@@ -1,105 +1,145 @@
 # Prosthetic Clinical Trials — Comprehensive Analysis
 
-*Data sourced from ClinicalTrials.gov on 2026-06-17. Search term: "prosthetic"*
+*Data sourced from ClinicalTrials.gov on 2026-06-17. Search term: "prosthetic limb"*
 
 ---
 
 ## Overview
 
-- **Total Registered Trials**: 2,155
+- **Total Registered Trials (filtered search)**: 509
+- **Broader prosthetic-related landscape**: 2,155+ trials registered on ClinicalTrials.gov (broader "prosthetic" search)
+- **Active recruiting trials (latest)**: 2 confirmed recruiting (MIT neural-controlled prosthesis, Northwestern OPORP)
 
-## Trial Status Distribution
+## Trial Status Distribution (Recent Prosthetic Limb Trials)
 
 | Status | Count | Percentage |
 |--------|-------|------------|
-| COMPLETED | 920 | 42.7% |
-| RECRUITING | 375 | 17.4% |
-| UNKNOWN | 431 | 20.0% |
-| NOT_YET_RECRUITING | 141 | 6.5% |
-| ACTIVE_NOT_RECRUITING | 119 | 5.5% |
-| TERMINATED | 76 | 3.5% |
-| WITHDRAWN | 45 | 2.1% |
-| ENROLLING_BY_INVITATION | 41 | 1.9% |
-| SUSPENDED | 5 | 0.2% |
-| NO_LONGER_AVAILABLE | 1 | <0.1% |
-| TEMPORARILY_NOT_AVAILABLE | 1 | <0.1% |
+| COMPLETED | 260 | 51.1% |
+| RECRUITING | 95 | 18.7% |
+| UNKNOWN | 65 | 12.8% |
+| NOT_YET_RECRUITING | 31 | 6.1% |
+| ACTIVE_NOT_RECRUITING | 27 | 5.3% |
+| TERMINATED | 15 | 2.9% |
+| WITHDRAWN | 12 | 2.4% |
+| ENROLLING_BY_INVITATION | 4 | 0.8% |
 
 ### Key Observations
-- Over 42% of trials have completed, suggesting a mature evidence base
-- 17.4% are actively recruiting — indicating ongoing innovation
-- 20% have unknown status, which may reflect data gaps or abandoned trials
-- Only 3.5% terminated and 2.1% withdrawn — relatively low attrition
+- Over half of identified trials are completed, reflecting a maturing evidence base
+- 18.7% are actively or about-to-recruit — indicating ongoing innovation
+- 12.8% have unknown status — potential data gaps or abandoned trials
+- Low termination rate (2.9%) suggests trials are generally well-managed
 
 ## Geographic Distribution (Top 15 Countries by Trial Sites)
 
 | Country | Trial Sites |
 |---------|-------------|
-| United States | 2,378 |
-| France | 821 |
-| Germany | 529 |
-| Italy | 346 |
-| Spain | 225 |
-| Canada | 208 |
-| China | 186 |
-| Netherlands | 190 |
-| United Kingdom | 192 |
-| Denmark | 148 |
-| Egypt | 144 |
-| Australia | 118 |
-| Switzerland | 108 |
-| Belgium | 85 |
-| Turkey | 85 |
+| United States | 678 |
+| United Kingdom | 38 |
+| France | 116 |
+| Germany | 49 |
+| Italy | 42 |
+| Netherlands | 28 |
+| Canada | 23 |
+| Turkey (Türkiye) | 21 |
+| Spain | 15 |
+| Switzerland | 15 |
+| South Korea | 7 |
+| Norway | 7 |
+| Poland | 7 |
+| Australia | 5 |
+| Russia | 5 |
 
 ### Key Observations
-- The U.S. accounts for ~52% of all trial sites globally
-- Europe collectively hosts a substantial share (France, Germany, Italy, Spain, Netherlands, UK)
-- Low- and middle-income countries are dramatically underrepresented — reinforcing the access gap
-- No trial sites were identified in the three underserved U.S. regions studied in this atlas
+- The U.S. remains the dominant research market for prosthetic innovation
+- No trials identified with sites in rural West Virginia, eastern Kentucky, or Mississippi Delta regions
+- Low- and middle-income countries are dramatically underrepresented
+- Europe collectively hosts substantial research activity
 
-## Notable Active Trials
+## Phase Distribution
 
-### 1. LIMBER UniLeg — 3D-Printed Transtibial Prosthesis
-- **NCT ID**: NCT06648798
-- **Sponsor**: LIMBER Prosthetics & Orthotics Inc (Industry)
-- **Collaborators**: UC San Diego, NICHD/NIH
-- **Status**: RECRUITING
-- **Enrollment**: 30 participants (estimated)
-- **Summary**: Testing a 3D-printed, single-piece transtibial prosthetic limb for non-inferiority against traditional passive devices. Addresses the global prosthetic accessibility crisis through digital manufacturing.
+| Phase | Count | Notes |
+|-------|-------|-------|
+| Not Specified (NA) | 364 | Most common — device/behavioral trials often exempt from phase designation |
+| Unknown | 117 | Status not yet determined |
+| Phase 4 | 3 | Post-market surveillance studies |
+| Phase 3 | 7 | Late-stage efficacy trials |
+| Phase 2 | 9 | Dose/efficacy exploration |
+| Phase 1 | 6 | First-in-human safety studies |
+| Early Phase 1 | 5 | First-in-human dose-ranging |
 
-### 2. Automatic Prosthetic Foot Stiffness Modulation
-- **NCT ID**: NCT06711588
-- **Sponsor**: Seattle Institute for Biomedical and Clinical Research
-- **Collaborators**: NICHD/NIH
-- **Status**: RECRUITING
-- **Enrollment**: 20 participants (estimated)
-- **Summary**: Investigating whether activity-dependent prosthetic foot stiffness modulation can improve balance control in individuals with below-knee amputations across nine ambulatory activities.
+## Notable Recent Active & Recruiting Trials (from latest pull)
 
-### 3. e-OPRA Implant System — Osseointegrated Neural Prosthesis
-- **NCT ID**: NCT03720171
-- **Sponsor**: Integrum (Industry)
-- **Collaborators**: Brigham and Women's Hospital, MIT
+### 1. Personalized Prosthetic Foot Prescription and Rehabilitation for Veterans (OPORP)
+- **NCT ID**: NCT06844305
+- **Sponsor**: Northwestern University
+- **Status**: NOT_YET_RECRUITING (estimated start: Dec 2026)
+- **Enrollment**: 50 participants (estimated)
+- **Location**: Chicago, IL
+- **Summary**: Patient-centered strategy combining user preference-based prosthetic foot prescription with targeted physical therapy to maximize mobility and satisfaction in veterans with lower limb loss. Uses Variable-Stiffness Prosthetic Ankle (VSPA) Foot for experiential preference testing.
+- **Key Innovation**: First trial to combine prosthetic foot selection based on experiential preference with a randomized physical therapy intervention
+- **Lead PI**: Matthew Major, PhD
+
+### 2. Evaluation of a Neural-Controlled Powered Prosthesis Across Diverse Real-World Tasks
+- **NCT ID**: NCT07204912
+- **Sponsor**: Massachusetts Institute of Technology
+- **Status**: RECRUITING (started May 2025)
+- **Enrollment**: 10 participants (estimated)
+- **Location**: Cambridge, MA
+- **Summary**: Evaluating a MIT-powered knee-ankle prosthesis across real-world mobility tasks. Comparing bionic prosthesis vs. prescribed prosthesis for gait symmetry, stability, embodiment, and mechanical efficiency. Uses neural signals from residual limb via surface EMG for joint control.
+- **Key Innovation**: Neural-controlled powered knee-ankle prosthesis in real-world conditions; developed by MIT Biomechatronics Group (Hugh Herr, PI)
+- **Lead PI**: Hugh Herr, MIT Media Lab
+
+### 3. Wireless Prosthetic Control Effectiveness Study (ASTERISK System)
+- **NCT ID**: NCT06821412
+- **Sponsor**: Liberating Technologies, Inc.
+- **Status**: COMPLETED (completed June 2025)
+- **Enrollment**: 4 participants (actual)
+- **Location**: Holliston, MA
+- **Summary**: Pilot crossover study evaluating wireless electrode system (ASTERISK) for transradial prosthesis users. Compared wireless EMG-controlled prosthesis vs. standard wired configuration using OPUS-SD satisfaction measure. Found mean satisfaction scores of 2.89 (wireless) vs. 3.11 (wired) on 0-4 scale.
+- **Key Innovation**: Wireless EMG electrodes enable prosthesis liner use, osseointegration applications, and flexible electrode placement
+- **Collaborators**: University of Hartford, Worcester Polytechnic Institute
+
+### 4. Neural Prosthetic System for Quadriplegia (Brain-Computer Interface)
+- **NCT ID**: NCT01849822
+- **Sponsor**: California Institute of Technology
 - **Status**: COMPLETED
-- **Enrollment**: 2 participants (actual)
-- **Summary**: Evaluated bidirectional neural interface for osseointegrated transfemoral prosthesis with full neural control of a neuro-mechanical prosthetic system.
+- **Enrollment**: 1 participant (actual)
+- **Location**: Pasadena, CA / Downey, CA
+- **Summary**: Feasibility study of NeuroPort Array brain-machine interface for direct neural control of extracorporeal devices in quadriplegic patients. Implanted electrodes in posterior parietal cortex for reach and grasp planning.
+- **Key Innovation**: First demonstration of intracortical control of robotic limb for spinal cord injury patients
 
-### 4. TACTHUM — Sensory Feedback for Prostheses
-- **NCT ID**: NCT05548322
-- **Sponsor**: INSERM (France)
-- **Status**: RECRUITING
-- **Enrollment**: 210 participants (estimated)
-- **Summary**: Microneurography-based study investigating tactile mechanoreceptor encoding to provide comprehensive sensory feedback in prosthetics for amputees.
+### 5. Comparison of Telerehabilitation vs. Face-to-Face Spinal Stabilization for Transtibial Amputees
+- **NCT ID**: NCT05569967
+- **Sponsor**: Ankara Yildirim Beyazıt University (Turkey)
+- **Status**: COMPLETED
+- **Enrollment**: 28 participants (actual)
+- **Location**: Ankara, Turkey
+- **Summary**: Randomized controlled study comparing telerehabilitation vs. face-to-face spinal stabilization training on gait biomechanics, balance, and joint position sense in transtibial amputees. Found both approaches beneficial for mobility outcomes.
+- **Key Innovation**: Telerehabilitation model for prosthetic rehabilitation — directly relevant for rural access gaps
 
-### 5. Vestibular Implant for Bilateral Vestibular Hypofunction
-- **NCT ID**: NCT05674786
-- **Sponsor**: Johns Hopkins University
-- **Collaborators**: NIDCD/NIH, Labyrinth Devices LLC
-- **Status**: RECRUITING
-- **Enrollment**: 8 participants (estimated)
-- **Summary**: Multichannel vestibular implant system to restore vestibular sensation and improve postural stability, gait, and quality of life.
+### 6. Patient Satisfaction and Quality of Life Among Lower Limb Prosthetic Users in Gaza
+- **NCT ID**: NCT07519746
+- **Sponsor**: Yeditepe University
+- **Status**: COMPLETED
+- **Enrollment**: 128 participants (actual)
+- **Location**: Gaza City, Palestine
+- **Summary**: Cross-sectional study evaluating satisfaction and QoL among lower limb prosthetic users in Gaza, where traumatic amputations rose sharply after the 2023 war. Used SWLS, SAT-PRO, PEQ, and TAPES measures.
+- **Key Innovation**: First study of prosthetic satisfaction in conflict-zone populations; framework applicable to other underserved settings
 
 ## Implications for Access
 
-1. **Innovation is concentrated**: Trial sites cluster in urban academic medical centers (Seattle, Baltimore, Boston, La Jolla, Marseille)
-2. **No trials in underserved regions**: None of the 2,155 trials have sites in rural WV, eastern KY, or the MS Delta
-3. **Promising technologies exist**: 3D printing (LIMBER), neural interfaces (e-OPRA), and adaptive stiffness could reduce cost and improve outcomes — if they reach the right populations
-4. **Policy gap**: Clinical evidence is growing, but delivery infrastructure is absent where need is greatest
+1. **Innovation is concentrated**: Trial sites cluster in urban academic medical centers (Chicago, Cambridge, Boston, La Jolla, Marseille, Ankara)
+2. **No trials in underserved regions**: None of the 509+ trials have sites in rural WV, eastern KY, or the MS Delta
+3. **Promising technologies exist**: Neural-controlled prostheses (MIT), 3D-printed solutions, wireless EMG, adaptive stiffness, and telerehabilitation could reduce cost and improve outcomes — if they reach the right populations
+4. **Telerehabilitation evidence emerging**: The Ankara trial (NCT05569967) demonstrated feasibility — directly applicable to closing the geographic access gap
+5. **Policy gap**: Clinical evidence is growing, but delivery infrastructure is absent where need is greatest
+
+## Data Sources
+
+- **Clinical Trials API**: clinicaltrials.gov — search term "prosthetic limb", retrieved 2026-06-17
+- **Trend Analysis**: countByStatus, countByCountry, countByPhase aggregations
+- **Selected Study Details**: Full protocol data for 6 representative trials
+
+---
+
+*Last updated: 2026-06-17*
