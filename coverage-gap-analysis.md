@@ -1,6 +1,8 @@
 # Prosthetic & Orthotic Care Coverage Gap Analysis
 
-*Geographic audit using OpenStreetMap data. Search radius: 50 km from each region center. Data retrieved: 2026-06-17*
+*Geographic audit using OpenStreetMap healthcare data. Search radius: 50 km from each region center.*
+- **Latest OSM Provider Search:** 2026-06-23 | **Clinical Trials Data:** 2026-06-23
+- **Target Regions:** Rural West Virginia (Beckley), Eastern Kentucky (Hazard), Mississippi Delta (Greenville, MS)
 
 ---
 
@@ -16,7 +18,7 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 
 **Center Point**: 37.78°N, 81.19°W (Beckley, Raleigh County)
 **Search Radius**: 50 km (≈31 mi)
-**Total Healthcare Facilities Found**: 29
+**Total Healthcare Facilities Found (OSM)**: 29
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
@@ -48,7 +50,7 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 
 **Center Point**: 37.25°N, 83.19°W (Hazard, Perry County)
 **Search Radius**: 50 km (≈31 mi)
-**Total Healthcare Facilities Found**: 27
+**Total Healthcare Facilities Found (OSM)**: 27
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
@@ -81,7 +83,7 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 
 **Center Point**: 33.41°N, 91.06°W (Greenville, Washington County)
 **Search Radius**: 50 km (≈31 mi)
-**Total Healthcare Facilities Found**: 9
+**Total Healthcare Facilities Found (OSM)**: 9
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
@@ -136,8 +138,8 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 ## Recommendations
 
 1. **Telehealth prosthetic consultations**: Expand remote fitting and follow-up capabilities (supported by the Ankara telerehabilitation trial NCT05569967)
-2. **Mobile prosthetic clinics**: Deploy periodic outreach vans from urban prosthetic centers (charleston, WV; Lexington, KY; Jackson, MS)
-3. **3D-printed prosthetic solutions**: Technologies like the LIMBER UniLeg (see clinical-trials-analysis.md) and osseointegrated prostheses could enable on-demand fabrication closer to patients
+2. **Mobile prosthetic clinics**: Deploy periodic outreach vans from urban prosthetic centers (Charleston, WV; Lexington, KY; Jackson, MS)
+3. **3D-printed prosthetic solutions**: Technologies like the LIMBER UniLeg and osseointegrated prostheses could enable on-demand fabrication closer to patients
 4. **Policy advocacy**: Push for improved Medicaid reimbursement for prosthetic services in underserved states; increase travel stipend programs
 5. **Community health worker integration**: Train local CHWs to provide basic prosthetic maintenance, skin checks, and identify complications early
 6. **Clinical trial site expansion**: Advocate for trial sites in rural areas to improve both access and the evidence base
@@ -149,7 +151,7 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 
 - **Provider Locations**: OpenStreetMap — healthcare category search within 50 km radius
 - **Geocoding**: OSM MCP geocode for Beckley WV, Hazard KY, Greenville MS
-- **Clinical Trials**: clinicaltrials.gov API — search term "prosthetic limb"
+- **Clinical Trials**: ClinicalTrials.gov API — search term "prosthetic"
 - **Region Selection**: Based on CDC Social Vulnerability Index and Amputee Coalition prevalence data
 
 ### Limitations
@@ -160,4 +162,4 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 
 ---
 
-*This analysis was generated on 2026-06-17 and should be supplemented with state licensure databases and Amputee Coalition provider directories for a complete picture.*
+*This analysis was generated on 2026-06-17 and updated on 2026-06-23. Should be supplemented with state licensure databases and Amputee Coalition provider directories for a complete picture.*
