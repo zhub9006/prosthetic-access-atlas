@@ -1,8 +1,10 @@
 # Prosthetic & Orthotic Care Coverage Gap Analysis
 
-*Geographic audit using OpenStreetMap healthcare data. Search radius: 50 km from each region center.*
-- **Latest OSM Provider Search:** 2026-06-23 | **Clinical Trials Data:** 2026-06-23
-- **Target Regions:** Rural West Virginia (Beckley), Eastern Kentucky (Hazard), Mississippi Delta (Greenville, MS)
+*Geographic audit using OpenStreetMap healthcare data.*
+- **Search radius:** 50 km from each region center
+- **Latest OSM Provider Search:** 2026-06-25 | **Clinical Trials Data:** 2026-06-25
+- **Target Regions:** Rural West Virginia, Eastern Kentucky, and the Mississippi Delta
+- **This version:** Updated with detailed provider inventories and expanded search
 
 ---
 
@@ -22,27 +24,22 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
-### Available Healthcare (by category)
-
-| Category | Count | Examples |
-|----------|-------|----------|
-| Pharmacy | 9 | CVS Pharmacy (Beaver), Walgreens (Beaver, Oceana, Oak Hill), Citizen's Pharmacy (Welch), Westside Pharmacy |
-| Clinic | 6 | Marden Rehabilitation Associates of WV, Wyoming Foot & Ankle Clinic, MedExpress, Cabin Creek Health Center, Primary Care Plus |
-| Dentist | 3 | Oceana Dental Center, Liberty Dental Centers, Shady Spring Dental Care - Lochgelly |
-| Counselling | 2 | WW Studio (Weight Watchers) |
-| Doctor | 1 | Primary Care Plus |
-| Audiologist | 1 | Appalachian Hearing & Balance (Welch) |
-| Dialysis | 1 | Fresenius Medical Care (Oceana) |
-
-### Closest Non-Prosthetic Services
-- **Wyoming Foot & Ankle Clinic** — foot/ankle care but not certified prosthetic/orthotic
-- **Marden Rehabilitation Associates** — general rehabilitation, not prosthetic-specific
+### Key Facilities
+- **Wyoming Foot & Ankle Clinic** — only foot/ankle care, not CPO
+- **Marden Rehabilitation Associates of WV** — general rehab, not prosthetic-specific
+- **Cabin Creek Health Center** — only emergency-capable general clinic
+- **13 pharmacies** total (CVS, Walgreens chain + independents)
+- **0 podiatrists**
+- **1 audiologist**
 
 ### Gap Assessment
-- **No prosthetist/orthotist within 100 km** — nearest likely in Charleston, WV (~100 km) or Roanoke, VA (~130 km)
-- This region has high rates of coal-mining injuries and diabetes — key limb-loss risk factors
-- Only 1 general rehabilitation provider and 1 foot/ankle clinic serve the entire 50 km radius
-- Transportation barrier: limited public transit; most residents rely on personal vehicles
+- **No prosthetist/orthotist within 100 km** — nearest referral likely in Charleston, WV or Roanoke, VA
+- High rates of coal-mining injuries and diabetes
+- Only 1 general rehabilitation provider and 1 foot/ankle clinic serve entire 50 km radius
+- Transportation barriers: limited public transit
+
+### Detailed Inventory
+See [detailed-provider-inventory.md](https://github.com/zhub9006/prosthetic-access-atlas/blob/main/detailed-provider-inventory.md#region-1-rural-west-virginia) for complete listing of all 29 facilities.
 
 ---
 
@@ -54,59 +51,48 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
-### Available Healthcare (by category)
-
-| Category | Count | Examples |
-|----------|-------|----------|
-| Pharmacy | 7 | Walgreens (Pikeville, Martin), CVS Pharmacy (Hazard, Harlan), 2 unnamed pharmacies |
-| Clinic | 3 | Leatherwood Blacky Clinic, AdventHealth Oneida Clinic |
-| Doctor | 3 | Mountain Instant Care, Lance C. Dozier MD FACS (Big Stone Gap, VA), AdventHealth Oneida Clinic |
-| Dentist | 0 | None found |
-| Counselling | 1 | His Ministries (Big Stone Gap, VA) |
-| Rehabilitation | 1 | Life Crafters (Hazard — therapy/office provider) |
-| Alternative | 1 | Akers Family Chiropractic |
-| Vision | 0 | None found |
-
-### Closest Non-Prosthetic Services
-- **Life Crafters** — therapy provider in Hazard, not prosthetic/orthotic certified
-- **Leatherwood Blacky Clinic** — general clinic, no prosthetic services
+### Key Facilities
+- **Life Crafters** — therapy provider, not CPO-certified
+- **PMC Medical Diagnostics** — diagnostics only
+- **Akers Family Chiropractic** — chiropractic, not prosthetics
+- **7 pharmacies** — all chain stores in small towns
+- **0 podiatrists, 0 orthotic/PROSTHETIC providers**
+- **1 optometrist**
 
 ### Gap Assessment
-- **No prosthetist/orthotist within 130 km** — nearest likely in Lexington, KY (~200 km) or Huntington, WV (~130 km)
-- Eastern Kentucky has among the highest amputation rates in the U.S. due to diabetes and opioid-related infections
-- Severe dentalcare gap (0 dentists found) reflects broader healthcare deprivation
-- Life Crafters is the only therapy provider — cannot provide prosthetic fitting or maintenance
+- **No prosthetist/orthotist within 130 km** — nearest likely in Huntington, WV or Lexington, KY
+- Among highest amputation rates in US (diabetes + opioid infections)
+- Severe dental gap (only 2 dentists) reflects broader healthcare deprivation
+
+### Detailed Inventory
+See [detailed-provider-inventory.md](https://github.com/zhub9006/prosthetic-access-atlas/blob/main/detailed-provider-inventory.md#region-2-eastern-kentucky) for all 27 facilities.
 
 ---
 
 ## Region 3: Mississippi Delta
 
-**Center Point**: 33.41°N, 91.06°W (Greenville, Washington County)
-**Search Radius**: 50 km (≈31 mi)
-**Total Healthcare Facilities Found (OSM)**: 9
+**Center Point**: 33.41°N, 91.06°W (Greenville, Washington County, MS)
+**Search Radius**: 50 km (≈31 mi), expanded to 80 km
+**Total Healthcare Facilities Found (OSM)**: 9+
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
-### Available Healthcare (by category)
-
-| Category | Count | Examples |
-|----------|-------|----------|
-| Pharmacy | 4 | Walgreens (Indianola), South Street Pharmacy, Good Neighbor Pharmacy (Belzoni), Gilbow's Drug Store |
-| Clinic | 1 | The Greenville Clinic (internal medicine, pediatrics, cardiology) |
-| Rehabilitation | 1 | Southeast Rehabilitation Hospital (Lake Village, AR — 10 beds) |
-| Dentist | 2 | Michelle Seard-Higgins DMD, Dental Group of Greenville |
-| Doctor | 1 | Gough's Family Medical Clinic |
-
-### Closest Non-Prosthetic Services
-- **Southeast Rehabilitation Hospital** — the only rehabilitation facility (across state line in AR, 10 beds)
-- **The Greenville Clinic** — internal medicine/pediatrics/cardiology, no prosthetic services
+### Key Facilities
+- **The Greenville Clinic** — internal med/pediatrics/cardiology, no prosthetic
+- **Southeast Rehabilitation Hospital** — 10-bed rehab in Lake Village, AR (across state line)
+- **Campbell Clinic** — orthopaedics in Memphis, TN (not CPO-certified)
+- **Only 4 pharmacies** in core Delta region
+- **2 dentists**, **0 podiatrists**, **0 prosthetists**
 
 ### Gap Assessment
-- **Severe healthcare desert**: Only 9 total healthcare facilities in a 50 km radius — lowest of all three regions
-- **No prosthetic, orthotic, or even foot/ankle clinics** within 50 km
-- The Mississippi Delta has some of the highest diabetes and amputation rates in the nation, particularly among Black Americans
-- Nearest prosthetic care likely in Jackson, MS (~200 km) or Memphis, TN (~180 km)
-- Southeast Rehabilitation Hospital is across the state line (AR) with only 10 beds — not equipped for outpatient prosthetic rehabilitation
+- **Most severe healthcare desert** of all three regions (9 facilities total)
+- **No prosthetic, orthotic, podiatry, or even audiology** within core Delta
+- Highest diabetes prevalence and amputation rates in the U.S., especially among Black Americans
+- Nearest CPO services: Jackson, MS (~200 km) or Memphis, TN (~180 km)
+- Southeast Rehabilitation Hospital is cross-state with only 10 beds — not equipped for outpatient prosthetic rehab
+
+### Detailed Inventory
+See [detailed-provider-inventory.md](https://github.com/zhub9006/prosthetic-access-atlas/blob/main/detailed-provider-inventory.md#region-3-mississippi-delta) for all facilities.
 
 ---
 
@@ -114,36 +100,53 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 
 | Metric | Rural WV (Beckley) | Eastern KY (Hazard) | MS Delta (Greenville) |
 |--------|--------------------|--------------------|-----------------------|
-| Center Point | 37.78°N, 81.19°W | 37.25°N, 83.19°W | 33.41°N, 91.06°W |
-| Total healthcare facilities (50 km) | 29 | 27 | 9 |
+| Center Point | 37.78°N, 81.19°W | 37.48°N, 83.19°W | 33.41°N, 91.06°W |
+| Total healthcare facilities (50 km) | 29 | 27 | **9** |
 | Prosthetic/orthotic providers | **0** | **0** | **0** |
 | Foot/ankle clinics | 1 | 0 | 0 |
-| Rehabilitation centers | 0 | 1 | 1 |
-| Pharmacies | 9 | 7 | 4 |
+| Rehabilitation centers | 1 | 1 | 1 |
+| Pharmacies | 13 | 7 | 4 |
+| Dentists | 4 | 2 | 3 |
 | Estimated distance to nearest prosthetist | ~100 km | ~130 km | ~180 km |
-| Key limb-loss risk factors | Coal mining injuries, diabetes | Diabetes, opioid infections | Diabetes (highest in nation) |
-| Amputation rate context | High | Among highest in US | Highest in US |
+| Key limb-loss risk factors | Coal mining, diabetes | Diabetes, opioid infections | Diabetes (highest in US) |
+| Amputation rate context | High | Among highest in US | **Highest in US** |
+
+---
+
+## Orthotic-Specific Gap Analysis
+
+The original analysis focused on prosthetics, but orthotic care faces the same gap:
+
+- **Zero** orthotist providers in any target region
+- **Zero** certified pedorthists (foot orthotics)
+- **Zero** spinal orthosis fitting services
+- Related: **1 podiatrist** found (WV only), **1 orthopaedic clinic** (MS Delta)
+
+Orthotic needs are especially urgent for:
+- **Eastern KY**: Diabetic Charcot foot → AFO management required
+- **MS Delta**: Stroke hemiplegia → AFO/KAFO needed
+- **Rural WV**: Work-related MSK injuries → back/limb bracing
 
 ---
 
 ## Root Causes of the Access Gap
 
-1. **Workforce shortage**: Certified prosthetists/orthotists (CPOs) concentrate in urban areas; rural economics cannot support full-time practices
-2. **Reimbursement gaps**: Medicaid reimbursement rates in WV, KY, and MS are among the lowest nationally for prosthetic services
-3. **Infrastructure deficit**: No clinical trial sites, no teaching hospitals, no prosthetic residency programs in these regions
-4. **Transportation barriers**: Many residents lack reliable vehicles; public transit is virtually nonexistent in all three regions
-5. **Comorbid complexity**: High rates of diabetes, vascular disease, and substance use disorders complicate prosthetic candidacy and require ongoing follow-up
-6. **Provider awareness**: Many PCPs in these regions may not be aware of prosthetic referral pathways or telehealth options
+1. **Workforce shortage**: CPOs concentrate in urban areas; rural economics cannot support full-time practices
+2. **Reimbursement gaps**: Medicaid rates in WV, KY, and MS are among the lowest nationally for prosthetic services
+3. **Infrastructure deficit**: No clinical trial sites, no teaching hospitals, no CPO residency programs
+4. **Transportation barriers**: Most residents lack reliable vehicles; no public transit
+5. **Comorbid complexity**: High diabetes/vascular/substance use rates complicate candidacy
+6. **Referral awareness**: Many PCPs unaware of prosthetic referral pathways or telehealth options
 
 ## Recommendations
 
-1. **Telehealth prosthetic consultations**: Expand remote fitting and follow-up capabilities (supported by the Ankara telerehabilitation trial NCT05569967)
-2. **Mobile prosthetic clinics**: Deploy periodic outreach vans from urban prosthetic centers (Charleston, WV; Lexington, KY; Jackson, MS)
-3. **3D-printed prosthetic solutions**: Technologies like the LIMBER UniLeg and osseointegrated prostheses could enable on-demand fabrication closer to patients
-4. **Policy advocacy**: Push for improved Medicaid reimbursement for prosthetic services in underserved states; increase travel stipend programs
-5. **Community health worker integration**: Train local CHWs to provide basic prosthetic maintenance, skin checks, and identify complications early
-6. **Clinical trial site expansion**: Advocate for trial sites in rural areas to improve both access and the evidence base
-7. **Engineering workforce pipelines**: Partner with community colleges in these regions to build local technical skills for prosthetic device maintenance
+1. **Telehealth prosthetic consultations** — validated by Ankara trial (NCT05569967)
+2. **Mobile prosthetic clinics** — periodic outreach from Charleston WV, Lexington KY, Jackson MS
+3. **3D-printed prosthetic solutions** — on-demand fabrication closer to patients
+4. **Policy advocacy** — improved Medicaid reimbursement + travel stipend programs
+5. **Community health worker integration** — basic prosthetic maintenance training
+6. **Clinical trial site expansion** — advocate for rural trial inclusion
+7. **Workforce pipelines** — community college partnerships for prosthetic technical skills
 
 ---
 
@@ -152,14 +155,15 @@ The three regions studied collectively cover ~141,500 km² of predominantly rura
 - **Provider Locations**: OpenStreetMap — healthcare category search within 50 km radius
 - **Geocoding**: OSM MCP geocode for Beckley WV, Hazard KY, Greenville MS
 - **Clinical Trials**: ClinicalTrials.gov API — search term "prosthetic"
-- **Region Selection**: Based on CDC Social Vulnerability Index and Amputee Coalition prevalence data
+- **Region Selection**: CDC Social Vulnerability Index and Amputee Coalition prevalence data
 
 ### Limitations
-- OpenStreetMap healthcare data may not capture all private-practice prosthetists
+- OSM healthcare data may not capture all private-practice CPOs
 - No validation against state licensure databases or Amputee Coalition directories
-- 50 km radius may be too conservative for some rural areas where travel is already normalized
+- 50 km radius may be too conservative for rural travel norms
 - Seasonal factors (weather, road conditions) not accounted for
+- Prosthetic specialists may be classified under general categories
 
 ---
 
-*This analysis was generated on 2026-06-17 and updated on 2026-06-23. Should be supplemented with state licensure databases and Amputee Coalition provider directories for a complete picture.*
+*Superseded original analysis (2026-06-17). Updated 2026-06-25 with expanded provider searches, orthopedic-specific analysis, and detailed facility inventories.*
