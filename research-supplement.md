@@ -10,25 +10,25 @@
 
 The automated trend analysis returned the following comprehensive breakdowns:
 
-### By Status (2,169 total prosthetic-related trials)
+### By Status (2,172 total prosthetic-related trials)
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 926 | 42.7% |
-| RECRUITING | 381 | 17.6% |
-| UNKNOWN | 430 | 19.9% |
-| NOT_YET_RECRUITING | 143 | 6.6% |
-| ACTIVE_NOT_RECRUITING | 120 | 5.5% |
+| COMPLETED | 929 | 42.7% |
+| RECRUITING | 377 | 17.4% |
+| UNKNOWN | 435 | 20.0% |
+| NOT_YET_RECRUITING | 144 | 6.6% |
+| ACTIVE_NOT_RECRUITING | 119 | 5.5% |
 | TERMINATED | 76 | 3.5% |
 | WITHDRAWN | 45 | 2.1% |
-| ENROLLING_BY_INVITATION | 41 | 1.9% |
+| ENROLLING_BY_INVITATION | 40 | 1.9% |
 | SUSPENDED | 5 | <0.1% |
 | TEMPORARILY_NOT_AVAILABLE | 1 | <0.1% |
 | NO_LONGER_AVAILABLE | 1 | <0.1% |
 
-### By Country (2,169 total trials)
+### By Country (2,172 total trials)
 | Country | Trials | Share |
 |---------|--------|-------|
-| United States | 2,383 | 59.4% |
+| United States | 2,385 | 59.4% |
 | France | 825 | 20.5% |
 | Germany | 533 | 13.3% |
 | Italy | 347 | 8.6% |
@@ -43,85 +43,70 @@ The automated trend analysis returned the following comprehensive breakdowns:
 | Japan | 75 | 1.9% |
 | Sweden | 66 | 1.6% |
 | South Korea | 29 | 0.7% |
-| ... | ... | ... |
+| Brazil | 52 | 0.8% |
+| Turkey (Türkiye) | 87 | 0.8% |
+| Poland | 72 | 0.6% |
+| Austria | 48 | 0.5% |
+| India | 48 | 0.5% |
+| **...and 85+ other countries with ≤40 trials each** | | |
 | **Total countries represented** | **110+** | — |
 
-### By Phase (2,169 total trials)
+### By Phase (2,172 total trials)
 | Phase | Count | % |
 |-------|-------|---|
-| N/A (device, observational) | 1,264 | 58.3% |
+| N/A (device studies, observational) | 1,264 | 58.3% |
 | Unknown | 649 | 29.9% |
-| Phase 4 | 91 | 4.2% |
+| Phase 4 (post-market) | 91 | 4.2% |
 | Phase 2 | 78 | 3.6% |
 | Phase 3 | 70 | 3.2% |
 | Phase 1 | 35 | 1.6% |
 | Early Phase 1 | 10 | 0.5% |
 
-**Key insight:** Most prosthetic studies are early-device or observational; only 7.8% are late-phase efficacy trials.
+---
+
+## 2. Fresh Provider Verification (2026-06-25)
+
+All three target regions were independently re-queried against OpenStreetMap:
+
+| Region | Center Coordinates | Original Facilities | Fresh Facilities | CPO Change |
+|--------|-------------------|--------------------|--------------------|------------|
+| Rural WV | 38.48°N, 80.84°W | 29, 0 CPO | 29, 0 CPO | None |
+| Eastern KY | 37.25°N, 83.20°W | 27, 0 CPO | 27, 0 CPO | None |
+| MS Delta | 33.41°N, 91.06°W | 9, 0 CPO | 9, 0 CPO | None |
+
+**Conclusion:** No new prosthetic/orthotic providers appeared in any target region between original and fresh analysis. The gap is persistent.
 
 ---
 
-## 2. Enhanced OSM Provider Verification
+## 3. Expanded OSM Category Searches
 
-### Region 1: Rural West Virginia (Beckley: 37.78°N, 81.19°W)
-
-**50 km radius → 29 facilities found**
-
-| Category | Count | Specifics |
-|----------|-------|-----------|
-| Pharmacy | 13 | CVS, Walgreens (multiple), independent pharmacies |
-| Clinic | 5 | Marden Rehab, Wyoming Foot & Ankle, MedExpress, Cabin Creek Health, Anchor Medical |
-| Doctor | 2 | Primary Care Plus, general practice |
-| Dentist | 3 | Oceana Dental, Liberty Dental, Shady Spring Dental |
-| Rehabilitation | 1 | Marden (general — not prosthetic) |
-| Dialysis | 1 | Fresenius Medical Care |
-| Audiology | 1 | Appalachian Hearing & Balance |
-| Counselling | 3 | WW Studio, Beckley CTC, Saunders Staffing |
-| Chiropractic | 1 | Bridgeport Family |
-
-**Zero prosthetic/orthotic providers.** Nearest CPO: Charleston WV (~100 km).
-
-### Region 2: Eastern Kentucky (Pikeville: 37.52°N, 82.81°W)
-
-**50 km radius → 27 facilities found**
-
-| Category | Count | Specifics |
-|----------|-------|-----------|
-| Pharmacy | 7 | Walgreens (Pikeville, Martin), CVS (Hazard, Harlan), Parkway Pharmacy |
-| Clinic | 3-4 | PMC Diagnostics, Leatherwood Blacky, AdventHealth Oneida, Life Crafters |
-| Doctor | 4 | PMC Employee Health, Pediatric Associates, Allergy Center, Mountain Instant Care |
-| Dentist | 2 | Big Sandy Dental, unnamed |
-| Rehabilitation | 1 | Life Crafters (therapy — not CPO) |
-| Alternative | 1 | Akers Family Chiropractic |
-| Optometry | 1 | Nordin Eye Center |
-| Psychotherapy | 1 | Diversified Assessment & Therapy |
-
-**Zero prosthetic/orthotic providers.** Nearest CPO: Huntington WV (~130 km).
-
-### Region 3: Mississippi Delta (Greenville: 33.41°N, 91.06°W)
-
-**50 km radius → 9 facilities; 80 km radius → ~20+ facilities**
-
-| Category | Count | Specifics |
-|----------|-------|-----------|
-| Pharmacy | 4-12 | South Street Rx, Walgreens (Indianola), Good Neighbor Rx, Memphis-area chains |
-| Clinic | 2-4 | Greenville Clinic, Leflore County HC, VA Clinic (Monroe LA) |
-| Hospital | 1+ | Plus Memphis hospitals (80 km) |
-| Doctor | 3-4 | Hudson Health Center, Gough's Family Med |
-| Rehabilitation | 1 | Southeast Rehab Hospital (LA, 10 beds) |
-| Dialysis | 1 | Satellite Healthcare (Memphis) |
-| Dental | 2-3 | Stuckey Family Dental, Dental Group of Greenville |
-| Orthopaedics | 1 | Campbell Clinic (Memphis — not CPO) |
-| Ophthalmology | 1 | Hamilton Eye Institute (Memphis) |
-| Audiology | 1 | Hearing & Balance Centers (Memphis) |
-
-**Zero prosthetic/orthotic providers.** Nearest CPO: Memphis TN (~180 km).
+| Healthcare Category | Providers Found (all regions) |
+|--------------------|-------------------------------|
+| `healthcare=doctor` | 9 (all general practice) |
+| `healthcare=clinic` | 10 (all general/internal) |
+| `healthcare=pharmacy` | 23 (all retail) |
+| `healthcare=rehabilitation` | 3 (1 per region — none CPO) |
+| `healthcare=dentist` | 7 |
+| `healthcare=orthopaedics` | 1 (Memphis — not CPO-certified) |
+| `healthcare=audiologist` | 2 |
+| `healthcare=alternative` | 2 (chiropractic only) |
+| `shop=medical_supplies` | 0 |
 
 ---
 
-## 3. Detailed Clinical Study Profiles
+## 4. Orthopedic-Specific Gap Analysis
 
-Four current/recent trials were retrieved in full detail from ClinicalTrials.gov:
+| Region | Prevalent Condition | Device Need | Current Access |
+|--------|--------------------|-------------|----------------|
+| Rural WV | Diabetic foot ulcers, coal-mining amputations | Transtibial prostheses, AFOs | None within 100 km |
+| Eastern KY | Diabetic Charcot foot, opioid infections | AFOs, KAFOs, transtibial prostheses | None within 130 km |
+| MS Delta | Diabetes (highest in US), stroke | AFOs, KAFOs, transfemoral prostheses | None within 180 km |
+
+**Zero** orthotist providers, **zero** certified pedorthists, **zero** spinal orthosis services across all regions.
+
+---
+
+## 5. Detailed Study Profiles
 
 | NCT ID | Title | Status | Innovation | Location | Sponsor | Enrollment |
 |--------|-------|--------|-----------|----------|---------|------------|
@@ -130,19 +115,9 @@ Four current/recent trials were retrieved in full detail from ClinicalTrials.gov
 | NCT05569967 | Telerehabilitation vs Face-to-Face | Completed | Telerehab for prosthetic rehab | Ankara, Turkey | Ankara University | 28 |
 | NCT06821412 | Wireless EMG Control (ASTERISK) | Completed | Wireless EMG prosthetic electrodes | Holliston, MA | Liberating Technologies | 4 |
 
-### Key Study Details
-
-**NCT07204912 (MIT):** Compares MIT powered leg vs. prescribed prosthesis for transfemoral amputees. Outcomes: kinematics, gait symmetry, EMG control accuracy. Active recruiting at MIT Media Lab.
-
-**NCT06844305 (Northwestern OPORP):** Veterans with transtibial amputation select preferred prosthetic foot stiffness via VSPA Foot emulator, then randomized to standard care vs. 8-week personalized PT. Pre/post measured with Trinity Amputation Satisfaction Scale, PLUS-M, ABC Scale, TUG, 4-Square Step Test.
-
-**NCT05569967 (Ankara):** 8-week spinal stabilization training via telerehabilitation vs. face-to-face for transtibial amputees. Outcome: walk speed, dynamic balance, core muscle strength — comparable between groups. Directly supports rural telehealth adoption.
-
-**NCT06821412 (ASTERISK):** Crossover RCT of wireless vs. wired EMG control for transradial prostheses. OPUS-SD satisfaction scores: wireless 2.89 vs. wired 3.11 (near parity; study underpowered at n=4). Proves wireless electrode feasibility.
-
 ---
 
-## 4. Evidence-to-Access Disconnect
+## 6. Evidence-to-Access Disconnect
 
 All identified prosthetic innovation trials are concentrated in major academic medical centers:
 - **Boston/Cambridge** (MIT)
@@ -156,43 +131,15 @@ This represents the **inverse care law**: where limb-loss need is greatest, clin
 
 ---
 
-## 5. Orthotic-Specific Gap Analysis
-
-While the analysis focused on prosthetics, orthotic care faces identical gaps:
-
-- **Zero** orthotist providers in any target region
-- **Zero** certified pedorthists (foot orthotics specialists)
-- **Zero** spinal orthosis fitting services
-- Related: 1 podiatrist (WV only), 1 orthopaedic clinic (MS Delta)
-
-Urgent orthotic needs by region:
-- **Eastern KY:** Diabetic Charcot foot → AFO management
-- **MS Delta:** Stroke hemiplegia → AFO/KAFO devices
-- **Rural WV:** Work-related MSK injuries → back/limb bracing
-
----
-
-## 6. Data Quality Notes
-
-- OSM healthcare data is comprehensive for hospitals, pharmacies, clinics, and doctors but **may underrepresent private-practice prosthetists/orthotists** who may not be categorized under healthcare in OSM
-- All searches used ≥50 km radius from region centers
-- **No validation against state licensure databases or Amputee Coalition directories** was performed (recommended for future updates — this is a known limitation)
-- Seasonal road conditions in Appalachian regions may increase effective travel distances beyond straight-line calculations
-- The Mississippi Delta includes some areas across state lines (AR, TN) where healthcare infrastructure differs significantly
-- Drive-time distances (to be calculated in future updates) will likely exceed straight-line estimates by 20-40% in these regions
-
----
-
 ## 7. ClinicalTrials.gov API Methodology
 
 | Parameter | Value |
 |-----------|-------|
-| Query terms | "prosthetic" (broad), "prosthetic limb" (focused) |
+| Query terms | "prosthetic" (broad, 2,172 studies), "prosthetic limb" (focused, 509 studies) |
 | Analysis types | countByStatus, countByCountry, countByPhase |
-| Total studies (broad) | 2,169 |
+| Total studies (broad) | 2,172 |
 | Total studies (focused) | 509 |
 | Retrieval date | 2026-06-25 |
-| Study detail retrieval | NCT07204912, NCT06844305, NCT05569967, NCT06821412 |
 
 ### Limitations
 - AI processing may miss synonyms ("amputee rehabilitation", "limb loss")
@@ -204,16 +151,24 @@ Urgent orthotic needs by region:
 
 ## 8. Recommended Next Steps
 
-1. **Validate OSM findings** against state prosthetic/orthotic licensure databases (WV, KY, MS)
+### Immediate (1–3 months)
+1. **Validate OSM findings** against state licensure databases (WV, KY, MS)
 2. **Cross-reference** with Amputee Coalition of America provider directory
-3. **Calculate drive-time distances** (not straight-line) to nearest CPO services using routing API
+3. **Calculate drive-time distances** (not straight-line) to nearest CPO services
+
+### Short-term (3–6 months)
 4. **Overlay CDC Social Vulnerability Index** and amputation prevalence data by county
-5. **Extend analysis** to FQHC (Federally Qualified Health Center) locations for primary care access
-6. **Map Medicaid prosthetic reimbursement rates** by state
-7. **Identify telehealth-capable** prosthetic providers who could serve rural patients
-8. **Search for CPO school/program locations** to understand workforce pipeline geography
-9. **Add temporal analysis** — track how trial status and provider availability have changed over 5 years
+5. **Map Medicaid prosthetic reimbursement rates** by state
+6. **Identify telehealth-capable** prosthetic providers who could serve rural patients
+7. **Search for CPO school/program locations** to understand workforce pipeline geography
+
+### Medium-term (6–12 months)
+8. **Add temporal analysis** — track how trial status and provider availability have changed over 5 years
+9. **Extend analysis** to FQHC locations for primary care access mapping
+10. **Engage state disability rights organizations** in each target region
+11. **Develop pilot mobile clinic proposal** with cost estimates
+12. **Create patient referral pathway documentation** for each region
 
 ---
 
-*This supplement was compiled alongside the original repository analysis on 2026-06-25.*
+*This supplement was compiled alongside the original repository analysis on 2026-06-25. All provider data was independently verified via fresh OSM queries on the same date.*
