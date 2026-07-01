@@ -4,7 +4,7 @@
 - **Search radius:** 50 km from each region center
 - **Latest OSM Provider Search:** 2026-06-25 | **Clinical Trials Data:** 2026-06-25
 - **Target Regions:** Rural West Virginia, Eastern Kentucky, and the Mississippi Delta
-- **This version:** Comprehensive update with verified facility counts and cross-region comparison
+- **This version:** Comprehensive update with verified facility counts and cross-region comparison; fresh OSM verification confirms zero CPO providers in all regions
 
 ---
 
@@ -19,6 +19,9 @@ The three regions studied collectively cover significant swaths of rural America
 | Rural WV (Beckley) | 29 | **0** | ~100 km | Coal mining, diabetes |
 | Eastern KY (Pikeville) | 27 | **0** | ~130 km | Diabetes, opioid infections |
 | MS Delta (Greenville) | 9 | **0** | ~180 km | Diabetes (highest in US) |
+
+### Fresh Verification (2026-06-25)
+All three regions were independently re-queried against OpenStreetMap. Results confirmed: **zero prosthetic/orthotic providers in all regions.** No new CPO-certified facilities appeared between searches. The access gap is persistent and structural.
 
 ---
 
@@ -73,13 +76,14 @@ The three regions studied collectively cover significant swaths of rural America
 ### Facility Breakdown
 | Category | Count | Notable Facilities |
 |----------|-------|--------------------|
-| Pharmacy | 7 | Walgreens (Pikeville, Martin, Whitesville), CVS (Hazard, Harlan), Parkway Pharmacy (Salyersville) |
+| Pharmacy | 7 | Walgreens (Pikeville, Martin), CVS (Hazard, Harlan), Parkway Pharmacy (Salyersville) |
 | Clinic | 3-4 | PMC Medical Diagnostics, Leatherwood Blacky, AdventHealth Oneida, Life Crafters |
 | Doctor | 4 | PMC Employee Health, Pediatric Associates, Allergy Center, Mountain Instant Care |
 | Dentist | 2 | Big Sandy Dental Center (Pikeville), unnamed |
 | Rehabilitation | 1 | Life Crafters (therapy — not CPO-certified) |
 | Alternative | 1 | Akers Family Chiropractic |
 | Optometry | 1 | Nordin Eye Center (Salyersville) |
+| Psychotherapy | 1 | Diversified Assessment & Therapy Services |
 
 ### Nearest Prosthetic/Orthotic Care
 - Huntington, WV (~130 km) — Appalachian Regional Healthcare system
@@ -99,14 +103,14 @@ The three regions studied collectively cover significant swaths of rural America
 
 **Center Point**: 33.41°N, 91.06°W (Greenville, Washington County, MS)
 **Search Radius**: 50 km (≈31 mi); expanded to 80 km reveals ~20+ facilities
-**Total Healthcare Facilities Found (OSM)**: 9+ (core Delta) → ~20+ (80 km)
+**Total Healthcare Facilities Found (OSM)**: 9 (core Delta) → ~20+ (80 km)
 **Prosthetic/Orthotic Providers**: **0**
 **Orthotic Providers**: **0**
 
 ### Facility Breakdown (Core 50 km)
 | Category | Count | Notable Facilities |
 |----------|-------|--------------------|
-| Pharmacy | 4+ | South Street Pharmacy (Indianola), Walgreens (Indianola), Good Neighbor Pharmacy (Belzoni) |
+| Pharmacy | 4+ | South Street Pharmacy (Indianola), Walgreens (Indianola), Good Neighbor Pharmacy (Belzoni), Gilbow's Drug Store |
 | Clinic | 2+ | The Greenville Clinic, Leflore County Health Center, Greenwood Medical Complex, VA Clinic (Monroe, LA) |
 | Hospital | 1+ | Unnamed hospital (MS core) |
 | Doctor | 3+ | Hudson Health Center (Memphis), Gough's Family Medical Clinic |
@@ -116,6 +120,16 @@ The three regions studied collectively cover significant swaths of rural America
 | Orthopaedics | 1 | Campbell Clinic (Memphis — sub-specialty, not CPO-certified) |
 | Ophthalmology | 1 | Hamilton Eye Institute (Memphis) |
 | Audiology | 1 | Hearing & Balance Centers of W Tennessee (Memphis) |
+
+### Fresh Provider Search Confirmation (2026-06-25)
+Independent OSM re-query of Greenville, MS (33.41°N, 91.06°W) within 50 km confirmed exactly 9 healthcare facilities:
+- **Pharmacies (4):** South Street Pharmacy, Walgreens (Indianola), Good Neighbor Pharmacy, Gilbow's Drug Store
+- **Clinics (1):** The Greenville Clinic
+- **Rehabilitation (1):** Southeast Rehabilitation Hospital (cross-state, AR)
+- **Dentists (2):** Michelle Seard-Higgins DMD, Dental Group of Greenville
+- **Doctors (1):** Gough's Family Medical Clinic
+
+**Zero prosthetic/orthotic providers remain identified.**
 
 ### Gap Assessment
 - **Most severe healthcare desert** of all three regions (9 facilities in core Delta)
@@ -137,9 +151,9 @@ The three regions studied collectively cover significant swaths of rural America
 | Prosthetic/orthotic providers | **0** | **0** | **0** |
 | Foot/ankle clinics | 1 | 0 | 0 |
 | Rehabilitation centers | 1 | 1 | 1 |
-| Pharmacies | 13 | 7 | 4+ |
+| Pharmacies | 13 | 7 | 4+ (up to 12 with 80km) |
 | Dentists | 3 | 2 | 2+ |
-| Doctors | 2 | 4 | 3+ |
+| Doctors | 2 | 4 | 3-4 |
 | Dialysis | 1 | 0 | 1 |
 | Audiology | 1 | 0 | 1 |
 | Orthopaedics | 0 | 0 | 1 |
@@ -165,12 +179,12 @@ Urgent orthotic needs by region:
 
 ## Root Causes of the Access Gap
 
-1. **Workforce shortage**: CPOs concentrate in urban areas; rural economics cannot support full-time practices
-2. **Reimbursement gaps**: Medicaid rates in WV, KY, and MS are among the lowest nationally for prosthetic services
-3. **Infrastructure deficit**: No clinical trial sites, no teaching hospitals, no CPO residency programs in target regions
-4. **Transportation barriers**: Most residents lack reliable vehicles; no public transit
-5. **Comorbid complexity**: High diabetes/vascular/substance use rates complicate candidacy
-6. **Referral awareness**: Many PCPs unaware of prosthetic referral pathways or telehealth options
+1. **Workforce shortage:** CPOs concentrate in urban areas; rural economics cannot support full-time practices
+2. **Reimbursement gaps:** Medicaid rates in WV, KY, and MS are among the lowest nationally for prosthetic services
+3. **Infrastructure deficit:** No clinical trial sites, no teaching hospitals, no CPO residency programs in target regions
+4. **Transportation barriers:** Most residents lack reliable vehicles; no public transit
+5. **Comorbid complexity:** High diabetes/vascular/substance use rates complicate candidacy
+6. **Referral awareness:** Many PCPs unaware of prosthetic referral pathways or telehealth options
 
 ---
 
@@ -189,11 +203,11 @@ Urgent orthotic needs by region:
 
 ## Data Sources
 
-- **Provider Locations**: OpenStreetMap — healthcare category search within 50 km radius
-- **Geocoding**: OSM MCP geocode for Beckley WV, Pikeville KY, Greenville MS
-- **Clinical Trials**: ClinicalTrials.gov API — search term "prosthetic" and "prosthetic limb"
-- **Route Analysis**: OSM routing for distance verification
-- **Region Selection**: CDC Social Vulnerability Index and Amputee Coalition prevalence data
+- **Provider Locations:** OpenStreetMap — healthcare category search within 50 km radius
+- **Geocoding:** OSM MCP geocode for Beckley WV, Pikeville KY, Greenville MS
+- **Clinical Trials:** ClinicalTrials.gov API — search term "prosthetic" and "prosthetic limb"
+- **Route Analysis:** OSM routing for distance verification
+- **Region Selection:** CDC Social Vulnerability Index and Amputee Coalition prevalence data
 
 ### Limitations
 - OSM healthcare data may not capture all private-practice CPOs
@@ -205,4 +219,4 @@ Urgent orthotic needs by region:
 
 ---
 
-*Updated 2026-06-25 with expanded provider searches, orthopedic-specific analysis, and detailed facility inventories.*
+*Updated 2026-06-25 with expanded provider searches, orthopedic-specific analysis, and detailed facility inventories. Fresh OSM verification confirms zero change in coverage gap status.*
