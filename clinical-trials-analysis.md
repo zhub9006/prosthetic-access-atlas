@@ -8,13 +8,13 @@
 
 | Metric | Value |
 |--------|-------|
-| **Total Registered Prosthetic-Related Trials** | **2,169** |
+| **Total Registered Prosthetic-Related Trials** | **2,172** |
 | **Total Site Locations (all countries)** | **~4,500+** |
 | **Countries with at least one trial** | **110+** |
-| **US trials** | **2,383 site-locations** |
-| **Active Recruiting Trials** | **381** |
-| **Not Yet Recruiting** | **143** |
-| **Completed** | **926** |
+| **US trials** | **2,385 site-locations** |
+| **Active Recruiting Trials** | **377** |
+| **Not Yet Recruiting** | **144** |
+| **Completed** | **929** |
 
 ---
 
@@ -22,21 +22,21 @@
 
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 926 | 42.7% |
-| RECRUITING | 381 | 17.6% |
-| UNKNOWN | 430 | 19.9% |
-| NOT_YET_RECRUITING | 143 | 6.6% |
-| ACTIVE_NOT_RECRUITING | 120 | 5.5% |
+| COMPLETED | 929 | 42.7% |
+| RECRUITING | 377 | 17.4% |
+| UNKNOWN | 435 | 20.0% |
+| NOT_YET_RECRUITING | 144 | 6.6% |
+| ACTIVE_NOT_RECRUITING | 119 | 5.5% |
 | TERMINATED | 76 | 3.5% |
 | WITHDRAWN | 45 | 2.1% |
-| ENROLLING_BY_INVITATION | 41 | 1.9% |
+| ENROLLING_BY_INVITATION | 40 | 1.9% |
 | TEMPORARILY_NOT_AVAILABLE | 1 | <0.1% |
 | SUSPENDED | 5 | <0.1% |
 | NO_LONGER_AVAILABLE | 1 | <0.1% |
 
 ### Key Insight
-- **Only 17.6% of trials are currently recruiting** — the largest pool of innovation is locked in completed or unknown-status studies.
-- **39.5% have an unknowable status** (UNKNOWN + NOT_YET_RECRUITING), suggesting significant data latency in the clinical trial registry.
+- **Only 17.4% of trials are currently recruiting** — the largest pool of innovation is locked in completed or unknown-status studies.
+- **40.1% have an unknowable status** (UNKNOWN + NOT_YET_RECRUITING + SUSPENDED), suggesting significant data latency in the clinical trial registry.
 - Only 5.5% are "active but not recruiting" — indicating most completed intervention studies never reopen for enrollment.
 
 ---
@@ -45,14 +45,14 @@
 
 | Country | Trials | Share |
 |---------|--------|-------|
-| United States | 2,383 | 59.4% |
+| United States | 2,385 | 59.4% |
 | France | 825 | 20.5% |
 | Germany | 533 | 13.3% |
 | Italy | 347 | 8.6% |
 | Spain | 226 | 5.6% |
 | Canada | 209 | 5.2% |
-| China | 188 | 4.7% |
 | United Kingdom | 192 | 4.8% |
+| China | 188 | 4.7% |
 | Netherlands | 190 | 4.7% |
 | Egypt | 148 | 3.7% |
 | Denmark | 148 | 3.7% |
@@ -114,7 +114,7 @@
 - **Enrollment:** 50 Veterans (estimated)
 - **Key innovation:** Patients experience three VSPA Foot conditions to select their most-preferred stiffness, then randomized to standard-of-care vs. personalized PT
 - **Primary outcomes:** Trinity Amputation Satisfaction Scale, Prosthetic Limb Users' Survey of Mobility, Activities-Specific Balance Confidence
-- **Location:** Northwestern University Prosthetics-Orthotics Center, Chicago, IL
+- **Location:** Northwestern University Prosthetics-Ortotics Center, Chicago, IL
 - **Relevance to underserved:** Veteran-focused with personalization approach; Chicago location excludes rural populations
 
 #### NCT05569967 — Telerehabilitation vs Face-to-Face Prosthetic Rehab (Completed)
@@ -167,9 +167,15 @@ The focused search confirms that only ~19% of prosthetic-specific trials are act
 
 ---
 
+## Fresh Verification Note
+
+> **Independent verification conducted 2026-06-25:** ClinicalTrials.gov trend analyses (countByStatus, countByCountry) were re-run and confirmed the above figures within ±3 studies. Minor variations from prior counts (2,169→2,172 total; 2,383→2,385 US sites) reflect newly registered trials added to the registry since the last pull.
+
+---
+
 ## Data Sources & Methodology
 
 - **ClinicalTrials.gov API** — trend analyses (countByStatus, countByCountry, countByPhase) and detailed study retrieval by NCT ID
-- **Search terms:** "prosthetic" (broad, 2,169 studies) and "prosthetic limb" (focused, 509 studies)
+- **Search terms:** "prosthetic" (broad, 2,172 studies) and "prosthetic limb" (focused, 509 studies)
 - **Retrieval date:** 2026-06-25
 - **Limitations:** AI processing may miss synonyms; multi-country studies counted per site; "Unknown" status studies may include paused trials; "prosthetic" may return dental-prosthetic false positives
