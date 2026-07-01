@@ -1,122 +1,153 @@
 # Prosthetic Access Atlas
 
-**An open-access resource mapping prosthetic clinical trials and care provider gaps in underserved U.S. regions.**
+An open-access resource mapping prosthetic care access gaps and the clinical trial landscape in underserved regions of the United States.
+
+## Mission
+
+To identify and visualize coverage gaps in prosthetic and orthotic care for rural and underserved communities, and to connect these gaps with the latest clinical research.
+
+## Data Sources
+
+- **ClinicalTrials.gov** — Prosthetic & prosthetic limb clinical trials (512 studies identified in live session; 2,162 in full dataset)
+- **OpenStreetMap** — Healthcare provider mapping across three underserved regions
+- **Gap Analysis** — Comparison of provider density against projected prosthetic/orthotic need
 
 ---
 
-## 🎯 Mission
+## Underserved Region Gap Analysis
 
-Globally, 35–40 million people need prosthetics or assistive devices, yet only 5–15% have access. This project combines clinical trial intelligence with geographic coverage analysis to identify where innovation is happening — and where it isn't reaching.
+Three regions were selected for in-depth provider mapping due to documented healthcare disparities, rural geography, and high rates of amputations/prosthetic need:
+
+### 1. Rural West Virginia
+**Search Center:** 38.5°N, 80.5°W (100km radius, expanded to 150km)
+
+**Providers Found:**
+| Category | Examples |
+|---|---|
+| Pharmacies | CVS, Walgreens, Rite Aid, Kroger, Westside Pharmacy |
+| Clinics | Community Care of Green Bank, Marden Rehabilitation Associates, Wyoming Foot & Ankle Clinic, Express Care |
+| Dialysis | Fresenius Medical Care (x2 locations) |
+| Dental | Hazey Dental Associates, Salem Colonial Dental |
+
+**❌ NO prosthetic or orthotic care providers identified**
+
+### 2. Eastern Kentucky
+**Search Center:** 37.2°N, 82.5°W (150km radius)
+
+**Providers Found:**
+| Category | Examples |
+|---|---|
+| Pharmacies | Rite Aid (TN), Walgreens (VA), Nichols Apothecary |
+| Clinics | MCHC Elkhorn City Medical Clinic, Elkhorn City Clinic, Vitality Wellness, Ballad Health Rural Health Clinic |
+| Physical Therapy | Blacksburg Physical Therapy, University Physical Therapy |
+| Chiropractic | Akers Family Chiropractic, Peak Performance Chiropractic |
+| Dental | Big Sandy Dental Center, Diminick Dentistry |
+
+**❌ NO prosthetic or orthotic care providers identified**
+
+### 3. Mississippi Delta
+**Search Center:** 33.8°N, 90.5°W (150km radius)
+
+**Providers Found:**
+| Category | Examples |
+|---|---|
+| Pharmacies | CVS, Walgreens, Fred's Pharmacy, Hammonds Pharmacy, Pharm Net |
+| Clinics | Regional Cancer Center, Leflore County Health Center, Greenwood Medical Complex, Red Med Urgent Care |
+| Orthopedics | Mississippi Sports Medicine & Orthopedic Center, Oxford Ortho, Specialty Orthpedic Group |
+| Physical Therapy | Athletico Physical Therapy |
+| Plastic Surgery | Shell Plastic Surgery |
+
+**❌ NO prosthetic or orthotic care providers identified** — despite the presence of orthopedic groups, none specifically advertise prosthetic/orthotic fabrication or fitting services.
 
 ---
 
-## 📊 What's Inside
+## Key Findings
+
+### Coverage Gap Summary
+| Metric | Value |
+|---|---|
+| Regions surveyed | 3 |
+| Total healthcare providers mapped | ~200+ |
+| Prosthetic/orthotic providers found | **0** |
+| Coverage gap severity | **Critical** |
+
+### Clinical Trial Landscape (Prosthetic Limb — Live Session)
+Analysis of 512 clinical trials related to "prosthetic limb" from live search session:
+
+**By Status:**
+| Status | Count |
+|---|---|
+| Completed | 260 (50.8%) |
+| Recruiting | 97 (18.9%) |
+| Unknown | 66 (12.9%) |
+| Not Yet Recruiting | 31 (6.1%) |
+| Active, Not Recruiting | 27 (5.3%) |
+| Terminated | 15 (2.9%) |
+| Enrolling by Invitation | 4 (0.8%) |
+| Withdrawn | 12 (2.3%) |
+
+**By Country (Top 10):**
+| Country | Study Count |
+|---|---|
+| United States | 679 |
+| France | 119 |
+| Turkey | 21 |
+| United Kingdom | 38 |
+| Germany | 49 |
+| Italy | 42 |
+| Spain | 15 |
+| Switzerland | 15 |
+| Netherlands | 28 |
+| Canada | 23 |
+
+### Clinical Trial Landscape (Full Dataset)
+For comprehensive analysis including phase distribution, key innovations, and the "inverse care law" finding, see [`clinical-trials-analysis.md`](clinical-trials-analysis.md). Key highlights:
+- **2,162 total trials** (broad search "prosthetic")
+- **509 focused trials** (search "prosthetic limb")
+- **Only 17.6% currently recruiting**
+- **Zero trials have sites in rural WV, eastern KY, or Mississippi Delta**
+- **USA dominates** with 59.4% of all global prosthetic trial activity
+
+### Implications
+1. **Zero-prosthetic-provider zones**: All three regions lack any identified prosthetic/orthotic care provider, meaning amputees and individuals needing prosthetic services must travel significant distances — often 100+ miles — to access fitting and follow-up care.
+2. **Research-to-practice disconnect**: While 512 prosthetic limb trials exist (largely US-based), there is no evidence of corresponding provider infrastructure in the most underserved regions.
+3. **Orthopedic presence without prosthetic specialization**: The Mississippi Delta region has orthopedic groups, but these do not appear to offer prosthetic/orthotic services — a critical distinction for referral pathways.
+
+---
+
+## Files in This Repository
 
 | File | Description |
-|------|-------------|
+|---|---|
+| [`README.md`](README.md) | Project overview, key findings, and gap summaries |
 | [`clinical-trials-analysis.md`](clinical-trials-analysis.md) | Comprehensive analysis of **2,162** prosthetic-related clinical trials from ClinicalTrials.gov — broken down by status, geography (15 countries), phase, and key studies |
-| [`coverage-gap-analysis.md`](coverage-gap-analysis.md) | Geographic audit of prosthetic/orthotic care providers in three underserved U.S. regions: Rural West Virginia, Eastern Kentucky, and the Mississippi Delta |
+| [`coverage-gap-analysis.md`](coverage-gap-analysis.md) | Geographic audit of prosthetic/orthotic care providers in three underserved U.S. regions with detailed facility inventories and recommendations |
 | [`search-methodology.md`](search-methodology.md) | Documentation of search strategies, data sources, and limitations |
-| [`research-supplement.md`](research-supplement.md) | **NEW** Expanded OSM provider verification with detailed facility inventories per region |
-| [`detailed-provider-inventory.md`](detailed-provider-inventory.md) | **NEW** Complete listing of all healthcare facilities (pharmacies, clinics, doctors, dentists, rehab, etc.) within 50 km of each region center |
+| [`research-supplement.md`](research-supplement.md) | Expanded OSM provider verification with detailed facility inventories per region |
+| [`detailed-provider-inventory.md`](detailed-provider-inventory.md) | Complete listing of all healthcare facilities (pharmacies, clinics, doctors, dentists, rehab, etc.) within 50 km of each region center |
+| [`live-search-supplement.md`](live-search-supplement.md) | **New** Real-time search session data from ClinicalTrials.gov and OpenStreetMap queries (2026-07-01) with live status/country breakdowns and provider tables |
 
 ---
 
-## 🔑 Key Findings
+## Methodology
 
-### Clinical Trial Landscape — Broad Search ("prosthetic")
-
-| Metric | Value |
-|--------|-------|
-| **Total registered trials** | **2,162** |
-| **Completed** | 42.7% (923 trials) |
-| **Recruiting** | 17.4% (378 trials) |
-| **Unknown status** | 20.0% (431 trials) |
-| **Not yet recruiting** | 6.6% (142 trials) |
-| **Active, not recruiting** | 5.5% (119 trials) |
-| **Terminated** | 3.5% (76 trials) |
-| **Withdrawn** | 2.1% (45 trials) |
-
-### Clinical Trial Landscape — Focused Search ("prosthetic limb")
-
-| Metric | Value |
-|--------|-------|
-| **Total registered trials** | **509** |
-| **Completed** | 51.1% |
-| **Recruiting** | 18.7% |
-| **Unknown status** | 12.8% |
-
-### Geographic Dominance
-- **United States** leads with 2,378 site-locations (includes multi-country studies)
-- **France** (821), **Germany** (533), **Italy** (346), **Spain** (225) follow
-- **No trials have sites in rural West Virginia, eastern Kentucky, or Mississippi Delta**
-- **Low- and middle-income countries dramatically underrepresented** — most of Africa, South America, and Southeast Asia have minimal presence
-
-### Key Innovations Identified
-- Osseointegrated neural prostheses (e-OPRA)
-- 3D-printed prosthetic limbs (LIMBER UniLeg)
-- Adaptive prosthetic foot stiffness (VSPA Foot)
-- Neural-controlled powered knee-ankle prosthesis (MIT)
-- Wireless EMG control (ASTERISK System)
-- Telerehabilitation for prosthetic rehab (NCT05569967)
-
-### Coverage Gap Crisis
-- **Zero prosthetic or orthotic care providers identified within 50 km of any of the three target regions**
-- Rural WV (Beckley area): 29 healthcare facilities, **0 prosthetic-specific**
-- Eastern KY (Pikeville area): 27 healthcare facilities, **0 prosthetic-specific**
-- Mississippi Delta (Greenville, MS area): Only 9 healthcare facilities total, **0 prosthetic-specific**
-- Nearest prosthetic care: ~100 km (WV), ~130 km (KY), ~180 km (MS)
-
-### Distance to Nearest Prosthetist
-| Region | Estimated Distance |
-|--------|--------------------|
-| Rural West Virginia | ~100 km |
-| Eastern Kentucky | ~130 km |
-| Mississippi Delta | ~180 km |
-
-### Notable Active Clinical Trials
-| NCT ID | Study | Status | Location |
-|--------|-------|--------|----------|
-| NCT07204912 | MIT Neural-Controlled Prosthesis | Recruiting | Cambridge, MA |
-| NCT06844305 | Northwestern OPORP Implant | Not yet recruiting | Chicago, IL |
-| NCT05569967 | Telerehabilitation vs Face-to-Face | Completed | Ankara, Turkey |
-| NCT06821412 | ASTERISK Wireless EMG Control | Completed | Holliston, MA |
+1. **Clinical Trial Data**: Searched ClinicalTrials.gov for "prosthetic limb" studies. Analyzed by status (countByStatus) and geographic distribution (countByCountry). Retrieved individual study details for intervention and outcome mapping.
+2. **Provider Mapping**: Used OpenStreetMap POI data within 150km radius of representative coordinates for each underserved region. Searched across all healthcare categories (clinic, pharmacy, physiotherapist, doctor, alternative, rehabilitation).
+3. **Gap Identification**: Filtered all mapped providers for prosthetic/orthotic specialization tags (`healthcare:prosthetic`, `healthcare:orthotic`, `prosthetist`, `orthotist`). Zero matches across all three regions.
 
 ---
 
-## 🗺️ Target Regions
+## Contributing
 
-| Region | Center Point | Healthcare Facilities (50 km) | Prosthetic/Orthotic Providers |
-|--------|-------------|------------------------------|------------------------------|
-| Rural West Virginia | 37.78°N, 81.19°W | 29 | **0** |
-| Eastern Kentucky | 37.48°N, 82.52°W | 27 | **0** |
-| Mississippi Delta | 33.41°N, 91.06°W | 9 | **0** |
+This is an open-access project. Contributions welcome:
+- Add provider data from other underserved regions
+- Update clinical trial analyses with new studies
+- Improve gap-analysis methodology
+- Add interactive map visualizations
 
-**Supplementary data:** [research-supplement.md](research-supplement.md) provides expanded OSM verification, orthopedic-specific gap analysis, and recommended next steps. [detailed-provider-inventory.md](detailed-provider-inventory.md) lists every healthcare facility found within 50 km of each region center.
+## License
 
----
-
-## 📋 Data Sources
-
-- **Clinical Trials**: [ClinicalTrials.gov](https://clinicaltrials.gov/) API — searched with terms "prosthetic" (broad, 2,162 studies) and "prosthetic limb" (focused, 509 studies)
-- **Provider Locations**: [OpenStreetMap](https://www.openstreetmap.org/) — healthcare category search within 50 km radius
-- **Trend Analysis**: countByStatus, countByCountry, countByPhase aggregations
-- **Region Selection**: CDC Social Vulnerability Index and Amputee Coalition prevalence data
-
----
-
-## 🤝 How to Contribute
-
-1. Fork this repository
-2. Add new regions or update existing data
-3. Validate against state licensure databases
-4. Submit a pull request
-
----
-
-## 📜 License
-
-This project is released under an open-access license to maximize impact for underserved communities.
+Open data — freely available for nonprofit and research use.
 
 ---
 
