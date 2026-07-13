@@ -1,48 +1,37 @@
 # Prosthetic Access Atlas
 
-An open-access resource mapping prosthetic/orthotic clinical trial data and uncovered care gaps in underserved U.S. regions.
+An open-access resource mapping prosthetic/orthotic clinical trial landscape and care access gaps in underserved U.S. regions.
 
-## Mission
+## Key Findings (642 Trials)
+- **Recruiting**: 114 (17.8%) | **Completed**: 269 (41.9%) | **Unknown**: 134 (20.9%)
+- **Phase 1-3**: 84 trials total (13.1%) | **No/Unknown Phase**: 538 (83.8%)
+- **U.S. studies**: 680 (multi-country arms) | **NIH-funded**: 1 trial only!
+- **Sponsor**: 492 Other/Academic | 107 Industry | 23 Federal | 1 NIH
 
-This repository aggregates clinical trial data from ClinicalTrials.gov and OpenStreetMap healthcare provider data to identify where prosthetic and orthotic care is most needed — and where research is most active.
+## Regional Gap Analysis
 
-## Contents
+| Region | Center | O&P Providers Found in OSM | Nearest Major O&P Center |
+|---|---|---|---|
+| Rural West Virginia | 38.5°N, 80.5°W | **0** | Charleston, WV (+out-of-state) |
+| Eastern Kentucky | 37.5°N, 83.0°W | **0** | Lexington, KY (~161 km) |
+| Mississippi Delta | 33.4°N, 90.2°W | **0** | Memphis, TN (~161 km) |
 
-| File | Description |
-|------|-------------|
-| [clinical-trials-data.md](clinical-trials-data.md) | Full ClinicalTrials.gov trend analysis by status, phase, sponsor, and region |
-| [gap-analysis.md](gap-analysis.md) | Mapping of underserved areas and healthcare provider coverage gaps |
-| [key-studies.md](key-studies.md) | Detailed summaries of landmark prosthetic clinical trials |
-| [data-sources.md](data-sources.md) | Methodology, data sources, and update notes |
+### Three Universal Barriers:
+1. Zero certifiable prosthetist/orthotist providers mapped in 150 km radius around any region center
+2. Rural hospital closures + long travel distances prevent regular O&P follow-up
+3. High diabetes/vascular disease/trauma rates create greater limb-loss need than in most regions
 
-## Key Findings
+## Data Files
+- `data/clinicaltrials_trends.json` — raw statistical output from ClinicalTrials.gov
+- `data/regions_gtfs.json` — region metadata (coordinates, barriers, pop estimates)
+- `ANALYSIS/full_trials_summary.md` — complete trial analysis
+- `ANALYSIS/region_gap_analysis.md` — detailed regional care gap analysis
 
-- **2,182+ prosthetic-related clinical trials** are registered on ClinicalTrials.gov
-- **30% are currently recruiting or active** — 380 actively recruiting, 119 active-not-recruiting
-- **No Phase III trials** exist for lower-limb prosthetic amputation — a critical research gap
-- **The U.S. dominates** prosthetic research with 2,393 studies in our dataset, but rural regions lack providers
-- **Mississippi Delta, Eastern Kentucky, and rural West Virginia** show severe shortages of prosthetic/orthotic care providers
-
-## Regions of Focus
-
-1. **Rural West Virginia** — Provider-rich counties (Kanawha, Raleigh) contrast sharply with remote mountain communities
-2. **Eastern Kentucky** — Limited clinics and no dedicated orthotic/prosthetic facilities in the Pikeville–Hazard corridor
-3. **Mississippi Delta** — Extreme provider scarcity; no hospitals or specialty clinics within 40 km of core Delta towns
-
-## How to Use
-
-- Browse clinical trial trends to identify research opportunities
-- Use the gap analysis to advocate for new prosthetic/orthotic services
-- Explore key studies for informed understanding of the latest advances
+## How to Contribute
+- Map certified ABC/CPO providers into these gap zones
+- Add patient navigation resources for trial enrollment
+- Update recruitment status as ClinicalTrials.gov data refreshes
+- Submit regional commute/time-to-care routing data
 
 ## License
-
-Open-access — all data is publicly sourced and freely reusable.
-
-## Contributing
-
-To add new data, update the relevant markdown file and submit a pull request.
-
-## Acknowledgments
-
-Data sources: ClinicalTrials.gov API, OpenStreetMap, U.S. Census Bureau.
+Open Access
