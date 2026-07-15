@@ -1,0 +1,48 @@
+{
+  "search_method": "OpenStreetMap nearby POI search via OSM MCP",
+  "search_radii": {
+    "initial": "50km",
+    "expanded": "100km"
+  },
+  "regions": [
+    {
+      "name": "Rural West Virginia",
+      "center": {
+        "city": "Beckley",
+        "state": "WV",
+        "lat": 37.7781702,
+        "lon": -81.1881557
+      },
+      "healthcare_categories_found": ["pharmacy", "dentist", "dialysis", "clinic"],
+      "prosthetic_orthotic_found": false,
+      "prosthetic_orthotic_count": 0,
+      "nearest_specialized_care": "Charleston Area Medical Center (CAMC), ~100km"
+    },
+    {
+      "name": "Eastern Kentucky",
+      "center": {
+        "city": "Pikeville",
+        "state": "KY",
+        "lat": 37.4792672,
+        "lon": -82.5187629
+      },
+      "healthcare_categories_found": ["clinic", "pharmacy", "doctor", "dentist"],
+      "prosthetic_orthotic_found": false,
+      "prosthetic_orthotic_count": 0,
+      "nearest_specialized_care": "University of Kentucky Medical Center, Lexington, KY ~150km"
+    },
+    {
+      "name": "Mississippi Delta",
+      "center": {
+        "city": "Greenville",
+        "state": "MS",
+        "lat": 33.4111051,
+        "lon": -91.0635857
+      },
+      "healthcare_categories_found": ["clinic", "pharmacy", "rehabilitation", "dentist", "doctor"],
+      "prosthetic_orthotic_found": false,
+      "prosthetic_orthotic_count": 0,
+      "nearest_specialized_care": "Methodist Rehabilitation Center, Jackson, MS ~200km"
+    }
+  ]
+}
