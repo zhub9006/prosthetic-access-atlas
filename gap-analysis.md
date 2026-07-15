@@ -1,6 +1,6 @@
 # Prosthetic & Orthotic Care Gap Analysis
 
-> Under-served U.S. regions mapped via OpenStreetMap (OSM) healthcare and amenity data on 2026-07-13.
+> Under-served U.S. regions mapped via OpenStreetMap (OSM) healthcare and amenity data on 2026-07-15.
 
 ## Executive Summary
 
@@ -10,7 +10,7 @@ We analyzed three regions recognized as medically underserved for prosthetic and
 2. **Eastern Kentucky (KY)**
 3. **Mississippi Delta (MS)**
 
-For each region, we assessed the availability of hospitals, clinics, pharmacies, prosthetists, orthotists, and related healthcare providers.
+For each region, we assessed the availability of hospitals, clinics, pharmacies, prosthetists, orthotists, and related healthcare providers. The critical finding: **zero prosthetic or orthotic care providers** were identified within 100km of any of these regions.
 
 ---
 
@@ -29,7 +29,7 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 
 ### Provider Availability
 
-#### Urban/Suburban Corridor (Charleston–Beckley)
+#### Urban/Suburban Corridor (Charleston-Beckley)
 | Provider Type | Name | Location |
 |--------------|------|----------|
 | Pharmacy | CVS Pharmacy (Elkview, WV) | Elkview, WV |
@@ -59,6 +59,18 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | Clinic | Summersville Family Medicine | Summersville, WV |
 | Pharmacy | Walgreens (Sutton) | Sutton, WV |
 
+### Neighborhood Score (Beckley - 25km radius)
+| Category | Score | Details |
+|----------|-------|---------|
+| Overall | 4.8 / 10 | |
+| Healthcare | 0 / 10 | ZERO prosthetist/orthotist/PM&R |
+| Groceries | 10.0 | 68 locations |
+| Restaurants | 9.9 | 121 locations |
+| Education | 10.0 | |
+| Public Transport | 0 | Car-dependent |
+| Parks | 0 | 11 parks within 25km |
+| Shopping | 9.7 | |
+
 ### Gap Assessment
 
 | Gap | Severity | Detail |
@@ -66,8 +78,8 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | No dedicated orthotics/prosthetics clinic | **Severe** | No clinic in the dataset specifically provides prosthetic fitting or orthotic fabrication outside the Charleston corridor |
 | No prosthetist listed in OSM | **Severe** | OSM has zero providers tagged as `healthcare=prosthetist` or `healthcare=orthotist` in WV |
 | DVHA (durable medical equipment) limited | **Moderate** | No DME providers mapped in rural counties |
-| Pharmacy access uneven | **Moderate** | Rural areas rely on 1–2 pharmacies; some lack drive-through or carry prosthetic supply lines |
-| Chiropractor only | **Moderate** | Only alternative providers (e.g., Akers Family Chiropractic) serve some rural areas — no physiatry or PM&R | |
+| Pharmacy access uneven | **Moderate** | Rural areas rely on 1-2 pharmacies; some lack drive-through or carry prosthetic supply lines |
+| Chiropractor only | **Moderate** | Only alternative providers (e.g., Akers Family Chiropractic) serve some rural areas — no physiatry or PM&R |
 | Federal VA access limited | **Moderate** | VA Clinic in Sutton serves veterans but is a single-point facility for a large rural area |
 
 ---
@@ -81,6 +93,7 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | Hazard (Perry County) | 37.249°N, 83.193°W |
 | Eastern KY (Floyd County) | 37.517°N, 82.806°W |
 | Elkhorn City | 37.305°N, 82.353°W |
+| Ashland (Boyd County) | 38.478°N, 82.638°W |
 
 ### Provider Availability
 
@@ -103,6 +116,28 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | Dentist | Big Sandy Dental Center | Pikeville, KY |
 | Optometrist | Dr. Mary Anne Belcher O.D. PSC | Elkhorn City, KY |
 | Chiropractic | Akers Family Chiropractic | Pikeville, KY |
+
+#### Ashland (Boyd County) - Slightly better
+| Provider Type | Name | Location |
+|--------------|------|----------|
+| Pharmacy | CVS Pharmacy | Ashland, KY |
+| Pharmacy | CVS Pharmacy (Ironton, OH) | Ironton, OH |
+| Clinic | King's Daughters Medical Center | Ashland, KY |
+| Clinic | Our Lady of Bellefonte Hospital | Ashland, KY |
+| Clinic | BOOM Health (mobile) | Ashland, KY |
+| Doctor | Brooke Medical Center | Ashland, KY |
+
+### Neighborhood Score (Pikeville - 25km radius)
+| Category | Score | Details |
+|----------|-------|---------|
+| Overall | 5.3 / 10 | |
+| Healthcare | 0 / 10 | ZERO prosthetist/orthotist/PM&R |
+| Groceries | 9.2 | 46 locations |
+| Restaurants | 10.0 | 75 locations |
+| Education | 0 | |
+| Public Transport | 0 | |
+| Parks | 8.8 | |
+| Shopping | 9.6 | |
 
 ### Gap Assessment
 
@@ -130,8 +165,6 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | Cleveland (Bolivar County) | 33.744°N, 90.725°W |
 | Indianola (Sunflower County) | 33.451°N, 90.655°W |
 | Greenwood (Leflore County) | 33.516°N, 90.180°W |
-| Delta (Panola County) | 34.423°N, 90.129°W |
-| Delta (Coahoma County) | 34.405°N, 90.572°W |
 
 ### Provider Availability
 
@@ -158,6 +191,18 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | Doctor | None mapped within 40 km | — |
 | Hospital | None mapped within 40 km | — |
 
+### Neighborhood Score (Greenville - 25km radius)
+| Category | Score | Details |
+|----------|-------|---------|
+| Overall | 2.8 / 10 | |
+| Healthcare | 1.3 / 10 | ZERO prosthetist/orthotist/PM&R |
+| Groceries | 0 / 10 | Only 4 convenience stores within 100km |
+| Restaurants | 10.0 | 30 locations |
+| Education | 0 | |
+| Public Transport | 0 | |
+| Parks | 9.8 | |
+| Shopping | 2.0 | |
+
 ### Gap Assessment
 
 | Gap | Severity | Detail |
@@ -169,7 +214,7 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 | No durable medical equipment (DME) | **Severe** | No DME supplier mapped in the entire Delta region |
 | Multi-county service void | **High** | Sunflower, Sharkey, Bolivar, Coahoma, and Washington Counties overlap in a service desert |
 | Chronic disease burden | **High** | Mississippi has the highest diabetes prevalence in the U.S. → highest per-capita amputation rate. The Delta region is ground zero for this crisis. |
-| Racial disparity | **High** | The Delta is majority African American; amputation rates for Black patients are 2–3× higher than white patients nationally |
+| Racial disparity | **High** | The Delta is majority African American; amputation rates for Black patients are 2-3x higher than white patients nationally |
 
 ---
 
@@ -203,4 +248,4 @@ For each region, we assessed the availability of hospitals, clinics, pharmacies,
 - **OpenStreetMap**: Used geocoding and nearby-place searches for healthcare amenities (clinics, hospitals, pharmacies, doctors, optometrists, dentists, alternative) centered on representative towns in each underserved region.
 - **Limitation**: OSM data may not capture all providers, especially private O&P clinics that don't maintain OSM entries. The absence of a provider in OSM does not prove it doesn't exist — it likely signals an access gap.
 
-Last updated: 2026-07-13
+Last updated: 2026-07-15
