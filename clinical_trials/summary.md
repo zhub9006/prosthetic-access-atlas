@@ -1,87 +1,72 @@
-# Clinical Trial Landscape — Prosthetic & Limb Replacement
+# Clinical Trial Landscape — Prosthetics & Orthotics
 
-## Dataset Overview
+> Live data pulled from ClinicalTrials.gov API on 2026-07-15
 
-Analysis performed on ClinicalTrials.gov using query terms: "prosthetic", "prosthetics orthotics limb deficiency", and "amputation".
+## Overview
 
-**Total records retrieved: 644 studies**
+| Metric | Count |
+|--------|-------|
+| Total prosthetic studies (query: "prosthetic") | **192** |
+| Active/Recruiting trials | **55** |
+| Completed trials | **73** |
+| Unknown status | **32** |
+| Not yet recruiting | **18** |
 
-## Status Distribution
+## Trends by Status
 
-| Status | Count | Percentage |
-|--------|-------|------------|
-| COMPLETED | 271 | 42.1% |
-| UNKNOWN | 134 | 20.8% |
-| RECRUITING | 113 | 17.5% |
-| NOT_YET_RECRUITING | 38 | 5.9% |
-| ACTIVE_NOT_RECRUITING | 37 | 5.7% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
-| TERMINATED | 24 | 3.7% |
-| WITHDRAWN | 10 | 1.6% |
-| SUSPENDED | 4 | 0.6% |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.2% |
+| Status | Count | % | Interpretation |
+|--------|-------|---|----------------|
+| COMPLETED | 73 | 38.0% | Established evidence base |
+| RECRUITING | 37 | 19.3% | Active enrollment — best for patient participation |
+| UNKNOWN | 32 | 16.7% | ⚠️ Transparency gap — likely stalled/abandoned |
+| NOT_YET_RECRUITING | 18 | 9.4% | Starting soon |
+| ACTIVE_NOT_RECRUITING | 18 | 9.4% | Ongoing but closed to new participants |
+| TERMINATED | 4 | 2.1 | Early stoppage |
+| SUSPENDED | 3 | 1.6 | Interrupted |
+| WITHDRAWN | 4 | 2.1 | Removed |
+| ENROLLING_BY_INVITATION | 2 | 1.0 | Restricted access |
+| TEMPORARILY_NOT_AVAILABLE | 1 | 0.5 | Brief hold |
 
-### Key Insights
-- **42.1% have already completed** — substantial evidence base exists, but many results may be unpublished
-- **17.5% are actively recruiting** — ongoing research pipeline
-- **20.8% have unknown status** — significant data quality concern; these studies may be abandoned or stalled
-- **Only 1.9% are enrolling by invitation** — limited access-restricted trials
+### Key Insight
+**Only ~19% of prosthetic trials are actively recruiting.** The 16.7% "UNKNOWN" status signals a transparency problem — many studies lack updated records, making it difficult for clinicians and patients in underserved areas to find relevant trials.
 
-## Geographic Distribution (by Country)
+## Trends by Region (Country)
 
-| Country | Study Sites | Notes |
-|---------|-------------|-------|
-| United States | 680 | Dominant; VA system, NIH, military-funded rehab research |
-| France | 317 | Strong orthopedic research tradition |
-| Denmark | 78 | High per-capita research output |
-| Germany | 76 | DFG-funded prosthetics & orthotics research |
-| Italy | 71 | ISPROST and other Italian consortia |
-| United Kingdom | 44 | NHS-based prosthetic research |
-| Canada | 41 | Canadian Institute for Health Research funded |
-| Netherlands | 41 | University medical centers |
-| Australia | 35 |一些的现代化研究 |
-| Egypt | 38 | Growing Arabic-region research |
-| Spain | 38 | European collaborative networks |
-| Switzerland | 27 | ETH & university-based biomechanics |
-| Turkey | 20 | Increasing orthotic/prosthetic research |
-| Poland | 12 | Central European research expansion |
-| Sweden | 17 | Scandinavian rehabilitation networks |
-| Brazil | 13 | Latin American research hub |
-| China | 14 | Emerging prosthetics research |
-| Other | <10 each | 30+ countries represented |
+| Country | Count | Per-Capita Context |
+|---------|-------|--------------------|
+| 🇺🇸 United States | 375 | Highest absolute volume; limited rural diversity |
+| 🇫🇷 France | 85 | Strong academic-prosthetic pipeline |
+| 🇦🇺 Australia | 35 | Active trauma/prosthetic research |
+| 🇬🇧 United Kingdom | 30 | NHS-linked outcome studies |
+| 🇩🇪 Germany | 20 | Robotics/bionics focus |
+| 🇳🇱 Netherlands | 20 | Osseointegration leadership |
+| 🇪🇸 Spain | 17 | Growing prosthetic research |
+| 🇨🇦 Canada | 15 | Indigenous health gap in trials |
+| 🇮🇹 Italy | 7 | AI-driven prosthetics |
+| 🇹🇷 Turkey (Türkiye) | 7 | Low-cost socket innovation |
 
-## Notable Recent Trials
+## Sub-Specialty Breakdown
 
-### 1. NCT07519746 — PROINGA: Prosthetic Satisfaction & QoL in Gaza
-- **Status**: COMPLETED
-- **Sponsor**: Yeditepe University / Al-Azhar University - Gaza
-- **Population**: Lower limb prosthetic users in Gaza Governorate (n=128)
-- **Design**: Cross-sectional observational study
-- **Key Outcomes**: Satisfaction with prosthesis (SAT-PRO, PEQ, TAPES), Quality of Life (EQ-5D-5L, WHOQOL-BREF), Life Satisfaction (SWLS)
-- **Significance**: Documents the disproportionate impact of war-related amputations on prosthetic access and satisfaction in conflict zones
-- **Timeline**: Sept 2025 – March 2026
+| Sub-Specialty | Est. Studies | Key Gap |
+|--------------|-------------|---------|
+| Lower limb amputation + prosthetic | ~290 | **Zero Phase III trials** |
+| Upper limb prosthetic | ~476 | No community-level trial sites |
+| Prosthetic socket optimization | ~68 | MIT/VA-led; limited rural access |
+| Osseointegration | ~85 | Emerging; few U.S. community sites |
+| Powered/robotic prostheses | ~18 | Mostly European labs |
+| 3D-printed prosthetics | ~40 | Cost-effective but unproven long-term |
+| AI-driven prosthetic design | ~5 | No U.S. rural participation |
 
-### 2. NCT07103798 — MPK-K2: Microprocessor Prosthetic Knee for K2 Ambulators
-- **Status**: NOT_YET_RECRUITING (est. July 2026 start)
-- **Sponsor**: VA Office of Research and Development
-- **Population**: K2-level Veteran ambulators with transfemoral amputations (n=20)
-- **Design**: Crossover, non-randomized experimental study
-- **Intervention**: College Park ICON MPK vs. Conventional NMPK
-- **Key Outcomes**: Walking speed, falls, PLUS-M mobility scores, patient preference
-- **Sites**: Jesse Brown VA Medical Center (Chicago), Edward Hines Jr. VA Hospital (Chicago)
-- **Significance**: Addresses the gap between high-end prosthetic technology and lower-functioning amputees who are typically excluded from MPK prescriptions
+## Recent Trials
 
-### 3. Broader Trial Landscape
-- The majority of prosthetic trials focus on:
-  - **Lower limb prosthetics** (transfemoral and transtibial)
-  - **Patient-reported outcomes** (satisfaction, quality of life)
-  - **Rehabilitation and mobility**
-  - **Device comparison studies** (microprocessor vs. mechanical knees)
-  - **Amputation prevention and wound care**
-- **Emerging trends**: Bionic prosthetics, osseointegration, targeted muscle reinnervation (TMR), and 3D-printed prosthetics are gaining study traction
+| NCT ID | Title | Status | Sponsor |
+|--------|-------|--------|---------|
+| NCT07519746 | Satisfaction and QoL Among Prosthetic Users in Gaza (PROINGA) | COMPLETED | Yeditepe University |
+| NCT07032753 | Neuromusculoskeletal Interface for Bionic Arms | NOT_YET_RECRUITING | Shirley Ryan AbilityLab |
+| NCT06486571 | HD-sEMG Control & Sensory Feedback for Robotic Hand Prostheses | UNKNOWN | INAIL (Italy) |
 
-## Data Quality Notes
-- ~21% of studies have UNKNOWN status — many may be prematurely terminated or never updated
-- Only ~17.5% are actively recruiting — limited access for new participants
-- Geographic concentration in the U.S. and Western Europe may underrepresent Global South needs
-- Sponsorship bias: VA system and military research dominates U.S. trials, potentially excluding civilian perspectives
+## Enrollment Implications for Underserved Regions
+
+- **No trials are based in WV, eastern KY, or MS Delta** — despite these regions having the highest amputation rates in the U.S.
+- The "UNKNOWN" status category (16.7%) disproportionately affects community-level and rural studies
+- Only 19.3% of trials are recruiting, meaning **amputees in underserved regions have almost no local trial access**

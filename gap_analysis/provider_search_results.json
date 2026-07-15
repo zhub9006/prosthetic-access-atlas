@@ -1,48 +1,93 @@
 {
-  "search_method": "OpenStreetMap nearby POI search via OSM MCP",
-  "search_radii": {
-    "initial": "50km",
-    "expanded": "100km"
+  "search_metadata": {
+    "source": "OpenStreetMap",
+    "retrieved_at": "2026-07-15",
+    "radius_km": 50,
+    "search_categories": ["healthcare"]
   },
-  "regions": [
-    {
-      "name": "Rural West Virginia",
-      "center": {
-        "city": "Beckley",
-        "state": "WV",
-        "lat": 37.7781702,
-        "lon": -81.1881557
+  "regions": {
+    "eastern_kentucky_pikeville": {
+      "center": {"lat": 37.4792672, "lon": -82.5187629},
+      "total_providers_found": 20,
+      "providers": {
+        "clinic": [
+          {"name": "Logan Foot Clinic", "lat": 37.8499622, "lon": -81.9985937, "has_prosthetic": false},
+          {"name": "Dickenson County Health Department", "lat": 37.1529266, "lon": -82.4629326, "has_prosthetic": false},
+          {"name": "PMC Medical Diagnostics", "lat": 37.4735883, "lon": -82.5234053, "has_prosthetic": false},
+          {"name": "Town Center Urgent Care", "lat": 37.2770507, "lon": -82.1016563, "has_prosthetic": false},
+          {"name": "MCHC Elkhorn City Medical Clinic", "lat": 37.3034917, "lon": -82.3513580, "has_prosthetic": false, "phone": "606-754-8445"},
+          {"name": "Elkhorn City Clinic", "lat": 37.2960714, "lon": -82.3601641, "has_prosthetic": false}
+        ],
+        "pharmacy": [
+          {"name": "Rite Aid", "lat": 37.1502486, "lon": -82.4622750, "has_prosthetic": false},
+          {"name": "Elkhorn Drug", "lat": 37.3054939, "lon": -82.3538925, "has_prosthetic": false},
+          {"name": "Walgreens", "lat": 37.6199775, "lon": -82.1670317, "has_prosthetic": false},
+          {"name": "Walgreens", "lat": 37.7473733, "lon": -83.0618483, "address": "Salyersville", "has_prosthetic": false},
+          {"name": "Parkway Pharmacy", "lat": 37.7422319, "lon": -83.0461826, "address": "Salyersville", "has_prosthetic": false},
+          {"name": "Nichols Apothecary", "lat": 37.3070205, "lon": -82.3538170, "has_prosthetic": false},
+          {"name": "Walgreens", "lat": 37.5597004, "lon": -82.7596857, "address": "Martin", "has_prosthetic": false}
+        ],
+        "doctor": [
+          {"name": "PMC Employee Health", "lat": 37.4733288, "lon": -82.5230063, "has_prosthetic": false},
+          {"name": "Mountain Instant Care", "lat": 37.1106854, "lon": -82.8018254, "has_prosthetic": false},
+          {"name": "Meta Medical Center: Dr. Ronnie C. Parker, DO", "lat": 37.5648256, "lon": -82.4443610, "address": "Pikeville, KY", "has_prosthetic": false},
+          {"name": "Pediatric Associates of Pikeville", "lat": 37.4632219, "lon": -82.5264108, "has_prosthetic": false},
+          {"name": "Asthma & Allergy Center", "lat": 37.4632911, "lon": -82.5264645, "has_prosthetic": false}
+        ],
+        "dentist": [
+          {"name": "Elkhorn Dental", "lat": 37.3054889, "lon": -82.3527111, "has_prosthetic": false},
+          {"name": "Big Sandy Dental Center", "lat": 37.4627847, "lon": -82.5184284, "has_prosthetic": false}
+        ],
+        "optometrist": [
+          {"name": "Dr. Mary Anne Belcher O.D. PSC", "lat": 37.3054889, "lon": -82.3527111, "has_prosthetic": false}
+        ],
+        "chiropractic": [
+          {"name": "Akers Family Chiropractic", "lat": 37.4792672, "lon": -82.5187629, "has_prosthetic": false}
+        ]
       },
-      "healthcare_categories_found": ["pharmacy", "dentist", "dialysis", "clinic"],
-      "prosthetic_orthotic_found": false,
-      "prosthetic_orthotic_count": 0,
-      "nearest_specialized_care": "Charleston Area Medical Center (CAMC), ~100km"
+      "prosthetic_providers_found": 0,
+      "orthotist_providers_found": 0
     },
-    {
-      "name": "Eastern Kentucky",
-      "center": {
-        "city": "Pikeville",
-        "state": "KY",
-        "lat": 37.4792672,
-        "lon": -82.5187629
+    "mississippi_delta_greenville": {
+      "center": {"lat": 33.4111051, "lon": -91.0635857},
+      "total_providers_found": 9,
+      "providers": {
+        "clinic": [
+          {"name": "The Greenville Clinic", "lat": 33.3819143, "lon": -91.0291499, "specialty": "internal, pediatrics, cardiology", "has_prosthetic": false}
+        ],
+        "pharmacy": [
+          {"name": "South Street Pharmacy", "lat": 33.7419737, "lon": -90.7176566, "has_prosthetic": false},
+          {"name": "Walgreens", "lat": 33.7481259, "lon": -90.7164852, "has_prosthetic": false},
+          {"name": "Good Neighbor Pharmacy", "lat": 33.4590648, "lon": -90.6373432, "has_prosthetic": false},
+          {"name": "Gilbow's Drug Store", "lat": 33.8101036, "lon": -90.5285560, "has_prosthetic": false}
+        ],
+        "doctor": [
+          {"name": "Gough's Family Medical Clinic", "lat": 33.8123956, "lon": -90.5279320, "has_prosthetic": false}
+        ],
+        "rehabilitation": [
+          {"name": "Southeast Rehabilitation Hospital", "lat": 33.3147629, "lon": -91.2903316, "beds": 10, "location": "Lake Village, AR", "has_prosthetic": false}
+        ],
+        "dentist": [
+          {"name": "Michelle Seard-Higgins DMD PLLC", "lat": 33.4062507, "lon": -91.0305699, "has_prosthetic": false},
+          {"name": "Dental Group of Greenville", "lat": 33.3481607, "lon": -91.0431873, "has_prosthetic": false}
+        ]
       },
-      "healthcare_categories_found": ["clinic", "pharmacy", "doctor", "dentist"],
-      "prosthetic_orthotic_found": false,
-      "prosthetic_orthotic_count": 0,
-      "nearest_specialized_care": "University of Kentucky Medical Center, Lexington, KY ~150km"
+      "prosthetic_providers_found": 0,
+      "orthotist_providers_found": 0
     },
-    {
-      "name": "Mississippi Delta",
-      "center": {
-        "city": "Greenville",
-        "state": "MS",
-        "lat": 33.4111051,
-        "lon": -91.0635857
+    "rural_west_virginia": {
+      "center": {"lat": 38.4758406, "lon": -80.8408415},
+      "note": "OSM nearby search was rate-limited; data supplemented with known state infrastructure",
+      "known_providers": {
+        "hospital": ["CAMC (Charleston Area Medical Center)", "WVU Ruby Memorial Hospital", "Thomas Memorial Hospital"],
+        "clinic": ["Cabin Creek Health Center", "One Day Surgery Center"],
+        "pharmacy": ["CVS Pharmacy (Elkview)", "CVS Pharmacy (Beaver)", "Rite Aid (Sissonville)", "Walgreens (Hurricane)", "Walgreens (Teays Valley)", "Kroger Pharmacy (Charleston)", "Fruth Pharmacy (Charleston)"],
+        "rehabilitation": ["Marden Rehabilitation Associates (Oak Hill)"],
+        "foot_care": ["Wyoming Foot and Ankle Clinic (Oak Hill)"],
+        "va": ["VA Clinic (Sutton)"]
       },
-      "healthcare_categories_found": ["clinic", "pharmacy", "rehabilitation", "dentist", "doctor"],
-      "prosthetic_orthotic_found": false,
-      "prosthetic_orthotic_count": 0,
-      "nearest_specialized_care": "Methodist Rehabilitation Center, Jackson, MS ~200km"
+      "prosthetic_providers_found": 0,
+      "orthotist_providers_found": 0
     }
-  ]
+  }
 }

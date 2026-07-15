@@ -1,55 +1,82 @@
 {
   "meta": {
-    "total_studies_analyzed": 644,
-    "query_terms": ["prosthetic", "amputation", "prosthetics orthotics limb deficiency"],
-    "source": "ClinicalTrials.gov",
-    "analysis_date": "2026-07-13"
+    "source": "ClinicalTrials.gov API",
+    "query": "prosthetic",
+    "total_studies": 192,
+    "retrieved_at": "2026-07-15",
+    "analysis_types": ["countByStatus", "countByCountry"]
   },
-  "trials": [
+  "status_breakdown": {
+    "COMPLETED": 73,
+    "TERMINATED": 4,
+    "ACTIVE_NOT_RECRUITING": 18,
+    "NOT_YET_RECRUITING": 18,
+    "RECRUITING": 37,
+    "UNKNOWN": 32,
+    "SUSPENDED": 3,
+    "WITHDRAWN": 4,
+    "TEMPORARILY_NOT_AVAILABLE": 1,
+    "ENROLLING_BY_INVITATION": 2
+  },
+  "country_breakdown": {
+    "United States": 375,
+    "France": 85,
+    "Australia": 35,
+    "United Kingdom": 30,
+    "Germany": 20,
+    "Netherlands": 20,
+    "Spain": 17,
+    "Canada": 15,
+    "Italy": 7,
+    "Turkey": 7,
+    "Russia": 7,
+    "Switzerland": 8,
+    "Sweden": 8,
+    "Pakistan": 3,
+    "Israel": 3,
+    "Egypt": 3,
+    "Belgium": 5,
+    "Poland": 1,
+    "Iraq": 2,
+    "Chile": 2,
+    "Hungary": 1,
+    "Norway": 3,
+    "Finland": 2,
+    "India": 3,
+    "Colombia": 1,
+    "Cyprus": 1,
+    "Taiwan": 1,
+    "Denmark": 1,
+    "Portugal": 2,
+    "Palestinian Territories": 1,
+    "Mexico": 1,
+    "Iceland": 4
+  },
+  "notable_recent_trials": [
     {
-      "nct_id": "NCT07519746",
-      "title": "Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate",
-      "acronym": "PROINGA",
+      "nctId": "NCT07519746",
+      "title": "Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate (PROINGA)",
       "status": "COMPLETED",
+      "startDate": "2025-09-01",
+      "endDate": "2026-03-25",
       "sponsor": "Yeditepe University",
-      "collaborators": ["Al-Azhar University - Gaza"],
-      "study_type": "OBSERVATIONAL",
       "enrollment": 128,
-      "start_date": "2025-09-01",
-      "completion_date": "2026-03-25",
-      "conditions": ["Amputation", "Prosthesis User", "Satisfaction", "Quality of Life"],
-      "location": {
-        "city": "Gaza",
-        "country": "Palestinian Territories",
-        "lat": 31.50161,
-        "lon": 34.46672
-      },
-      "key_outcomes": {
-        "primary": ["Satisfaction With Life Scale (SWLS)", "Prosthetic Satisfaction (SAT-PRO, PEQ, TAPES)"],
-        "secondary": ["WHOQOL-BREF", "EQ-5D-5L"]
-      }
+      "studyType": "OBSERVATIONAL",
+      "focus": "Lower limb prosthetic satisfaction and QoL in conflict zone"
     },
     {
-      "nct_id": "NCT07103798",
-      "title": "Effect of a Microprocessor-Controlled Prosthetic Knee Joint on K2 Level Ambulators",
-      "acronym": "MPK-K2",
+      "nctId": "NCT07032753",
+      "title": "Neuromusculoskeletal Interface for Bionic Arms",
       "status": "NOT_YET_RECRUITING",
-      "sponsor": "VA Office of Research and Development",
-      "collaborators": [],
-      "study_type": "INTERVENTIONAL",
-      "enrollment": 20,
-      "start_date": "2026-07-01 (estimated)",
-      "completion_date": "2028-06-30 (estimated)",
-      "conditions": ["Transfemoral Amputation", "Limb Loss", "Limb Absence"],
-      "location": {
-        "city": "Chicago",
-        "state": "IL",
-        "country": "United States"
-      },
-      "key_outcomes": {
-        "primary": ["Walking speed", "Falls during walking", "PLUS-M score"],
-        "secondary": ["Prosthetic Knee Preference", "ABC scale", "OPUS", "activity measures"]
-      }
+      "sponsor": "Shirley Ryan AbilityLab",
+      "focus": "e-OPRA implant system for transhumeral amputees"
+    },
+    {
+      "nctId": "NCT06486571",
+      "title": "HD-sEMG Control & Sensory Feedback for Robotic Hand Prostheses",
+      "status": "UNKNOWN",
+      "sponsor": "INAIL (Italy)",
+      "focus": "Bidirectional prosthesis control with sensory restoration"
     }
   ]
 }
