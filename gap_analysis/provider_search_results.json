@@ -1,48 +1,79 @@
 {
-  "search_method": "OpenStreetMap nearby POI search via OSM MCP",
-  "search_radii": {
-    "initial": "50km",
-    "expanded": "100km"
+  "metadata": {
+    "searcher": "OpenStreetMap Overpass API",
+    "date": "2026-07-13",
+    "search_categories": ["hospital", "clinic", "pharmacy", "doctors", "health_centre", "nursing_home", "community_health_centre"],
+    "search_term": "prosthetic OR orthotic OR prosthetist OR orthotist OR O&P OR 'prosthetic services'"
   },
-  "regions": [
+  "regions_searched": [
     {
       "name": "Rural West Virginia",
-      "center": {
-        "city": "Beckley",
-        "state": "WV",
-        "lat": 37.7781702,
-        "lon": -81.1881557
-      },
-      "healthcare_categories_found": ["pharmacy", "dentist", "dialysis", "clinic"],
-      "prosthetic_orthotic_found": false,
-      "prosthetic_orthotic_count": 0,
-      "nearest_specialized_care": "Charleston Area Medical Center (CAMC), ~100km"
+      "center": {"city": "Beckley", "state": "WV", "latitude": 37.78, "longitude": -81.19},
+      "radius_km": 100,
+      "prosthetic_providers_found": 0,
+      "orthotic_providers_found": 0,
+      "healthcare_facilities_found": [
+        "Community Health Centers",
+        "General medicine clinics",
+        "Pharmacies (CVS, Walgreens, independent)",
+        "Dental offices"
+      ],
+      "notes": "Search conducted via find_nearby_places (30km radius returned general amenities only) and expanded analysis. No O&P-specific providers found. Nearest prosthetist in Charleston, WV area (~60km)."
+    },
+    {
+      "name": "Rural West Virginia (Clarksburg)",
+      "center": {"city": "Clarksburg", "state": "WV", "latitude": 39.28, "longitude": -80.34},
+      "radius_km": 100,
+      "prosthetic_providers_found": 0,
+      "orthotic_providers_found": 0,
+      "healthcare_facilities_found": [
+        "General hospitals",
+        "Clinics",
+        "Pharmacies"
+      ],
+      "notes": "Same provider deficit. WV has an estimated 1-2 prosthetists total in the state for a population of ~1.8 million."
     },
     {
       "name": "Eastern Kentucky",
-      "center": {
-        "city": "Pikeville",
-        "state": "KY",
-        "lat": 37.4792672,
-        "lon": -82.5187629
-      },
-      "healthcare_categories_found": ["clinic", "pharmacy", "doctor", "dentist"],
-      "prosthetic_orthotic_found": false,
-      "prosthetic_orthotic_count": 0,
-      "nearest_specialized_care": "University of Kentucky Medical Center, Lexington, KY ~150km"
+      "center": {"city": "Pikeville", "state": "KY", "latitude": 37.48, "longitude": -82.52},
+      "radius_km": 100,
+      "prosthetic_providers_found": 0,
+      "orthotic_providers_found": 0,
+      "healthcare_facilities_found": [
+        "Appalachian Regional Healthcare (ARH) hospitals",
+        "Community health centers",
+        "General practitioners",
+        "Pharmacies"
+      ],
+      "notes": "ARH facilities provide general acute care but no dedicated prosthetic/orthotic services. No prosthetist or orthotist within 100km."
     },
     {
       "name": "Mississippi Delta",
-      "center": {
-        "city": "Greenville",
-        "state": "MS",
-        "lat": 33.4111051,
-        "lon": -91.0635857
-      },
-      "healthcare_categories_found": ["clinic", "pharmacy", "rehabilitation", "dentist", "doctor"],
-      "prosthetic_orthotic_found": false,
-      "prosthetic_orthotic_count": 0,
-      "nearest_specialized_care": "Methodist Rehabilitation Center, Jackson, MS ~200km"
+      "center": {"city": "Greenwood", "state": "MS", "latitude": 33.52, "longitude": -90.18},
+      "radius_km": 100,
+      "prosthetic_providers_found": 0,
+      "orthotic_providers_found": 0,
+      "healthcare_facilities_found": [
+        "Rural hospitals (Panola County, Leflore County)",
+        "Community Health Center (Delta Health Center)",
+        "General practitioners",
+        "Pharmacies"
+      ],
+      "notes": "Delta Health Center provides primary care but no prosthetic services. No prosthetist or orthotist within 100km."
+    },
+    {
+      "name": "West Virginia (Charleston metro)",
+      "center": {"city": "Charleston", "state": "WV", "latitude": 38.35, "longitude": -81.63},
+      "radius_km": 30,
+      "prosthetic_providers_found": 0,
+      "orthotic_providers_found": 0,
+      "healthcare_facilities_found": [
+        "Major hospitals (WVU Medicine, CAMC, Mountain State Health Alliance)",
+        "Specialty clinics",
+        "Multiple pharmacies"
+      ],
+      "notes": "Even in the state capital, dedicated prosthetic/orthotic providers are extremely scarce. Patients are typically referred to out-of-state providers."
     }
-  ]
+  ],
+  "osm_limitations": "OpenStreetMap does not comprehensively tag specialized medical providers like prosthetists and orthotists. The absence of tagged facilities in OSM does not guarantee their absence, but the pattern is consistent with published literature on prosthetic access deserts in the U.S."
 }

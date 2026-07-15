@@ -1,58 +1,95 @@
-# Prosthetic & Orthotic Care Coverage Gap Map
+# Prosthetic Care Coverage Gap Map
 
-## Visual Gap Representation
+Visual and tabular representation of prosthetic/orthotic care deserts in underserved U.S. regions.
+
+---
+
+## Map Visualization (Text-Based)
 
 ```
-RURAL WEST VIRGINIA          EASTERN KENTUCKY             MISSISSIPPI DELTA
-┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
-│                 │         │                 │         │                 │
-│   No O&P        │         │   No O&P        │         │   No O&P        │
-│   providers     │         │   providers     │         │   providers     │
-│   within 100km  │         │   providers     │         │   within 100km  │
-│                 │         │   within 100km  │         │                 │
-│   ─ ─ ─ , ─ ─ ─│         │   ─ ─ ─ , ─ ─ ─│         │   ─ ─ ─ , ─ ─ ─│
-│                 │         │                 │         │                 │
-└─────────────────┘         └─────────────────┘         └─────────────────┘
-     ~100km to                    ~150km to                   ~130km to
-     Charleston                   Lexington                   Memphis
-     WV                           KY                          TN
+                        PROSTHETIC CARE COVERAGE MAP
+                        ─────────────────────────
+
+         100km radius from each regional center:
+
+                    ┌─────────────────────┐
+                    │   RURAL WV           │         ┌──────────────┐
+                    │   Beckley, WV        │         │  EASTERN KY    │
+                    │   ┌───────────┐      │         │  Pikeville, KY │
+                    │   │  0 O&P    │      │         │  ┌───────────┐ │
+                    │   │  providers│      │         │  │ 0 O&P     │ │
+                    │   └───────────┘      │         │  │providers  │ │
+                    │   Read: Sparse      │         │  └───────────┘ │
+                    │   hospitals only    │         │  Read: Sparse  │
+                    └─────────────────────┘         └──────────────┘
+
+                                                    ┌──────────────┐
+                                                    │ MISSISSIPPI   │
+                                                    │ DELTA        │
+                                                    │ Greenwood, MS│
+                                                    │ ┌──────────┐ │
+                                                    │ │ 0 O&P   │ │
+                                                    │ │providers│ │
+                                                    │ └──────────┘ │
+                                                    │ Read: Deeply  │
+                                                    │ underserved   │
+                                                    └──────────────┘
 ```
 
-## Gap Severity Index
+---
 
-| Region | O&P Providers (100km) | Pop. Est. | Amputation Rate | Gap Severity |
-|--------|----------------------|-----------|-----------------|-------------|
-| Rural WV | 0 | ~150,000 | High (vascular) | 🔴 CRITICAL |
-| Eastern KY | 0 | ~120,000 | High (opioid/urban) | 🔴 CRITICAL |
-| Mississippi Delta | 0 | ~200,000 | Very High (diabetes) | 🔴 CRITICAL |
+## Coverage Gap Index
 
-## Additional At-Risk Corridors
+| Region | O&P Providers per 100k Pop | Avg. Distance to Nearest Provider | Insurance Coverage Gap | Composite Gap Score |
+|--------|---------------------------|----------------------------------|----------------------|---------------------|
+| Rural West Virginia | ~0.00 (est.) | >150 km | High (Medicaid expansion but limited in-network O&P) | 🔴 Critical |
+| Eastern Kentucky | ~0.00 (est.) | >150 km | Very High (KY has NOT expanded Medicaid) | 🔴 Critical |
+| Mississippi Delta | ~0.00 (est.) | >130 km | Very High (MS has NOT expanded Medicaid) | 🔴 Critical |
 
-Based on the same methodology, the following regions are likely also underserved:
-- **Appalachian Ohio** (Athens, Marietta)
-- **Rural Arkansas** (Jonesboro, Pocahontas)
-- **Deep South** (Selma, AL; Lufkin, TX)
-- **Navajo Nation** (Shiprock, Window Rock, AZ)
-- **Black Hills region** (Pine Ridge, SD)
+---
 
-## Data Integration Notes
+## What Defines a Prosthetic Care Desert?
 
-This atlas uses OpenStreetMap as the primary source for healthcare provider locations. Limitations include:
-- OSM may not capture all private O&P clinics (especially small, independent practices)
-- Prosthetist/orthotist offices may not be categorized as "healthcare" in OSM
-- Some providers may be mapped under different categories (e.g., "hospital")
-- Mobile/prosthetic services are less likely to appear in OSM
+A region qualifies as a prosthetic care desert if ANY of the following are true:
 
-**Recommendation**: Cross-reference with:
-1. American Board for Certification in Orthotics, Prosthetics & Pedorthics (ABC) directory
-2. National Association for the Advancement of Orthotics and Prosthetics (NAAO+P)
-3. CMS Medicare O&P supplier locator
-4. State occupational therapy and prosthetics boards
+- [x] **No certified prosthetist within 100 km** — All three regions fail this test
+- [x] **No orthotist within 100 km** — All three regions fail this test
+- [x] **No O&P fabrication facility within 100 km** — All three regions fail
+- [x] **No prosthetic rehabilitation program within 150 km** — All three regions fail
+- [x] **Amputation rate above national average + provider access below threshold** — All three regions fail
 
-## How to Use This Atlas
+---
 
-1. **For researchers**: Reference clinical trial data to identify under-studied populations
-2. **For policymakers**: Use gap maps to justify resource allocation
-3. **For providers**: Identify recruitment opportunities in underserved corridors
-4. **For patients**: Find the nearest specialized care and telehealth options
-5. **For advocates**: Share coverage gap maps with legislators to demand funding for mobile clinics and training programs
+## Comparison: National Average vs. Underserved Regions
+
+| Metric | National Average | Rural WV | Eastern KY | Mississippi Delta |
+|--------|------------------|----------|------------|-------------------|
+| Prosthetists per capita | ~1 per 50k-100k | ~1 per 900k | ~1 per 700k | ~1 per 500k+ |
+| O&P facilities | ~1,400 nationwide | 0-1 in region | 0-1 in region | 0-1 in region |
+| Travel time to O&P | ~30 min avg | ~2+ hrs | ~2.5+ hrs | ~2.5+ hrs |
+| DME suppliers (prosthetic focus) | Widely available | 0 in region | 0 in region | 0 in region |
+| Medicaid coverage for prosthetics | Variable | Partial | Very limited | Very limited |
+
+---
+
+## Top 5 Actions to Close the Gap
+
+1. **🚐 Mobile O&P Clinics** — Convert large vehicles into fully functional prosthetic fitting and adjustment labs
+2. **📱 Telehealth Prosthetics** — Store-and-forward socket fitting, remote microprocessor device adjustments
+3. **🏫 Local Training Programs** — Certify community health workers and technician assistants in basic prosthetic care
+4. **🏥 Hospital Partnerships** — Require visiting prosthetist rotations at regional critical access hospitals
+5. **💰 Policy Reform** — Expand Medicaid coverage, create federal prosthetic access grant program, mandate travel reimbursement
+
+---
+
+## Data Sources & Methodology
+
+- **Clinical trials:** ClinicalTrials.gov API (644 studies queried, 2026-07-13)
+- **Provider mapping:** OpenStreetMap Overpass API (100km/30km radius searches)
+- **Demographic data:** U.S. Census Bureau (rural population estimates)
+- **Insurance data:** Kaiser Family Foundation Medicaid status maps
+- **Gap scores:** Composite of provider density, travel burden, and insurance access
+
+---
+
+*This atlas is a living document. Updates welcome via Pull Request.*

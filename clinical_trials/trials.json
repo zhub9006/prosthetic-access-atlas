@@ -1,54 +1,77 @@
 {
-  "meta": {
-    "total_studies_analyzed": 644,
-    "query_terms": ["prosthetic", "amputation", "prosthetics orthotics limb deficiency"],
-    "source": "ClinicalTrials.gov",
-    "analysis_date": "2026-07-13"
+  "metadata": {
+    "total_studies": 644,
+    "source": "ClinicalTrials.gov API",
+    "analysis_date": "2026-07-13",
+    "search_term": "prosthetic",
+    "analysis_types": ["countByStatus", "countByCountry", "countByPhase"]
   },
-  "trials": [
+  "status_breakdown": {
+    "COMPLETED": 271,
+    "RECRUITING": 113,
+    "UNKNOWN": 134,
+    "NOT_YET_RECRUITING": 38,
+    "ACTIVE_NOT_RECRUITING": 37,
+    "ENROLLING_BY_INVITATION": 12,
+    "TERMINATED": 24,
+    "SUSPENDED": 4,
+    "WITHDRAWN": 10,
+    "TEMPORARILY_NOT_AVAILABLE": 1
+  },
+  "phase_breakdown": {
+    "N/A": 338,
+    "Unknown": 202,
+    "Phase4": 29,
+    "Phase2": 39,
+    "Phase3": 30,
+    "Phase1": 15,
+    "EarlyPhase1": 4
+  },
+  "geographic_distribution": {
+    "United States": 680,
+    "France": 317,
+    "Denmark": 78,
+    "Germany": 76,
+    "Italy": 71,
+    "United Kingdom": 44,
+    "Canada": 41,
+    "Netherlands": 41,
+    "Egypt": 38,
+    "Spain": 38,
+    "Australia": 35,
+    "Switzerland": 27,
+    "Poland": 12,
+    "Brazil": 13,
+    "Sweden": 17,
+    "China": 14,
+    "Austria": 14,
+    "Iraq": 2,
+    "Pakistan": 3,
+    "Kenya": 2,
+    "Israel": 6,
+    "Belgium": 20,
+    "Turkey": 20,
+    "Portugal": 7,
+    "Norway": 6
+  },
+  "key_recent_trials": [
     {
-      "nct_id": "NCT07519746",
+      "nctId": "NCT07519746",
       "title": "Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate",
       "acronym": "PROINGA",
       "status": "COMPLETED",
       "sponsor": "Yeditepe University",
       "collaborators": ["Al-Azhar University - Gaza"],
-      "study_type": "OBSERVATIONAL",
+      "studyType": "OBSERVATIONAL",
       "enrollment": 128,
-      "start_date": "2025-09-01",
-      "completion_date": "2026-03-25",
+      "startDate": "2025-09-01",
+      "completionDate": "2026-03-25",
+      "location": {"city": "Gaza", "country": "Palestinian Territories", "lat": 31.50161, "lon": 34.46672},
       "conditions": ["Amputation", "Prosthesis User", "Satisfaction", "Quality of Life"],
-      "location": {
-        "city": "Gaza",
-        "country": "Palestinian Territories",
-        "lat": 31.50161,
-        "lon": 34.46672
-      },
-      "key_outcomes": {
-        "primary": ["Satisfaction With Life Scale (SWLS)", "Prosthetic Satisfaction (SAT-PRO, PEQ, TAPES)"],
-        "secondary": ["WHOQOL-BREF", "EQ-5D-5L"]
-      }
-    },
-    {
-      "nct_id": "NCT07103798",
-      "title": "Effect of a Microprocessor-Controlled Prosthetic Knee Joint on K2 Level Ambulators",
-      "acronym": "MPK-K2",
-      "status": "NOT_YET_RECRUITING",
-      "sponsor": "VA Office of Research and Development",
-      "collaborators": [],
-      "study_type": "INTERVENTIONAL",
-      "enrollment": 20,
-      "start_date": "2026-07-01 (estimated)",
-      "completion_date": "2028-06-30 (estimated)",
-      "conditions": ["Transfemoral Amputation", "Limb Loss", "Limb Absence"],
-      "location": {
-        "city": "Chicago",
-        "state": "IL",
-        "country": "United States"
-      },
-      "key_outcomes": {
-        "primary": ["Walking speed", "Falls during walking", "PLUS-M score"],
-        "secondary": ["Prosthetic Knee Preference", "ABC scale", "OPUS", "activity measures"]
+      "interventions": ["Observational Study - No Intervention"],
+      "outcomes": {
+        "primary": ["Satisfaction With Life Scale (SWLS)"],
+        "secondary": ["Quality of life (WHOQOL-BREF)", "Health-related quality of life (EQ-5D-5L)"]
       }
     }
   ]
