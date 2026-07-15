@@ -8,51 +8,82 @@ RURAL WEST VIRGINIA          EASTERN KENTUCKY             MISSISSIPPI DELTA
 │                 │         │                 │         │                 │
 │   No O&P        │         │   No O&P        │         │   No O&P        │
 │   providers     │         │   providers     │         │   providers     │
-│   within 100km  │         │   providers     │         │   within 100km  │
-│                 │         │   within 100km  │         │                 │
-│   ─ ─ ─ , ─ ─ ─│         │   ─ ─ ─ , ─ ─ ─│         │   ─ ─ ─ , ─ ─ ─│
+│   within 30km   │         │   within 30km   │         │   within 30km   │
 │                 │         │                 │         │                 │
+│   ─ ─ 90km to ─│         │  ─ 120km to ── │         │ ─ 130km to ─── │
+│   Charleston    │         │   Lexington     │         │   Memphis       │
+│   (WV)          │         │   (KY)          │         │   (TN)          │
 └─────────────────┘         └─────────────────┘         └─────────────────┘
-     ~100km to                    ~150km to                   ~130km to
-     Charleston                   Lexington                   Memphis
-     WV                           KY                          TN
+  Walkability: 2/10           Walkability: 2/10           Walkability: 2/10
+  Healthcare: 9.0*           Healthcare: 0.0 🔴          Healthcare: 2.1 🔴
+  *general healthcare only — zero O&P/orthotics
 ```
 
 ## Gap Severity Index
 
-| Region | O&P Providers (100km) | Pop. Est. | Amputation Rate | Gap Severity |
-|--------|----------------------|-----------|-----------------|-------------|
-| Rural WV | 0 | ~150,000 | High (vascular) | 🔴 CRITICAL |
-| Eastern KY | 0 | ~120,000 | High (opioid/urban) | 🔴 CRITICAL |
-| Mississippi Delta | 0 | ~200,000 | Very High (diabetes) | 🔴 CRITICAL |
+| Region | O&P Providers (30km) | Pop. Est. | Amputation Rate | Healthcare Score | Gap Severity | Nearest O&P |
+|--------|---------------------|-----------|-----------------|-----------------|-------------|-------------|
+| Rural WV | 0 | ~150,000 | High (vascular) | 9.0 (general) | 🔴 CRITICAL | Charleston (~90km) |
+| Eastern KY | 0 | ~120,000 | High (opioid/diabetes) | 0.0 🔴 | 🔴 CRITICAL | Lexington (~120km) |
+| Mississippi Delta | 0 | ~200,000 | Very High (diabetes) | 2.1 🔴 | 🔴 CRITICAL | Memphis (~130km) |
 
-## Additional At-Risk Corridors
+## Travel Distance to Nearest Prosthetic Care
 
-Based on the same methodology, the following regions are likely also underserved:
-- **Appalachian Ohio** (Athens, Marietta)
-- **Rural Arkansas** (Jonesboro, Pocahontas)
-- **Deep South** (Selma, AL; Lufkin, TX)
+```
+Czech crescent: 30km ──┐
+                       ├── 60km ──┐
+                       │          ├── 90km ──┐
+                       │          │          ├── 120km ──┐
+                       │          │          │          ├── 130km ──┐
+                       │          │          │          │          └── 160km
+Rural WV ───────► Charleston (90km)
+Eastern KY ──────► Lexington (120km)
+Mississippi Delta ─► Memphis (130km)
+```
+
+## Clinical Trial Access by Region
+
+| Region | Prosthetic Trials | Nearest Trial Site | Travel Distance |
+|--------|------------------|-------------------|-----------------|
+| Rural WV | 0 | N/A | Unreachable |
+| Eastern KY | 0 | U of Louisville (NCT05440032) | ~120km |
+| Mississippi Delta | 0 | U of Mississippi Medical Center (NCT02540681) | ~160km |
+
+## Additional At-Risk Corridors (Preliminary)
+
+Based on the same methodology, the following regions likely have similar or worse gaps:
+- **Appalachian Ohio** (Athens, Marietta, Chillicothe)
+- **Rural Arkansas** (Jonesboro, Pocahontas, Retrieved)
+- **Deep South** (Selma, AL; Lufkin, TX; Pine Bluff, AR)
 - **Navajo Nation** (Shiprock, Window Rock, AZ)
-- **Black Hills region** (Pine Ridge, SD)
+- **Black Hills region** (Pine Ridge, SD; Rapid City outskirts)
 
-## Data Integration Notes
+## Data Sources & Limitations
 
-This atlas uses OpenStreetMap as the primary source for healthcare provider locations. Limitations include:
-- OSM may not capture all private O&P clinics (especially small, independent practices)
-- Prosthetist/orthotist offices may not be categorized as "healthcare" in OSM
-- Some providers may be mapped under different categories (e.g., "hospital")
-- Mobile/prosthetic services are less likely to appear in OSM
+### Primary Sources
+- **ClinicalTrials.gov API** — prosthetic condition search, status/country aggregations, detailed trial records
+- **OpenStreetMap** — provider location data via MCP tools (geocode, find_nearby_places, search_category, analyze_neighborhood)
 
-**Recommendation**: Cross-reference with:
-1. American Board for Certification in Orthotics, Prosthetics & Pedorthics (ABC) directory
-2. National Association for the Advancement of Orthotics and Prosthetics (NAAO+P)
-3. CMS Medicare O&P supplier locator
-4. State occupational therapy and prosthetics boards
+### Limitations
+1. **OSM data may be incomplete** — smaller O&P businesses may not be mapped
+2. **30km radius is a starting point** — in truly rural areas, the nearest O&P may be 60-100+ km away but still the "closest" option
+3. **ClinicalTrials.gov only reflects registered studies** — unregistered or industry-only trials may be missed
+4. **Neighborhood scores are algorithmic** — real-world access may differ
+5. **OSM categories may not capture O&P** — prosthetists/orthotists may be under "shop" or "healthcare" or not mapped at all
 
-## How to Use This Atlas
+### Recommended Cross-References
+1. **ABC Directory** (American Board for Certification in Orthotics, Prosthetics & Pedorthics)
+2. **NAAO+P** (National Association for the Advancement of Orthotics and Prosthetics)
+3. **CMS Medicare O&P Supplier Locator**
+4. **State occupational therapy and prosthetics boards**
+5. **Hanger Clinic / Össur / Ottobock / Fairride / Clarkson** — major provider networks
 
-1. **For researchers**: Reference clinical trial data to identify under-studied populations
-2. **For policymakers**: Use gap maps to justify resource allocation
-3. **For providers**: Identify recruitment opportunities in underserved corridors
-4. **For patients**: Find the nearest specialized care and telehealth options
-5. **For advocates**: Share coverage gap maps with legislators to demand funding for mobile clinics and training programs
+## Next Steps
+1. ✅ Complete ClinicalTrials.gov data collection and analysis
+2. ✅ Map three initial target regions
+3. ⬜ Validate OSM provider data with phone calls/ABC directory
+4. ⬜ Expand to additional at-risk corridors
+5. ⬜ Add interactive Leaflet.js map with plotted provider locations and coverage polygons
+6. ⬜ Integrate HCUP/Medicare amputee incidence by county
+7. ⬜ Add travel-time isochrone calculations
+8. ⬜ Track grant funding and trial enrollment by region
