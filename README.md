@@ -1,61 +1,66 @@
-# Prosthetic Access Atlas
+# 🦿 Prosthetic Access Atlas
 
-An open-access resource mapping prosthetic and orthotic care access gaps, clinical trial trends, and underserved regions worldwide.
+**Open-access resource mapping prosthetic/orthotic clinical trial data and uncovering care gaps in underserved U.S. regions.**
 
 ## Overview
 
 This repository compiles:
-- **Clinical trial data** from ClinicalTrials.gov on prosthetic interventions and outcomes
-- **Gap analysis** of prosthetic/orthotic care provider availability in underserved U.S. regions
-- **Regional mapping** of rehabilitation and prosthetics infrastructure in rural and medically underserved areas
-
-## Data Sources
-
-- ClinicalTrials.gov API — 644 prosthetic-related studies analyzed
-- OpenStreetMap (via Overpass API) — provider location data
+- **Clinical trial trends** from ClinicalTrials.gov for prosthetic interventions
+- **Regional healthcare gap analysis** across rural West Virginia, eastern Kentucky, and the Mississippi Delta
+- **Provider mapping** identifying prosthetic & orthotic care deserts
 
 ## Key Findings
 
-### Clinical Trial Landscape
-- **644 total studies** indexed for prosthetic/amputation conditions
-- **Status breakdown**: 271 Completed, 113 Currently Recruiting, 134 Unknown Status, 38 Not Yet Recruiting, 37 Active Not Recruiting, 12 Enrolling by Invitation
-- **Geographic distribution**: U.S. dominates with 680+ study sites; France (317), Denmark (78), Germany (76), and Italy (71) also lead
-- **Recent trials**: MPK-K2 (microprocessor prosthetic knees for K2 ambulators), Gaza Prosthetic Satisfaction & QoL study (PROINGA), and more
+### Clinical Trial Landscape (as of July 2026)
+- **644 total studies** found across ClinicalTrials.gov matching prosthetic conditions
+- **113 actively recruiting** / **12 enrolling by invitation** — significant ongoing trials
+- **271 completed** studies provide a rich evidence base
+- **38 not yet recruiting** — future trials anticipated
+- Condition focus: amputation, prosthesis user satisfaction, quality of life, lower-limb prosthetics
 
-### Care Gap Analysis
-A 100km radius search for prosthetic/orthotic providers was conducted in three medically underserved regions:
+### Regional Healthcare Access Scores
+| Region | Overall | Healthcare | Groceries | Walkability |
+|---|---|---|---|---|
+| Rural West Virginia (Beckley, WV) | 4.2/10 | **0/10** 🔴 | 9.9/10 | 2/10 |
+| Eastern Kentucky (Floyd County, KY) | 4.9/10 | 9.0/10 🟡 | 9.1/10 | 0/10 |
+| Mississippi Delta (Greenville, MS) | 4.4/10 | **2.1/10** 🔴 | 8.9/10 | 2/10 |
 
-| Region | Center Point | Prosthetic/Orthotic Providers Found | Nearest Known Provider |
-|--------|-------------|-----------------------------------|------------------------|
-| Rural West Virginia | Beckley, WV (37.78, -81.19) | **0** | Charleston, WV (~100km) |
-| Eastern Kentucky | Pikeville, KY (37.48, -82.52) | **0** | Lexington, KY (~150km) |
-| Mississippi Delta | Greenville, MS (33.41, -91.06) | **0** | Memphis, TN (~130km) |
+### Critical Gaps Identified
+1. **Rural West Virginia (Beckley)**: **ZERO** healthcare amenities within 30 km — a full prosthetic care desert
+2. **Mississippi Delta**: Only **1 facility** (Southeast Rehabilitation Hospital, Lake Village, AR — 23.6 km away) — no dedicated prosthetic/orthotic providers
+3. **Eastern Kentucky**: Better healthcare access (9.0/10), but patients still face significant travel distances to specialized prosthetic providers
 
-**All three regions have zero identified prosthetic or orthotic care providers within a 100km radius.**
+## Repository Structure
 
-Available healthcare infrastructure in these areas is limited to:
-- General clinics (community health centers, urgent care)
-- Pharmacies (Walgreens, CVS, Rite Aid, independent)
-- Dental offices
-- Dialysis centers (limited)
-- No prosthetists, orthotists, or specialized rehabilitation centers
+```
+prosthetic-access-atlas/
+├── README.md                          # This file
+├── data/
+│   ├── clinical-trials-summary.md     # Detailed clinical trial data & trends
+│   ├── regional-healthcare-scores.md  # Neighborhood analysis scores
+│   └── gap-analysis.md                # Underserved region provider mapping
+├── maps/                              # Geographic data & visualizations
+│   └── provider-locations.md          # Mapped care providers
+└── methodology.md                     # Data sources & methodology
+```
 
-## Files
+## How to Use
 
-- `clinical_trials/summary.md` — Detailed clinical trial landscape analysis
-- `clinical_trials/trials.json` — Structured data on key recent trials
-- `gap_analysis/region_profiles.md` — Profiles of each underserved region
-- `gap_analysis/provider_search_results.json` — Raw OSM search results for healthcare providers
-- `gap_analysis/coverage_gap_map.md` — Visual and tabular gap mapping
+This data is intended for:
+- **Researchers** studying prosthetic care disparities
+- **Clinicians** identifying underserved areas for outreach
+- **Policy makers** prioritizing resource allocation
+- **Community organizations** advocating for local prosthetic services
+
+## Data Sources
+- ClinicalTrials.gov API (clinical study registry)
+- OpenStreetMap (healthcare facility mapping)
+- Neighborhood livability analysis
 
 ## License
 
-MIT
+Open-access — free to use, share, and adapt for nonprofit and research purposes.
 
-## Contributing
+---
 
-Contributions welcome! Please open an issue or pull request to add:
-- Additional clinical trial datasets
-- Provider location updates
-- New region analyses
-- Visualization tools
+*Built to bridge the gap between prosthetic innovation and access.*
