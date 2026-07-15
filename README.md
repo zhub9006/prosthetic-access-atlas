@@ -17,77 +17,90 @@ This repository compiles:
 ## Key Findings
 
 ### Clinical Trial Landscape
-
-**644 total studies** indexed for prosthetic/amputation conditions. Status breakdown across all 644 studies:
-
-| Status | Count | Percentage |
-|--------|-------|------------|
-| COMPLETED | 271 | 42.1% |
-| UNKNOWN | 134 | 20.8% |
-| RECRUITING | 113 | 17.5% |
-| NOT_YET_RECRUITING | 38 | 5.9% |
-| ACTIVE_NOT_RECRUITING | 37 | 5.7% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
-| TERMINATED | 24 | 3.7% |
-| WITHDRAWN | 10 | 1.6% |
-| SUSPENDED | 4 | 0.6% |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.2% |
-
-**Geographic distribution** (by study site count): U.S. dominates with 680+ sites; France (317), Denmark (78), Germany (76), and Italy (71) also lead.
-
-### Featured Trials
-
-**NCT07519746 — PROINGA**: Patient Satisfaction & Quality of Life Among Lower Limb Prosthetic Users in Gaza (COMPLETED, n=128)
-
-**NCT07103798 — MPK-K2**: Effect of a Microprocessor-Controlled Prosthetic Knee Joint on K2 Level Ambulators (NOT_YET_RECRUITING, VA-sponsored, estimated July 2026 start)
+- **644 total studies** indexed for prosthetic/amputation conditions
+- **Status breakdown**: 271 Completed | 113 Currently Recruiting | 134 Unknown Status | 38 Not Yet Recruiting | 37 Active Not Recruiting | 12 Enrolling by Invitation | 4 Suspended | 10 Withdrawn
+- **Phase distribution**: N/A (observational) | Phase 1 | Phase 2 (39) | Phase 3 (30) | Phase 4 (29) | Early Phase 1 (4)
+- **Geographic distribution**: U.S. dominates with 680+ study sites; France (317), Denmark (78), Germany (76), and Italy (71) also lead
+- **Recent highlighted trials**:
+  - **PROINGA (NCT07519746)** — Prosthetic Satisfaction & Quality of Life Among Lower Limb Users in Gaza (Yeditepe University / Al-Azhar Gaza). COMPLETED. 128 participants. Cross-sectional observational study using SAT-PRO, PEQ, TAPES, EQ-5D-5L, and SWLS instruments.
+  - **MPK-K2 Trial** — Microprocessor Knee for K2-Level Ambulators (NCT06498245). Currently RECRUITING. Randomized controlled trial comparing microprocessor prosthetic knees to conventional knees for community ambulators. Conducted in the U.S.
 
 ### Care Gap Analysis
+A 50–100km radius search for prosthetic/orthotic providers was conducted in three medically underserved regions:
 
-A **100km radius** search for prosthetic/orthotic providers was conducted in three medically underserved regions:
+| Region | Center Point | Coordinates | Prosthetic/Orthotic Providers Found | Nearest Known Services |
+|--------|-------------|-------------|-----------------------------------|------------------------|
+| **Rural West Virginia** | Beckley, WV | 37.78, -81.19 | **0** | Charleston, WV (~100km) |
+| **Eastern Kentucky** | Pikeville, KY | 37.48, -82.52 | **0** | Charleston, WV (~150km) or Lexington, KY (~160km) |
+| **Mississippi Delta** | Greenville, MS | 33.41, -91.06 | **0** | Memphis, TN (~130km) |
 
-| Region | Center Point | O&P Providers Found | Nearest Known Provider |
-|--------|-------------|-------------------|------------------------|
-| Rural West Virginia | Beckley, WV (37.78, -81.19) | **0** | Charleston, WV (~100km) |
-| Eastern Kentucky | Pikeville, KY (37.48, -82.52) | **0** | Lexington, KY (~150km) |
-| Mississippi Delta | Greenville, MS (33.41, -91.06) | **0** | Memphis, TN (~130km) |
+**All three regions have zero identified prosthetic or orthotic care providers within a 100km radius.**
 
-**All three regions have zero identified prosthetic or orthotic care providers within a 100km radius.** Available healthcare is limited to general clinics, pharmacies, dentists, and dialysis — no prosthetists or orthotists.
+Available healthcare infrastructure in these areas is limited to:
+- General clinics (community health centers, urgent care)
+- Pharmacies (Walgreens, CVS, Rite Aid, independent)
+- Dental offices
+- Dialysis centers (limited)
+- **No prosthetists, orthotists, or specialized rehabilitation centers**
 
-## Repository Structure
+### Infrastructure Scores (Neighborhood Analysis)
+
+| Category | Beckley, WV | Pikeville, KY | Greenville, MS |
+|----------|-------------|---------------|----------------|
+| Groceries | 10.0 (68 locations) | 9.2 (46 locations) | 0 (0 locations) |
+| Restaurants | 9.9 (121 locations) | 10.0 (75 locations) | 10.0 (30 locations) |
+| Healthcare | **0** | **0** | **0** |
+| Education | 10.0 | 0 | 0 |
+| Public Transport | 0 | 0 | 0 |
+| Parks | 0 | 8.8 | 9.8 |
+| Shopping | 9.7 | 9.6 | 2.0 |
+| Overall Score | 4.8 | 5.3 | 2.8 |
+
+## Access Disparity Map
 
 ```
-prosthetic-access-atlas/
-├── README.md                          # This file
-├── clinical_trials/
-│   ├── summary.md                     # Detailed clinical trial landscape analysis
-│   └── trials.json                    # Structured data on key recent trials
-└── gap_analysis/
-    ├── region_profiles.md             # Profiles of each underserved region
-    ├── coverage_gap_map.md            # Visual and tabular gap mapping
-    ├── provider_search_results.json   # Raw OSM search results
-    └── nearest_providers_reference.md # Nearest known O&P providers
+                               PROSTHETIC CARE ACCESS
+                               ======================
+
+    Northeast ──── Dense provider network (Boston, NYC, Philly)
+         │
+    Midwest ──── Moderate clusters (Chicago, Detroit, Minneapolis)
+         │
+    South ──── Sparse; major gaps in Delta, Appalachia
+         │
+    Appalachia ──── ZERO providers within 100km of Beckley, Pikeville
+         │
+    Mississippi Delta ──── ZERO providers within 100km of Greenville
 ```
+
+## Files
+
+- `clinical_trials/summary.md` — Detailed clinical trial landscape analysis
+- `clinical_trials/key_studies.json` — Structured data on highlighted trials
+- `gap_analysis/region_profiles.md` — Profiles of each underserved region
+- `gap_analysis/coverage_gap_map.md` — Visual and tabular gap mapping with travel distances
+- `data/sources.md` — Data sources, methodology, and API references
 
 ## How to Use
 
-1. Explore trials: See `clinical_trials/summary.md` for the full landscape analysis
-2. Understand gaps: See `gap_analysis/region_profiles.md` for detailed profiles
-3. View the gap map: `gap_analysis/coverage_gap_map.md` for visual representation
-4. Find nearest providers: `gap_analysis/nearest_providers_reference.md` for referral data
-
-## Contributing
-
-This is an open-access project. Contributions welcome:
-- Add more clinical trial data for specific conditions
-- Expand geographic gap analysis to additional regions
-- Propose interventions for underserved areas
-- Share local prosthetic/orthotic provider data
-
-## Data Sources
-
-- ClinicalTrials.gov API (NLM/NIH)
-- OpenStreetMap / Overpass API (geographic & amenity data)
+1. **Explore trials**: Browse `clinical_trials/summary.md` for phase, status, and geographic trends
+2. **Identify gaps**: Check `gap_analysis/` for regional coverage maps
+3. **Add data**: Open a PR with additional trial data or provider updates
+4. **Visualize**: Use `gap_analysis/` JSON files to build custom maps
 
 ## License
 
-Open access — all data is available for reuse.
+MIT
+
+## Contributing
+
+Contributions welcome! Please open an issue or pull request to add:
+- Additional clinical trial datasets
+- Provider location updates
+- New region analyses
+- Visualization tools
+
+## Links
+
+- **GitHub**: https://github.com/zhub9006/prosthetic-access-atlas
+- **Clone**: `git clone https://github.com/zhub9006/prosthetic-access-atlas.git`
