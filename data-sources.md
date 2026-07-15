@@ -1,79 +1,72 @@
 # Data Sources & Methodology
 
+> How this atlas was built — transparent, reproducible, and open.
+
 ## ClinicalTrials.gov Data
 
-- **API**: ClinicalTrials.gov v2 (MCP server interface)
-- **Query terms used**:
-  - `prosthetic` (broad)
-  - `upper limb prosthetic`
-  - `lower limb prosthetic amputation`
-  - `orthotic prosthetic rehabilitation`
-  - `prosthetic socket fit`
-  - `osseointegration prosthetic`
-  - `prosthetic training rehabilitation amputee`
-  - `bionic prosthesis upper limb`
-  - `3D printed prosthetic`
-  - `prosthesis rehabilitation`
-  - `prosthetic rehabilitation amputee driving`
-  - `microwave prosthesis`
-- **Analyses performed**:
-  - `countByStatus` — distribution across trial lifecycle stages
-  - `countByPhase` — breakdown of trial phases (I–IV, NA, Unknown)
-  - `countByCountry` — geographic distribution of trial locations
-  - `countBySponsorType` — sponsor landscape (academic, industry, federal)
-- **Individual study summaries** retrieved for 8 landmark trials
-- **Retrieval date**: 2026-07-13
+- **API version**: ClinicalTrials.gov v2 API
+- **Query**: `"prosthetic"` with term filters for `prosthetic care OR prosthetics OR orthotics`
+- **Analyses performed**: `countByStatus`, `countByCountry`
+- **Retrieval date**: 2026-07-15
+- **Total matched studies**: 192
 
-## OpenStreetMap (OSM) Healthcare Data
+### Data Fields Used
+| Field | Source |
+|-------|--------|
+| NCT ID, Brief Title, Official Title | `protocolSection.identificationModule` |
+| Overall Status | `protocolSection.statusModule.overallStatus` |
+| Start/Completion Dates | `protocolSection.statusModule.startDateStruct` |
+| Sponsor | `protocolSection.sponsorCollaboratorsModule.leadSponsor` |
+| Conditions | `protocolSection.conditionsModule.conditions` |
+| Study Type | `protocolSection.designModule.studyType` |
+| Enrollment | `protocolSection.designModule.enrollmentInfo.count` |
+| Locations | `protocolSection.contactsLocationsModule.locations` |
+| Brief Summary | `protocolSection.descriptionModule.briefSummary` |
 
-- **Geocoding**: Used OSM Nominatim geocoder to find coordinates for:
-  - Rural West Virginia (Charleston, Beckley, Oak Hill, Clarksburg, Sutton, Summersville, WV State Center)
-  - Eastern Kentucky (Pikeville, Hazard, Elkhorn City, Eastern KY)
-  - Mississippi Delta (Greenville, Leland, Rolling Fork, Clarksdale, Cleveland, Indianola, Greenwood, Delta)
-- **Nearby-place searches**: Queried `healthcare` category at each coordinate with radii of 30–60 km
-- **Provider categories extracted**:
-  - `hospital`
-  - `clinic`
-  - `doctors`
-  - `pharmacy`
-  - `optometrist`
-  - `dentist`
-  - `dialysis`
-  - `alternative` (chiropractic)
-- **Note on prosthetist/orthotist data**: OSM does not currently classify providers as `healthcare=prosthetist` or `healthcare=orthotist` in any of these regions. This absence is itself a finding.
-- **OSM License**: PDDL (Open Database License)
+## OpenStreetMap Data
 
-## Gap Analysis Methodology
+- **API**: Overpass API via OSM-MCP server
+- **Geocoding**: `geocode_address` for region centers
+- **Nearby search**: `find_nearby_places` with `healthcare` category
+- **Radius**: 50 km for urban areas, 30 km for rural
+- **Retrieval date**: 2026-07-15
 
-- Provider counts were aggregated by category and geographic region
-- Coverage maps were generated using OSM administrative boundary and point-of-interest data
-- Gap severity ratings:
-  - **Severe**: Zero providers of any kind within 40 km
-  - **High**: One or fewer providers of a critical specialty
-  - **Moderate**: Limited or inconsistent access
-  - **Low**: Adequate urban-standard access
+### Healthcare Categories Searched
+- `clinic` — community health centers, urgent care
+- `hospital` — inpatient facilities
+- `pharmacy` — drug stores
+- `doctor` — general practitioners, specialists
+- `dentist` — dental providers
+- `rehabilitation` — rehab hospitals and centers
+- `optometrist` — vision care
+- `chiropractic` — musculoskeletal care
+- `prosthetist` / `orthotist` / `O&P` — **not found**
 
-## ClinicalTrials.gov API Limitations
+### Regions Analyzed
+| Region | Center Point | Radius |
+|--------|-------------|--------|
+| Rural West Virginia | 38.48°N, 80.84°W | 30 km |
+| Eastern Kentucky | 37.48°N, 82.52°W | 50 km |
+| Mississippi Delta | 33.41°N, 91.06°W | 50 km |
 
-- The `fields` parameter has strict naming requirements (e.g., `NCTId` not `nctId`, `BriefTitle` not `briefTitle`)
-- Sort ordering requires specific string-based field/order pairs
-- Some search queries return 400 errors if invalid field names are included
-- The MCP server wraps the REST API and adds validation layers
+## Limitations
 
-## Known Limitations
+1. **OSM completeness**: Private O&P clinics may not maintain OSM entries. Absence suggests a gap but does not prove non-existence.
+2. **ClinicalTrials.gov scope**: The API may not index all prosthetics-related trials; some use different condition terminology.
+3. **Geographic resolution**: OSM point-center searches may miss providers in adjacent counties.
+4. **Temporal validity**: OSM data is community-edited and may be outdated.
 
-1. **OSM completeness**: Not all healthcare providers are in OSM. Small private O&P clinics, VA prosthetics services, and university-based clinics may be missing.
-2. **Clinical trial relevance**: Some "prosthetic" trials are dental/implant-related (e.g., peri-implant mucositis). We filtered these out in summary tables.
-3. **Temporal snapshot**: Data reflects a single day (2026-07-13). Trial statuses and counts will change over time.
-4. **Geographic resolution**: OSM searches are centered on town coordinates; some rural providers may be just outside the search radius.
+## Tools Used
 
-## Recommended Updates
-
-- Re-run ClinicalTrials.gov queries quarterly
-- Refresh OSM searches after each major healthcare facility opening/closing dataset
-- Cross-reference with HHS Health Resources & Services Administration (HRSA) Medically Underserved Area (MUA) designations
-- Add NPI (National Provider Identifier) lookup for confirmed prosthetist/orthotist gaps
+| Tool | Purpose |
+|------|---------|
+| `clinicaltrials_analyze_trends` | Aggregate studies by status, country |
+| `clinicaltrials_list_studies` | Retrieve recent trial details |
+| `osm_geocode_address` | Convert region names to coordinates |
+| `osm_find_nearby_places` | Search healthcare amenities near each center |
+| `github_create_repository` | Create public atlas repository |
+| `github_push_files` | Compile all outputs into structured files |
 
 ---
 
-Last updated: 2026-07-13 | Repository: [prosthetic-access-atlas](https://github.com/zhub9006/prosthetic-access-atlas)
+*Last updated: 2026-07-15*
