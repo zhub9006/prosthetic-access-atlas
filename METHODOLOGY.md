@@ -1,75 +1,61 @@
 # Methodology
 
-## Data Collection (2026-07-15)
+> How this atlas was built — transparent, reproducible, and open.
 
-### 1. ClinicalTrials.gov
-- **API:** ClinicalTrials.gov MCP server
-- **Query:** `condition=prosthetic` (644 matching studies)
-- **Trends:** `countByStatus` and `countByCountry` aggregations
-- **Detail:** Full protocol data for 5 representative trials
-- **Regional search:** `locn` filter applied for West Virginia, Kentucky, Mississippi
+## Clinical Trial Data Collection
+- Source: ClinicalTrials.gov API (api/v2/studies)
+- Query: `cond=prosthetic` and related terms
+- Analyses: `countByStatus`, `countByCountry`
+- Retrieval date: 2026-07-15
+- Total matched studies: 2,182
 
-### 2. OpenStreetMap (via OSM MCP)
-- **Geocoding:** Resolved Buckhannon WV, Hazard KY, and Greenville MS to precise coordinates
-- **Neighborhood Analysis:** `analyze_neighborhood` with 30km radius (walkability, healthcare, education, services scores)
-- **Healthcare Search:** `find_nearby_places` with healthcare category filters
-- **Category Search:** `search_category` for healthcare subcategories
+### Data Fields Used
+| Field | Source |
+|-------|--------|
+| NCT ID, Brief Title, Official Title | `protocolSection.identificationModule` |
+| Overall Status | `protocolSection.statusModule.overallStatus` |
+| Start/Completion Dates | `protocolSection.statusModule.startDateStruct` |
+| Sponsor | `protocolSection.sponsorCollaboratorsModule.leadSponsor` |
+| Conditions | `protocolSection.conditionsModule.conditions` |
+| Study Type | `protocolSection.designModule.studyType` |
+| Enrollment | `protocolSection.designModule.enrollmentInfo.count` |
+| Locations | `protocolSection.contactsLocationsModule.locations` |
+| Brief Summary | `protocolSection.descriptionModule.briefSummary` |
 
-### 3. Tools Used
+## Geospatial Gap Analysis
+- Source: OpenStreetMap (Overpass API)
+- Geocoding: `geocode_address` for region centers
+- Nearby search: `find_nearby_places` with healthcare category
+- Reverse geocode: `reverse_geocode` for location confirmation
+- Neighborhood analysis: `analyze_neighborhood` for livability scoring
+- Search radius: 50-100km around each region
+
+### Healthcare Categories
+- `clinic`, `hospital`, `pharmacy`, `doctor`, `dentist`, `rehabilitation`
+- `prosthetist`, `orthotist`, `O&P` — **not found**
+
+### Regions
+| Region | Center Point | Coordinates | Radius |
+|--------|-------------|-------------|--------|
+| Rural WV | Beckley, WV | 37.778°N, 81.188°W | 25 km |
+| Eastern KY | Pikeville, KY | 37.479°N, 82.519°W | 25 km |
+| MS Delta | Greenville, MS | 33.411°N, 91.064°W | 25 km |
+
+## Limitations
+1. OSM may not capture all private O&P clinics
+2. ClinicalTrials.gov may not index all prosthetics-related trials
+3. OSM point-center searches may miss adjacent county providers
+4. OSM data is community-edited and may be outdated
+
+## Tools
 | Tool | Purpose |
 |------|---------|
-| `clinicaltrials_list_studies` | Search/retrieve trial listings |
 | `clinicaltrials_analyze_trends` | Aggregate by status, country |
-| `clinicaltrials_get_study` | Detailed trial protocol data |
-| `geocode_address` | Resolve location names → coordinates |
-| `analyze_neighborhood` | Livability/amenity scoring (30km) |
-| `find_nearby_places` | POI search by category |
-| `search_category` | Area-based feature search |
+| `clinicaltrials_list_studies` | Retrieve trial details |
+| `clinicaltrials_get_study` | NCT-specific summaries |
+| `osm_geocode_address` | Region coordinates |
+| `osm_reverse_geocode` | Address lookup |
+| `osm_find_nearby_places` | Search amenities |
+| `osm_analyze_neighborhood` | Livability scoring |
 
-### Limitations
-1. **OSM data may be incomplete** — smaller O&P businesses may not be mapped
-2. **30km radius baseline** — in rural areas, nearest O&P may be 60-100+ km away but still "closest" option
-3. **ClinicalTrials.gov only reflects registered studies** — unregistered/industry-only trials excluded
-4. **Neighborhood scores are algorithmic estimates** — real-world access may differ
-5. **OSM categories may not capture O&P** — prosthetists/orthotists may be under different categories or not mapped at all
-
-### Recommended Validation
-1. **ABC Directory** (certification board O&P provider locator)
-2. **NAAO+P** (professional association)
-3. **CMS Medicare O&P Supplier Locator**
-4. **State occupational therapy & prosthetics boards**
-5. **Major provider networks:** Hanger, Össur, Ottobock, Fairride/Clarkson
-
-### Rate Limits Encountered
-- OSM `find_nearby_places` returned 429 (rate limited) on second call for West Virginia — used `search_category` results instead
-- Shell limit on `search_category` with complex bounding boxes — reverted to `find_nearby_places` with healthcare category for KY and MS successfully
-
-## Repository Structure
-```
-prosthetic-access-atlas/
-├── README.md                      # Overview and key findings
-├── CLINICAL_TRIALS.md             # Detailed trial data (existing)
-├── clinical_trials/
-│   ├── summary.md                 # Status/country trends (existing)
-│   ├── detailed_trials.md         # ← NEW: 5 trial profiles + access gap
-│   ├── trials.json                # ← NEW: Structured JSON data
-│   └── trials.json                # ← NEW: Trial profiles and regional presence
-├── gap_analysis/
-│   ├── region_profiles.md          # Regional profiles (existing, enriched)
-│   ├── coverage_gap_map.md         # Gap visualization (existing, updated)
-│   └── precise_gaps.md             # ← NEW: Precise provider data for 3 regions
-├── regions/
-│   ├── west_virginia.md            # ← NEW: WV detailed analysis
-│   ├── eastern_kentucky.md         # ← NEW: KY detailed analysis
-│   └── mississippi_delta.md        # ← NEW: MS detailed analysis
-└── METHODOLOGY.md                  # ← NEW: This file
-```
-
-## Future Enhancements
-1. Interactive Globe/Map (Leaflet.js) with plotted provider locations and coverage polygons
-2. Validate OSM provider data against ABC directory and phone verification
-3. Expand to additional at-risk corridors (Appalachian Ohio, Rural Arkansas, Deep South, Navajo Nation, Black Hills)
-4. Integrate HCUP/Medicare data for amputee incidence by county
-5. Add travel-time isochrone calculations from centroid points
-6. Track NIH/CDC grant funding and trial enrollment by region
-7. Monitor ClinicalTrials.gov for new access/equity-focused prosthetic studies
+*Last updated: 2026-07-15*
