@@ -2,65 +2,91 @@
 
 ## Clinical Trial Data
 
-### Source
-- **Database:** ClinicalTrials.gov
-- **API:** CTAPI v2 (latest)
-- **Query:** `condition: prosthetic`
-- **Date:** July 13, 2026
-- **Total Records:** 644 unique studies
+**Source:** ClinicalTrials.gov API v2  
+**Query Date:** July 15, 2026  
+**Query Parameters:**
+- Condition: `prosthetic`
+- Sort: Last update post date
+- Result count: 10 studies (detail mode), full trend analysis (644 total)
+- Additional analyses: status, phase, sponsor type, country
 
-### Analysis Methods
-1. **Status Analysis:** Counted studies grouped by `overallStatus` field
-2. **Country Analysis:** Counted studies by lead sponsor country (using `location.country`)
-3. **Phase Analysis:** Counted studies by trial phase (`phase` field)
-4. **Key Trial Retrieval:** Fetched detailed metadata for most recently submitted studies
+### API Endpoints Used
+```
+GET /api/v2/studies?query.cond=prosthetic&sort=lastUpdatePostDate&pageSize=10
+GET /api/v2/studies/vis/analyze?analysisType=countByStatus&query.cond=prosthetic
+GET /api/v2/studies/vis/analyze?analysisType=countByPhase&query.cond=prosthetic
+GET /api/v2/studies/vis/analyze?analysisType=countByCountry&query.cond=prosthetic
+GET /api/v2/studies/vis/analyze?analysisType=countBySponsorType&query.cond=prosthetic
+```
 
-### Limitations
-- ClinicalTrials.gov may not capture all prosthetic studies (some are industry-sponsored and may not register)
-- "Unknown" status affects 20.8% of studies
-- Geographic counts may double-count multi-site studies
+**Limitations:**
+- ClinicalTrials.gov API experienced intermittent timeouts (504) and service errors (500)
+- Country-level data may have overlapping counts (studies can have multiple sites)
+- "Unknown" status indicates records with insufficient metadata
+- Only 10 of 644 studies were individually verified; remaining data from trend analysis
 
----
+## Geographic / Provider Data
 
-## Gap Analysis Data
-
-### Source
-- **Database:** OpenStreetMap (via Overpass API)
-- **Search Categories:** amenity = hospital, clinic, pharmacy, doctors, health_centre, nursing_home, community_health_centre
-- **Search Terms:** prosthetic, orthotic, prosthetist, orthotist, O&P, 'prosthetic services'
-- **Regions Searched:** Rural West Virginia, Eastern Kentucky, Mississippi Delta
-- **Date:** July 13, 2026
+**Source:** OpenStreetMap (Overpass API) via OSM MCP Server  
+**Query Date:** July 15, 2026  
 
 ### Methodology
-1. For each region, identified a representative center point
-2. Searched within 30km and 100km radius for healthcare facilities
-3. Filtered results for prosthetic/orthotic specialization
-4. Verified absence of O&P providers through cross-referencing
+1. **Geocode** regional center points:
+   - Beckley, WV → (37.778, -81.188)
+   - Pikeville, KY → (37.479, -82.519)
+   - Greenville, MS → (33.411, -91.064)
+   - Huntington, WV → (38.419, -82.445)
+   - Cleveland, MS → (33.744, -90.725)
 
-### Limitations
-- **OSM tagging is incomplete:** Prosthodontists and orthotists are often not tagged in OSM at all
-- **Radius may be insufficient:** Some rural residents may need to travel >150km
-- **OSM data ≠ ground truth:** Absence of a tag doesn't definitively prove absence of a provider
-- **Recommended validation:** Cross-reference with AOPA (American Orthotic & Prosthetic Association) directory and state licensing boards
+2. **Search** for healthcare amenities within 20,000-50,000m radius:
+   - Categories: `healthcare` (clinic, doctor, pharmacy, dentist, optometrist)
+   - Also searched: `shop` → `medical_equipment` (no results found)
+
+3. **Neighborhood analysis** for livability scores:
+   - Radius: 10,000m for each center
+   - Categories scored: healthcare, education, groceries, restaurants, parks, shopping, public_transport, services
+
+**Limitations:**
+- OSM Overpass API returned HTTP 429 (rate limit), 504 (timeout), and 400 (bad request) errors
+- Healthcare category search was the only reliable query; many location-based searches failed
+- OSM may underreport prosthetic/orthotic-specific providers (many small O&P shops are not tagged)
+- Prosthetists/orthotists may be listed under generic "clinic" or "doctor" tags without specialty annotation
+- No commercial provider directories (e.g., American Board for Certification in Orthotics, Prosthetics & Pedorthics) were queried
+
+## Gap Scoring Methodology
+
+Each region scored on:
+1. **Provider Density**: Count of prosthetic/orthotic providers per 100k population
+2. **Travel Burden**: Average distance to nearest O&P provider
+3. **Insurance Access**: Medicaid expansion status + specialty coverage
+4. **Infrastructure Score**: Healthcare, education, public transport, services availability
+
+**Gap Severity:**
+- 🔴 Critical: 0 providers within 100km + Medicaid non-expansion
+- 🟠 High: 1-2 providers within 100km + partial coverage
+- 🟡 Moderate: 3-5 providers within 100km
+- 🟢 Low: 5+ providers within 50km
+
+## Neighborhood Analysis
+
+Tool: `osm-mcp-server_analyze_neighborhood` (10km radius)
+
+### Beckley, WV Results:
+- Healthcare: 8.1/10 (4 features: pharmacy ×3, doctor ×1)
+- Education: 9.8/10 (15 schools)
+- **No pharmacies or doctors specializing in prosthetics/orthotics**
+
+### Pikeville, KY Results:
+- Healthcare: 8.6/10 (4 features within 10km)
+- Education: 9.9/10 (20 schools including U. of Pikeville)
+- **No prosthetics/orthotics providers**
+
+### Greenville, MS Results:
+- Healthcare: 0/10 (0 features within 10km)
+- Education: 9.6/10 (18 schools)
+- Restaurants: 10.0/10 (14 locations)
+- **Only 3 healthcare facilities found in 20km radius — all dentists or general clinic**
 
 ---
 
-## Recommended Validation Steps
-
-1. Cross-reference with AOPA Member Directory (aopa.org)
-2. Check state prosthetics/orthotics licensing boards (WV, KY, MS)
-3. Search CMS Physician Compare for O&P providers in these regions
-4. Contact State Vocational Rehabilitation agencies for on-the-ground data
-5. Verify rural hospital capabilities via CMS Care Compare
-
----
-
-## Citation Format
-
-If using this data in academic or policy publications:
-
-```
-Prosthetic Access Atlas. (2026). Clinical Trial Landscape Analysis 
-and Underserved Region Coverage Gaps. Retrieved from
-https://github.com/zhub9006/prosthetic-access-atlas
-```
+*Methodology document updated 2026-07-15. Data is current as of this date.*

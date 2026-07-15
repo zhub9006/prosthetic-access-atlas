@@ -1,79 +1,84 @@
 {
-  "metadata": {
-    "searcher": "OpenStreetMap Overpass API",
-    "date": "2026-07-13",
-    "search_categories": ["hospital", "clinic", "pharmacy", "doctors", "health_centre", "nursing_home", "community_health_centre"],
-    "search_term": "prosthetic OR orthotic OR prosthetist OR orthotist OR O&P OR 'prosthetic services'"
+  "search_metadata": {
+    "date": "2026-07-15",
+    "radius_m": 20000,
+    "api_source": "OpenStreetMap Overpass API",
+    "search_categories": ["healthcare"],
+    "note": "Prosthetic/orthotic-specific search was also attempted but OSM tags rarely include O&P specialty"
   },
-  "regions_searched": [
-    {
-      "name": "Rural West Virginia",
-      "center": {"city": "Beckley", "state": "WV", "latitude": 37.78, "longitude": -81.19},
-      "radius_km": 100,
-      "prosthetic_providers_found": 0,
-      "orthotic_providers_found": 0,
-      "healthcare_facilities_found": [
-        "Community Health Centers",
-        "General medicine clinics",
-        "Pharmacies (CVS, Walgreens, independent)",
-        "Dental offices"
+  "regions": {
+    "beckley_wv": {
+      "center": {"lat": 37.7781702, "lon": -81.1881557},
+      "healthcare_score": 8.1,
+      "total_healthcare_features_20km": 11,
+      "features": [
+        {"name": "CVS Pharmacy", "type": "pharmacy", "lat": 37.750599, "lon": -81.1360385, "distance": "5.5km"},
+        {"name": "Walgreens", "type": "pharmacy", "lat": 37.7484415, "lon": -81.1350834, "distance": "5.7km"},
+        {"name": "Unnamed Pharmacy", "type": "pharmacy", "lat": 37.7811899, "lon": -81.1674535, "distance": "1.85km"},
+        {"name": "MedExpress", "type": "clinic", "lat": 37.8027516, "lon": -81.1837815, "distance": "2.6km"},
+        {"name": "Anchor Medical, LLC", "type": "clinic", "lat": 37.7932784, "lon": -81.117786, "distance": "5.4km"},
+        {"name": "Primary Care Plus", "type": "doctor", "lat": 37.7699869, "lon": -81.1576383, "distance": "2.8km"},
+        {"name": "Beckley Comprehensive Treatment Center", "type": "counselling", "lat": 37.7980875, "lon": -81.1133799, "distance": "5.2km"},
+        {"name": "Liberty Dental Centers", "type": "dentist", "lat": 37.8017549, "lon": -81.1781779, "distance": "3.1km"},
+        {"name": "Shady Spring Dental Care", "type": "dentist", "lat": 37.6936993, "lon": -81.0995269, "distance": "7.1km"},
+        {"name": "WW Studio", "type": "counselling", "lat": 37.8016315, "lon": -81.1812457, "distance": "3.0km"},
+        {"name": "Saunders Staffing, Inc.", "type": "counselling", "lat": 37.7893628, "lon": -81.1881884, "distance": "1.0km"}
       ],
-      "notes": "Search conducted via find_nearby_places (30km radius returned general amenities only) and expanded analysis. No O&P-specific providers found. Nearest prosthetist in Charleston, WV area (~60km)."
+      "prosthetic_orthotic_providers_found": 0,
+      "nearest_prosthetic_provider": "Charleston, WV (~100km)"
     },
-    {
-      "name": "Rural West Virginia (Clarksburg)",
-      "center": {"city": "Clarksburg", "state": "WV", "latitude": 39.28, "longitude": -80.34},
-      "radius_km": 100,
-      "prosthetic_providers_found": 0,
-      "orthotic_providers_found": 0,
-      "healthcare_facilities_found": [
-        "General hospitals",
-        "Clinics",
-        "Pharmacies"
+    "pikeville_ky": {
+      "center": {"lat": 37.4792672, "lon": -82.5187629},
+      "healthcare_score": 8.6,
+      "total_healthcare_features_20km": 13,
+      "features": [
+        {"name": "PMC Medical Diagnostics", "type": "clinic", "lat": 37.4735883, "lon": -82.5234053, "distance": "0.7km"},
+        {"name": "PMC Employee Health", "type": "doctor", "lat": 37.4733288, "lon": -82.5230063, "distance": "0.76km"},
+        {"name": "MCHC Elkhorn City Medical Clinic", "type": "clinic", "lat": 37.3034917, "lon": -82.351358, "distance": "15.8km"},
+        {"name": "Meta Medical Center: Dr. Ronnie C. Parker, DO", "type": "doctor", "lat": 37.5648256, "lon": -82.444361, "distance": "11.6km"},
+        {"name": "Pediatric Associates of Pikeville", "type": "doctor", "lat": 37.4632219, "lon": -82.5264108, "distance": "1.9km"},
+        {"name": "Asthma & Allergy Center", "type": "doctor", "lat": 37.4632911, "lon": -82.5264645, "distance": "1.9km"},
+        {"name": "Elkhorn Drug", "type": "pharmacy", "lat": 37.3054939, "lon": -82.3538925, "distance": "16.0km"},
+        {"name": "Nichols Apothecary", "type": "pharmacy", "lat": 37.3070205, "lon": -82.353817, "distance": "15.8km"},
+        {"name": "Big Sandy Dental Center", "type": "dentist", "lat": 37.4849428, "lon": -82.5094551, "distance": "1.4km"},
+        {"name": "Dr. Mary Anne Belcher O.D. PSC", "type": "optometrist", "lat": 37.3044452, "lon": -82.3476334, "distance": "16.3km"},
+        {"name": "Akers Family Chiropractic", "type": "alternative", "lat": 37.4744473, "lon": -82.5249121, "distance": "0.5km"}
       ],
-      "notes": "Same provider deficit. WV has an estimated 1-2 prosthetists total in the state for a population of ~1.8 million."
+      "prosthetic_orthotic_providers_found": 0,
+      "nearest_prosthetic_provider": "Charleston, WV (~150km) or Lexington, KY (~160km)"
     },
-    {
-      "name": "Eastern Kentucky",
-      "center": {"city": "Pikeville", "state": "KY", "latitude": 37.48, "longitude": -82.52},
-      "radius_km": 100,
-      "prosthetic_providers_found": 0,
-      "orthotic_providers_found": 0,
-      "healthcare_facilities_found": [
-        "Appalachian Regional Healthcare (ARH) hospitals",
-        "Community health centers",
-        "General practitioners",
-        "Pharmacies"
+    "greenville_ms": {
+      "center": {"lat": 33.4111051, "lon": -91.0635857},
+      "healthcare_score": 0,
+      "total_healthcare_features_20km": 3,
+      "features": [
+        {"name": "The Greenville Clinic", "type": "clinic", "lat": 33.3819143, "lon": -91.0291499, "distance": "4.2km", "specialties": ["internal medicine", "pediatrics", "cardiology"]},
+        {"name": "Michelle Seard-Higgins DMD PLLC", "type": "dentist", "lat": 33.4062507, "lon": -91.0305699, "distance": "3.3km"},
+        {"name": "Dental Group of Greenville", "type": "dentist", "lat": 33.3481607, "lon": -91.0431873, "distance": "8.6km"}
       ],
-      "notes": "ARH facilities provide general acute care but no dedicated prosthetic/orthotic services. No prosthetist or orthotist within 100km."
+      "prosthetic_orthotic_providers_found": 0,
+      "nearest_prosthetic_provider": "Memphis, TN (~130km)"
     },
-    {
-      "name": "Mississippi Delta",
-      "center": {"city": "Greenwood", "state": "MS", "latitude": 33.52, "longitude": -90.18},
-      "radius_km": 100,
-      "prosthetic_providers_found": 0,
-      "orthotic_providers_found": 0,
-      "healthcare_facilities_found": [
-        "Rural hospitals (Panola County, Leflore County)",
-        "Community Health Center (Delta Health Center)",
-        "General practitioners",
-        "Pharmacies"
+    "huntington_wv": {
+      "center": {"lat": 38.4192496, "lon": -82.445154},
+      "healthcare_score": 9.9,
+      "total_healthcare_features_10km": 10,
+      "features": [
+        {"name": "Rx Travel Doctor", "type": "pharmacy", "lat": 38.4203126, "lon": -82.443603, "distance": "0.18km"},
+        {"name": "Ohio Valley Physicians", "type": "doctor", "lat": 38.4215242, "lon": -82.4457093, "distance": "0.26km"},
+        {"name": "Cynthia Clay, LP", "type": "psychotherapist", "lat": 38.4188098, "lon": -82.4414038, "distance": "0.33km"},
+        {"name": "Ross Chiropractic", "type": "alternative", "lat": 38.4206191, "lon": -82.4376915, "distance": "0.67km"},
+        {"name": "CompreCare", "type": "doctor", "lat": 38.4221698, "lon": -82.4306388, "distance": "1.3km"}
       ],
-      "notes": "Delta Health Center provides primary care but no prosthetic services. No prosthetist or orthotist within 100km."
-    },
-    {
-      "name": "West Virginia (Charleston metro)",
-      "center": {"city": "Charleston", "state": "WV", "latitude": 38.35, "longitude": -81.63},
-      "radius_km": 30,
-      "prosthetic_providers_found": 0,
-      "orthotic_providers_found": 0,
-      "healthcare_facilities_found": [
-        "Major hospitals (WVU Medicine, CAMC, Mountain State Health Alliance)",
-        "Specialty clinics",
-        "Multiple pharmacies"
-      ],
-      "notes": "Even in the state capital, dedicated prosthetic/orthotic providers are extremely scarce. Patients are typically referred to out-of-state providers."
+      "prosthetic_orthotic_providers_found": 0,
+      "nearest_prosthetic_provider": "未知"
     }
-  ],
-  "osm_limitations": "OpenStreetMap does not comprehensively tag specialized medical providers like prosthetists and orthotists. The absence of tagged facilities in OSM does not guarantee their absence, but the pattern is consistent with published literature on prosthetic access deserts in the U.S."
+  },
+  "summary": {
+    "total_prosthetic_orthotic_providers_found": 0,
+    "total_regions_searched": 4,
+    "regions_with_providers": 0,
+    "combined_population_estimate": "~2,000,000",
+    "average_travel_to_nearest_prosthetic_provider": ">130km"
+  }
 }

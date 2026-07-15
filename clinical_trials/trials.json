@@ -1,78 +1,108 @@
 {
-  "metadata": {
-    "total_studies": 644,
-    "source": "ClinicalTrials.gov API",
-    "analysis_date": "2026-07-13",
-    "search_term": "prosthetic",
-    "analysis_types": ["countByStatus", "countByCountry", "countByPhase"]
-  },
-  "status_breakdown": {
+  "total_studies": 644,
+  "query_date": "2026-07-15",
+  "source": "ClinicalTrials.gov API",
+  "key_trials": [
+    {
+      "nct_id": "NCT03726918",
+      "title": "Identification of New Predictive Osseointegration Bio-Markers of the Prosthetic Implant in Patients With OsteoArthritis",
+      "status": "COMPLETED",
+      "phase": "N/A",
+      "country": "Italy",
+      "keywords": ["osseointegration", "biomarkers", "prosthetic implant"]
+    },
+    {
+      "nct_id": "NCT05407545",
+      "title": "Evaluation of a Motorised Prosthetic Knee",
+      "status": "COMPLETED",
+      "phase": "N/A",
+      "country": "Belgium",
+      "keywords": ["microprocessor knee", "motorised prosthetic"]
+    },
+    {
+      "nct_id": "NCT01756924",
+      "title": "Safety and Efficacy of CEM-102 With Rifampin Compared to Standard Therapy in Patients With Prosthetic Joint Infections",
+      "status": "TERMINATED",
+      "phase": "Phase 2",
+      "country": "United States",
+      "keywords": ["antibiotic", "prosthetic joint infection", CEM-102]
+    },
+    {
+      "nct_id": "NCT05411601",
+      "title": "Numerical Standard of Anthropomorphicity of Prosthetic Feet for Improvement of Amputee Performance",
+      "status": "UNKNOWN",
+      "phase": "N/A",
+      "country": "International",
+      "keywords": ["prosthetic feet", "anthropomorphicity"]
+    },
+    {
+      "nct_id": "NCT04427007",
+      "title": "Moisture Management Liner Effectiveness Study",
+      "status": "COMPLETED",
+      "phase": "N/A",
+      "country": "United States",
+      "keywords": ["prosthetic liner", "moisture management", "comfort"]
+    },
+    {
+      "nct_id": "NCT01849822",
+      "title": "Providing Brain Control of Extracorporeal Devices to Patients With Quadriplegia",
+      "status": "COMPLETED",
+      "phase": "N/A",
+      "country": "United States",
+      "keywords": ["neuroprosthetics", "brain-computer interface"]
+    },
+    {
+      "nct_id": "NCT02569541",
+      "title": "Oral Sodium Fusidate (CEM-102) for the Treatment of Staphylococcal Bone or Joint Infections",
+      "status": "COMPLETED",
+      "phase": "Phase 2 & 3",
+      "country": "United States",
+      "keywords": ["antibiotic", "staph infection", "prosthetic"]
+    },
+    {
+      "nct_id": "NCT01373099",
+      "title": "Study of Antibiotic Spacer Design to Treat Infection After Hip Replacement",
+      "status": "COMPLETED",
+      "phase": "N/A",
+      "country": "United States",
+      "keywords": ["antibiotic spacer", "prosthetic joint infection"]
+    },
+    {
+      "nct_id": "NCT04390607",
+      "title": "Leukocyte Esterase Sensor Test",
+      "status": "UNKNOWN",
+      "phase": "N/A",
+      "country": "United States",
+      "keywords": ["diagnostic sensor", "socket fit", "skin integrity"]
+    },
+    {
+      "nct_id": "NCT01020253",
+      "title": "The Effectiveness of Two Osteoporosis Drugs on Prosthetic Bone Mineral Density Loss After Total Hip Arthroplasty",
+      "status": "UNKNOWN",
+      "phase": "N/A",
+      "country": "Japan",
+      "keywords": ["osteoporosis", "bone mineral density", "prosthetic"]
+    }
+  ],
+  "status_distribution": {
     "COMPLETED": 271,
-    "RECRUITING": 113,
     "UNKNOWN": 134,
+    "RECRUITING": 113,
+    "TERMINATED": 24,
     "NOT_YET_RECRUITING": 38,
     "ACTIVE_NOT_RECRUITING": 37,
     "ENROLLING_BY_INVITATION": 12,
-    "TERMINATED": 24,
-    "SUSPENDED": 4,
     "WITHDRAWN": 10,
+    "SUSPENDED": 4,
     "TEMPORARILY_NOT_AVAILABLE": 1
   },
-  "phase_breakdown": {
-    "N/A": 338,
+  "phase_distribution": {
+    "NA": 338,
     "Unknown": 202,
-    "Phase4": 29,
-    "Phase2": 39,
-    "Phase3": 30,
-    "Phase1": 15,
-    "EarlyPhase1": 4
-  },
-  "geographic_distribution": {
-    "United States": 680,
-    "France": 317,
-    "Denmark": 78,
-    "Germany": 76,
-    "Italy": 71,
-    "United Kingdom": 44,
-    "Canada": 41,
-    "Netherlands": 41,
-    "Egypt": 38,
-    "Spain": 38,
-    "Australia": 35,
-    "Switzerland": 27,
-    "Poland": 12,
-    "Brazil": 13,
-    "Sweden": 17,
-    "China": 14,
-    "Austria": 14,
-    "Iraq": 2,
-    "Pakistan": 3,
-    "Kenya": 2,
-    "Israel": 6,
-    "Belgium": 20,
-    "Turkey": 20,
-    "Portugal": 7,
-    "Norway": 6
-  },
-  "key_recent_trials": [
-    {
-      "nctId": "NCT07519746",
-      "title": "Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate",
-      "acronym": "PROINGA",
-      "status": "COMPLETED",
-      "sponsor": "Yeditepe University",
-      "collaborators": ["Al-Azhar University - Gaza"],
-      "studyType": "OBSERVATIONAL",
-      "enrollment": 128,
-      "startDate": "2025-09-01",
-      "completionDate": "2026-03-25",
-      "location": {"city": "Gaza", "country": "Palestinian Territories", "lat": 31.50161, "lon": 34.46672},
-      "conditions": ["Amputation", "Prosthesis User", "Satisfaction", "Quality of Life"],
-      "interventions": ["Observational Study - No Intervention"],
-      "outcomes": {
-        "primary": ["Satisfaction With Life Scale (SWLS)"],
-        "secondary": ["Quality of life (WHOQOL-BREF)", "Health-related quality of life (EQ-5D-5L)"]
-      }
-    }
-  ]
+    "Phase 4": 29,
+    "Phase 2": 39,
+    "Phase 3": 30,
+    "Phase 1": 15,
+    "Early Phase 1": 4
+  }
 }
