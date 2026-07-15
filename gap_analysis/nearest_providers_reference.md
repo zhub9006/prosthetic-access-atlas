@@ -10,7 +10,7 @@ This document lists the nearest known O&P providers to the three focus regions, 
 | WVU Rehabilitation Medicine | Morgantown, WV | ~130 km | University hospital |
 | Hanger Clinic | Charleston, WV | ~100 km | National O&P chain |
 | Össur | Distributor network | Via Charleston | Prosthetic components |
-| Martin Prosthetic & Orthotic Lab | Beckley, WV | *In-town* (if existing) | Independent lab (verify) |
+| Martin Prosthetic & Orthotic Lab | Beckley, WV | *In-town* (verify) | Independent lab |
 
 ## Eastern Kentucky
 
