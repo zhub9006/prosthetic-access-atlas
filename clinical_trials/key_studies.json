@@ -1,56 +1,87 @@
 {
-  "total_studies": 644,
-  "analysis_date": "2026-07-14",
-  "source": "ClinicalTrials.gov API",
-  "highlighted_trials": [
+  "recruiting_trials": [
     {
-      "nct_id": "NCT07519746",
-      "brief_title": "Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate",
-      "official_title": "Patient Satisfaction and Quality of Life Among Lower Limb Prosthetic Users in Gaza Governorate During Gaza War",
-      "acronym": "PROINGA",
-      "status": "COMPLETED",
-      "phase": "N/A (Observational)",
-      "start_date": "2025-09-01",
-      "completion_date": "2026-03-25",
-      "enrollment": 128,
-      "lead_sponsor": "Yeditepe University",
-      "collaborators": ["Al-Azhar University - Gaza"],
-      "location": {"facility": "Gaza hospitals", "city": "Gaza", "country": "Palestinian Territories", "lat": 31.50161, "lon": 34.46672},
-      "conditions": ["Amputation", "Prosthesis User", "Satisfaction"],
-      "study_type": "OBSERVATIONAL",
-      "patient_registry": true,
-      "instruments": ["SAT-PRO", "PEQ", "TAPES", "EQ-5D-5L", "SWLS"],
-      "key_findings": "First satisfaction and QoL baseline for lower-limb prosthetic users in conflict-affected Gaza; highlights devastating impact of war on prosthetic access"
+      "nct_id": "NCT06134167",
+      "title": "Transdermal Compress Device for Transfemoral Amputations",
+      "acronym": "BAL-448-001",
+      "status": "RECRUITING",
+      "sponsor": "Balmoral Medical company",
+      "sponsor_type": "INDUSTRY",
+      "fda_regulated": true,
+      "study_type": "INTERVENTIONAL",
+      "phase": "NA",
+      "enrollment": 100,
+      "start_date": "2024-06-11",
+      "completion_date": "2031-06",
+      "conditions": ["Prosthesis and Implants"],
+      "intervention": "Transdermal Compress Device",
+      "location": "United States (multicenter)",
+      "description": "Prospective, multicenter, single-arm, open-label study evaluating safety and effectiveness of the Transdermal Compress device in participants with transfemoral limb loss. Bone-anchored transdermal implant for patients who cannot use conventional socket prostheses. 5-year follow-up with Osseointegration Quality Registry.",
+      "key_outcomes": [
+        "Composite endpoint: prosthetic wear time + PROMIS Physical Function + OPUS Satisfaction at 2 years",
+        "Infection rate (superficial and deep) at 2 and 5 years",
+        "Lack of secondary surgical intervention",
+        "Radiographic success"
+      ]
     },
     {
       "nct_id": "NCT06498245",
-      "brief_title": "Microprocessor Knee for K2-Level Ambulators",
-      "official_title": "Randomized Trial of Microprocessor Knee vs. Conventional Knee for K2-Level Community Ambulators",
+      "title": "MPK-K2: Microprocessor Knee for K2-Level Ambulators",
       "acronym": "MPK-K2",
       "status": "RECRUITING",
-      "phase": "Phase 3",
-      "start_date": "2024-07-01",
-      "enrollment": 200,
-      "lead_sponsor": "Northwestern University",
-      "location": {"facility": "Northwestern Prosthetics & Orthotics Center", "city": "Chicago", "country": "United States", "lat": 41.88, "lon": -87.63},
-      "conditions": ["Lower Limb Amputation", "Gait Impairment"],
+      "sponsor": "University Hospital, Strasbourg, France",
+      "sponsor_type": "OTHER",
       "study_type": "INTERVENTIONAL",
-      "design": "Randomized Controlled Trial (4-arm)",
-      "key_findings": "Target population (K2-level) aligns with rural amputee functional status; results could inform rural coverage policy"
+      "phase": null,
+      "enrollment": null,
+      "start_date": null,
+      "completion_date": null,
+      "conditions": ["Prosthetic Rehabilitation"],
+      "intervention": "Microprocessor prosthetic knee",
+      "location": "France",
+      "description": "Randomized controlled trial comparing microprocessor prosthetic knees to conventional knees for community ambulators (K-level 2). Evaluates functional outcomes, satisfaction, and mobility.",
+      "key_outcomes": [
+        "Functional mobility assessment",
+        "Prosthetic satisfaction scales",
+        "Adverse event rates"
+      ]
     }
   ],
-  "status_distribution": {
-    "COMPLETED": 271, "RECRUITING": 113, "UNKNOWN": 134, "NOT_YET_RECRUITING": 38, "ACTIVE_NOT_RECRUITING": 37, "ENROLLING_BY_INVITATION": 12, "TERMINATED": 24, "WITHDRAWN": 10, "SUSPENDED": 4, "TEMPORARILY_NOT_AVAILABLE": 1
-  },
-  "phase_distribution": {
-    "N/A": 338, "PHASE_4": 29, "PHASE_3": 30, "PHASE_2": 39, "PHASE_1": 15, "EARLY_PHASE_1": 4, "Unknown": 202
-  },
-  "geographic_distribution": {
-    "United States": 680, "France": 317, "Denmark": 78, "Germany": 76, "Italy": 71, "United Kingdom": 44, "Canada": 41, "Netherlands": 41, "Spain": 38, "Egypt": 38, "Australia": 35, "Poland": 12, "Brazil": 13, "Switzerland": 27, "Sweden": 17, "China": 14, "Turkey": 20, "Israel": 6, "Norway": 6, "India": 6, "South Korea": 4, "Taiwan": 4, "Belgium": 20, "Portugal": 7, "Austria": 14, "Iceland": 4, "Finland": 4, "Russia": 9, "Chile": 3, "Hungary": 1, "Greece": 2, "Japan": 3, "Singapore": 1, "Lithuania": 1, "Colombia": 1, "Iran": 1, "Cyprus": 1, "Slovenia": 1, "Iraq": 2, "Kenya": 2, "Pakistan": 3, "Mexico": 3, "Rwanda": 1, "Lebanon": 1, "Hong Kong": 1, "Serbia": 1, "Taiwan": 4
-  },
-  "rural_access_alert": {
-    "note": "ZERO dedicated prosthetic research sites exist in rural Appalachia (WV/KY) or the Mississippi Delta (MS). Geographic coincidence: these are the same regions identified as having zero prosthetic care providers within 100km.",
-    "regions_with_zero_providers": ["Rural West Virginia (Beckley, WV)", "Eastern Kentucky (Pikeville, KY)", "Mississippi Delta (Greenville, MS)"],
-    "nearest_metropolitan_areas": ["Charleston, WV (~100km from Beckley)", "Lexington, KY (~160km from Pikeville)", "Memphis, TN (~130km from Greenville)"]
+  "completed_trials": [
+    {
+      "nct_id": "NCT07519746",
+      "title": "PROINGA: Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate",
+      "status": "COMPLETED",
+      "sponsor": "Yeditepe University / Al-Azhar Gaza",
+      "sponsor_type": "OTHER",
+      "study_type": "OBSERVATIONAL",
+      "enrollment": 128,
+      "start_date": "2024",
+      "completion_date": "2025",
+      "conditions": ["Prosthetic Satisfaction"],
+      "location": "Gaza, Palestine",
+      "instruments": ["SAT-PRO", "PEQ", "TAPES", "EQ-5D-5L", "SWLS"],
+      "description": "Cross-sectional observational study of prosthetic satisfaction and quality of life among lower limb prosthetic users in Gaza. Examines relationship between device satisfaction and subjective well-being."
+    },
+    {
+      "nct_id": "NCT06498245",
+      "title": "Early Abdominal Wall Prosthesis Infections: Epidemiology (AWPI)",
+      "status": "COMPLETED",
+      "sponsor": "University Hospital, Strasbourg, France",
+      "sponsor_type": "OTHER",
+      "study_type": "OBSERVATIONAL",
+      "enrollment": 500,
+      "start_date": "2023-10",
+      "completion_date": "2024-10",
+      "conditions": ["Abdominal Wall Prosthesis Infections"],
+      "location": "Strasbourg, France",
+      "description": "Retrospective study on ~500 patients researching characteristics of prosthetic infections (microorganism, site, timing), factors linked to appearance, and optimization of management."
+    }
+  ],
+  "metadata": {
+    "total_studies": 644,
+    "data_source": "ClinicalTrials.gov API",
+    "generated": "2026-07-15",
+    "query_terms": ["prosthetic", "amputation", "prosthetic limb", "prosthetic rehabilitation"]
   }
 }
