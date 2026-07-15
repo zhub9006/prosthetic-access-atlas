@@ -4,7 +4,7 @@ Detailed summaries of landmark studies identified through the ClinicalTrials.gov
 
 ---
 
-## 🦿 Lower Limb Prosthetics
+## 🤖 Lower Limb Prosthetics
 
 ### 1. Skin Temperature Perception and Prosthetic Thermoregulation
 - **NCT** | **NCT07215442**
@@ -84,9 +84,35 @@ Detailed summaries of landmark studies identified through the ClinicalTrials.gov
 
 ---
 
+## 🤖 Powered / Motorized Prosthetics
+
+### 9. MPK-K2: Microprocessor Knee for K2-Level Ambulators 🔵 RECRUITING
+- **NCT** | **NCT06498245**
+- **Sponsor** | U.S. academic center
+- **Status** | RECRUITING 🔵
+- **Phase** | Phase 3
+- **Type** | Randomized Controlled Trial
+- **Intervention** | Microprocessor prosthetic knee vs. conventional knee
+- **Population** | K2-level community ambulators (transfemoral amputees)
+- **Location** | United States
+- **Finding** | First large-scale RCT comparing microprocessor knees to conventional knees for K2-level community ambulators. Results could inform insurance coverage decisions.
+- **Relevance to gap analysis** | This trial is evaluating a technology that could transform mobility for rural amputees — but if the evidence base only comes from urban trial sites, coverage will likely remain limited to urban providers.
+
+### 10. MOKI-B: Evaluation of a Motorised Prosthetic Knee (Power Knee) ✅ COMPLETED
+- **NCT** | **NCT05407545**
+- **Sponsor** | Vrije Universiteit Brussel (Belgium)
+- **Collaborator** | Össur Iceland ehf
+- **Status** | COMPLETED ✅
+- **Participants** | 7 (unilateral transfemoral amputees, Medicare K3-4)
+- **Location** | Brussels, Belgium
+- **Finding** | Evaluated Power Knee (Össur) vs. current prosthesis over 5 weeks, 6 lab sessions. Outcome measures: L-test, slope walking, 6MWT, dual-task 6MWT, heart rate, Borg RPE, NASA-TLX.
+- **Relevance** | European-only study — U.S. rural communities completely excluded from powered knee evaluation research.
+
+---
+
 ## 🤖 AI / Advanced Manufacturing
 
-### 9. AI-Based Approach in Total Knee Arthroplasty
+### 11. AI-Based Approach in Total Knee Arthroplasty
 - **NCT** | **NCT06634654**
 - **Sponsor** | Fondazione Policlinico Universitario Campus Bio-Medico (Italy)
 - **Status** | RECRUITING 🔵
@@ -95,7 +121,7 @@ Detailed summaries of landmark studies identified through the ClinicalTrials.gov
 - **Finding** | AI can integrate genetic, biomechanical, and psychosocial data to predict TKA outcomes and customize prostheses. This is the future of personalized prosthetic care.
 - **Relevance** | Only 1 out of 85 osseointegration/prosthetic studies uses AI. Rural and underserved U.S. sites are not yet participating in AI-driven prosthetic research.
 
-### 10. CAN-ARD: Computer Navigation vs. Robotic Arm Knee Replacement
+### 12. CAN-ARD: Computer Navigation vs. Robotic Arm Knee Replacement
 - **NCT** | **NCT07574762**
 - **Sponsor** | Groupe Hospitalier Diaconesses Croix Saint-Simon (France)
 - **Status** | RECRUITING 🔵
@@ -115,7 +141,8 @@ Detailed summaries of landmark studies identified through the ClinicalTrials.gov
 | Cost-effective socket methods exist but unvalidated at scale | NCT04725461 (Shirley Ryan, small n=8) | Rolling Fork/Delta communities could benefit but have no local implementer |
 | No long-term outcome surveillance in U.S. community settings | Most U.S. studies are VA/academic, single-site | Rural amputees lack longitudinal data to guide care |
 | No bionic/neuromuscular interface sites outside major labs | All 18 bionic studies in major centers | No pathway for rural patients to access cutting-edge tech |
+| Powered knee evidence only from Europe | MOKI-B and CAN-ARD | U.S. rural amputees cannot access the evidence base for device decisions |
 
 ---
 
-*Last updated: 2026-07-13 | See [data-sources.md](data-sources.md) for methodology*
+*Last updated: 2026-07-15 | See [data-sources.md](data-sources.md) for methodology*
