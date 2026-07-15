@@ -1,0 +1,22 @@
+{
+  "region": "Rural West Virginia",
+  "center": {"name": "Beckley, WV", "lat": 37.78, "lon": -81.19},
+  "population_estimate": 130000,
+  "area_sq_mi": 8000,
+  "poverty_rate_percent": 18,
+  "healthcare": {
+    "prosthetics_within_100km": 0,
+    "hospitals_within_100km": 5,
+    "nearest_hospital": "Charleston Area Medical Center General Hospital",
+    "nearest_distance_miles": 50,
+    "nearest_drive_minutes": 75,
+    "pharmacies_count": "Several",
+    "community_health_centers": "Limited"
+  },
+  "counties": ["Raleigh", "Fayette", "Logan", "Webster"],
+  "key_cities": ["Beckley", "Oak Hill", "Mount Hope", "Ronceverte", "Lewisburg"],
+  "transportation": {
+    "public_transit": "None between Beckley and Charleston",
+    "primary_mode": "个人 vehicle required"
+  }
+}

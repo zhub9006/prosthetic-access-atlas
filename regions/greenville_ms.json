@@ -1,0 +1,29 @@
+{
+  "region": "Mississippi Delta",
+  "center": {"name": "Greenville, MS", "lat": 33.41, "lon": -91.06},
+  "population_estimate": 200000,
+  "area_sq_mi": 7000,
+  "poverty_rate_percent": 30,
+  "healthcare": {
+    "prosthetics_within_100km": 0,
+    "hospitals_within_100km": 2,
+    "nearest_hospital": "Delta Regional Medical Center West Campus",
+    "nearest_distance_miles": 4,
+    "nearest_drive_minutes": 10,
+    "second_nearest_hospital": "Delta Health System - The Medical Center",
+    "second_nearest_distance_miles": 5,
+    "third_nearest_hospital": "Bolivar Medical Center (Cleveland, MS)",
+    "third_nearest_distance_miles": 37,
+    "nearest_prosthetics_city": "Memphis, TN or Jackson, MS",
+    "nearest_prosthetics_distance_miles": 130,
+    "pharmacies_count": "Walmart, CVS, independent",
+    "community_health_centers": "Some (Delta Health Alliance)"
+  },
+  "counties": ["Washington", "Bolivar", "Coahoma", "Sunflower"],
+  "key_cities": ["Greenville", "Cleveland", "Rosedale", "Indianola", "Leland"],
+  "transportation": {
+    "public_transit": "None",
+    "primary_mode": "个人 vehicle required",
+    "note": "Mississippi has NOT expanded Medicaid for prosthetic coverage"
+  }
+}

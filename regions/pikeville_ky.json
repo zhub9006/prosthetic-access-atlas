@@ -1,0 +1,26 @@
+{
+  "region": "Eastern Kentucky",
+  "center": {"name": "Pikeville, KY", "lat": 37.48, "lon": -82.52},
+  "population_estimate": 150000,
+  "area_sq_mi": 6500,
+  "poverty_rate_percent": 22,
+  "healthcare": {
+    "prosthetics_within_100km": 0,
+    "hospitals_within_100km": 1,
+    "nearest_hospital": "Paintsville ARH Hospital",
+    "nearest_distance_miles": 35,
+    "nearest_drive_minutes": 35,
+    "second_nearest_hospital": "Charleston Area Medical Center General Hospital",
+    "second_nearest_distance_miles": 108,
+    "second_nearest_drive_minutes": 128,
+    "pharmacies_count": "Limited",
+    "community_health_centers": "Minimal"
+  },
+  "counties": ["Pike", "Floyd", "Johnson", "Martin", "Letcher"],
+  "key_cities": ["Pikeville", "Prestonsburg", "Hindman", "Vicco", "Elkhorn City"],
+  "transportation": {
+    "public_transit": "None",
+    "primary_mode": "个人 vehicle required",
+    "note": "Kentucky has NOT expanded Medicaid for prosthetic coverage"
+  }
+}

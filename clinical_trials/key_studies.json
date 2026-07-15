@@ -1,87 +1,96 @@
 {
-  "recruiting_trials": [
+  "retrieved_date": "2026-07-15",
+  "total_studies_in_database": 1491,
+  "highlighted_studies": [
+    {
+      "nct_id": "NCT05768802",
+      "title": "Evaluation of an Implantable Intramuscular Device to Control a Myoelectric Prosthesis",
+      "status": "RECRUITING",
+      "conditions": ["Amputation", "Amputation; Traumatic, Hand"],
+      "intervention": "Myoelectric Implantable Recording Array (MIRA)",
+      "sponsor": "Boninger, Michael, MD",
+      "country": "United States",
+      "summary": "Implanted intramuscular device senses muscle signals to control a myoelectric prosthesis. Device stays implanted up to 1 year. Improving control vs. surface electrodes."
+    },
+    {
+      "nct_id": "NCT07645729",
+      "title": "Evaluation of a Powered Ankle Prosthesis Capable of Bidirectional Control Via Neural Recording and Cutaneous Stimulation",
+      "status": "RECRUITING",
+      "conditions": ["Amputation"],
+      "intervention": "Powered Prosthesis",
+      "sponsor": "Massachusetts Institute of Technology",
+      "country": "United States",
+      "summary": "Assesses powered ankle prosthesis with bidirectional neural recording and cutaneous stimulation. Evaluates embodiment, gait symmetry, and stability."
+    },
+    {
+      "nct_id": "NCT05095805",
+      "title": "Weight-bearing Training Exercise May Improve Loading of Trans-tibial Prosthesis and Functional Gait",
+      "status": "COMPLETED",
+      "conditions": ["Amputation"],
+      "intervention": "Weight-bearing exercise (Nintendo Wii Balance Board)",
+      "sponsor": "University Rehabilitation Institute, Republic of Slovenia",
+      "country": "Slovenia",
+      "summary": "Pilot RCT using off-the-shelf devices for weight-bearing training in first-time trans-tibial prosthesis recipients."
+    },
     {
       "nct_id": "NCT06134167",
-      "title": "Transdermal Compress Device for Transfemoral Amputations",
-      "acronym": "BAL-448-001",
+      "title": "A Prospective, Multicenter, Single-Arm, Open-Label Study to Evaluate the Safety and Effectiveness of the Transdermal Compress Device in Participants With Transfemoral Amputations",
       "status": "RECRUITING",
-      "sponsor": "Balmoral Medical company",
-      "sponsor_type": "INDUSTRY",
-      "fda_regulated": true,
-      "study_type": "INTERVENTIONAL",
-      "phase": "NA",
-      "enrollment": 100,
-      "start_date": "2024-06-11",
-      "completion_date": "2031-06",
       "conditions": ["Prosthesis and Implants"],
       "intervention": "Transdermal Compress Device",
-      "location": "United States (multicenter)",
-      "description": "Prospective, multicenter, single-arm, open-label study evaluating safety and effectiveness of the Transdermal Compress device in participants with transfemoral limb loss. Bone-anchored transdermal implant for patients who cannot use conventional socket prostheses. 5-year follow-up with Osseointegration Quality Registry.",
-      "key_outcomes": [
-        "Composite endpoint: prosthetic wear time + PROMIS Physical Function + OPUS Satisfaction at 2 years",
-        "Infection rate (superficial and deep) at 2 and 5 years",
-        "Lack of secondary surgical intervention",
-        "Radiographic success"
-      ]
+      "sponsor": "Balmoral Medical company",
+      "country": "United States (9 sites)",
+      "summary": "Evaluates safety and effectiveness of transdermal compress for transfemoral amputees across 9 U.S. sites."
     },
     {
-      "nct_id": "NCT06498245",
-      "title": "MPK-K2: Microprocessor Knee for K2-Level Ambulators",
-      "acronym": "MPK-K2",
-      "status": "RECRUITING",
-      "sponsor": "University Hospital, Strasbourg, France",
-      "sponsor_type": "OTHER",
-      "study_type": "INTERVENTIONAL",
-      "phase": null,
-      "enrollment": null,
-      "start_date": null,
-      "completion_date": null,
-      "conditions": ["Prosthetic Rehabilitation"],
-      "intervention": "Microprocessor prosthetic knee",
-      "location": "France",
-      "description": "Randomized controlled trial comparing microprocessor prosthetic knees to conventional knees for community ambulators (K-level 2). Evaluates functional outcomes, satisfaction, and mobility.",
-      "key_outcomes": [
-        "Functional mobility assessment",
-        "Prosthetic satisfaction scales",
-        "Adverse event rates"
-      ]
-    }
-  ],
-  "completed_trials": [
-    {
-      "nct_id": "NCT07519746",
-      "title": "PROINGA: Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate",
+      "nct_id": "NCT04427007",
+      "title": "Moisture Management Liner Effectiveness Study",
       "status": "COMPLETED",
-      "sponsor": "Yeditepe University / Al-Azhar Gaza",
-      "sponsor_type": "OTHER",
-      "study_type": "OBSERVATIONAL",
-      "enrollment": 128,
-      "start_date": "2024",
-      "completion_date": "2025",
-      "conditions": ["Prosthetic Satisfaction"],
-      "location": "Gaza, Palestine",
-      "instruments": ["SAT-PRO", "PEQ", "TAPES", "EQ-5D-5L", "SWLS"],
-      "description": "Cross-sectional observational study of prosthetic satisfaction and quality of life among lower limb prosthetic users in Gaza. Examines relationship between device satisfaction and subjective well-being."
+      "conditions": ["Amputation Stumps", "Amputees", "Prosthesis User"],
+      "intervention": "Moisture Management Liner + Intrasocket Cooling Element (ICE)",
+      "sponsor": "Liberating Technologies, Inc.",
+      "country": "United States",
+      "summary": "Silicone liner that removes sweat and conducts heat using thermally conductive elastomers. Works with ICE cooling device."
     },
     {
-      "nct_id": "NCT06498245",
-      "title": "Early Abdominal Wall Prosthesis Infections: Epidemiology (AWPI)",
+      "nct_id": "NCT03376919",
+      "title": "Efficacy and Usability of the Cyberlegs++ (CLs++) Ortho-prosthesis Modules in Enabling and Enhancing Mobility in Trans-femoral Amputees",
+      "status": "UNKNOWN",
+      "conditions": ["Lower Limb Amputation Above Knee (Injury)"],
+      "intervention": "CLs++ gait training",
+      "sponsor": "Vrije Universiteit Brussel",
+      "country": "Belgium / Italy",
+      "summary": "Assesses efficacy of Cyberlegs++ active prosthesis for transfemoral amputees. International project in Belgium and Italy."
+    },
+    {
+      "nct_id": "NCT05196100",
+      "title": "Acceptability of an Interim Socket System in the Immediate Rehabilitation of People With a tranSTibial Amputation (ASSIST)",
+      "status": "ACTIVE_NOT_RECRUITING",
+      "conditions": ["Amputation"],
+      "intervention": "Amparo confidence socket",
+      "sponsor": "University of Hull",
+      "country": "United Kingdom",
+      "summary": "Explores acceptability of an interim socket system for new below-knee amputation patients and NHS providers."
+    },
+    {
+      "nct_id": "NCT02491424",
+      "title": "Direct Skeletal Fixation of Prosthetic Limbs Following Trans-femoral Amputation - Study of an Intraosseous Transcutaneous Amputation Prosthesis (ITAP)",
       "status": "COMPLETED",
-      "sponsor": "University Hospital, Strasbourg, France",
-      "sponsor_type": "OTHER",
-      "study_type": "OBSERVATIONAL",
-      "enrollment": 500,
-      "start_date": "2023-10",
-      "completion_date": "2024-10",
-      "conditions": ["Abdominal Wall Prosthesis Infections"],
-      "location": "Strasbourg, France",
-      "description": "Retrospective study on ~500 patients researching characteristics of prosthetic infections (microorganism, site, timing), factors linked to appearance, and optimization of management."
+      "conditions": ["Traumatic Amputation of Lower Extremity"],
+      "intervention": "Direct skeletal fixation of ITAP",
+      "sponsor": "Stryker Orthopaedics",
+      "country": "United Kingdom",
+      "summary": "Studies direct skeletal fixation of prosthetic limbs following trans-femoral amputation using ITAP system."
+    },
+    {
+      "nct_id": "NCT01784003",
+      "title": "Characterizing Ankle Function During Sloped Locomotion for Prosthesis Development",
+      "status": "COMPLETED",
+      "conditions": ["Traumatic Amputation of Lower Extremity"],
+      "intervention": "Powered ankle-foot prosthesis",
+      "sponsor": "VA Eastern Colorado Health Care System",
+      "country": "United States",
+      "summary": "Characterizes ankle function during sloped locomotion to develop advanced powered ankle-foot prostheses."
     }
-  ],
-  "metadata": {
-    "total_studies": 644,
-    "data_source": "ClinicalTrials.gov API",
-    "generated": "2026-07-15",
-    "query_terms": ["prosthetic", "amputation", "prosthetic limb", "prosthetic rehabilitation"]
-  }
+  ]
 }

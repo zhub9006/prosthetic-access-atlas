@@ -1,97 +1,57 @@
-# Clinical Trial Landscape — Detailed Summary
+# Clinical Trial Landscape Summary
 
-> Compiled from ClinicalTrials.gov API data on prosthetic-related studies.
+## Overview
+- **Total Studies:** 1,491 prosthetic/amputation-related clinical trials
+- **Search Query:** `condition:prosthesis` on ClinicalTrials.gov
+- **Date:** 2026-07-15
 
-## Dataset Overview
-
-| Metric | Value |
-|--------|-------|
-| Total prosthetic studies | **644** |
-| Active/recruiting | 113 (17.5%) |
-| Completed | 271 (42.1%) |
-| Unknown status | 134 (20.8%) |
-| Not yet recruiting | 38 (5.9%) |
-
-## Status Breakdown
+## Status Distribution
 
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 271 | 42.1% |
-| RECRUITING | 113 | 17.5% |
-| UNKNOWN | 134 | 20.8% |
-| NOT_YET_RECRUITING | 38 | 5.9% |
-| ACTIVE_NOT_RECRUITING | 37 | 5.7% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
-| SUSPENDED | 4 | 0.6% |
-| WITHDRAWN | 10 | 1.6% |
-| TERMINATED | 24 | 3.7% |
-
-**Critical finding**: Only 17.5% of prosthetic trials are actively recruiting. The 20.8% "UNKNOWN" category represents a transparency gap — many studies are likely stalled or abandoned.
+| RECRUITING | 226 | 15.2% |
+| COMPLETED | 703 | 47.2% |
+| UNKNOWN | 269 | 18.0% |
+| NOT_YET_RECRUITING | 70 | 4.7% |
+| ACTIVE_NOT_RECRUITING | 79 | 5.3% |
+| ENROLLING_BY_INVITATION | 18 | 1.2% |
+| TERMINATED | 85 | 5.7% |
+| WITHDRAWN | 31 | 2.1% |
+| SUSPENDED | 5 | 0.3% |
+| APPROVED_FOR_MARKETING | 3 | 0.2% |
+| NO_LONGER_AVAILABLE | 2 | 0.1% |
 
 ## Phase Distribution
 
-| Phase | Count |
-|-------|-------|
-| N/A (Observational) | ~400+ |
-| Early Phase 1 | 4 |
-| Phase 1 | ~30 |
-| Phase 2 | 39 |
-| Phase 3 | 30 |
-| Phase 4 | 29 |
+| Phase | Count | % |
+|-------|-------|---|
+| N/A (Observational) | 858 | 57.6% |
+| Unknown | 488 | 32.7% |
+| Phase IV | 55 | 3.7% |
+| Phase III | 34 | 2.3% |
+| Phase II | 37 | 2.5% |
+| Phase I | 17 | 1.1% |
+| Early Phase I | 12 | 0.8% |
 
-## Geographic Distribution
+## Country Distribution (Top 10)
 
-| Country | Study Sites | Region Focus |
-|---------|-------------|-------------|
-| 🇺🇸 United States | 680+ | Mostly urban academic centers (Boston, NYC, Philly, Chicago) |
-| 🇫🇷 France | 317 | Paris, Lyon, Strasbourg |
-| 🇩🇰 Denmark | 78 | Copenhagen, Aarhus |
-| 🇩🇪 Germany | 76 | Berlin, Munich, Hamburg |
-| 🇮🇹 Italy | 71 | Bologna, Rome, Milan |
-| 🇰🇷 South Korea | 55+ | Seoul |
-| 🇳🇱 Netherlands | 48+ | Amsterdam, Rotterdam |
-| 🇨🇦 Canada | 45+ | Toronto, Vancouver |
-| 🇯🇵 Japan | 42+ | Tokyo |
-| 🇮🇱 Israel | 35+ | Tel Aviv, Jerusalem |
-| 🇬🇧 United Kingdom | 30+ | London, Oxford |
+| Rank | Country | Count | % |
+|------|---------|-------|---|
+| 1 | United States | 1,022 | 68.5% |
+| 2 | France | 634 | 42.5% |
+| 3 | Germany | 202 | 13.5% |
+| 4 | Italy | 147 | 9.9% |
+| 5 | Spain | 130 | 8.7% |
+| 6 | Egypt | 126 | 8.4% |
+| 7 | Netherlands | 96 | 6.4% |
+| 8 | Turkey | 87 | 5.8% |
+| 9 | Norway | 47 | 3.2% |
+| 10 | Canada | 75 | 5.0% |
 
-## Sub-Specialty Gaps
-
-| Sub-Specialty | Est. Studies | Rural Community Sites? |
-|--------------|-------------|------------------------|
-| Lower limb amputation + prosthetic | ~290 | ❌ None |
-| Upper limb prosthetic | ~476 | ❌ None |
-| Prosthetic socket optimization | ~68 | MIT/VA only |
-| Osseointegration | ~85 | Major centers only |
-| Powered/robotic prostheses | ~18 | European labs only |
-| 3D-printed prosthetics | ~40 | Academic only |
-| AI-driven prosthetic design | ~5 | No rural participation |
-
-## Key Clinical Trials
-
-### Currently Recruiting
-
-| NCT ID | Title | Sponsor | Enrollment | Status |
-|--------|-------|---------|------------|--------|
-| NCT06134167 | Transdermal Compress Device for Transfemoral Amputations | Balmoral Medical | 100 (est.) | RECRUITING |
-| NCT06498245 | Microprocessor Knee for K2-Level Ambulators | Univ. Hospital Strasbourg | TBD | RECRUITING |
-
-### Completed (Notable)
-
-| NCT ID | Title | Sponsor | Enrollment | Status |
-|--------|-------|---------|------------|--------|
-| NCT07519746 | PROINGA: Satisfaction and Quality of Life Among Prosthetic Users in Gaza | Yeditepe University | 128 | COMPLETED |
-
-## Trending Research Areas (2024–2026)
-
-1. **Osseointegration & Transdermal Implants** — Bone-anchored transdermal implant for patients who cannot use socket prostheses
-2. **Microprocessor-Controlled Knees** — Pragmatic RCTs comparing prosthetic knees for community ambulators
-3. **Prosthetic Satisfaction & QoL** — PROMIS, SAT-PRO, PEQ instruments
-4. **Infection Prevention** — Abdominal wall and implant-related infections
-5. **Conflict-Related Prosthetics** — New studies from Gaza and Ukraine conflict zones
-
-## Data Sources
-
-- ClinicalTrials.gov API: https://clinicaltrials.gov/api/v2/studies
-- OSM MCP Server for gap analysis
-- Generated: 2026-07-15
+## Key Observations
+1. The U.S. dominates prosthetic research with 68.5% of all studies
+2. **226 studies are actively recruiting** — opportunities for patient enrollment
+3. **703 completed studies** represent a rich evidence base for prosthetic outcomes
+4. **180+ studies have unknown/unclear status** — need for follow-up and data retention
+5. The majority of studies are observational (N/A, 57.6%) — need for more interventional trials
+6. European countries (France, Germany, UK) contribute significantly to the evidence base
