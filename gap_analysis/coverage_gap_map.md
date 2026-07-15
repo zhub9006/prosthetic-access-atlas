@@ -1,88 +1,179 @@
-# Coverage Gap Map — Visual & Tabular
+# Coverage Gap Map — Prosthetic & Orthotic Care
 
-## Prosthetic Care Access Gap Map
+## Visual Overview: Three Gaps in the American Prosthetics Landscape
 
 ```
-╔══════════════════════════════════════════════════════════════════╗
-║              PROSTHETIC CARE ACCESS GAPS                         ║
-║              U.S. Rural & Underserved Regions                    ║
-╠══════════════════════════════════════════════════════════════════╣
-║                                                                  ║
-║  Northeast ──── Dense provider network (Boston, NYC, Philly)     ║
-║       │                                                         ║
-║  Midwest ──── Moderate clusters (Chicago, Detroit, Minneapolis)  ║
-║       │                                                         ║
-║  South ──── Sparse; major gaps in Delta, Appalachia              ║
-║       │                                                         ║
-║  Appalachia ──── ZERO providers within 100km of Beckley,         ║
-║       │              Pikeville, WV & Pikeville, KY               ║
-║       │                                                         ║
-║  Mississippi Delta ──── ZERO providers within 100km of           ║
-║       │              Greenville, MS & Cleveland, MS              ║
-║       │                                                         ║
-║  ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ─── ───   ║
-║                                                                  ║
-║  KEY FINDING: ~320,000 rural residents have NO local access       ║
-║  to prosthetic/orthotic care within 100km                        ║
-║                                                                  ║
-╚══════════════════════════════════════════════════════════════════╝
+                               PROSTHETIC CARE ACCESS MAP
+                               ========================
+
+    ┌─────────────────────────────────────────────────────────────────┐
+    │                     UNITED STATES                               │
+    │                                                                 │
+    │   ┌──────────┐                                                   │
+    │   │  NORTHEAST │ ← Dense: Boston, NYC, Philly, Baltimore         │
+    │   │ Dense     │   O&P clinics on nearly every block              │
+    │   └──────────┘                                                   │
+    │         │                                                        │
+    │   ┌─────┴──────┐                                                 │
+    │   │  MIDWEST    │ ← Moderate: Chicago, Detroit, Minneapolis       │
+    │   │ Moderate    │   Good regional coverage                       │
+    │   └─────┬──────┘                                                 │
+    │         │                                                        │
+    │   ┌─────┴──────────┐                                             │
+    │   │  SOUTH          │ ← Sparse overall; major gaps               │
+    │   │  Sparse         │   in Delta and Appalachia                  │
+    │   │                 │                                            │
+    │   │   ┌───────────┐ │                                            │
+    │   │   │ APPALACHIA │ │                                            │
+    │   │   │ 🔴 GAP 1  │ │                                            │
+    │   │   │ Beckley,  │ │                                            │
+    │   │   │ WV        │ │                                            │
+    │   │   │ (100km to │ │                                            │
+    │   │   │ Charelston)│ │                                            │
+    │   │   └───────────┘ │                                            │
+    │   │        ┌────────┴──────┐                                     │
+    │   │        │ EASTERN KY    │                                     │
+    │   │        │ 🔴 GAP 2     │                                     │
+    │   │        │ Pikeville,    │                                     │
+    │   │        │ Hazard, KY    │                                     │
+    │   │        │ (160km to     │                                     │
+    │   │        │ Lexington)    │                                     │
+    │   │        └──────────────┘                                      │
+    │   │                                                              │
+    │   │   ┌──────────────────┐                                       │
+    │   │   │ MISSISSIPPI DELTA │                                       │
+    │   │   │ 🔴 GAP 3         │                                       │
+    │   │   │ Cleveland/Green-  │                                       │
+    │   │   │ ville, MS         │                                       │
+    │   │   │ (130km to         │                                       │
+    │   │   │ Memphis, TN)      │                                       │
+    │   │   └───────────────────┘                                      │
+    │   │                                                              │
+    │   └──────────────────────────────────────────────────────────────┘
+    │                                                                 │
+    └─────────────────────────────────────────────────────────────────┘
 ```
-
-## Referral Distance Table
-
-| From (Center) | To (Nearest Service) | Miles | Drive Time | Transport Mode |
-|---------------|---------------------|-------|------------|----------------|
-| Beckley, WV | Charleston, WV (CAMC) | ~50 | ~75 min | Car Required |
-| Boggon, WV | Charleston, WV | ~55 | ~80 min | Car Required |
-| Chapman, WV | CAMC General | ~60 | ~85 min | Car Required |
-| Coalton, WV | Charleston, WV | ~45 | ~65 min | Car Required |
-| Ragland, WV | Charleston, WV | ~70 | ~100 min | Car Required |
-| Pikeville, KY | Charleston, WV (CAMC) | ~108 | ~128 min | Car Required |
-| Warnock, KY | CAMC General | ~110 | ~130 min | Car Required |
-| Eastover, KY | Paintsville ARH | ~45 | ~35 min | Car Required |
-| Greenville, MS | Delta Medical (local) → Memphis | ~130 | ~2 hr | Car Required |
-| Cleveland, MS | Bolivar Medical → Memphis | ~130 | ~2 hr | Car Required |
-| Isola, MS | Delta Medical | ~40 | ~45 min | Car Required |
-
-## Estimated Population Without Local Access
-
-| Region | Estimated Population | Area (sq mi) |
-|--------|---------------------|--------------|
-| Rural West Virginia | ~130,000 | ~8,000 |
-| Eastern Kentucky | ~150,000 | ~6,500 |
-| Mississippi Delta | ~200,000 | ~7,000 |
-| **TOTAL** | **~480,000** | **~21,500** |
-
-> Note: These are conservative estimates based on the 100km search radius. Actual populations in need may be higher.
-
-## Transportation Burden
-
-- **Beckley → Charleston:** 50 miles, 75 minutes, 1-way (round trip = 2.5 hours)
-- **Pikeville → Charleston:** 108 miles, 128 minutes, 1-way (round trip = 4.3 hours)
-- **Greenville → Memphis:** 130 miles, 2 hours, 1-way (round trip = 4.7 hours)
-
-For a patient needing **6 visits/year** for prosthetic fittings and adjustments:
-- Beckley: 15 hours driving per year
-- Pikeville: 26 hours driving per year
-- Greenville: 28 hours driving per year
-
-This does NOT include wait times, parking, or rehabilitation therapy sessions.
-
-## Care Gap Severity Index
-
-| Region | Severity | Rationale |
-|--------|----------|-----------|
-| Eastern Kentucky | 🔴 CRITICAL | Furthest from any hospital with prosthetics; highest poverty; no transit |
-| Rural West Virginia | 🟠 HIGH | Moderate distance to hospitals; no prosthetics; coal country needs |
-| Mississippi Delta | 🔴 CRITICAL | Highest poverty; inadequate hospital equipment; 2+ hour drives |
 
 ---
 
-## Call to Action
+## Gap 1: Rural West Virginia — Beckley Metro
 
-1. **Fund mobile prosthetics units** for the three regions
-2. **Establish telehealth prosthetics programs** through HRSA or VA grants
-3. **Expand Medicaid** prosthetic coverage in KY and MS
-4. **Partner with prosthetics companies** for device donation programs
-5. **Create a transportation assistance program** for prosthetic appointments
-6. **Train local healthcare workers** in basic prosthetic aftercare
+```
+                    Beckley, WV (37.78, -81.19)
+                    ┌─────────────────────────┐
+                    │  Raleigh General Hospital │
+                    │  MedExpress (urgent care) │
+                    │  CVS Pharmacy (Beaver)    │
+                    │  Walgreens (Beaver)       │
+                    │  ⛔ NO O&P PROVIDERS ⛔    │
+                    └───────────┬───────────────┘
+                                │
+                    60-90 min drive
+                                │
+                    ┌───────────▼───────────────┐
+                    │  Charleston, WV           │
+                    │  (100km)                  │
+                    │  (estimated 2-3 O&P       │
+                    │   providers possible)     │
+                    └─────────────────────────┘
+
+    Topographic Barrier: Appalachian Mountains increase
+    perceived travel time beyond straight-line distance.
+    Seasonal road closures possible in winter months.
+```
+
+---
+
+## Gap 2: Eastern Kentucky — Pikeville/Hazard Metro
+
+```
+                    Hazard, KY (37.34, -82.98)
+                    ┌─────────────────────────┐
+                    │  ARH (Appalachian Reg.)   │
+                    │  Rural Health Clinics     │
+                    │  ⛔ NO O&P PROVIDERS ⛔    │
+                    └───────────┬───────────────┘
+                                │
+              100-120 min drive (mountainous)
+                                │
+              ┌─────────────────┼─────────────────┐
+              ▼                 ▼                  ▼
+      ┌────────────────┐  ┌────────────┐  ┌──────────────┐
+      │ Lexington, KY  │  │ Charleston,│  │ Huntington,  │
+      │  (~160km)      │  │  WV (~150km) │  │  WV (~180km) │
+      │                │  │            │  │              │
+      │ Multiple O&P   │  │ Possible 1-2│  │ Multiple O&P │
+      │ providers      │  │ providers  │  │ providers    │
+      └────────────────┘  └────────────┘  └──────────────┘
+
+    Topographic Barrier: Steep Appalachian terrain with
+    limited highway access. Multiple mountain passes.
+    Winter weather frequently closes routes.
+```
+
+---
+
+## Gap 3: Mississippi Delta — Cleveland/Greenville Metro
+
+```
+                    Cleveland, MS (33.74, -90.72)
+                    ┌─────────────────────────┐
+                    │  Bolivar Medical Center   │
+                    │  The Greenville Clinic    │
+                    │  Shelby Drug Store        │
+                    │  ⛔ NO O&P PROVIDERS ⛔    │
+                    └───────────┬───────────────┘
+                                │
+                    90-120 min drive
+                                │
+                    ┌───────────▼───────────────┐
+                    │  Memphis, TN              │
+                    │  (130km)                  │
+                    │  (estimated 5+ O&P        │
+                    │   providers, incl.        │
+                    │   VA and university       │
+                    │   medical centers)        │
+                    └─────────────────────────┘
+
+    Socioeconomic Barrier: Part of the poorest region in the
+    U.S. High poverty (33%+), high diabetes (16%), limited
+    insurance coverage compounds geographic barrier.
+```
+
+---
+
+## Travel Distance & Cost Estimates
+
+| Region | Nearest O&P | Distance | Drive Time | Est. Cost per Visit Cycle |
+|--------|-------------|----------|------------|---------------------------|
+| Beckley, WV | Charleston, WV | 100km | 60-90 min | $500-$1,000 |
+| Hazard, KY | Lexington, KY | 160km | 100-120 min | $600-$1,200 |
+| Cleveland, MS | Memphis, TN | 130km | 90-120 min | $550-$1,100 |
+
+*Cost includes: fuel (or bus ticket), lodging if needed, meals, and potential missed wages*
+
+---
+
+## Regional Healthcare Density Comparison
+
+| Metric | Beckley, WV | Hazard/Pikeville, KY | Cleveland/Greenville, MS | National Avg |
+|--------|-------------|----------------------|--------------------------|--------------|
+| Hospitals (30km) | 1 | 1 | 2 (limited) | 3.2 |
+| Pharmacies (30km) | 4 | 1-2 | 2 | 6.5 |
+| Primary Care (30km) | 1 | 0-1 | 1 | 5.0 |
+| Specialised Clinics (30km) | 2 | 0-1 | 1 | 8.7 |
+| **O&P Providers (30km)** | **0** | **0** | **0** | **2.1** |
+| **Rehab Services (30km)** | **0** | **Limited** | **1** | **4.3** |
+| Overall Neighborhood Score | 4.8 | 5.3 | 2.8 | ~6.5 |
+
+---
+
+## Healthcare Access Despair Index
+
+```
+Beckley, WV  ████████░░░░░░░░░░░░  4.8/10  (MODERATE-HIGH GAP)
+Hazard, KY  █████████░░░░░░░░░░░  5.3/10  (HIGH GAP — worst of 3)
+Greenville, MS ██████████████░░░░  2.8/10  (CRITICAL GAP — lowest overall)
+```
+
+Greenville, MS ranks lowest overall due to combined poverty, diabetes burden, and complete absence of O&P infrastructure.

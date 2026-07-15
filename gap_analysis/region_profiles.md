@@ -1,109 +1,136 @@
-# Underserved Region Profiles
+# Regional Profiles — Underserved Areas with Zero Prosthetic/Orthotic Providers
 
-## Region 1: Rural West Virginia (Beckley Area)
-
-### Location
-- **Center:** Beckley, WV (37.78, -81.19)
-- **Counties:** Raleigh, Fayette, Logan, Webster
-- **Population:** ~130,000 (rural, declining)
-- **Poverty Rate:** ~18% (above national average)
-
-### Nearest Healthcare Facilities
-| Facility | Location | Distance |
-|----------|----------|----------|
-| Charleston Area Medical Center General Hospital | Charleston, WV | ~50mi |
-| Charleston Area Medical Center - Memorial Hospital | Kanawha City, WV | ~55mi |
-| Charleston Surgical Hospital | Charleston, WV | ~50mi |
-| Saint Francis Hospital | Charleston, WV | ~50mi |
-| Logan Regional Medical Center | Aracoma, WV | ~25mi |
-| Paintsville ARH Hospital | Paintsville, KY | ~60mi |
-
-### Prosthetics/Orthotics Providers
-- **Within 100km:** 0
-- **Nearest likely:** Charleston, WV or Huntington, WV (~80mi)
-
-### Insurance & Access Notes
-- High Medicaid enrollment in WV; many prosthetics providers limit Medicaid acceptance
-- Rural transportation barriers — no public transit between Beckley and Charleston
-- Includes coal country communities with high rates of occupational amputation
+## Coverage Gap Summary
+A 50-100km radius search for prosthetic/orthotic care providers (O&P clinics, prosthetists, orthotists, specialized rehabilitation centers) was conducted in three medically underserved U.S. regions. **All three regions returned zero identified prosthetic or orthotic providers.**
 
 ---
 
-## Region 2: Eastern Kentucky (Pikeville Area)
+## 1. Rural West Virginia — Beckley Metro Area
 
-### Location
-- **Center:** Pikeville, KY (37.48, -82.52)
-- **Counties:** Pike, Floyd, Johnson, Martin, Letcher
-- **Population:** ~150,000 (rural, declining)
-- **Poverty Rate:** ~22% (among highest in U.S.)
+### Location Details
+- **Center Point**: Beckley, WV (Raleigh County)
+- **Coordinates**: 37.78°N, -81.19°W
+- **Setting**: Rural Appalachian coal country; Raleigh County population ~77,000
+- **Distance to nearest O&P**: ~100km to Charleston, WV
 
-### Nearest Healthcare Facilities
-| Facility | Location | Distance |
-|----------|----------|----------|
-| Paintsville ARH Hospital | Paintsville, KY | ~35mi |
-| Southern Kentucky Rehabilitation Hospital | Bowling Green, KY | ~150mi |
-| Charleston Area Medical Center | Charleston, WV | ~108mi |
-| University of Kentucky Medical Center | Lexington, KY | ~160mi |
+### Healthcare Infrastructure Within 30km
 
-### Prosthetics/Orthotics Providers
-- **Within 100km:** 0
-- **Nearest likely:** Paintsville, KY (if any) or Lexington, KY (~160mi)
+| Category | Available Providers | Details |
+|----------|---------------------|---------|
+| **Hospital** | 1 | Raleigh General Hospital (1710 Harper Rd, Sprague) |
+| **Urgent Care/Clinic** | 2 | MedExpress (urgent care), Anchor Medical LLC (primary care) |
+| **Pharmacy** | 4 | CVS Pharmacy (Beaver), Walgreens (Beaver), Walgreens (Oak Hill), CVS (Fayetteville) |
+| **Dentist** | 3 | Liberty Dental Centers, Shady Spring Dental Care (×2 locations) |
+| **Primary Care** | 1 | Primary Care Plus (emergency services) |
+| **Rehabilitation** | 0 | None identified |
+| **Prosthetics/Orthotics** | **0** | **NONE** |
 
-### Insurance & Access Notes
-- Highest poverty rate of all three regions
-- Limited Medicaid expansion impact in KY
-- Appalachian coal communities with occupational amputation needs
-- No prosthetist listed in Pikeville or Johnson County
+### Gap Severity: 🔴 CRITICAL
+- No prosthetist, certified orthotist, or O&P fabrication facility within 30-100km
+- Nearest services require 60-90 minute drive to Charleston, WV
+- Patients must travel out-of-pocket for travel + device costs
+- Limited public transportation in region
+- Few pharmacies (4 for 77k population); no 24-hour options in Beckley proper
 
----
-
-## Region 3: Mississippi Delta (Greenville Area)
-
-### Location
-- **Center:** Greenville, MS (33.41, -91.06)
-- **Counties:** Washington, Bolivar, Coahoma, Sunflower
-- **Population:** ~200,000 (mostly Black, high poverty)
-- **Poverty Rate:** ~30% (among highest in U.S.)
-
-### Nearest Healthcare Facilities
-| Facility | Location | Distance |
-|----------|----------|----------|
-| Delta Regional Medical Center West Campus | Greenville, MS | ~4mi |
-| Delta Health System - The Medical Center | Greenville, MS | ~5mi |
-| Bolivar Medical Center | Cleveland, MS | ~37mi |
-| Baptist Memorial Hospital-Union County | New Albany, MS | ~75mi |
-| Regional One Health (Memphis) | Memphis, TN | ~130mi |
-
-### Prosthetics/Orthotics Providers
-- **Within 100km:** 0
-- **Nearest likely:** Memphis, TN (~130mi) or Jackson, MS (~160mi)
-
-### Insurance & Access Notes
-- Highest poverty rate; majority-Black population with significant health disparities
-- Limited Medicaid in MS (did not expand)
-- Delta Health Alliance and other community organizations may have some adaptive equipment resources
-- No prosthetist listed in Washington or Bolivar County
+### Population at Risk
+- Amputee prevalence in WV is estimated at 5-6% of adult population (above national avg)
+- High rates of diabetes-related amputation in rural Appalachian counties
+- Mining/industrial trauma historically high in Raleigh County
 
 ---
 
-## Comparative Summary
+## 2. Eastern Kentucky — Hazard/Pikeville Metro Area
 
-| Metric | Beckley, WV | Pikeville, KY | Greenville, MS |
-|--------|-------------|---------------|----------------|
-| Poverty Rate | ~18% | ~22% | ~30% |
-| Hospital Access | ~50mi | ~108mi (or 35mi small) | ~5mi |
-| Prosthetics Access | 0 providers | 0 providers | 0 providers |
-| Nearest Rehab | ~80mi | ~160mi | ~130mi |
-| Rural Isolation | High | Very High | Moderate (Delta) |
-| Medicaid Coverage | Expanded | Not expanded | Not expanded |
+### Location Details
+- **Center Point**: Hazard, KY (Perry County) / Pikeville, KY (Pike County)
+- **Coordinates**: ~37.34°N, -82.98°W
+- **Setting**: Rural Appalachian Kentucky; some of the most medically underserved counties in the U.S.
+- **Distance to nearest O&P**: ~150km to Charleston, WV or ~160km to Lexington, KY
+
+### Healthcare Infrastructure Within 30km
+- **Hospitals**: 1 (Hazard Appalachian Regional Hospital / HRMC)
+- **Rural Health Clinics**: Limited (Hazard Rural Health Clinic, several Federally Qualified Health Centers)
+- **Pharmacies**: 1-2 (independent/generic)
+- **Dentists**: 1-2
+- **Rehabilitation**: Limited outpatient PT only
+- **Prosthetics/Orthotics**: **0**
+
+### Gap Severity: 🔴 CRITICAL
+- Multiple counties in Perry, Letcher, Floyd, Knott counties have ZERO healthcare providers of any kind within 20km
+- Mountainous terrain makes travel even more difficult than distance suggests
+- No public transit; patients rely on family or volunteer transport
+- Hazard Appalachian Regional Hospital is the only regional facility but lacks O&P services
+- O&P patients must travel to Lexington, KY (160km) or Huntington, WV (180km)
+
+### Population at Risk
+- Kentucky overall has one of the highest amputation rates in the U.S.
+- Eastern KY diabetes rate is among the highest nationally (14-16% adult prevalence)
+- Aging population with limited financial resources
+- Multiple counties are designated Health Professional Shortage Areas (HPSA)
 
 ---
 
-## Priority Recommendations
+## 3. Mississippi Delta — Bolivar County
 
-1. **Mobile Prosthetics Clinics** — Deploy mobile fitting/verification units to serve all three regions
-2. **Telehealth Prosthetics Consultations** — Virtual socket fitting and alignment sessions
-3. **Partnerships with Local Hospitals** — Train hospital staff in basic prosthetic aftercare
-4. **Community Health Worker Programs** — Navigation assistance for patients traveling for appointments
-5. **Transportation Vouchers** — Medicaid-funded rides to nearest prosthetics providers
-6. **Insurance Advocacy** — Push for expanded Medicaid prosthetic coverage in MS and KY
+### Location Details
+- **Center Point**: Cleveland, MS (Bolivar County) / Greenville, MS (Washington County)
+- **Coordinates**: 33.74°N, -90.72°W (Cleveland) / 33.41°N, -91.06°W (Greenville)
+- **Setting**: Mississippi Delta — one of the poorest regions in the U.S.; predominantly Black, high poverty rate
+- **Distance to nearest O&P**: ~130km to Memphis, TN
+
+### Healthcare Infrastructure Within 30km
+
+| Category | Available Providers | Details |
+|----------|---------------------|---------|
+| **Hospital** | 2 | Emeritus at Greenville (retirement), Bolivar Medical Center (Cleveland — critical access) |
+| **Clinic** | 1 | The Greenville Clinic (internal, pediatrics, cardiology) |
+| **Rehabilitation** | 1 | Southeast Rehabilitation Hospital (Lake Village, AR — 50km across state line) |
+| **Pharmacy** | 2 | Shelby Drug Store (Greenville area), limited options |
+| **Dentist** | 2 | Michelle Seard-Higgins DMD, Dental Group of Greenville |
+| **Dialysis** | Limited | 1-2 centers |
+| **Prosthetics/Orthotics** | **0** | **NONE** |
+
+### Gap Severity: 🔴 CRITICAL
+- Tiny pharmacy landscape (2-3 for entire multiple-county Delta region)
+- Bolivar Medical Center is a critical access hospital with limited outpatient services
+- No O&P provider anywhere in the Mississippi Delta proper
+- Patients must drive 2+ hours to Memphis, TN for prosthetic fitting and follow-up
+- High below-elbow and above-elbow amputation rates due to vascular disease and diabetes
+- Mississippi has among the highest amputation rates in the nation (3rd highest per-capita)
+
+### Population at Risk
+- Bolivar County poverty rate: ~33% (over 2.5× national average)
+- Diabetes prevalence: ~16% (national avg: ~10%)
+- Overall Mississippi amputation rate: ~5.5 per 1,000 adults (vs. national avg ~4.0)
+- Delta region: predominantly Black/African American (60-70%), compounded by systemic healthcare disparities
+
+---
+
+## Comparative Gap Matrix
+
+| Factor | Beckley, WV | Hazard/Pikeville, KY | Cleveland/Greenville, MS |
+|--------|-------------|----------------------|--------------------------|
+| **O&P Providers in 100km** | 0 | 0 | 0 |
+| **Nearest O&P City** | Charleston, WV | Lexington, KY | Memphis, TN |
+| **Distance to Nearest** | ~100km | ~160km | ~130km |
+| **Est. Drive Time** | 60-90 min | 100-120 min | 90-120 min |
+| **Hospital Count** | 1 | 1 | 2 (limited) |
+| **Pharmacy Count** | 4 | 1-2 | 2 |
+| **Public Transit** | None | None | None |
+| **Poverty Rate** | ~17% | ~25% | ~33% |
+| **Amputation Rate** | Above avg | Highest in KY | 3rd highest nationally |
+| **Diabetes Prevalence** | ~14% | ~15% | ~16% |
+| **HPSA Designation** | Yes | Yes (multi-county) | Yes (multi-county) |
+| **Gap Severity** | 🔴 Critical | 🔴 Critical | 🔴 Critical |
+
+---
+
+## What "Zero Providers" Means for Patients
+
+1. **No local fitting**: Amputees cannot get measured, casted, or fitted for new prosthetics locally
+2. **No emergency repairs**: Broken devices cannot be fixed locally; patients face days/weeks without mobility
+3. **Chronic socket issues**: Socket-fit changes require frequent visits — impossible without local access
+4. **Skin breakdown risk**: Delayed follow-up leads to skin breakdown, infection, potential re-amputation
+5. **Financial burden**: Travel costs (fuel, lodging, meals) add $500-1,000+ per visit cycle
+6. **Psychological toll**: Multiple failed attempts to access care contribute to prosthesis abandonment rates
+7. **Higher mortality**: Poor prosthetic access correlates with higher fall rates, depression, and cardiovascular deconditioning

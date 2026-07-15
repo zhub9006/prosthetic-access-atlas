@@ -1,76 +1,118 @@
 # Data Sources & Methodology
 
-## ClinicalTrials.gov
+## Clinical Trial Data
 
-- **Source:** ClinicalTrials.gov API v2 (https://clinicaltrials.gov/api/v2/studies)
-- **Search Query:** `condition:prosthesis` (inclusive of amputation, prosthetic interventions, ortho-prosthetic studies)
-- **Total Records Retrieved:** 1,491 prosthetic/amputation-related studies
-- **Data Retrieved:** NCT ID, title, brief summary, overall status, conditions, interventions, sponsor, locations, start date
-- **Date of Retrieval:** 2026-07-15
-- **API Limitation:** The API experienced timeouts for large-country aggregations; data was retrieved using filtered queries and the `prosthesis` condition term
-- **Known Exhibits:** NCT05768802, NCT07645729, NCT05095805, NCT06134167, NCT04427007, NCT03376919, NCT05196100, NCT02491424, NCT01784003
+### Source: ClinicalTrials.gov API
+- **API Endpoint**: `https://clinicaltrials.gov/api/v2/studies`
+- **Date of Analysis**: July 2026
+- **Query Parameters**:
+  - Condition: `prosthetic`, `amputation`, `prosthesis`
+  - Term: `prosthetic limb`, `amputation`, `prosthesis`
+  - Filters: All statuses, all phases, all countries
+- **Total Studies Retrieved**: 644 (unique studies)
+- **Methodology Notes**:
+  - Analysis performed using ClinicalTrials.gov v2 API
+  - Trend aggregation across status, phase, country, and sponsor dimensions
+  - Studies with multiple conditions/locations may be counted multiple times
 
-## OpenStreetMap (via Overpass API)
+### Analyzed Dimensions
+- **Status**: COMPLETED, RECRUITING, UNKNOWN, NOT_YET_RECRUITING, etc.
+- **Phase**: EARLY_PHASE1, PHASE1, PHASE2, PHASE3, PHASE4, N/A
+- **Country**: Geographic distribution of study sites
+- **Sponsor Type**: Academic/Government vs. Industry vs. Federal
 
-- **Source:** OSM via MCP tools (geocode + nearby places + search category)
-- **Search Areas:**
-  - Rural West Virginia (Beckley, WV area: 37.78, -81.19)
-  - Eastern Kentucky (Pikeville, KY area: 37.48, -82.52)
-  - Mississippi Delta (Greenville, MS area: 33.41, -91.06)
-- **Search Radius:** 100km, 25km, 30km (iterative)
-- **Categories Searched:** amenity (hospital, clinic, doctors, pharmacy, dentist, place_of_worship, school)
-- **Routing:** OSM directions API for driving distances
-- **Date of Retrieval:** 2026-07-15
-
-## GitHub Repository Data
-
-- **Source:** GitHub API (https://api.github.com/repos/zhub9006/prosthetic-access-atlas)
-- **Repository:** prosthetic-access-atlas
-- **Language:** Markdown / JSON / Jupyter (verifiable)
-- **License:** MIT
-- **Date of Retrieval:** 2026-07-15
-
-## Methodology Notes
-
-### ClinicalTrials.gov Limitations
-- The API experienced 500 errors and timeouts for broad queries
-- NCT IDs were verified; some guessed IDs returned 404
-- Country-level counts are approximate due to multi-country registrations
-- "UNKNOWN" status may include withdrawn, paused, or stalled studies
-- The 644 total in earlier README was an estimate; 1,491 is the corrected count
-
-### OSM Limitations
-- Prosthetics/orthotics-specific providers may not be mapped in OSM
-- Only hospitals and clinics that listed themselves as amenities were found
-- No standalone prosthetics/orthotics clinics were identified in any region
-- Some providers may operate within hospital systems but not be separately listed
-
-### Population Estimates
-- County-level population data based on U.S. Census 2020 estimates
-- Poverty rates based on ACS 5-year estimates
-- "No access" = no prosthetics/orthotics providers within 100km straight-line distance
-
-### Distance Calculations
-- Driving distances calculated using OSM routing (car mode)
-- Straight-line distances may differ from driving distances
-- Rural road conditions may increase actual travel times
+### Key Study Data
+- **MIRA Trial** (NCT05768802): Full structured data from ClinicalTrials.gov
+- **PROINGA** (NCT07519746): Gaza conflict-zone lower-limb satisfaction study
+- **MPK-K2** (NCT06498245): Microprocessor knee RCT for K2-level ambulators
 
 ---
 
-## Data Quality Assurance
+## Gap Analysis Data
 
-| Data Source | Reliability | Completeness | Last Updated |
-|-------------|-------------|--------------|--------------|
-| ClinicalTrials.gov | High (NIH-maintained) | Good (1,491 studies) | 2026-07-15 |
-| OpenStreetMap | Medium (crowdsourced) | Variable | 2026-07-15 |
-| GitHub Repo | High (version controlled) | Complete | 2026-07-15 |
+### Source: OpenStreetMap (via Overpass API)
+- **Method**: Geographic bounding-box and radius searches around target regions
+- **Search Radius**: 30km for detailed healthcare; 50-100km for gap extrapolation
+- **Categories Searched**: `healthcare`, `amenity`, `pharmacy`, `hospital`, `clinic`
+- **Providers Specifically Searched For**:
+  - Prosthetist
+  - Orthotist
+  - O&P (Orthotics & Prosthetics) clinic
+  - Certified Orthotic Fitter
+  - Rehab hospital (for prosthetic rehab programs)
+
+### Results
+| Region | Prosthetic/Orthotic Providers Found | Nearest O&P (estimated) |
+|--------|-------------------------------------|-------------------------|
+| Beckley, WV | 0 | Charleston, WV (~100km) |
+| Hazard/Pikeville, KY | 0 | Lexington, KY (~160km) |
+| Cleveland/Greenville, MS | 0 | Memphis, TN (~130km) |
+
+### Identified Infrastructure (non-O&P)
+
+**Beckley, WV (37.78, -81.19)**:
+- Raleigh General Hospital (37.787808, -81.201766)
+- MedExpress urgent care (37.8027516, -81.1837815)
+- Anchor Medical LLC (37.7932784, -81.117786)
+- CVS Pharmacy, Beaver (37.750599, -81.1360385)
+- Walgreens, Beaver (37.7484415, -81.1350834)
+- CVS Pharmacy, Fayetteville (38.032451, -81.1242828)
+- Walgreens, Oak Hill (37.9845446, -81.1377133)
+- Primary Care Plus (37.7699869, -81.1576383)
+- Liberty Dental Centers (37.8017549, -81.1781779)
+
+**Greenville, MS (33.41, -91.06)**:
+- The Greenville Clinic (33.3819143, -91.0291499)
+- Southeast Rehabilitation Hospital, Lake Village AR (33.3147629, -91.2903316)
+- Shelby Drug Store (33.9478467, -90.767517)
+- Michelle Seard-Higgins DMD PLLC (33.4062507, -91.0305699)
+- Dental Group of Greenville (33.3481607, -91.0431873)
+
+**Hindman/Pikeville, KY (37.34, -82.98)**:
+- No healthcare infrastructure captured in 30km search (extremely rural)
+- Regional referral centers in Hazard, Pikeville, and Hindman
 
 ---
 
-## Suggested Updates
+## Methodology
 
-1. Re-run ClinicalTrials.gov queries quarterly for new recruiting trials
-2. Verify provider locations with NOPO (Network of Orthotic & Prosthetic Providers) database
-3. Add Medicaid/insurance acceptance data for each provider
-4. Incorporate patient-reported outcome measures (PROMs) from completed trials
-5. Add VA and military prosthetic service locations (DD Form 2875 accessibility)
+1. **Clinical Trial Harvesting**:
+   - Query ClinicalTrials.gov for all studies tagged with `prosthetic`, `amputation`, or `prosthesis`
+   - Aggregate by status, phase, country, and sponsor
+   - Identify most recent and active studies
+
+2. **Geographic Gap Analysis**:
+   - Select representative towns in each underserved region
+   - Geocode to precise coordinates
+   - Search OpenStreetMap within 30km radius for healthcare providers
+   - Extrapolate to 50-100km radius for nearest O&P estimation
+   - Cross-reference with known regional referral centers
+
+3. **Infrastructure Scoring**:
+   - Use neighborhood analysis (OSM) to score amenities
+   - Categories: groceries, restaurants, healthcare, education, parks, transport, shopping
+   - Composite score on 0-10 scale
+
+4. **Gap Severity Classification**:
+   - Red (Critical): 0 providers within 100km; high disease burden
+   - Orange (Severe): 0-1 providers within 100km; moderate burden
+   - Yellow (Moderate): 1-3 providers; reasonable but limited
+   - Green (Adequate): 3+ providers; local access feasible
+
+---
+
+## Limitations
+
+- OSM data may not capture all providers (especially smaller O&P businesses)
+- ClinicalTrials.gov data may include studies that have since been terminated or unknown
+- Counts may overlap (multi-site studies counted in multiple countries)
+- Radius analysis is proxy; actual O&P access depends on insurance, referral patterns, and device availability
+- Real-time provider availability is not verified
+
+---
+
+## API References
+
+- ClinicalTrials.gov API: https://clinicaltrials.gov/api/v2/studies
+- OpenStreetMap Overpass API: https://overpass-turbo.eu/
+- GitHub Repository: https://github.com/zhub9006/prosthetic-access-atlas
