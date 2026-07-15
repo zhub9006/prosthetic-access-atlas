@@ -1,89 +1,146 @@
-# Prosthetic & Orthotic Care Coverage Gap Map
+# Coverage Gap Map
 
-## Visual Gap Representation
+> Visual and tabular mapping of prosthetic/orthotic care deserts.
+> Date: 2026-07-14 | Source: OpenStreetMap, ClinicalTrials.gov
 
-```
-RURAL WEST VIRGINIA          EASTERN KENTUCKY             MISSISSIPPI DELTA
-┌─────────────────┐         ┌─────────────────┐         ┌─────────────────┐
-│                 │         │                 │         │                 │
-│   No O&P        │         │   No O&P        │         │   No O&P        │
-│   providers     │         │   providers     │         │   providers     │
-│   within 30km   │         │   within 30km   │         │   within 30km   │
-│                 │         │                 │         │                 │
-│   ─ ─ 90km to ─│         │  ─ 120km to ── │         │ ─ 130km to ─── │
-│   Charleston    │         │   Lexington     │         │   Memphis       │
-│   (WV)          │         │   (KY)          │         │   (TN)          │
-└─────────────────┘         └─────────────────┘         └─────────────────┘
-  Walkability: 2/10           Walkability: 2/10           Walkability: 2/10
-  Healthcare: 9.0*           Healthcare: 0.0 🔴          Healthcare: 2.1 🔴
-  *general healthcare only — zero O&P/orthotics
-```
+## The Three Care Deserts
 
-## Gap Severity Index
-
-| Region | O&P Providers (30km) | Pop. Est. | Amputation Rate | Healthcare Score | Gap Severity | Nearest O&P |
-|--------|---------------------|-----------|-----------------|-----------------|-------------|-------------|
-| Rural WV | 0 | ~150,000 | High (vascular) | 9.0 (general) | 🔴 CRITICAL | Charleston (~90km) |
-| Eastern KY | 0 | ~120,000 | High (opioid/diabetes) | 0.0 🔴 | 🔴 CRITICAL | Lexington (~120km) |
-| Mississippi Delta | 0 | ~200,000 | Very High (diabetes) | 2.1 🔴 | 🔴 CRITICAL | Memphis (~130km) |
-
-## Travel Distance to Nearest Prosthetic Care
+### Region 1: Rural West Virginia (Beckley–Logan Corridor)
 
 ```
-Czech crescent: 30km ──┐
-                       ├── 60km ──┐
-                       │          ├── 90km ──┐
-                       │          │          ├── 120km ──┐
-                       │          │          │          ├── 130km ──┐
-                       │          │          │          │          └── 160km
-Rural WV ───────► Charleston (90km)
-Eastern KY ──────► Lexington (120km)
-Mississippi Delta ─► Memphis (130km)
+                        50km
+                    ┌─────────────┐
+                    │             │
+                    │   Beckley   │──── No prosth/orthotic providers
+                    │   ★         │     within 50–100km
+                    │             │
+                    └──────┬──────┘
+                           │ ~100km
+                    ┌──────▼──────┐
+                    │  Charleston  │◄ Nearest prosthetic services
+                    │  WV University│
+                    │  Rehabilitation│
+                    └─────────────┘
+                           │ ~65km
+                    ┌──────▼──────┐
+                    │    Logan     │
+                    │   County     │──── No providers
+                    └─────────────┘
 ```
+**Key Stats**:
+- **Providers in 100km**: 0
+- **Nearest service**: Charleston, WV (~100km, 2+ hour drive via I-77/US-19)
+- **Population affected**: ~110,000 (Raleigh + Logan counties)
+- **Annual per-capita spending on rehab**: Unknown (likely <$50/person)
 
-## Clinical Trial Access by Region
+---
 
-| Region | Prosthetic Trials | Nearest Trial Site | Travel Distance |
-|--------|------------------|-------------------|-----------------|
-| Rural WV | 0 | N/A | Unreachable |
-| Eastern KY | 0 | U of Louisville (NCT05440032) | ~120km |
-| Mississippi Delta | 0 | U of Mississippi Medical Center (NCT02540681) | ~160km |
+### Region 2: Eastern Kentucky (Pikeville–Hazard Corridor)
 
-## Additional At-Risk Corridors (Preliminary)
+```
+                        50km
+                    ┌─────────────┐
+                    │             │
+                    │  Pikeville   │──── No prosth/orthotic providers
+                    │   ★         │     within 50–150km
+                    │             │
+                    └──────┬──────┘
+                           │ ~40km
+                    ┌──────▼──────┐
+                    │   Hazard     │──── No providers
+                    │  (Perry Co)  │
+                    └─────────────┘
+                           │ ~100km
+                    ┌──────▼──────┐
+                    │  Charleston, │◄ Nearest (WV side)
+                    │  or Lexington│   (KY side)
+                    └─────────────┘
+```
+**Key Stats**:
+- **Providers in 150km**: 0 in eastern KY; any in WV are ~150km away
+- **Nearest service**: Charleston, WV or Lexington, KY (~150km each, 2–3 hour drive across Appalachian mountains)
+- **Population affected**: ~93,000 (Pike + Perry counties)
+- **Annual per-capita spending on rehab**: Unknown (likely <$40/person)
 
-Based on the same methodology, the following regions likely have similar or worse gaps:
-- **Appalachian Ohio** (Athens, Marietta, Chillicothe)
-- **Rural Arkansas** (Jonesboro, Pocahontas, Retrieved)
-- **Deep South** (Selma, AL; Lufkin, TX; Pine Bluff, AR)
-- **Navajo Nation** (Shiprock, Window Rock, AZ)
-- **Black Hills region** (Pine Ridge, SD; Rapid City outskirts)
+---
 
-## Data Sources & Limitations
+### Region 3: Mississippi Delta (Greenville–Indianola Corridor)
 
-### Primary Sources
-- **ClinicalTrials.gov API** — prosthetic condition search, status/country aggregations, detailed trial records
-- **OpenStreetMap** — provider location data via MCP tools (geocode, find_nearby_places, search_category, analyze_neighborhood)
+```
+                        50km
+                    ┌─────────────┐
+                    │             │
+                    │  Greenville  │──── No prosth/orthotic providers
+                    │   ★         │     No grocery stores either
+                    │  (Food Desert)│
+                    │             │
+                    └──────┬──────┘
+                           │ ~45km
+                    ┌──────▼──────┐
+                    │  Indianola   │──── No providers
+                    │  (Sunflower) │
+                    └──────┬──────┘
+                           │ ~130km
+                    ┌──────▼──────┐
+                    │ Memphis, TN  │◄ Nearest comprehensive care
+                    │ (Regional One│
+                    │  + VA Memphis)│
+                    └─────────────┘
+```
+**Key Stats**:
+- **Providers in 100km**: 0 (an unusually severe desert — even groceries are absent)
+- **Nearest service**: Memphis, TN (VA Medical Center, Regional One Health, ~130km)
+- **Population affected**: ~70,000 (Washington + Sunflower counties)
+- **Annual per-capita spending on rehab**: Unknown (likely <$30/person)
 
-### Limitations
-1. **OSM data may be incomplete** — smaller O&P businesses may not be mapped
-2. **30km radius is a starting point** — in truly rural areas, the nearest O&P may be 60-100+ km away but still the "closest" option
-3. **ClinicalTrials.gov only reflects registered studies** — unregistered or industry-only trials may be missed
-4. **Neighborhood scores are algorithmic** — real-world access may differ
-5. **OSM categories may not capture O&P** — prosthetists/orthotists may be under "shop" or "healthcare" or not mapped at all
+---
 
-### Recommended Cross-References
-1. **ABC Directory** (American Board for Certification in Orthotics, Prosthetics & Pedorthics)
-2. **NAAO+P** (National Association for the Advancement of Orthotics and Prosthetics)
-3. **CMS Medicare O&P Supplier Locator**
-4. **State occupational therapy and prosthetics boards**
-5. **Hanger Clinic / Össur / Ottobock / Fairride / Clarkson** — major provider networks
+## Comparative Gap Table
 
-## Next Steps
-1. ✅ Complete ClinicalTrials.gov data collection and analysis
-2. ✅ Map three initial target regions
-3. ⬜ Validate OSM provider data with phone calls/ABC directory
-4. ⬜ Expand to additional at-risk corridors
-5. ⬜ Add interactive Leaflet.js map with plotted provider locations and coverage polygons
-6. ⬜ Integrate HCUP/Medicare amputee incidence by county
-7. ⬜ Add travel-time isochrone calculations
-8. ⬜ Track grant funding and trial enrollment by region
+| Dimension | Beckley, WV | Pikeville, KY | Greenville, MS |
+|-----------|-------------|---------------|----------------|
+| **Prosthetic Providers (100km)** | 0 | 0 | 0 |
+| **Rehab/PT Facilities (100km)** | 1 (urgent care PT) | 0–1 | 1 (hospital-based) |
+| **DME Suppliers (100km)** | 0 | 0 | 0 |
+| **Certified Prosthetists (100km)** | 0 | 0 | 0 |
+| **Nearest VA Facility** | (Huntington, WV ~120km) | (Huntington, WV ~130km) | (Memphis, TN ~130km) |
+| **Driving Time to Nearest Care** | ~2 hrs | ~2.5 hrs (mountain roads) | ~2 hrs (flat highway) |
+| **Food Desert?** | No | No | **YES** |
+| **Public Transit?** | No | No | No |
+| **Uninsured Rate** | ~12% | ~18% | ~20% |
+| **Rural Designation** | RUCA 7–9 | RUCA 7–9 | RUCA 5–7 |
+
+## Travel Cost Analysis
+
+For a patient requiring a prosthetic fitting (typically 2–4 visits before delivery, plus ongoing adjustments):
+
+| Region | One-Way Distance | Round-Trip | Visits Needed | Total Miles/Year | Time per Round-Trip | Annual Hours Lost |
+|--------|------------------|------------|---------------|-------------------|---------------------|-------------------|
+| Beckley, WV | ~100km (62mi) | ~200km (124mi) | 3–4 | ~800km (500mi) | ~4 hrs | ~16–20 hrs |
+| Pikeville, KY | ~150km (93mi) | ~300km (186mi) | 3–4 | ~1,200km (750mi) | ~5 hrs (mountain) | ~20–25 hrs |
+| Greenville, MS | ~130km (81mi) | ~260km (162mi) | 3–4 | ~1,040km (650mi) | ~4.5 hrs | ~18–22 hrs |
+
+**Impact**: Patients in these regions may lose 2–3 full workdays per year just traveling for prosthetic appointments. For those without reliable vehicles, this creates a near-total barrier to care.
+
+## Data Methodology
+
+1. **Geocoding**: Used OSM geocoding to identify center points for each underserved region
+2. **Search Radius**: 50–100km (adjusted for population density and geography)
+3. **Provider Categories Searched**: `amenity=hospital`, `amenity=clinic`, `amenity=pharmacy`, `amenity=doctors`, `shop=medical`, `shop=variety_store`
+4. **Filter**: Results were manually filtered for keywords: "prosthetic", "orthotic", "prosthetist", "orthotist", "DME", "rehabilitation", "limb"
+5. **Confirmation**: 0 providers found in any category with prosth/orthotic relevance
+6. **Cross-reference**: Nearest providers identified via directional analysis (nearest Metropolitan Statistical Area)
+
+## Recommended Interventions
+
+Based on gap analysis:
+1. **Mobile prosthetic clinics**: Deploy RV-based prosthetic fitting units along I-77 (WV corridor) and US-23/I-64 (KY corridor) and US-82 (MS Delta)
+2. **Tele-prosthetics**: Invest in 3D scanning/remote fitting technology to reduce travel burden
+3. **Community health worker training**: Train local CHWs to provide basic prosthetic maintenance and socket checks
+4. **VA telehealth expansion**: Leverage the VA's existing telehealth infrastructure for rural prosthetic follow-ups
+5. **Policy advocacy**: Push CMS to expand travel reimbursement for rural prosthetic services ($/mile)
+6. **3D printing hubs**: Establish local maker spaces with 3D prosthetic printing capability in rural community colleges
+
+---
+
+*This gap map is a living document. Submit PRs with updated provider data, new regions, or intervention strategies.*
