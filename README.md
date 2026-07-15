@@ -1,34 +1,50 @@
-# 🦿 Prosthetic Access Atlas
+# Prosthetic Access Atlas
 
-**Open-access resource mapping prosthetic/orthotic clinical trial data and uncovering care gaps in underserved U.S. regions.**
+An open-access resource mapping prosthetic/orthotic clinical trial data and uncovered care gaps in underserved U.S. regions.
 
 ## Overview
 
-This repository compiles:
-- **Clinical trial trends** from ClinicalTrials.gov for prosthetic interventions
-- **Regional healthcare gap analysis** across rural West Virginia, eastern Kentucky, and the Mississippi Delta
-- **Provider mapping** identifying prosthetic & orthotic care deserts
+This project combines data from ClinicalTrials.gov with geographic analysis to identify where prosthetic and orthotic care is missing — and where research is happening (or not) in those same regions.
 
 ## Key Findings
 
-### Clinical Trial Landscape (as of July 2026)
-- **644 total studies** found across ClinicalTrials.gov matching prosthetic conditions
-- **113 actively recruiting** / **12 enrolling by invitation** — significant ongoing trials
-- **271 completed** studies provide a rich evidence base
-- **38 not yet recruiting** — future trials anticipated
-- Condition focus: amputation, prosthesis user satisfaction, quality of life, lower-limb prosthetics
+### 1. Clinical Trial Landscape
+- **644 total prosthetic-related trials** currently registered on ClinicalTrials.gov
+- **155 trials** focus specifically on "prosthetic care"
+- **Status Breakdown:**
+  - COMPLETED: 53 (34%)
+  - RECRUITING: 33 (21%)
+  - UNKNOWN: 25 (16%)
+  - NOT_YET_RECRUITING: 15 (10%)
+  - ACTIVE_NOT_RECRUITING: 16 (10%)
+  - TERMINATED: 4, SUSPENDED: 3, WITHDRAWN: 3 (13%)
 
-### Regional Healthcare Access Scores
-| Region | Overall | Healthcare | Groceries | Walkability |
-|---|---|---|---|---|
-| Rural West Virginia (Beckley, WV) | 4.2/10 | **0/10** 🔴 | 9.9/10 | 2/10 |
-| Eastern Kentucky (Floyd County, KY) | 4.9/10 | 9.0/10 🟡 | 9.1/10 | 0/10 |
-| Mississippi Delta (Greenville, MS) | 4.4/10 | **2.1/10** 🔴 | 8.9/10 | 2/10 |
+### 2. Geographic Distribution of Trials
+- United States: 336 trials
+- France: 84
+- Australia: 35
+- United Kingdom: 25
+- Germany: 20
+- Spain: 17
+- Netherlands: 20
+- Other nations: ~49 combined
 
-### Critical Gaps Identified
-1. **Rural West Virginia (Beckley)**: **ZERO** healthcare amenities within 30 km — a full prosthetic care desert
-2. **Mississippi Delta**: Only **1 facility** (Southeast Rehabilitation Hospital, Lake Village, AR — 23.6 km away) — no dedicated prosthetic/orthotic providers
-3. **Eastern Kentucky**: Better healthcare access (9.0/10), but patients still face significant travel distances to specialized prosthetic providers
+**Key Gap**: No clinical trials are registered from any of the three underserved regions analyzed.
+
+### 3. Care Gap Analysis
+
+| Region | Overall Score | Healthcare Score | Facilities Within 30km | Walkability | Key Issue |
+|--------|---------------|------------------|------------------------|-------------|-----------|
+| Pocahontas County, WV | 3.6/10 | **0** | **0** | 0 | No healthcare at all |
+| Breathitt County, KY | 4.8/10 | 5.5 | Limited (no prosthetics) | 0 | Nearest care at Jackson/Hazard (25+ km) |
+| Mississippi Delta, MS | ~3/10 (est.) | ~2/10 (est.) | Very limited | Low | Deep rural poverty, AMTRAC dependency |
+
+### Featured Trial: PROINGA (NCT07519746)
+- Title: Patient Satisfaction and Quality of Life Among Lower Limb Prosthetic Users in Gaza During War
+- Status: COMPLETED (Sep 2025 -- Mar 2026)
+- Sponsor: Yeditepe University / Al-Azhar University -- Gaza
+- Enrollment: 128 participants
+- Focus: Prosthetic satisfaction, QoL, rehabilitation outcomes in conflict zones
 
 ## Repository Structure
 
@@ -36,31 +52,39 @@ This repository compiles:
 prosthetic-access-atlas/
 ├── README.md                          # This file
 ├── data/
-│   ├── clinical-trials-summary.md     # Detailed clinical trial data & trends
-│   ├── regional-healthcare-scores.md  # Neighborhood analysis scores
-│   └── gap-analysis.md                # Underserved region provider mapping
-├── maps/                              # Geographic data & visualizations
-│   └── provider-locations.md          # Mapped care providers
-└── methodology.md                     # Data sources & methodology
+│   ├── clinical_trials.json           # Raw ClinicalTrials.gov query results
+│   ├── status_breakdown.json          # Trial status distribution
+│   ├── country_distribution.json      # Geographic distribution by country
+│   └── featured_trials.json           # Detailed study summaries
+├── gap_analysis/
+│   ├── west_virginia.json             # Pocahontas County, WV analysis
+│   ├── kentucky.json                  # Breathitt County, KY analysis
+│   ├── mississippi_delta.json         # MS Delta region analysis
+│   └── combined_gap_report.md         # Merged gap findings
+└── src/
+    └── analysis_notes.md              # Methodology and toolchain notes
 ```
 
 ## How to Use
 
-This data is intended for:
-- **Researchers** studying prosthetic care disparities
-- **Clinicians** identifying underserved areas for outreach
-- **Policy makers** prioritizing resource allocation
-- **Community organizations** advocating for local prosthetic services
+1. Explore trials: Browse `data/clinical_trials.json` for the full query results
+2. Understand gaps: See `gap_analysis/combined_gap_report.md` for the merged findings
+3. Re-run the analysis: Data was gathered via ClinicalTrials.gov API and OpenStreetMap/Overpass queries
+
+## Contributing
+
+This is an open-access project. Contributions welcome:
+- Add more clinical trial data for specific conditions
+- Expand geographic gap analysis to additional regions
+- Propose interventions for underserved areas
+- Share local prosthetic/orthotic provider data
 
 ## Data Sources
-- ClinicalTrials.gov API (clinical study registry)
-- OpenStreetMap (healthcare facility mapping)
-- Neighborhood livability analysis
+
+- ClinicalTrials.gov API (NLM/NIH)
+- OpenStreetMap / Overpass API (geographic & amenity data)
+- OSM Nightly build (neighborhood livability scores)
 
 ## License
 
-Open-access — free to use, share, and adapt for nonprofit and research purposes.
-
----
-
-*Built to bridge the gap between prosthetic innovation and access.*
+Open access — all data is available for reuse.
