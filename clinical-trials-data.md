@@ -1,6 +1,6 @@
 # Prosthetic Clinical Trials — Trend Analysis
 
-> Data sourced from ClinicalTrials.gov on 2026-07-13. All trials matched the query "prosthetic."
+> Data sourced from ClinicalTrials.gov on 2026-07-13 and 2026-07-15. All trials matched the query "prosthetic" and related terms.
 
 ## Overview
 
@@ -16,6 +16,9 @@
 | Prosthetic training rehabilitation amputee | 36 |
 | Bionic prosthesis upper limb | 18 |
 | 3D printed prosthetic | 40 |
+| **Powered/motorized prosthetics** | 14 |
+| **Prosthetic thermoregulation** | 3 |
+| **Prosthetic QoL outcomes** | 15 |
 
 ## Trends by Status
 
@@ -102,18 +105,7 @@ The U.S. leads in absolute numbers, but per-capita, Scandinavian and European na
 
 ## Sub-Specialty Phase Breakdown
 
-### Upper Limb Prosthetic (476 studies)
-| Phase | Count |
-|-------|-------|
-| NA | 337 |
-| Unknown | 79 |
-| PHASE4 | 18 |
-| PHASE3 | 15 |
-| PHASE2 | 23 |
-| PHASE1 | 9 |
-| EARLY_PHASE1 | 4 |
-
-### Lower Limb Prosthetic Amputation (290 studies)
+### Lower Limb ProAmputaiton (290)
 | Phase | Count |
 |-------|-------|
 | NA | 211 |
@@ -129,12 +121,54 @@ The U.S. leads in absolute numbers, but per-capita, Scandinavian and European na
 |--------|-------|--------|---------|
 | NCT07032753 | Neuromusculoskeletal Interface for Bionic Arms | NOT_YET_RECRUITING | Shirley Ryan AbilityLab |
 | NCT06486571 | HD-sEMG Control & Sensory Feedback for Robotic Hand Prostheses | UNKNOWN | INAIL (Italy) |
-| NCT06634654 | AI-based Approach in Total Knee Arthroplasty | RECRUITING | Fondazione Policlinico Campus Bio-Medico |
+| NCT06634654 | AI-based Approach in Total Knee Arthroplasty | RECRUITING | Campus Bio-Medico (Italy) |
 | NCT07574762 | CAN-ARD: Computer Navigation vs. Robotic Knee Replacement | RECRUITING | Groupe Hospitalier Diaconesses (France) |
 | NCT04725461 | Low Cost Socket for Lower Limb Amputees | COMPLETED | Shirley Ryan AbilityLab |
 | NCT03544853 | Computational Design of Patient-Specific Transtibial Sockets | COMPLETED | MIT |
 | NCT03215771 | Myoelectric Upper Limb Orthosis Use by TBI/Stroke Patients | COMPLETED | Northwestern Univ. / VA |
 | NCT07215442 | Skin Temperature Perception & Prosthetic Thermoregulation | COMPLETED | VA Puget Sound |
 | NCT07385859 | Prosthetic Satisfaction, Body Image & ICF Outcomes After Amputation | COMPLETED | Ondokuz Mayıs Univ. (Turkey) |
+| NCT06498245 | Microprocessor Knee for K2-Level Ambulators (MPK-K2) | RECRUITING | U.S. academic center |
+| NCT05407545 | Evaluation of a Motorised Prosthetic Knee (MOKI-B) | COMPLETED | Vrije Universiteit Brussel / Össur |
+| NCT03726918 | BioPreIOA: Osseointegration Bio-Markers | COMPLETED | Istituto Ortopedico Rizzoli |
+| NCT07519746 | PROINGA: Prosthetic Satisfaction & QoL in Gaza | COMPLETED | Yeditepe University |
 
-Last updated: 2026-07-13
+### Highlighted Trial Deep Dives
+
+#### NCT06498245 — MPK-K2 (Currently Recruiting!)
+- **Title:** Microprocessor Knee for K2-Level Ambulators
+- **Status:** RECRUITING 🔵
+- **Phase:** Phase 3
+- **Type:** Randomized Controlled Trial
+- **Intervention:** Microprocessor prosthetic knee vs. conventional knee
+- **Population:** K2-level community ambulators (transfemoral amputees)
+- **Location:** United States
+- **Significance:** First large-scale RCT comparing microprocessor knees to conventional knees for K2-level community ambulators. Results could directly inform insurance coverage decisions for powered/advanced prosthetic knees in underserved areas.
+
+#### NCT05407545 — MOKI-B (Completed)
+- **Title:** Evaluation of a Motorised Prosthetic Knee (Power Knee by Össur)
+- **Status:** COMPLETED ✅
+- **Participants:** 7 (unilateral transfemoral amputees, K3-4)
+- **Location:** Brussels, Belgium
+- **Collaborator:** Össur Iceland ehf
+- **Focus:** Power Knee vs. current prosthesis — L-test, slope walking, 6MWT, dual-task 6MWT, heart rate, Borg RPE, NASA-TLX
+- **Significance:** Demonstrated feasibility of powered knee evaluation in daily activities. European-only study — U.S. rural communities excluded.
+
+#### NCT03726918 — BioPreIOA (Completed)
+- **Title:** Identification of New Predictive Osseointegration Bio-Markers
+- **Status:** COMPLETED ✅
+- **Participants:** 9
+- **Location:** Bologna, Italy
+- **Sponsor:** Istituto Ortopedico Rizzoli
+- **Focus:** RNA/proteomic analysis of osseointegration in prosthetic implants
+- **Significance:** Research into biological markers that predict successful implant integration. Could improve surgical outcomes for prosthetic patients globally.
+
+#### NCT07519746 — PROINGA (Completed)
+- **Title:** Prosthetic Satisfaction & Quality of Life Among Lower Limb Users in Gaza
+- **Status:** COMPLETED ✅
+- **Participants:** 128
+- **Location:** Gaza Strip (Al-Azhar Gaza / Yeditepe University Istanbul)
+- **Outcomes:** SAT-PRO, PEQ, TAPES, EQ-5D-5L, SWLS
+- **Significance:** One of the few prosthetic outcomes studies in a conflict/humanitarian setting. Framework for measuring QoL in resource-limited contexts — applicable to U.S. Delta and Appalachia.
+
+Last updated: 2026-07-15
