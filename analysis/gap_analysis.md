@@ -1,36 +1,32 @@
-# Gap Analysis Methodology
+# Detailed Access Gap Analysis
 
-## Methodology
+## Cardiovascular Context
+The Mississippi Delta has the highest amputation rates in the United States due to diabetes and vascular disease. In rural West Virginia and Eastern Kentucky, amputation rates are elevated due to a combination of chronic disease, trauma, and opioid crisis complications.
 
-### Data Collection
-- **Clinical Trial Source:** ClinicalTrials.gov API (search: prosthetic care, prosthetic limb)
-- **Provider Source:** OpenStreetMap, ABC Directory, Hanger Clinic network
-- **Demographic Source:** CDC, HRSA, US Census Bureau
+## Facility Gaps Summary
 
-### Gap Scoring (0-5 scale)
-| Factor | Weight | Scoring |
-|--------|--------|---------|
-| CPO distance | 30% | 0=within 20 mi, 3=50-100 mi, 5=100+ mi |
-| Medicaid acceptance | 20% | 0=widely accepted, 3=limited, 5=none |
-| Amputation rate | 20% | 0=below avg, 3=2x avg, 5=3x+ avg |
-| Public transit | 15% | 0=available, 5=none |
-| Inpatient rehab | 15% | 0=within 50 mi, 5=none |
+### West Virginia (14 facilities found)
+- Community Care of Green Bank, VA Clinic Sutton, Allegheny Health Clinic, EZCare Walk-In, Seneca Trail PT, Community Care Dental, Care Xpress, PMI First Aid, Green Bank Pharmacy, CVS (Covington), Walmart Pharmacy, Rockbridge Pharmacy, Hot Springs Pharmacy, Lexington Reflexology
 
-### Scoring Results
-- **Rural WV:** 1/5 (CPO ~190 mi away, but WV Medicaid limited coverage)
-- **Eastern KY:** 1/5 (CPO ~130 mi away, but KY Medicaid accepted in Lexington; deep isolation)
-- **Mississippi Delta:** 0/5 (CPO 200-250 mi away; MS no Medicaid expansion; highest amputations)
+### Eastern Kentucky (19 facilities found)
+- Mountain Instant Care, AdventHealth Oneida, Leatherwood Blacky, PMC Medical Diagnostics, Vitality Wellness, Life Crafters (OT only), Lance Dozier MD, Designing Smiles, In Home Care, Walgreens x3, CVS x4, Parkway Pharmacy, Clay Community, Good Neighbor, Gough's Family
 
-### Limitations
-- OSM provider data may be incomplete; ABC directory verification needed
-- Amputation rates vary by county; state-level data used as proxy
-- Medicaid policies change; verify current status
-- Cultural and socioeconomic factors not fully captured in numbers
+### Mississippi Delta (9 facilities found)
+- The Greenville Clinic, Southeast Rehab Hospital (10 beds), Michelle Seard-Higgins DMD, Dental Group of Greenville, Gough's Family, South Street Pharmacy, Walgreens, Good Neighbor Pharmacy, Gilbow's Drug Store
 
-### Next Steps
-1. Conduct on-the-ground CPO provider verification in each region
-2. Collect patient testimony for qualitative data
-3. Update provider map quarterly
-4. Advocate for mobile prosthetic clinics with health policy stakeholders
-5. Partner with VA and HRSA for evidence-based intervention design
-6. Submit manuscript to JAMA or Archives of PM&R
+## Key Finding: ZERO CPO facilities identified in any of the three regions
+
+## Medicaid Context
+- WV: Limited CPO reimbursement; many metro providers decline WV Medicaid
+- KY: Some Lexington CPOs accept KY Medicaid; WV Medicaid rarely accepted
+- MS: No Medicaid expansion; virtually no CPO accepts MS Medicaid
+
+## Recommended Immediate Actions
+1. Deploy mobile CPO units on rotating schedules
+2. Implement tele-rehabilitation for follow-ups
+3. Create state-funded travel voucher programs
+4. Advocate for Medicaid expansion in WV/MS
+5. Offer tax incentives for CPOs in underserved counties
+6. Train local CHWs in prosthetic maintenance
+7. Explore 3D-printed prosthetic production locally
+8. Establish CPO residency rotations through WVU/UK/UM
