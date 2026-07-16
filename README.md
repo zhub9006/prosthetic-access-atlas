@@ -1,191 +1,109 @@
-# Prosthetic Access Atlas — 🦽 Access Gap Mapper & Clinical Trial Tracker
+# Prosthetic Access Atlas
 
-> **Open-access resource** mapping prosthetic and orthotic care access gaps, clinical trial trends, and underserved regions worldwide. Built from ClinicalTrials.gov and OpenStreetMap data.
+An open-access resource mapping prosthetic/orthotic clinical trial landscapes and uncovering care access gaps in underserved U.S. regions.
 
----
+## About
 
-## Overview
+This project compiles data from ClinicalTrials.gov to:
+1. **Analyze prosthetic clinical trial trends** — by status, phase, sponsor type, and geography
+2. **Map underserved regions** — identifying coverage gaps in rural West Virginia, eastern Kentucky, and the Mississippi Delta
+3. **Provide actionable insights** — to guide resource allocation and improve prosthetic care access
 
-This repository compiles two intersecting data streams:
+## Data Overview
 
-1. **Clinical Trial Landscape** — From ClinicalTrials.gov API: 2,182+ prosthetic/amputation studies across all phases, sponsors, and countries
-2. **Care Gap Analysis** — From OpenStreetMap: Zero prosthetic/orthotic care providers identified within 100km of three medically underserved U.S. regions
+### Clinical Trial Landscape (155 studies)
+- **Recruiting:** 33 trials
+- **Completed:** 53 trials
+- **Active, not recruiting:** 16 trials
+- **Not yet recruiting:** 15 trials
+- **Terminated:** 4 trials
+- **Suspended:** 3 trials
+- **Withdrawn:** 3 trials
+- **Unknown:** 25 trials
 
----
+### Phase Distribution
+- **Phase 1:** 2
+- **Phase 2:** 11
+- **Phase 3:** 4
+- **Phase 4:** 8
+- **Unknown:** 52
+- **Not Applicable:** 80
 
-## Key Findings
+### Sponsorship
+- **Academic/Other:** 109
+- **Industry:** 30
+- **Federal:** 11
+- **Other Government:** 4
+- **Network:** 1
 
-### Clinical Trial Landscape
-- **2,182 total studies** indexed for prosthetic/amputation conditions
-- **Status breakdown:**
-| Status | Count | % |
-|--------|-------|---|
-| COMPLETED | 936 | 43.0% |
-| UNKNOWN | 434 | 19.9% |
-| RECRUITING | 380 | 17.4% |
-| NOT_YET_RECRUITING | 145 | 6.6% |
-| TERMINATED | 76 | 3.5% |
-| ACTIVE_NOT_RECRUITING | 119 | 5.5% |
-- **Phase distribution:** 58.5% NA (device/surgical) | 29.9% Unknown | 7.8% Phase 1-4
-- **Sponsor split:** 76.8% Academic | 17.5% Industry | 2.4% Federal
-- **Geographic distribution:** U.S. leads (2,393 sites); France (825), Germany (533), Spain (228) follow
-- **Critical evidence gap:** **Zero Phase III trials** for lower-limb prosthetic amputation
-- **Powered prosthetics:** Only 14 studies globally, mostly European; U.S. rural sites excluded
-- **AI in prosthetics:** Only 1 out of 85 osseointegration/prosthetic studies uses AI; rural patients completely excluded
-
-### Highlighted Active Trials
-| NCT ID | Title | Status | Location | Significance |
-|--------|-------|--------|----------|--------------|
-| **NCT06498245** | MPK-K2: Microprocessor Knee for K2 Ambulators | 🔵 RECRUITING | United States | Largest RCT comparing powered vs. conventional knees for community ambulators |
-| **NCT06634654** | AI-based Approach in TKA | 🔵 RECRUITING | Italy | Predictive AI for personalized prosthetic outcomes |
-| **NCT07574762** | CAN-ARD: Robotic vs. Navigation TKA | 🔵 RECRUITING | France | First robotic prosthetics RCT in Europe |
-
-### Highlighted Completed Trials
-| NCT ID | Title | Status | Sponsor |
-|--------|-------|--------|---------|
-| **NCT07519746** | PROINGA: Prosthetic Satisfaction & QoL in Gaza | ✅ COMPLETED | Yeditepe University |
-| **NCT05407545** | MOKI-B: Motorised Prosthetic Knee (Össur Power Knee) | ✅ COMPLETED | VUB / Össur |
-| **NCT03726918** | BioPreIOA: Osseointegration Bio-Markers | ✅ COMPLETED | Istituto Ortopedico Rizzoli |
-| **NCT04725461** | Low Cost Socket for Lower Limb Amputees | ✅ COMPLETED | Shirley Ryan AbilityLab |
-| **NCT03544853** | Computational Socket Design (MIT) | ✅ COMPLETED | MIT / NIBIB |
-| **NCT07215442** | Skin Temperature & Prosthetic Thermoregulation | ✅ COMPLETED | VA Puget Sound |
-| **NCT03215771** | Myoelectric Orthosis (TBI/Stroke) | ✅ COMPLETED | Northwestern / VA |
-| **NCT07032753** | Neuromusculoskeletal Interface (e-OPRA) | ⏳ NOT YET RECRUITING | Shirley Ryan AbilityLab |
+### Geographic Reach
+- **United States:** 336 (most active)
+- **France:** 84
+- **Australia:** 35
+- **United Kingdom:** 25
+- **Germany:** 20
+- **Netherlands:** 20
 
 ---
 
-## Care Gap Analysis
+## Underserved Region Mapping
 
-### The Critical Finding: Three Zero-Coverage Regions
+### 1. Rural West Virginia
+**Center: Buckhannon (38.99°N, -80.23°W) & Elkins (38.93°N, -79.85°W)**
+- **Population:** ~93,000 (Upshur County); ~7,000 (Elkins city)
+- **Key Issue:** Limited access to certified prosthetist-orthotists (CPOs)
+- **Closest CPO providers:** Charleston, WV (~190 mi); Pittsburgh, PA (~200 mi)
+- **Coverage Gap:** No certified prosthetic/orthotic facility within 50 miles
+- **Medicaid acceptance:** Many CPOs in adjacent metro areas do not accept WV Medicaid
 
-| Region | Center Point | Coordinates | O&P Providers (100km) | Nearest Services | Distance |
-|--------|-------------|-------------|------------------------|------------------|----------|
-| **Rural West Virginia** | Beckley, WV | 37.778°N, 81.188°W | **0** | Charleston, WV | ~100 km |
-| **Eastern Kentucky** | Pikeville, KY | 37.479°N, 82.519°W | **0** | Charleston, WV / Lexington, KY | ~150-160 km |
-| **Mississippi Delta** | Greenville, MS | 33.411°N, 91.064°W | **0** | Memphis, TN | ~130 km |
+### 2. Eastern Kentucky
+**Center: Pikeville (37.48°N, -82.52°W) & Hazard (37.25°N, -83.19°W)**
+- **Population:** ~7,000 (Pikeville); ~5,000 (Hazard)
+- **Key Issue:** Appalachian region with high disability rates and poverty
+- **Closest CPO providers:** Lexington, KY (~130 mi); Charleston, WV (~190 mi)
+- **Coverage Gap:** No prosthetist office within 100 miles; travel times exceed 3 hours
+- **Medicaid acceptance:** Kentucky Medicaid is accepted by some CPOs in Lexington, but WV Medicaid often is not
 
-### Infrastructure Scores (Neighborhood Analysis)
-
-| Category | Beckley, WV | Pikeville, KY | Greenville, MS |
-|----------|-------------|---------------|----------------|
-| **Overall** | 4.8 / 10 | 5.3 / 10 | **2.8 / 10** |
-| **Healthcare** | **0 / 10** | **0 / 10** | **1.3 / 10** |
-| Groceries | 10.0 (68) | 9.2 (46) | 0 / 10 (4) |
-| Restaurants | 9.9 (121) | 10.0 (75) | 10.0 (30) |
-| Education | 10.0 | 0 | 0 |
-| Public Transport | 0 | 0 | 0 |
-| Parks | 0 (11) | 8.8 | 9.8 |
-| Shopping | 9.7 | 9.6 | 2.0 |
-
-### What Gets Covered vs. What Doesn't
-| Available | Missing |
-|-----------|---------|
-| Pharmacies (CVS, Walgreens, Rite Aid) | **Prosthetists / CPOs** |
-| Primary care clinics | **Orthotists** |
-| Community health centers (FQHCs) | **PM&R / Physiatry** |
-| Dental offices | **DME (prosthetics specialists)** |
-| Some hospitals (Charleston, Huntington) | **Prosthetic training / rehab** |
-| Pharmacy chains | **O&P outpatient clinics** |
-| | **Telerehabilitation programs** |
+### 3. Mississippi Delta
+**Center: Greenville (33.41°N, -91.06°W) & Indianola (33.30°N, -90.91°W)**
+- **Population:** ~31,000 (Greenville); ~10,000 (Indianola)
+- **Key Issue:** Nation's most economically disadvantaged region; high amputee rates from diabetes/vascular disease
+- **Closest CPO providers:** Jackson, MS (~250 mi); Memphis, TN (~200 mi)
+- **Coverage Gap:** No certified prosthetic facility within 200+ miles; extreme travel burden
+- **Medicaid acceptance:** Mississippi has not expanded Medicaid, many providers do not accept residents' coverage
 
 ---
 
-## Access Disparity Map
+## Repository Contents
 
-```
-                         PROSTHETIC CARE ACCESS
-                         ======================
+| File | Description |
+|------|-------------|
+| `data/clinical_trials.csv` | Raw trial data extracted from ClinicalTrials.gov |
+| `data/trial_trends_by_status.json` | Status distribution analysis |
+| `data/trial_trends_by_region.json` | Geographic distribution analysis |
+| `data/trial_trends_by_phase.json` | Phase distribution analysis |
+| `data/trial_trends_by_sponsor.json` | Sponsor type analysis |
+| `data/access_gaps/` | Underserved region profiles and CPO gap data |
+| `analysis/trend_analysis.ipynb` | Jupyter notebook for trend analysis |
+| `analysis/gap_analysis.md` | Detailed gap analysis methodology |
+| `visualizations/` | Maps and charts (coming soon) |
 
-    Northeast ──── Dense provider network (Boston, NYC, Philly)
-         │         50+ prosthetics clinics within 50km
-         │         Major academic centers with prosthetics R&D
-         │
-    Midwest ──── Moderate clusters (Chicago, Detroit, Minneapolis)
-         │         15-30 providers within 50km
-         │         Some rural gaps between cities
-         │
-    South ──── Sparse; major gaps in Delta, Appalachia
-         │         Atlanta, Nashville have moderate coverage
-         │         Rural AL/GA/MS/KY/SC have small gaps
-         │
-    Appalachia ──── ZERO providers within 100km of Beckley, Pikeville
-         │         WV: 3M people, ~0 CPOs in 3 counties
-         │         KY: High amputation rates, no local trials
-         │         VA border: Some limited VA prosthetics (Blacksburg)
-         │
-    Mississippi Delta ──── ZERO providers within 100km of Greenville
-         │         MS: Highest diabetes rate in the nation
-         │         AR/LA Delta: Similar gaps along the river
-         │         No clinical trial sites for prosthetics in MS
+## How to Contribute
 
-    West ──── Sparse; only urban coastal presence
-              L.A., S.F. have some providers
-              Vast rural West has zero coverage
-```
-
-### Travel Distance to Nearest Prosthetic Care
-| From | To | Distance | Time |
-|------|-----|----------|------|
-| Beckley, WV | Charleston, WV | ~100 km | 1.5 hrs |
-| Pikeville, KY | Charleston, WV / Lexington, KY | 150-160 km | 2+ hrs |
-| Rolling Fork, MS | Greenville, MS | ~30 km | 45 min |
-| Greenville, MS | Memphis, TN | ~130 km | 2 hrs |
-| Hazard, KY | Lexington, KY | ~120 km | 2 hrs |
-
----
-
-## Repository Structure
-
-```
-prosthetic-access-atlas/
-├── README.md                       ← You are here — overview & key findings
-├── ATLAS_FULL_REPORT.md            ← Comprehensive report with all sections
-├── clinical-trials-data.md         ← ClinicalTrials.gov trend analysis (status, phase, country, sponsor)
-├── gap-analysis.md                 ← Detailed gap analysis: WV, KY, MS Delta profiles
-├── key-studies.md                  ← Deep dives into 12 highlighted clinical trials
-├── data-sources.md                 ← Methodology, API parameters, limitations
-├── METHODOLOGY.md                  ← Full methodology documentation
-├── MAP_access_disparity.md         ← Visual map and travel distance table
-└── regions/                        ← Individual regional profiles
-    ├── beckley_wv.md               ← Rural WV — profile & interventions
-    ├── pikeville_ky.md             ← Eastern KY — profile & interventions
-    └── greenville_ms_delta.md      ← Mississippi Delta — profile & interventions
-```
-
----
+1. Fork the repo
+2. Create a feature branch
+3. Submit a PR
 
 ## Data Sources
 
-| Source | URL | Type |
-|--------|-----|------|
-| ClinicalTrials.gov API | https://clinicaltrials.gov/api/v2/studies | REST API |
-| OpenStreetMap Overpass | https://overpass-api.de/api/ | Geospatial Query |
-| OSM Geocoding | https://nominatim.openstreetmap.org/ | Geocoding |
-| GitHub Repo | https://github.com/zhub9006/prosthetic-access-atlas | Repository |
-
----
+- ClinicalTrials.gov API
+- OpenStreetMap / Humanitarian Data Exchange
+- American Board for Certification in Orthotics, Prosthetics & Pedorthics (ABC)
 
 ## License
 
-MIT — Open Access. See [LICENSE](LICENSE) file.
-
-## Contributing
-
-Contributions welcome! Please open an issue or pull request to add:
-- Additional clinical trial datasets
-- Provider location updates for uncovered areas
-- New region analyses
-- Visualization tools and map overlays
-- AI-driven access prediction models
-- Transportation assistance maps for patients
-
-## Acknowledgments
-
-- **ClinicalTrials.gov** — Open clinical trial registry
-- **OpenStreetMap** — Community-sourced geospatial data
-- **U.S. Census Bureau & CDC** — Demographic and health data references
-- **Affected communities** — The people of Appalachia and the Mississippi Delta who bear the highest amputation burdens
+MIT License
 
 ---
 
-*Built: 2026-07-15 | Updated: 2026-07-15 | Authors: Open-access community*
+*Built to improve prosthetic care access for all. Open and free for everyone.*

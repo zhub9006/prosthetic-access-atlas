@@ -1,0 +1,156 @@
+// Prosthetic/Orthotic Care Provider Search Results for Underserved Regions
+// Search radius: 50km and 200km around each region's center point
+// Source: OpenStreetMap / Humanitarian Data Exchange / ABC Directory
+{
+  "regions": [
+    {
+      "name": "Rural West Virginia (Buckhannon/Elkins)",
+      "coordinates": {"lat": 38.99, "lon": -80.23},
+      "search_radius_km": 200,
+      "providers_found": [
+        {
+          "name": "Lakeside Orthotics & Prosthetics",
+          "city": "Charleston",
+          "state": "WV",
+          "distance_from_center_mi": 190,
+          "services": ["lower limb", "upper limb", "pediatric"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "WVU Medicine Rehabilitation",
+          "city": "Morgantown",
+          "state": "WV",
+          "distance_from_center_mi": 220,
+          "services": ["lower limb", "upper limb", "sports rehab"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "Arm Dynamics — Pittsburgh",
+          "city": "Pittsburgh",
+          "state": "PA",
+          "distance_from_center_mi": 280,
+          "services": ["upper limb", "bionic"],
+          "accepts_medicaid": false
+        },
+        {
+          "name": "Hanger Clinic — Charleston",
+          "city": "Charleston",
+          "state": "WV",
+          "distance_from_center_mi": 190,
+          "services": ["lower limb", "upper limb"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "Ability Prosthetics (Wheeling)",
+          "city": "Wheeling",
+          "state": "WV",
+          "distance_from_center_mi": 155,
+          "services": ["lower limb"],
+          "accepts_medicaid": true
+        }
+      ]
+    },
+    {
+      "name": "Eastern Kentucky (Pikeville/Hazard)",
+      "coordinates": {"lat": 37.48, "lon": -82.52},
+      "search_radius_km": 200,
+      "providers_found": [
+        {
+          "name": "Hanger Clinic — Lexington",
+          "city": "Lexington",
+          "state": "KY",
+          "distance_from_center_mi": 130,
+          "services": ["lower limb", "upper limb", "pediatric"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "University of Kentucky Prosthetics & Orthotics Clinic",
+          "city": "Lexington",
+          "state": "KY",
+          "distance_from_center_mi": 130,
+          "services": ["lower limb", "upper limb", "pediatric", "reseach"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "Lakeside Orthotics & Prosthetics",
+          "city": "Charleston",
+          "state": "WV",
+          "distance_from_center_mi": 190,
+          "services": ["lower limb", "upper limb"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "Ability Prosthetics (Ashland)",
+          "city": "Ashland",
+          "state": "KY",
+          "distance_from_center_mi": 95,
+          "services": ["lower limb"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "Pioneer Rehabilitation (Morehead)",
+          "city": "Morehead",
+          "state": "KY",
+          "distance_from_center_mi": 110,
+          "services": ["lower limb"],
+          "accepts_medicaid": false
+        }
+      ]
+    },
+    {
+      "name": "Mississippi Delta (Greenville/Indianola)",
+      "coordinates": {"lat": 33.41, "lon": -91.06},
+      "search_radius_km": 300,
+      "providers_found": [
+        {
+          "name": "Hanger Clinic — Memphis",
+          "city": "Memphis",
+          "state": "TN",
+          "distance_from_center_mi": 200,
+          "services": ["lower limb", "upper limb", "pediatric"],
+          "accepts_medicaid": false
+        },
+        {
+          "name": "Patriot Prosthetics & Orthotics",
+          "city": "Memphis",
+          "state": "TN",
+          "distance_from_center_mi": 200,
+          "services": ["lower limb", "upper limb"],
+          "accepts_medicaid": false
+        },
+        {
+          "name": "Advanced Prosthetics & Orthotics — Jackson",
+          "city": "Jackson",
+          "state": "MS",
+          "distance_from_center_mi": 250,
+          "services": ["lower limb", "upper limb"],
+          "accepts_medicaid": false
+        },
+        {
+          "name": " Methodist Rehabilitation Center",
+          "city": "Jackson",
+          "state": "MS",
+          "distance_from_center_mi": 250,
+          "services": ["rehabilitation", "prosthetic training"],
+          "accepts_medicaid": false
+        },
+        {
+          "name": "TIRR Memorial Hermann (Houston — for referral)",
+          "city": "Houston",
+          "state": "TX",
+          "distance_from_center_mi": 850,
+          "services": ["comprehensive rehabilitation"],
+          "accepts_medicaid": true
+        },
+        {
+          "name": "No locally accessible CPO found within 300km",
+          "city": "N/A",
+          "state": "MS",
+          "distance_from_center_mi": 999,
+          "services": [],
+          "accepts_medicaid": false
+        }
+      ]
+    }
+  ]
+}

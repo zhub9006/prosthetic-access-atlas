@@ -1,0 +1,17 @@
+{
+  "analysisType": "countBySponsorType",
+  "totalStudies": 155,
+  "results": {
+    "ACADEMIC_OTHER": {"count": 109, "percentage": 70.3, "label": "Universities, hospitals, academic medical centers"},
+    "INDUSTRY": {"count": 30, "percentage": 19.4, "label": "Pharmaceutical and device companies"},
+    "FEDERAL": {"count": 11, "percentage": 7.1, "label": "NIH, VA, and other federal agencies"},
+    "OTHER_GOV": {"count": 4, "percentage": 2.6, "label": "Other government entities"},
+    "NETWORK": {"count": 1, "percentage": 0.6, "label": "Multi-site research networks"}
+  },
+  "insights": [
+    "Academic sponsors dominate (70.3%) — industry investment in prosthetics is low relative to other medical fields",
+    "Federal funding (NIH/VA) accounts for only 7.1% — the VA is a key prosthetic stakeholder but underfunded",
+    "Industry sponsors account for 19.4% — mostly focused on prosthetic joint infections, not limb prosthetics",
+    "No manufacturer-led Phase 3 trials for next-generation prosthetic limbs exist in the dataset"
+  ]
+}

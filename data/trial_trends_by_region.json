@@ -1,0 +1,24 @@
+{
+  "analysisType": "countByCountry",
+  "totalStudies": 155,
+  "results": {
+    "United States": {"count": 336, "percentage": 48.5, "label": "Highest prosthetic research activity globally"},
+    "France": {"count": 84, "percentage": 12.1, "label": "Second-largest prosthetic research hub"},
+    "Australia": {"count": 35, "percentage": 5.1, "label": "Significant Pacific-region research"},
+    "United Kingdom": {"count": 25, "percentage": 3.6, "label": "Established prosthetic research tradition"},
+    "Germany": {"count": 20, "percentage": 2.9, "label": "Strong biomechanics research base"},
+    "Netherlands": {"count": 20, "percentage": 2.9, "label": "Growing prosthetic innovation center"},
+    "Spain": {"count": 17, "percentage": 2.5, "label": "Emerging prosthetic research"},
+    "Canada": {"count": 13, "percentage": 1.9, "label": "North American research partner"},
+    "Turkey": {"count": 7, "percentage": 1.0, "label": "Growing prosthetic research capacity"},
+    "Switzerland": {"count": 8, "percentage": 1.2, "label": "Technical innovation in prosthetics"},
+    "Sweden": {"count": 8, "percentage": 1.2, "label": "Scandinavian prosthetic research"
+  },
+  "insights": [
+    "U.S. leads prosthetic clinical research with nearly half of all global trials",
+    "France is the second-largest hub, with strong EU funding and academic partnerships",
+    "Developing nations (India: 3, Pakistan: 2, Egypt: 3) contribute minimally — a major access gap",
+    "U.S. trials concentrated in urban academic medical centers (Baltimore, Boston, Pittsburgh, Philadelphia)",
+    "Rural Appalachia and the Mississippi Delta have ZERO prosthetic trials conducted locally"
+  ]
+}
