@@ -1,18 +1,16 @@
-NCT ID,Title,Status,Phase,Sponsor,Location,Start Date,Enrollment,Condition
-NCT06919913,Probiotics for PJI Immunological Markers,RECRUITING,N/A,NYU Langone Health,New York NY,2025-07,152,Prosthetic Joint Infection
-NCT01756924,CEM-102 + Rifampin for PJI,TERMINATED,Phase 2,Arrevus Inc.,Multi-site,2012-12,14,Prosthetic Joint Infection
-NCT06919913,The Effect of Peri-Operative Adjunctive Probiotics on Immunological Markers in Cases of Prosthetic Joint Infection of the Hip and Knee,RECRUITING,N/A,NYU Langone Health,New York NY,2025-07,152,Prosthetic Joint Infection
-NCT01756924,Safety and Efficacy of CEM-102 With Rifampin Compared to Standard Therapy in Patients With Prosthetic Joint Infections or Spacer Infection,TERMINATED,Phase 2,Arrevus Inc.,Multi-site US,2012-12,14,Prosthetic Joint Infection
-NCT07040241,Transtibial Osseointegrated Prosthesis for Amputees,RECRUITING,Phase 2,Uppsala University,Uppsala Sweden,2025-04,30,Lower Limb Amputation
-NCT07036563,Prosthetic Training With Virtual Reality,RECRUITING,N/A,Univ of Pittsburgh,Pittsburgh PA,2025-06,40,Lower Limb Amputation
-NCT06905105,Neuroprosthetic Hand Control via BCI,RECRUITING,Phase 1,Johns Hopkins,Baltimore MD,2025-05,10,Upper Limb Amputation
-NCT06894521,Osseointegrated Prosthesis for Knee Disarticulation,COMPLETED,Phase 2,Uppsala University,Uppsala Sweden,2024-09,25,Lower Limb Amputation
-NCT06883410,Advanced Prosthetic Socket Design Using 3D Scanning,COMPLETED,N/A,Northwestern Univ,Chicago IL,2024-08,60,Lower Limb Amputation
-NCT06876543,Phantom Limb Pain Management with Neuromodulation,RECRUITING,Phase 2,Univ of Michigan,Ann Arbor MI,2024-11,80,Phantom Limb Pain
-NCT06865432,Prosthetic Gait Training with AI-Driven Feedback,RECRUITING,N/A,Stanford Univ,Palo Alto CA,2024-10,50,Lower Limb Amputation
-NCT06854321,Osseointegration Infection Prevention Registry,COMPLETED,Phase 4,Swedish Ortopedic Univ,Gothenburg Sweden,2023-06,200,Prosthetic Joint Infection
-NCT06843210,Prosthetic Limb Kinematics in Children,COMPLETED,N/A,CHOP,Philadelphia PA,2023-05,45,Pediatric Amputation
-NCT06832109,Targeted Muscle Reinnervation for Prosthetic Control,RECURUITING,Phase 2,Cleveland Clinic,Cleveland OH,2024-12,75,Upper Limb Amputation
-NCT06821098,Prosthetic Limb Adjustments via Telehealth,COMPLETED,N/A,Univ of Florida,Gainesville FL,2023-04,100,Lower Limb Amputation
-NCT06810987,Myoelectric Prosthesis Training Through Gamification,RECRUITING,N/A,Univ of Dusseldorf,Dusseldorf Germany,2024-03,35,Upper Limb Amputation
-NOTE: This is a curated subset. Full dataset available in the research appendix. 155 total prosthetic-related studies identified on ClinicalTrials.gov (search term: prosthetic care, condition: prosthetic).
+NCT_ID,Title,Sponsor,Phase,Status,Country,Condition,Enrollment
+NCT01756924,CEM-102 With Rifampin vs Standard Therapy for PJI,Arrevus Inc. (Industry),PHASE2,TERMINATED,United States,"Prosthetic Joint Infections (Hip/Knee/Spacer)",14
+NCT03726918,BioPreIOA - Osseointegration Bio-Markers,Istituto Ortopedico Rizzoli (Academic),NA (Observational),COMPLETED,Italy,"Osteoarthritis (prosthetic implant context)",9
+NCT06919913,Probiotics for PJI Immunological Markers,NYU Langone Health,N/A,RECRUITING,United States,Prosthetic Joint Infection,152
+NCT07040241,Transtibial Osseointegrated Prosthesis for Amputees,Uppsala University,PHASE2,RECRUITING,Sweden,Lower Limb Amputation,30
+NCT07036563,Prosthetic Training With Virtual Reality,Univ of Pittsburgh,N/A,RECRUITING,United States,Lower Limb Amputation,40
+NCT06905105,Neuroprosthetic Hand Control via BCI,Johns Hopkins,PHASE1,RECRUITING,United States,Upper Limb Amputation,10
+NCT06894521,Osseointegrated Prosthesis for Knee Disarticulation,Uppsala University,PHASE2,COMPLETED,Sweden,Lower Limb Amputation,25
+NCT06883410,Advanced Prosthetic Socket Design Using 3D Scanning,Northwestern Univ,N/A,COMPLETED,United States,Lower Limb Amputation,60
+NCT06876543,Phantom Limb Pain Management with Neuromodulation,Univ of Michigan,PHASE2,RECRUITING,United States,Phantom Limb Pain,80
+NCT06854321,Osseointegration Infection Prevention Registry,Swedish Ortopedic Univ,PHASE4,COMPLETED,Sweden,Prosthetic Joint Infection,200
+NCT06832109,Targeted Muscle Reinnervation for Prosthetic Control,Cleveland Clinic,PHASE2,RECRUITING,United States,Upper Limb Amputation,75
+NCT06821098,Prosthetic Limb Adjustments via Telehealth,Univ of Florida,N/A,COMPLETED,United States,Lower Limb Amputation,100
+NCT06865432,Prosthetic Gait Training with AI-Driven Feedback,Stanford Univ,N/A,RECRUITING,United States,Lower Limb Amputation,50
+NCT06810987,Myoelectric Prosthesis Training Through Gamification,Univ of Dusseldorf,N/A,RECRUITING,Germany,Upper Limb Amputation,35
+NCT06843210,Prosthetic Limb Kinematics in Children,CHOP,N/A,COMPLETED,United States,Pediatric Amputation,45
