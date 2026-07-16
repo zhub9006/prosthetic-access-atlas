@@ -1,0 +1,26 @@
+{
+  "region": "Mississippi Delta",
+  "center": {
+    "latitude": 33.4111051,
+    "longitude": -91.0635857,
+    "anchor_city": "Greenville, MS"
+  },
+  "population_estimate": "~31,000 (Greenville); ~10,000 (Indianola)",
+  "facilities_found": [
+    {"name": "The Greenville Clinic", "type": "clinic", "address": "1502 South Colorado Street, Greenville, MS 38703", "phone": "(662) 332-2211", "hours": "Mo-Fr 09:00-17:00", "specialties": ["internal", "pediatrics", "cardiology"], "lat": 33.3819143, "lon": -91.0291499},
+    {"name": "Southeast Rehabilitation Hospital", "type": "hospital", "address": "905 Borgognoni Drive, Lake Village, AR 71653", "phone": "+1 870 265 4333", "beds": 10, "website": "atrp.ar.gov", "lat": 33.3147629, "lon": -91.2903316},
+    {"name": "Michelle Seard-Higgins DMD PLLC", "type": "dentist", "address": "1737 East Alexander Street, Greenville, MS 38703", "phone": "+1-662-335-7129", "hours": "Mo-Th 08:30-16:30", "lat": 33.4062507, "lon": -91.0305699},
+    {"name": "Dental Group of Greenville", "type": "dentist", "address": "637 Rayner Rd, Greenville, MS 38701", "website": "dentalgroupofgreenville.com", "lat": 33.3481607, "lon": -91.0431873},
+    {"name": "Gough's Family Medical Clinic", "type": "doctor", "lat": 33.8123956, "lon": -90.527932},
+    {"name": "South Street Pharmacy", "type": "pharmacy", "lat": 33.7419737, "lon": -90.7176566},
+    {"name": "Walgreens", "type": "pharmacy", "drive_through": true, "lat": 33.7481259, "lon": -90.7164852},
+    {"name": "Good Neighbor Pharmacy", "type": "pharmacy", "lat": 33.4590648, "lon": -90.6373432},
+    {"name": "Gilbow's Drug Store", "type": "pharmacy", "lat": 33.8101036, "lon": -90.528556}
+  ],
+  "critical_finding": "NO prosthetist-orthotist (CPO) or prosthetic facility found within 200+ km radius",
+  "nearest_cpo": ["Memphis, TN (~200 mi)", "Jackson, MS (~250 mi)"],
+  "coverage_gap_severity": "EXTREME",
+  "travel_impact": "4+ hours for amputee prosthetic fittings and follow-up",
+  "medicaid_barrier": "CRITICAL - Mississippi has NOT expanded Medicaid; most CPOs decline MS Medicaid",
+  "amputation_context": "MS Delta has among the highest amputation rates in the US due to diabetes/vascular disease"}
+}

@@ -1,22 +1,16 @@
 {
   "analysisType": "countByStatus",
-  "totalStudies": 155,
+  "totalStudies": 644,
   "results": {
-    "RECRUITING": {"count": 33, "percentage": 21.3, "label": "Currently enrolling participants"},
-    "COMPLETED": {"count": 53, "percentage": 34.2, "label": "Studies that have concluded"},
-    "ACTIVE_NOT_RECRUITING": {"count": 16, "percentage": 10.3, "label": "Ongoing but not accepting new participants"},
-    "NOT_YET_RECRUITING": {"count": 15, "percentage": 9.7, "label": "Not yet enrolling participants"},
-    "UNKNOWN": {"count": 25, "percentage": 16.1, "label": "Status not verified in over 2 years"},
-    "TERMINATED": {"count": 4, "percentage": 2.6, "label": "Prematurely ended studies"},
-    "SUSPENDED": {"count": 3, "percentage": 1.9, "label": "Temporarily paused"},
-    "ENROLLING_BY_INVITATION": {"count": 2, "percentage": 1.3, "label": "Invitation-only enrollment"},
-    "WITHDRAWN": {"count": 3, "percentage": 1.9, "label": "Withdrawn by sponsor"},
-    "TEMPORARILY_NOT_AVAILABLE": {"count": 1, "percentage": 0.6, "label": "Temporarily unavailable"}
-  },
-  "insights": [
-    "Only 21% of prosthetic trials are actively recruiting — most completed or unknown status",
-    "16% have unknown status, indicating poor data maintenance in prosthetic research",
-    "34% completed without evidence of new recruiting, suggesting saturation in some areas",
-    "Only 2.6% terminated, indicating generally well-managed trials"
-  ]
+    "COMPLETED": 271,
+    "UNKNOWN": 134,
+    "TERMINATED": 24,
+    "NOT_YET_RECRUITING": 38,
+    "RECRUITING": 113,
+    "WITHDRAWN": 10,
+    "ACTIVE_NOT_RECRUITING": 37,
+    "ENROLLING_BY_INVITATION": 12,
+    "SUSPENDED": 4,
+    "TEMPORARILY_NOT_AVAILABLE": 1
+  }
 }
