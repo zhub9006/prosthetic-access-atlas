@@ -1,30 +1,27 @@
 {
   "region": "Rural West Virginia",
-  "center": {
-    "latitude": 38.2234533,
-    "longitude": -80.0945099,
-    "anchor_city": "Marlinton, WV"
-  },
-  "population_estimate": "~93,000 (Upshur County area); ~7,000 (Elkins)",
-  "facilities_found": [
-    {"name": "Community Care of Green Bank", "type": "clinic", "address": "4498 Potomac Highlands Trail, Green Bank, WV 24944", "phone": "+1 304 456 5115", "lat": 38.414868, "lon": -79.8474293},
-    {"name": "VA Clinic, Sutton", "type": "clinic", "address": "Skidmore Lane, Sutton, WV 26601", "lat": 38.7031794, "lon": -80.6677643},
-    {"name": "Allegheny Health Clinic", "type": "clinic", "address": "321 East Beech Street", "lat": 37.7847685, "lon": -79.9856965},
-    {"name": "EZCare Walk-In Medical Center", "type": "clinic", "address": "919 S Craig Ave, Covington, VA 24426", "phone": "+1-540-960-2231", "lat": 37.7818672, "lon": -79.9908517},
-    {"name": "Seneca Trail Physical Therapy", "type": "physiotherapist", "lat": 38.2246859, "lon": -80.0967586},
-    {"name": "Community Care Dental", "type": "dentist", "address": "6404 Potomac Highlands Trail, Green Bank, WV 24944", "phone": "+1 304 456 5433", "lat": 38.4282211, "lon": -79.8177686},
-    {"name": "Care Xpress", "type": "clinic", "lat": 38.7019314, "lon": -80.6662205},
-    {"name": "PMI First Aid", "type": "clinic", "operator": "Camp PMI", "lat": 37.9676225, "lon": -79.4433818},
-    {"name": "Green Bank Pharmacy", "type": "pharmacy", "phone": "+1 304 456 3333", "lat": 38.4149145, "lon": -79.847447},
-    {"name": "CVS Pharmacy (Covington)", "type": "pharmacy", "lat": 37.7810617, "lon": -79.9895607},
-    {"name": "Walmart Pharmacy (Covington)", "type": "pharmacy", "lat": 37.767729, "lon": -79.9913842},
-    {"name": "Rockbridge Pharmacy (Lexington)", "type": "pharmacy", "address": "146 South Main Street, Lexington, VA 24450", "phone": "+1-540-463-4001", "lat": 37.7831982, "lon": -79.4438402},
-    {"name": "Hot Springs Pharmacy", "type": "pharmacy", "lat": 37.9997229, "lon": -79.8318246},
-    {"name": "Lexington Reflexology", "type": "clinic", "address": "9 West Nelson Street, Lexington, VA", "phone": "+1-540-784-9700", "lat": 37.7844825, "lon": -79.4432313}
-  ],
-  "critical_finding": "NO certified prosthetist-orthotist (CPO) found within 50-60km radius",
+  "center": {"latitude": 38.2234533, "longitude": -80.0945099, "anchor_city": "Marlinton, WV"},
+  "population": "~93k (county area); ~7k (Elkins)",
+  "facilities_count": 14,
+  "cpo_within_radius": "None within 50-60km",
   "nearest_cpo": ["Charleston, WV (~190 mi)", "Pittsburgh, PA (~200 mi)"],
-  "coverage_gap_severity": "CRITICAL",
-  "travel_impact": "3+ hours for prosthetic fitting and follow-up",
-  "medicaid_barrier": "Many metro-area CPOs do not accept WV Medicaid"
+  "severity": "CRITICAL",
+  "travel_impact": "3+ hours for prosthetic fitting",
+  "medicaid_barrier": "WV limits CPO reimbursement",
+  "facilities": [
+    {"name": "Community Care of Green Bank", "type": "clinic", "phone": "+1 304 456 5115"},
+    {"name": "VA Clinic, Sutton", "type": "clinic", "operator": "VA"},
+    {"name": "Allegheny Health Clinic", "type": "clinic"},
+    {"name": "EZCare Walk-In Medical Center", "type": "clinic", "phone": "+1-540-960-2231"},
+    {"name": "Seneca Trail Physical Therapy", "type": "physiotherapist"},
+    {"name": "Community Care Dental", "type": "dentist", "phone": "+1 304 456 5433"},
+    {"name": "Green Bank Pharmacy", "type": "pharmacy", "phone": "+1 304 456 3333"},
+    {"name": "CVS Pharmacy (Covington, VA)", "type": "pharmacy"},
+    {"name": "Walmart Pharmacy (Covington, VA)", "type": "pharmacy"},
+    {"name": "Rockbridge Pharmacy (Lexington, VA)", "type": "pharmacy", "phone": "+1-540-463-4001"},
+    {"name": "Hot Springs Pharmacy", "type": "pharmacy"},
+    {"name": "CTC (Camp PMI) First Aid", "type": "clinic"},
+    {"name": "Lexington Reflexology", "type": "clinic", "phone": "+1-540-784-9700"},
+    {"name": "Care Xpress", "type": "clinic"}
+  ]
 }

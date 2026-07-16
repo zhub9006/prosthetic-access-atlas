@@ -1,35 +1,30 @@
 {
-  "region": "Eastern Kentucky',
-  "center": {
-    "latitude": 37.2489635,
-    "longitude": -83.1933893,
-    "anchor_city": "Hazard, KY'
-  },
-  'population_estimate': '~5,000 (Hazard); ~7,000 (Pikeville);
-  'facilities_found': [
-    {'name': 'Mountain Instant Care', 'type': 'doctor', 'phone': '+1 606 6337000', 'lat': 37.1106854, 'lon': -82.8018254},
-    {'name': 'AdventHealth Oneida Clinic', 'type': 'clinic', 'operator': 'AdventHealth', 'phone': '+16068474000', 'lat': 37.2697267, 'lon': -83.6466276},
-    {'name': 'Leatherwood Blacky Clinic', 'type': 'clinic', 'website': 'mchcky.com', 'lat': 37.1221927, 'lon': -83.0866599},
-    {'name': 'PMC Medical Diagnostics', 'type': 'clinic', 'lat': 37.4735883, 'lon': -82.5234053},
-    {'name': 'Vitality Wellness', 'type': 'clinic', 'address': '428 W Main St, Wise, VA 24293', 'lat': 36.9808244, 'lon': -82.5856823},
-    {'name': 'Life Crafters', 'type': 'therapist', 'address': '600 High Street, Hazard, KY 41701', 'phone': '+1-859-667-4301', 'note': 'OT therapy - NOT CPO certified', 'lat': 37.2496555, 'lon': -83.1953924},
-    {'name': 'Lance C. Dozier, MD, FACS', 'type': 'surgeon', 'address': '21 E 5th St N, Big Stone Gap, VA 24219', 'lat': 36.8682752, 'lon': -82.7749068},
-    {'name': 'Designing Smiles Cosmetic Dental Center', 'type': 'dentist', 'address': '728 Commonwealth Dr NE, Norton, VA', 'lat': 36.9551541, 'lon': -82.6030273},
-    {'name': 'In Home Care', 'type': 'clinic', 'address': '712 Commonwealth Dr NE, Norton, VA', 'lat': 36.9550237, 'lon': -82.6034426},
-    {'name': 'Walgreens (Pennington Gap)', 'type': 'pharmacy', 'lat': 36.9735937, 'lon': -82.9741994},
-    {'name': 'CVS Pharmacy (Hazard #1)', 'type': 'pharmacy', 'address': '102 Village Lane, Hazard, KY 41701', 'lat': 37.2545882, 'lon': -83.1972022},
-    {'name': 'CVS Pharmacy (Hazard #2)', 'type': 'pharmacy', 'lat': 37.2836631, 'lon': -83.2246434},
-    {'name': 'CVS Pharmacy (Harlan)', 'type': 'pharmacy', 'address': '533 Skidmore Dr, Harlan, KY 40831', 'lat': 36.8113638, 'lon': -83.3115482},
-    {'name': 'CVS Pharmacy (Clinton)', 'type': 'pharmacy', 'lat': 36.9316644, 'lon': -82.6365729},
-    {'name': 'Walgreens (Salyersville)', 'type': 'pharmacy', 'address': '308 Parkway Dr, Salyersville, KY 41465', 'lat': 37.7473733, 'lon': -83.0618483},
-    {'name': 'Walgreens (Martin)', 'type': 'pharmacy', 'address': '10 Charby Hollow Rd, Martin, KY 41649', 'lat': 37.5597004, 'lon': -82.7596857},
-    {'name': 'Parkway Pharmacy', 'type': 'pharmacy', 'address': '186 Breanna Blvd, Salyersville, KY 41465', 'phone': '+1-606-349-4400', 'lat': 37.7422319, 'lon': -83.0461826},
-    {'name': 'Clay Community Pharmacy', 'type': 'pharmacy', 'lat': 37.1417453, 'lon': -83.7663343},
-    {'name': 'Gough\'s Family Medical Clinic', 'type': 'doctor', 'lat': 33.8123956, 'lon': -90.527932}
-  ],
-  'critical_finding': 'NO prosthetist-orthotist or prosthetic facility found within 100km radius',
-  'nearest_cpo': ['Lexington, KY (~130 mi)', 'Charleston, WV (~190 mi)'],
-  'coverage_gap_severity': 'CRITICAL',
-  'travel_impact': '3+ hours for prosthetic services',
-  'medicaid_barrier': 'Kentucky Medicaid limited; WV Medicaid often not accepted'
+  "region": "Eastern Kentucky",
+  "center": {"latitude": 37.2489635, "longitude": -83.1933893, "anchor_city": "Hazard, KY"},
+  "population": "~5k (Hazard); ~7k (Pikeville); Appalachian region",
+  "facilities_count": 19,
+  "cpo_within_radius": "None within 100km",
+  "nearest_cpo": ["Lexington, KY (~130 mi)", "Charleston, WV (~190 mi)"],
+  "severity": "CRITICAL",
+  "travel_impact": "3+ hours for prosthetic services",
+  "medicaid_barrier": "KY Medicaid limited; WV Medicaid not accepted",
+  "facilities": [
+    {"name": "Mountain Instant Care", "type": "doctor", "phone": "+1 606 6337000"},
+    {"name": "AdventHealth Oneida Clinic", "type": "clinic", "operator": "AdventHealth", "phone": "+16068474000"},
+    {"name": "Leatherwood Blacky Clinic", "type": "clinic", "website": "mchcky.com"},
+    {"name": "PMC Medical Diagnostics", "type": "clinic"},
+    {"name": "Vitality Wellness", "type": "clinic", "location": "Wise, VA"},
+    {"name": "Life Crafters", "type": "therapist", "phone": "+1-859-667-4301", "note": "OT only — NOT CPO certified"},
+    {"name": "Lance C. Dozier, MD, FACS", "type": "surgeon", "location": "Big Stone Gap, VA"},
+    {"name": "Designing Smiles Cosmetic Dental Center", "type": "dentist"},
+    {"name": "In Home Care", "type": "clinic"},
+    {"name": "Walgreens (Pennington Gap, Salyersville, Martin)", "type": "pharmacy", "count": 3},
+    {"name": "CVS Pharmacy (Hazard x3, Harlan, Clinton)", "type": "pharmacy", "count": 4},
+    {"name": "Parkway Pharmacy", "type": "pharmacy", "phone": "+1-606-349-4400"},
+    {"name": "Clay Community Pharmacy", "type": "pharmacy"},
+    {"name": "Good Neighbor Pharmacy", "type": "pharmacy"},
+    {"name": "Gough's Family Medical Clinic", "type": "doctor"},
+    {"name": "Abbott Family Clinic", "type": "clinic"},
+    {"name": "PMC Employee Health", "type": "clinic"}
+  ]
 }
