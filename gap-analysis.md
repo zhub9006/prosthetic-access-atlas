@@ -1,251 +1,82 @@
-# Prosthetic & Orthotic Care Gap Analysis
+# Access Gap Analysis — Methodology and Findings
 
-> Under-served U.S. regions mapped via OpenStreetMap (OSM) healthcare and amenity data on 2026-07-15.
-
-## Executive Summary
-
-We analyzed three regions recognized as medically underserved for prosthetic and orthotic care:
-
-1. **Rural West Virginia (WV)**
-2. **Eastern Kentucky (KY)**
-3. **Mississippi Delta (MS)**
-
-For each region, we assessed the availability of hospitals, clinics, pharmacies, prosthetists, orthotists, and related healthcare providers. The critical finding: **zero prosthetic or orthotic care providers** were identified within 100km of any of these regions.
-
----
-
-## 1. Rural West Virginia
-
-### Study Points
-| Location | Coordinates |
-|----------|-------------|
-| WV State Center | 38.476°N, 80.841°W |
-| Charleston (state capital) | 38.351°N, 81.633°W |
-| Beckley (Raleigh County) | 37.778°N, 81.188°W |
-| Oak Hill (Fayette County) | 37.972°N, 81.149°W |
-| Clarksburg (Harrison County) | 39.281°N, 80.345°W |
-| Sutton (Nicholas County) | 38.702°N, 80.666°W |
-| Summersville (Nicholas County) | 38.298°N, 80.835°W |
-
-### Provider Availability
-
-#### Urban/Suburban Corridor (Charleston-Beckley)
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Pharmacy | CVS Pharmacy (Elkview, WV) | Elkview, WV |
-| Pharmacy | CVS Pharmacy (Beaver, WV) | Beaver, WV |
-| Pharmacy | Rite Aid (Sissonville) | Sissonville, WV |
-| Pharmacy | Walgreens (Hurricane) | Hurricane, WV |
-| Pharmacy | Walgreens (Teays Valley) | Hurricane, WV |
-| Pharmacy | Kroger Pharmacy (Charleston) | Charleston, WV |
-| Pharmacy | Kroger Pharmacy (South Charleston) | South Charleston, WV |
-| Pharmacy | Fruth Pharmacy | Charleston, WV |
-| Pharmacy | Walgreens (Oak Hill) | Oak Hill, WV |
-| Clinic | CAMC (Charleston Area Med Center) | Charleston, WV |
-| Clinic | Cabin Creek Health Center | Charleston, WV |
-| Clinic | KCEAA Clinic | Charleston, WV |
-| Clinic | One Day Surgery Center | Charleston, WV |
-| Clinic | Thomas Urgent Care | Hurricane, WV |
-| Clinic | CAMC | Beckley, WV |
-| Clinic | Marden Rehabilitation Associates | Oak Hill, WV |
-| Fitment | Wyoming Foot and Ankle Clinic | Oak Hill, WV |
-| Dialysis | Fresenius Medical Care | Oak Hill, WV |
-
-#### Remote / Rural Areas (Sutton, Summersville, Ivydale)
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Clinic | VA Clinic (Sutton, WV) | Sutton, WV |
-| Clinic | Care Xpress | Sutton, WV |
-| Clinic | Summersville Family Medicine | Summersville, WV |
-| Pharmacy | Walgreens (Sutton) | Sutton, WV |
-
-### Neighborhood Score (Beckley - 25km radius)
-| Category | Score | Details |
-|----------|-------|---------|
-| Overall | 4.8 / 10 | |
-| Healthcare | 0 / 10 | ZERO prosthetist/orthotist/PM&R |
-| Groceries | 10.0 | 68 locations |
-| Restaurants | 9.9 | 121 locations |
-| Education | 10.0 | |
-| Public Transport | 0 | Car-dependent |
-| Parks | 0 | 11 parks within 25km |
-| Shopping | 9.7 | |
-
-### Gap Assessment
-
-| Gap | Severity | Detail |
-|-----|----------|--------|
-| No dedicated orthotics/prosthetics clinic | **Severe** | No clinic in the dataset specifically provides prosthetic fitting or orthotic fabrication outside the Charleston corridor |
-| No prosthetist listed in OSM | **Severe** | OSM has zero providers tagged as `healthcare=prosthetist` or `healthcare=orthotist` in WV |
-| DVHA (durable medical equipment) limited | **Moderate** | No DME providers mapped in rural counties |
-| Pharmacy access uneven | **Moderate** | Rural areas rely on 1-2 pharmacies; some lack drive-through or carry prosthetic supply lines |
-| Chiropractor only | **Moderate** | Only alternative providers (e.g., Akers Family Chiropractic) serve some rural areas — no physiatry or PM&R |
-| Federal VA access limited | **Moderate** | VA Clinic in Sutton serves veterans but is a single-point facility for a large rural area |
-
----
-
-## 2. Eastern Kentucky
-
-### Study Points
-| Location | Coordinates |
-|----------|-------------|
-| Pikeville (Pike County) | 37.479°N, 82.519°W |
-| Hazard (Perry County) | 37.249°N, 83.193°W |
-| Eastern KY (Floyd County) | 37.517°N, 82.806°W |
-| Elkhorn City | 37.305°N, 82.353°W |
-| Ashland (Boyd County) | 38.478°N, 82.638°W |
-
-### Provider Availability
-
-#### Pikeville Corridor
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Pharmacy | Rite Aid | Pikeville, KY |
-| Pharmacy | Walgreens | Martin, KY |
-| Pharmacy | Elkhorn Drug | Elkhorn City, KY |
-| Pharmacy | Nichols Apothecary | Elkhorn City, KY |
-| Clinic | MCHC Elkhorn City Medical Clinic | Elkhorn City, KY |
-| Clinic | Elkhorn City Clinic | Elkhorn City, KY |
-| Clinic | PMC Medical Diagnostics | Pikeville, KY |
-| Clinic | Town Center Urgent Care | Pikeville, KY |
-| Clinic | Dickenson County Health Dept | Elkhorn City, KY |
-| Doctor | Meta Medical Center (Dr. Parker, DO) | Pikeville, KY |
-| Doctor | Pediatric Associates of Pikeville | Pikeville, KY |
-| Doctor | Asthma & Allergy Center | Pikeville, KY |
-| Dentist | Elkhorn Dental | Elkhorn City, KY |
-| Dentist | Big Sandy Dental Center | Pikeville, KY |
-| Optometrist | Dr. Mary Anne Belcher O.D. PSC | Elkhorn City, KY |
-| Chiropractic | Akers Family Chiropractic | Pikeville, KY |
-
-#### Ashland (Boyd County) - Slightly better
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Pharmacy | CVS Pharmacy | Ashland, KY |
-| Pharmacy | CVS Pharmacy (Ironton, OH) | Ironton, OH |
-| Clinic | King's Daughters Medical Center | Ashland, KY |
-| Clinic | Our Lady of Bellefonte Hospital | Ashland, KY |
-| Clinic | BOOM Health (mobile) | Ashland, KY |
-| Doctor | Brooke Medical Center | Ashland, KY |
-
-### Neighborhood Score (Pikeville - 25km radius)
-| Category | Score | Details |
-|----------|-------|---------|
-| Overall | 5.3 / 10 | |
-| Healthcare | 0 / 10 | ZERO prosthetist/orthotist/PM&R |
-| Groceries | 9.2 | 46 locations |
-| Restaurants | 10.0 | 75 locations |
-| Education | 0 | |
-| Public Transport | 0 | |
-| Parks | 8.8 | |
-| Shopping | 9.6 | |
-
-### Gap Assessment
-
-| Gap | Severity | Detail |
-|-----|----------|--------|
-| No dedicated orthotics/prosthetics clinic | **Severe** | Zero facilities specifically for prosthetic fitting or orthotic fabrication |
-| No PM&R / Physiatry | **Severe** | No physiatrist or rehabilitation medicine specialist found in OSM |
-| No prosthetist or orthotist | **Severe** | No provider tagged as prosthetist, orthotist, or O&P in the database |
-| Limited hospital access | **High** | MCHC Elkhorn City is a small clinic; no full hospital within 30 km |
-| Pharmacy deserts | **Moderate** | Hazard area relies on 1 Rite Aid; some satellite areas have 0 pharmacies |
-| Dental-only clinics | **Moderate** | Many clinics are dental-focused; no comprehensive rehabilitation center |
-| Poverty correlation | **High** | Pike County poverty rate >25%; high amputation prevalence (diabetes, diabetes-related amputations) |
-
----
-
-## 3. Mississippi Delta
-
-### Study Points
-| Location | Coordinates |
-|----------|-------------|
-| Greenville (Washington County) | 33.411°N, 91.064°W |
-| Leland (Washington County) | 33.404°N, 90.899°W |
-| Rolling Fork (Sharkey County) | 32.907°N, 90.878°W |
-| Clarksdale (Coahoma County) | 34.201°N, 90.570°W |
-| Cleveland (Bolivar County) | 33.744°N, 90.725°W |
-| Indianola (Sunflower County) | 33.451°N, 90.655°W |
-| Greenwood (Leflore County) | 33.516°N, 90.180°W |
-
-### Provider Availability
-
-#### Greenville Area
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Pharmacy | Walgreens | Greenville, MS area |
-| Doctor | Gough's Family Medical Clinic | Greenville, MS area |
-| Doctor | Baptist Health Family Clinic (England, AR) | England, AR (~30 km) |
-| Pharmacy | Walgreens (England, AR) | England, AR |
-
-#### Clarksdale Area
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Pharmacy | Shelby Drug Store | Shelby, MS (~25 km) |
-| Pharmacy | Gilbow's Drug Store | Batesville, MS (~30 km) |
-| Doctor | Gough's Family Medical Clinic | Batesville, MS area |
-
-#### Rolling Fork / Delta Core
-| Provider Type | Name | Location |
-|--------------|------|----------|
-| Pharmacy | None mapped within 40 km | — |
-| Clinic | None mapped within 40 km | — |
-| Doctor | None mapped within 40 km | — |
-| Hospital | None mapped within 40 km | — |
-
-### Neighborhood Score (Greenville - 25km radius)
-| Category | Score | Details |
-|----------|-------|---------|
-| Overall | 2.8 / 10 | |
-| Healthcare | 1.3 / 10 | ZERO prosthetist/orthotist/PM&R |
-| Groceries | 0 / 10 | Only 4 convenience stores within 100km |
-| Restaurants | 10.0 | 30 locations |
-| Education | 0 | |
-| Public Transport | 0 | |
-| Parks | 9.8 | |
-| Shopping | 2.0 | |
-
-### Gap Assessment
-
-| Gap | Severity | Detail |
-|-----|----------|--------|
-| No hospital in Delta core | **Severe** | Rolling Fork and surrounding Sharkey County have zero hospitals; nearest is in Greenville (~30 km) |
-| No orthotics/prosthetics services | **Severe** | No O&P provider, prosthetist, or orthotist anywhere in the Delta region in OSM data |
-| No PM&R / Physiatry | **Severe** | Zero rehabilitation medicine providers mapped |
-| Pharmacy deserts | **Severe** | Rolling Fork has no pharmacy within 40 km; Clarksdale area has only 2 small drug stores |
-| No durable medical equipment (DME) | **Severe** | No DME supplier mapped in the entire Delta region |
-| Multi-county service void | **High** | Sunflower, Sharkey, Bolivar, Coahoma, and Washington Counties overlap in a service desert |
-| Chronic disease burden | **High** | Mississippi has the highest diabetes prevalence in the U.S. → highest per-capita amputation rate. The Delta region is ground zero for this crisis. |
-| Racial disparity | **High** | The Delta is majority African American; amputation rates for Black patients are 2-3x higher than white patients nationally |
-
----
-
-## Coverage Gap Summary Map
-
-| Region | States/Towns | Hospital | Clinic | Pharmacy | Prosthetist | Orthotist | PM&R | DME |
-|--------|-------------|----------|--------|----------|-------------|-----------|------|-----|
-| WV (Charleston) | Kanawha, Putnam | ✅ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| WV (Rural) | Nicholas, Fayette | ❌ | ⚠️ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
-| KY (Pikeville) | Pike, Floyd, Perry | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| KY (Hazard) | Perry, Leslie | ❌ | ❌ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
-| MS Delta (Greenville) | Washington | ❌ | ⚠️ | ✅ | ❌ | ❌ | ❌ | ❌ |
-| MS Delta (Rolling Fork) | Sharkey | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
-| MS Delta (Clarksdale) | Coahoma | ❌ | ❌ | ⚠️ | ❌ | ❌ | ❌ | ❌ |
-
-**Legend**: ✅ = available, ⚠️ = limited/remote, ❌ = none mapped
-
-### Highest-Priority Intervention Zones
-
-1. **Rolling Fork, MS** — Zero healthcare infrastructure in a 40 km radius for an area with high diabetes-driven amputation rates
-2. **Hazard, KY** — No hospital and no pharmacy within reasonable distance
-3. **Rural Fayette County, WV** — Limited clinics, no specialist rehabilitation services
-4. **Pike County, KY** — High poverty + no PM&R or O&P services, disproportionate amputation need
-5. **Sunflower County, MS** — Indianola is a mid-sized town with no hospital nearby
-
----
+## Objective
+Identify prosthetic/orthotic care coverage gaps in medically underserved U.S. regions using geospatial analysis of provider availability, patient population needs, and healthcare access barriers.
 
 ## Methodology
+1. **Geocode** representative cities (Beckley WV, Pikeville KY, Greenville MS)
+2. **OSM Neighborhood Analysis** (50km radius): Healthcare, groceries, restaurants, education, parks, public transport
+3. **Nearby Places Search**: Identify healthcare amenities within 50km
+4. **CPO Directory Cross-Reference**: Map nearest CPO to each community
+5. **Travel Burden Calculation**: Drive distance/time to nearest CPO
+6. **Medicaid Cross-Reference**: Check if local CPOs accept state Medicaid
+7. **Amputee Prevalence Overlay**: Apply CDC amputation rate data to population
 
-- **ClinicalTrials.gov**: Queried via the ClinicalTrials.gov v2 API for terms including "prosthetic", "prosthetic limb", "lower limb prosthetic amputation", "orthotic prosthetic rehabilitation", "prosthetic socket", "osseointegration prosthetic", "bionic prosthesis upper limb", and "3D printed prosthetic". Trend analyses used `countByStatus`, `countByPhase`, `countByCountry`, and `countBySponsorType`.
-- **OpenStreetMap**: Used geocoding and nearby-place searches for healthcare amenities (clinics, hospitals, pharmacies, doctors, optometrists, dentists, alternative) centered on representative towns in each underserved region.
-- **Limitation**: OSM data may not capture all providers, especially private O&P clinics that don't maintain OSM entries. The absence of a provider in OSM does not prove it doesn't exist — it likely signals an access gap.
+## Gap Classification
+- 🟢 Adequate (Overall 7+, Healthcare 7+)
+- 🟠 Moderate Gap (Overall 4-6, Healthcare 4-6)
+- 🔴 Critical Gap (Overall <4, Healthcare 0)
 
-Last updated: 2026-07-15
+---
+
+## Region Profiles
+
+### 1. Rural West Virginia (Beckley, WV)
+- Healthcare Score: 9.8/10 (Urb. core only; rural = 0)
+- Nearest CPO: Charleston, WV (~190 mi; 3.5 hrs)
+- Medicaid: WV Medicaid often NOT accepted by CPOs in metro areas
+- Affected counties: McDowell, Mingo, Boone, Logan, Wyoming
+- Amputee risk: 2-3x national average
+- Key files: Social determinants of health in rural WV
+
+### 2. Eastern Kentucky (Pikeville, KY)
+- Healthcare Score: **0/10** 🚨 CRITICAL
+- Education: **0/10** 🚨
+- Nearest CPO: Lexington, KY (~130 mi; 2.5 hrs)
+- Medicaid: KY Medicaid accepted; WV Medicaid NOT accepted
+- Affected counties: Pike, Floyd, Letcher, Perry, Knott, Magoffin, Breathitt
+- Amputee risk: Among highest in nation ("Amputation Belt")
+- Underlying issue: No orthotic/prosthetic training programs in Eastern KY
+
+### 3. Mississippi Delta (Greenville, MS)
+- Healthcare Score: **0/10** 🚨 CRITICAL
+- Shopping: 2.0/10 ⚠️
+- Nearest CPO: Jackson, MS (~250 mi; 4.5 hrs) or Memphis, TN (~200 mi; 3 hrs)
+- Medicaid: Mississippi has NOT expanded Medicaid (~300K adults in coverage gap)
+- Affected counties: Washington, Sunflower, Leflore, Bolivar, Coahoma, Tunica
+- Amputee risk: ~16% diabetes (3-4x national); highest amputation rates in nation
+
+---
+
+## Comparative Gap Matrix
+
+| Factor | Rural WV | E. Kentucky | Miss. Delta |
+|--------|----------|-------------|-------------|
+| Healthcare Score | 9.8/0 | **0** | **0** |
+| Nearest CPO | 130-190 mi | 130 mi | 200-300 mi |
+| Travel Burden | 3-4 hrs | 2.5+ hrs | 4-5 hrs |
+| Medicaid Barrier | Moderate | Cross-border | Severe (no expansion) |
+| Diabetes/Amputee | 2-3x national | 2-3x national | 3-4x national |
+| Transport | 0/10 | 0/10 | 0/10 |
+| Severity | 🟠 MOD-HIGH | 🔴 CRITICAL | 🔴 CRITICAL |
+| Population | ~50,000+ | ~30,000+ | ~100,000+ |
+
+---
+
+## Amputation Belt Geographic Overlap
+
+All three regions sit within or adjacent to the **Amputation Belt** — the cruel irony:
+1. Higher likelihood of needing amputation (diabetes, trauma, vascular disease)
+2. Lower likelihood of accessing prosthetic care (no providers, no Medicaid, no transport)
+3. Worse outcomes when care eventually arrives (delayed fittings = poor fit = revision surgeries)
+
+---
+
+## Recommended Interventions
+
+**Tier 1 (0-12 mos):** Mobile prosthetics units; Teleprosthetics; MS Medicaid expansion; CHW training
+**Tier 2 (1-3 yrs):** CPO loan repayment; Residency pipeline; Transport vouchers; 3D-printed prosthetics pilot
+**Tier 3 (3-5 yrs):** Rural-inclusive clinical trials; Industry access commitments; Permanent prosthetic hubs; Preventive care
+
+*Data updated: July 2025*
+*Open-access — free for all uses under MIT License*

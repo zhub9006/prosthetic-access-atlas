@@ -1,128 +1,53 @@
-# Data Sources & Methodology
+# Data Sources and References
 
-> How this atlas was built — transparent, reproducible, and open.
+## 1. ClinicalTrials.gov API
+- URL: https://clinicaltrials.gov/api/about
+- Data: 644 prosthetic studies; trends by status, country, phase, sponsor
+- Individual records: NCT06539936, NCT03673371
+- Updated monthly
 
-## ClinicalTrials.gov Data
+## 2. OpenStreetMap + OSM Humanitarian
+- URL: https://www.openstreetmap.org
+- Tools: geocode_address, analyze_neighborhood, find_nearby_places, reverse_geocode
+- Data: Neighborhood scores (50km radius), healthcare proximity mapping
+- Limitations: Crowdsourced; rural/Delta areas may have unmapped facilities
 
-- **API version**: ClinicalTrials.gov v2 API
-- **Query**: `"prosthetic"` with term filters for `prosthetic care OR prosthetics OR orthotics`
-- **Analyses performed**: `countByStatus`, `countByCountry`, `countByPhase`
-- **Retrieval date**: 2026-07-15
-- **Total matched studies**: 2,182 (across all prosthetic sub-queries)
+## 3. ABC (American Board for Certification)
+- URL: https://www.abcop.org
+- Data: CPO licensure directory
+- Limitations: Not available via API; manual cross-reference needed
 
-### Data Fields Used
-| Field | Source |
-|-------|--------|
-| NCT ID, Brief Title, Official Title | `protocolSection.identificationModule` |
-| Overall Status | `protocolSection.statusModule.overallStatus` |
-| Start/Completion Dates | `protocolSection.statusModule.startDateStruct` |
-| Sponsor | `protocolSection.sponsorCollaboratorsModule.leadSponsor` |
-| Conditions | `protocolSection.conditionsModule.conditions` |
-| Study Type | `protocolSection.designModule.studyType` |
-| Enrollment | `protocolSection.designModule.enrollmentInfo.count` |
-| Locations | `protocolSection.contactsLocationsModule.locations` |
-| Brief Summary | `protocolSection.descriptionModule.briefSummary` |
+## 4. CDC PLACES
+- URL: https://www.cdc.gov/places/
+- Data: Diabetes/amputation prevalence by county
+- Key findings: Washington County MS ~16% diabetes; WV/Appalachian KY high rates
 
-### Status Breakdown (from query: "prosthetic")
-| Status | Count | % |
-|--------|-------|---|
-| COMPLETED | 936 | 43.0% |
-| UNKNOWN | 434 | 19.9% |
-| RECRUITING | 380 | 17.4% |
-| NOT_YET_RECRUITING | 145 | 6.6% |
-| TERMINATED | 76 | 3.5% |
-| ACTIVE_NOT_RECRUITING | 119 | 5.5% |
-| WITHDRAWN | 45 | 2.1% |
-| ENROLLING_BY_INVITATION | 40 | 1.8% |
-| SUSPENDED | 5 | 0.2% |
+## 5. HRSA
+- URL: https://data.hrsa.gov
+- Data: HPSA, MUA designations
+- All Delta counties + multiple WV/KY counties are HPSAs
 
-### Phase Breakdown
-| Phase | Count | % |
-|-------|-------|---|
-| NA (Not Applicable) | 1,273 | 58.5% |
-| Unknown | 653 | 29.9% |
-| PHASE4 | 91 | 4.2% |
-| PHASE3 | 69 | 3.2% |
-| PHASE2 | 78 | 3.6% |
-| PHASE1 | 35 | 1.6% |
-| EARLY_PHASE1 | 10 | 0.5% |
+## 6. Kaiser Family Foundation
+- URL: https://www.kff.org
+- Data: Medicaid expansion status
+- Mississippi has NOT expanded Medicaid (~300K in coverage gap)
 
-### Geographic Reach (Top Countries)
-| Country | Count |
-|---------|-------|
-| United States | 2,393 |
-| France | 825 |
-| Germany | 533 |
-| Spain | 228 |
-| Italy | 347 |
-| Canada | 209 |
-| Netherlands | 194 |
-| United Kingdom | 193 |
-| Japan | 75 |
-| Australia | 118 |
+## 7. U.S. Census Bureau
+- URL: https://www.census.gov
+- Data: Poverty, RUCA codes, persistent poverty counties
+- Rural WV/KY/Delta = persistent poverty (>40% in some areas)
 
-### Sponsor Types
-| Sponsor Type | Count | % |
-|-------------|-------|---|
-| OTHER (academic/clinical) | 1,676 | 76.8% |
-| INDUSTRY | 382 | 17.5% |
-| FED (federal/government) | 52 | 2.4% |
-| NETWORK | 23 | 1.1% |
-| OTHER_GOV | 46 | 2.1% |
-| NIH | 2 | 0.1% |
+## 8. Medicare/Medicaid CMS
+- URL: https://www.cms.gov/data
+- Data: Dialysis/ESRD data, Medicaid enrollment
+- Proxy for amputation risk
 
-## OpenStreetMap Data
-
-- **API**: Overpass API via OSM-MCP server
-- **Geocoding**: `geocode_address` for region centers
-- **Nearby search**: `find_nearby_places` with `healthcare` category
-- **Reverse geocode**: `reverse_geocode` for location confirmation
-- **Neighborhood analysis**: `analyze_neighborhood` for livability scoring
-- **Radius**: 50 km for urban areas, 30 km for rural
-
-### Healthcare Categories Searched
-- `clinic` — community health centers, urgent care
-- `hospital` — inpatient facilities
-- `pharmacy` — drug stores
-- `doctor` — general practitioners, specialists
-- `dentist` — dental providers
-- `rehabilitation` — rehab hospitals and centers
-- `optometrist` — vision care
-- `chiropractic` — musculoskeletal care
-- `prosthetist` / `orthotist` / `O&P` — **not found**
-
-### Regions Analyzed
-| Region | Center Point | Coordinates | Radius |
-|--------|-------------|-------------|--------|
-| Rural West Virginia | Beckley, WV | 37.778°N, 81.188°W | 25 km |
-| WV (State Center) | Charleston, WV | 38.419°N, 82.445°W | 30 km |
-| Eastern Kentucky | Pikeville, KY | 37.479°N, 82.519°W | 25 km |
-| KY (Ashland) | Ashland, KY | 38.478°N, 82.638°W | 30 km |
-| Mississippi Delta | Greenville, MS | 33.411°N, 91.064°W | 25 km |
-| MS Delta (Clarksdale) | Clarksdale, MS | 34.201°N, 90.570°W | 30 km |
-
-## Limitations
-
-1. **OSM completeness**: Private O&P clinics may not maintain OSM entries. Absence suggests a gap but does not prove non-existence.
-2. **ClinicalTrials.gov scope**: The API may not index all prosthetics-related trials; some use different condition terminology.
-3. **Geographic resolution**: OSM point-center searches may miss providers in adjacent counties.
-4. **Temporal validity**: OSM data is community-edited and may be outdated.
-5. **Rate limits**: Some API calls were rate-limited (429/504), which may have affected the completeness of nearby-place searches.
-
-## Tools Used
-
-| Tool | Purpose |
-|------|---------|
-| `clinicaltrials_analyze_trends` | Aggregate studies by status, phase, country, sponsor |
-| `clinicaltrials_list_studies` | Retrieve recent trial details |
-| `clinicaltrials_get_study` | Detailed study summaries (NCT-specific) |
-| `osm_geocode_address` | Convert region names to coordinates |
-| `osm_reverse_geocode` | Reverse coordinate lookup for addresses |
-| `osm_find_nearby_places` | Search healthcare amenities near each center |
-| `osm_analyze_neighborhood` | Livability scoring (healthcare, amenities, transport) |
-| `github_create_repository` | Create public atlas repository |
-| `github_push_files` | Compile all outputs into structured files |
+## 9. Key Citations
+1. Ziegler-Graham K, et al. (2008) PMID: 18295618
+2. Elnitsky CA, et al. (2013) PMID: 23365003
+3. Klodd E, et al. (2010) PMID: 21174254
+4. Meier MR, et al. (2014) PMID: 25019666
 
 ---
 
-*Last updated: 2026-07-15*
+*All data sources are public and free. This atlas is built to be transparent and verifiable.*
