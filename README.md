@@ -1,109 +1,75 @@
 # Prosthetic Access Atlas
 
-An open-access resource mapping prosthetic/orthotic clinical trial landscapes and uncovering care access gaps in underserved U.S. regions.
+An open-access resource mapping prosthetic clinical trial landscapes and uncovering care access gaps in underserved U.S. regions.
 
-## About
+## Clinical Trial Trends (644 Total Studies)
 
-This project compiles data from ClinicalTrials.gov to:
-1. **Analyze prosthetic clinical trial trends** — by status, phase, sponsor type, and geography
-2. **Map underserved regions** — identifying coverage gaps in rural West Virginia, eastern Kentucky, and the Mississippi Delta
-3. **Provide actionable insights** — to guide resource allocation and improve prosthetic care access
-
-## Data Overview
-
-### Clinical Trial Landscape (155 studies)
-- **Recruiting:** 33 trials
-- **Completed:** 53 trials
-- **Active, not recruiting:** 16 trials
-- **Not yet recruiting:** 15 trials
-- **Terminated:** 4 trials
-- **Suspended:** 3 trials
-- **Withdrawn:** 3 trials
-- **Unknown:** 25 trials
+### Status Distribution
+| Status | Count | % |
+|--------|-------|---|
+| COMPLETED | 271 | 42.1% |
+| RECRUITING | 113 | 17.6% |
+| UNKNOWN | 134 | 20.8% |
+| NOT_YET_RECRUITING | 38 | 5.9% |
+| ACTIVE_NOT_RECRUITING | 37 | 5.7% |
+| TERMINATED | 24 | 3.7% |
+| WITHDRAWN | 10 | 1.5% |
+| ENROLLING_BY_INVITATION | 12 | 1.9% |
+| SUSPENDED | 4 | 0.6% |
 
 ### Phase Distribution
-- **Phase 1:** 2
-- **Phase 2:** 11
-- **Phase 3:** 4
-- **Phase 4:** 8
-- **Unknown:** 52
-- **Not Applicable:** 80
+| Phase | Count | % |
+|-------|-------|---|
+| N/A (Observational/Device) | 338 | 52.5% |
+| Unknown | 202 | 31.4% |
+| Phase 2 | 39 | 6.1% |
+| Phase 3 | 30 | 4.7% |
+| Phase 4 | 29 | 4.5% |
+| Phase 1 | 15 | 2.3% |
+| Early Phase 1 | 4 | 0.6% |
 
-### Sponsorship
-- **Academic/Other:** 109
-- **Industry:** 30
-- **Federal:** 11
-- **Other Government:** 4
-- **Network:** 1
+### Sponsor Type
+| Sponsor | Count | % |
+|---------|-------|---|
+| Academic/Other | 493 | 76.5% |
+| Industry | 108 | 16.8% |
+| Federal + Other Gov | 37 | 5.8% |
+| Network + NIH | 6 | 0.9% |
 
-### Geographic Reach
-- **United States:** 336 (most active)
-- **France:** 84
-- **Australia:** 35
-- **United Kingdom:** 25
-- **Germany:** 20
-- **Netherlands:** 20
+### Top Countries
+1. United States (~680) | 2. France (~317) | 3. Denmark (~78) | 4. Germany (~76) | 5. Italy (~71)
 
----
+## Access Gap Summary
+| Region | CPO Within 50km | Nearest CPO | Travel | Medicaid |
+|--------|----------------|-------------|--------|----------|
+| Rural WV | None | Charleston (~190 mi) | 3+ hrs | High |
+| Eastern KY | None | Lexington (~130 mi) | 3+ hrs | Medium |
+| MS Delta | None | Memphis (~200 mi) | 4+ hrs | Extreme |
 
-## Underserved Region Mapping
-
-### 1. Rural West Virginia
-**Center: Buckhannon (38.99°N, -80.23°W) & Elkins (38.93°N, -79.85°W)**
-- **Population:** ~93,000 (Upshur County); ~7,000 (Elkins city)
-- **Key Issue:** Limited access to certified prosthetist-orthotists (CPOs)
-- **Closest CPO providers:** Charleston, WV (~190 mi); Pittsburgh, PA (~200 mi)
-- **Coverage Gap:** No certified prosthetic/orthotic facility within 50 miles
-- **Medicaid acceptance:** Many CPOs in adjacent metro areas do not accept WV Medicaid
-
-### 2. Eastern Kentucky
-**Center: Pikeville (37.48°N, -82.52°W) & Hazard (37.25°N, -83.19°W)**
-- **Population:** ~7,000 (Pikeville); ~5,000 (Hazard)
-- **Key Issue:** Appalachian region with high disability rates and poverty
-- **Closest CPO providers:** Lexington, KY (~130 mi); Charleston, WV (~190 mi)
-- **Coverage Gap:** No prosthetist office within 100 miles; travel times exceed 3 hours
-- **Medicaid acceptance:** Kentucky Medicaid is accepted by some CPOs in Lexington, but WV Medicaid often is not
-
-### 3. Mississippi Delta
-**Center: Greenville (33.41°N, -91.06°W) & Indianola (33.30°N, -90.91°W)**
-- **Population:** ~31,000 (Greenville); ~10,000 (Indianola)
-- **Key Issue:** Nation's most economically disadvantaged region; high amputee rates from diabetes/vascular disease
-- **Closest CPO providers:** Jackson, MS (~250 mi); Memphis, TN (~200 mi)
-- **Coverage Gap:** No certified prosthetic facility within 200+ miles; extreme travel burden
-- **Medicaid acceptance:** Mississippi has not expanded Medicaid, many providers do not accept residents' coverage
-
----
-
-## Repository Contents
-
+## Repository Structure
 | File | Description |
 |------|-------------|
-| `data/clinical_trials.csv` | Raw trial data extracted from ClinicalTrials.gov |
-| `data/trial_trends_by_status.json` | Status distribution analysis |
-| `data/trial_trends_by_region.json` | Geographic distribution analysis |
-| `data/trial_trends_by_phase.json` | Phase distribution analysis |
-| `data/trial_trends_by_sponsor.json` | Sponsor type analysis |
-| `data/access_gaps/` | Underserved region profiles and CPO gap data |
-| `analysis/trend_analysis.ipynb` | Jupyter notebook for trend analysis |
-| `analysis/gap_analysis.md` | Detailed gap analysis methodology |
-| `visualizations/` | Maps and charts (coming soon) |
+| ATLAS_REPORT.md | Full comprehensive report |
+| data/clinical_trials.csv | Active trial data extract |
+| data/key_studies.md | Detailed study profiles |
+| data/trial_trends_by_status.json | Status distribution |
+| data/trial_trends_by_region.json | Geographic data |
+| data/trial_trends_by_phase.json | Phase analysis |
+| data/trial_trends_by_sponsor.json | Sponsor analysis |
+| data/access_gaps/*.json | Regional CPO gap profiles |
+| data/access_gap_summary.csv | Gap summary table |
+| analysis/methodology.md | Methodology & caveats |
+| analysis/gap_analysis.md | Detailed gap analysis |
+| data-sources.md | Data source attributions |
 
-## How to Contribute
-
+## Contributing
 1. Fork the repo
 2. Create a feature branch
-3. Submit a PR
-
-## Data Sources
-
-- ClinicalTrials.gov API
-- OpenStreetMap / Humanitarian Data Exchange
-- American Board for Certification in Orthotics, Prosthetics & Pedorthics (ABC)
+3. Commit changes
+4. Open a PR
 
 ## License
-
-MIT License
+MIT (Open Access)
 
 ---
-
-*Built to improve prosthetic care access for all. Open and free for everyone.*
+*Built to improve prosthetic care access for all. Open and free.*
