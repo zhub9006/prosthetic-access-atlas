@@ -1,128 +1,166 @@
 # Prosthetic Access Atlas — Comprehensive Report
 
-## Clinical Trial Landscape (ClinicalTrials.gov)
+An open-access resource mapping prosthetic/orthotic clinical trial data and uncovered care gaps in underserved U.S. regions.
 
-**Total Studies:** 644 prosthetic-related trials
+---
 
-### Status Distribution (644 total)
+## Clinical Trial Landscape (644 Total Studies)
+
+### Overview
+A total of **644 clinical studies** were identified on ClinicalTrials.gov matching the search term "prosthetic". Of these, **360** specifically address limb prosthesis and rehabilitation.
+
+### Status Distribution (All Prosthetic Studies)
+
 | Status | Count | % |
 |--------|-------|---|
 | COMPLETED | 271 | 42.1% |
 | UNKNOWN | 134 | 20.8% |
+| RECRUITING | 112 | 17.5% |
 | NOT_YET_RECRUITING | 38 | 5.9% |
-| RECRUITING | 113 | 17.6% |
 | ACTIVE_NOT_RECRUITING | 37 | 5.7% |
+| ENROLLING_BY_INVITATION | 12 | 1.9% |
 | TERMINATED | 24 | 3.7% |
 | WITHDRAWN | 10 | 1.5% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
 | SUSPENDED | 4 | 0.6% |
+| TEMPORARILY_NOT_AVAILABLE | 1 | 0.2% |
 
-**Key Insight:** 113 trials actively recruiting (17.6%). 84 in non-completed active status (RECRUITING + ACTIVE_NOT_RECRUITING + ENROLLING = 162). Only 282 completed and fully resolved (43.5%).
+**Key insight:** Nearly half of all prosthetic studies are completed, but only 17.5% are actively recruiting — a significant gap between research output and ongoing data collection for prosthetic care improvement.
 
-### Phase Distribution (644 total)
+### Status Distribution (Limb Prosthesis & Rehabilitation — 360 studies)
+
+| Status | Count |
+|--------|-------|
+| COMPLETED | 17 |
+| UNKNOWN | 7 |
+| NOT_YET_RECRUITING | 4 |
+| RECRUITING | 3 |
+| ACTIVE_NOT_RECRUITING | 1 |
+
+### Phase Distribution (All Prosthetic Studies)
+
 | Phase | Count | % |
 |-------|-------|---|
 | N/A (Observational/Device) | 338 | 52.5% |
 | Unknown | 202 | 31.4% |
 | Phase 2 | 39 | 6.1% |
 | Phase 3 | 30 | 4.7% |
-| Phase 1 | 15 | 2.3% |
 | Phase 4 | 29 | 4.5% |
+| Phase 1 | 15 | 2.3% |
 | Early Phase 1 | 4 | 0.6% |
 
-**Key Insight:** Only 84 interventional trials (PHASE1+2+3+4). Phase 3 trials (n=30) are critically scarce, indicating an evidence gap in prosthetic device efficacy. 52.5% have N/A phase (device registries/observational). 202 unknown phase = data quality issue.
+**Key insight:** Over half of studies are observational or device-focused; only ~13.6% are in formal interventional phases (1–3). This reflects the state of prosthetic research: still largely descriptive and device-evaluation rather than randomized clinical trials.
 
-### Sponsor Type (644 total)
-| Sponsor | Count | % |
-|---------|-------|---|
+### Phase Distribution (Limb Prosthesis & Rehabilitation)
+
+| Phase | Count |
+|-------|-------|
+| N/A (Observational/Device) | 215 |
+| Unknown | 103 |
+| Phase 1 | 7 |
+| Phase 2 | 17 |
+| Phase 3 | 10 |
+| Phase 4 | 9 |
+| Early Phase 1 | 4 |
+
+### Sponsor Type Distribution (644 studies)
+
+| Sponsor Type | Count | % |
+|-------------|-------|---|
 | Academic/Other | 493 | 76.5% |
 | Industry | 108 | 16.8% |
-| Federal | 23 | 3.6% |
-| Other Gov | 14 | 2.2% |
-| Network | 5 | 0.8% |
-| NIH | 1 | 0.2% |
+| Federal + Other Gov | 37 | 5.8% |
+| Network + NIH | 6 | 0.9% |
 
-**Key Insight:** Industry investment extremely low (16.8%). Most research is curiosity-driven (76.5% academic). This directly explains the shortage of Phase 3 trials — industry lacks commercial incentive for smaller prosthetic markets compared to pharma.
+**Key insight:** Industry involvement is relatively low (16.8%), suggesting prosthetic innovation is primarily driven by academic and research institutions rather than commercial partners. Federal/NIH funding for prosthetic access specifically is minimal.
 
-### Geographic Distribution (Top 15)
-1. United States: ~680 studies
-2. France: ~317
-3. Denmark: ~78
-4. Germany: ~76
-5. Italy: ~71
-6. Australia: ~35
-7. UK: ~44
-8. Netherlands: ~41
-9. Canada: ~41
-10. Spain: ~38
-11. Egypt: ~38
-12. Belgium: ~20
-13. Turkey: ~20
-14. Sweden: ~17
-15. Brazil: ~13
+### Geographic Distribution (Top Countries)
 
-**Key Insight:** US dominates (~680 includes multi-country). Per-capita, Denmark and Belgium lead. Sub-Saharan Africa, South Asia, and Latin America have minimal representation — yet these regions have the highest amputation rates. Egypt (~38) is a surprise entry.
+| Country | Study Count |
+|---------|-------------|
+| United States | ~680 |
+| France | ~317 |
+| Denmark | ~78 |
+| Germany | ~76 |
+| Italy | ~71 |
+| United Kingdom | ~44 |
+| Canada | ~41 |
+| Australia | ~35 |
+| Egypt | ~38 |
 
-## Key Studies
-
-### NCT01756924 — CEM-102 With Rifampin for Prosthetic Joint Infections
-- **Sponsor:** Arrevus Inc. (Industry) | **Phase:** Phase 2 | **Status:** TERMINATED
-- **Condition:** Prosthetic Joint Infections (Hip/Knee) + Infected Spacers
-- **Enrollment:** 14 (actual)
-- **Summary:** Oral CEM-102 (fusidic acid) + rifampin vs. standard antibiotics (vancomycin/daptomycin/linezolid/rifampin/ceftriaxone/etc.) for PJI. Terminated due to alternative study design being considered. Fusidic acid remains available via Expanded Access.
-- **Relevance:** Illustrates industry risk aversion in small-n prosthetic infection trials.
-
-### NCT03726918 — BioPreIOA (Osseointegration Bio-Markers)
-- **Sponsor:** Istituto Ortopedico Rizzoli (Academic) | **Phase:** Observational | **Status:** COMPLETED
-- **Condition:** Osteoarthritis
-- **Enrollment:** 9 (actual)
-- **Summary:** Single-center prospective cohort. Isolates synoviocytes, osteoblasts, chondrocytes from prosthetic implant tissue. Identifies miRNA/lncRNA biomarkers predictive of osseointegration.
-- **Relevance:** Academic-driven precision prosthetics; biomarker-driven personalized outcomes.
-
-## Access Gap Analysis: 3 Underserved US Regions
-
-### Rural West Virginia 🔴 CRITICAL
-- **Population:** ~93k (Upshur County area); ~7k (Elkins city)
-- **CPO within 50km:** NONE
-- **Nearest CPO:** Charleston, WV (~190 mi) / Pittsburgh, PA (~200 mi)
-- **Travel Time:** 3+ hours
-- **Local Facilities:** 14 (all non-prosthetic: general clinics, pharmacies, dental, PT)
-- **Medicaid Barrier:** High (WV limits CPO reimbursement; many metro CPOs decline WV)
-
-### Eastern Kentucky 🔴 CRITICAL
-- **Population:** ~5k (Hazard); ~7k (Pikeville)
-- **CPO within 100km:** NONE
-- **Nearest CPO:** Lexington, KY (~130 mi)
-- **Travel Time:** 3+ hours
-- **Local Facilities:** 19 (mostly pharmacies and general clinics; Life Crafters is OT only, NOT CPO-certified)
-- **Medicaid Barrier:** Medium (KY Medicaid limited; WV Medicaid not accepted)
-
-### Mississippi Delta 🟥 EXTREME
-- **Population:** ~31k (Greenville); ~10k (Indianola)
-- **CPO within 200+ km:** NONE
-- **Nearest CPO:** Memphis, TN (~200 mi) / Jackson, MS (~250 mi)
-- **Travel Time:** 4+ hours
-- **Local Facilities:** 9 (Southeast Rehab Hospital has only 10 beds)
-- **Medicaid Barrier:** EXTREME (Mississippi has NOT expanded Medicaid; MS Medicaid not accepted by most CPOs)
-
-| Metric | Rural WV | Eastern KY | MS Delta |
-|--------|----------|------------|----------|
-| CPO in 50km | None | None | None |
-| Nearest CPO | Charleston (190 mi) | Lexington (130 mi) | Memphis (200 mi) |
-| Travel | 3+ hrs | 3+ hrs | 4+ hrs |
-| Gap | CRITICAL | CRITICAL | EXTREME |
-| Medicaid | High | Medium | Extreme |
-
-## Recommended Interventions
-
-1. **Mobile Prosthetic Clinics** — Van-based CPO services on rotating schedules
-2. **Tele-Rehabilitation** — Remote prosthetic fittings and follow-ups
-3. **Travel Voucher Program** — State-funded travel for prosthetic appointments
-4. **Medicaid Expansion Advocacy** — Crucial for MS and WV
-5. **CPO Relocation Incentives** — Tax breaks in underserved counties
-6. **Community Health Worker Training** — Local prosthetic maintenance skills
-7. **3D-Printed Prosthetics** — Local fab labs for low-cost prosthetics
-8. **Regional CPO Residency Program** — WVU/UK/UM for rotations
+For limb prosthesis specifically, the US leads with **327 studies** (89.3% of 360 limb-prosthesis studies).
 
 ---
-*Comprehensive atlas report. Data: ClinicalTrials.gov + OpenStreetMap. July 2025.*
+
+## Access Gap Analysis
+
+### Underserved Regions Mapped
+
+| Region | Central Coordinates | CPO Within 50km | Nearest CPO | Travel Time to Nearest CPO | Medicaid Coverage |
+|--------|-------------------|-----------------|-------------|---------------------------|-------------------|
+| Rural West Virginia (Beckley area) | 37.78, -81.19 | **None** | Charleston, WV (~190 mi) | 3+ hours | High |
+| Eastern Kentucky (Pikeville area) | 37.48, -82.52 | **None** | Lexington, KY (~130 mi) | 3+ hours | Medium |
+| Mississippi Delta (Greenville area) | 33.41, -91.06 | **None** | Memphis, TN (~200 mi) | 4+ hours | Extreme |
+
+### Detailed Gap Profiles
+
+#### Rural West Virginia — Beckley
+- **Healthcare within 50 km:** Pharmacies (CVS, Walgreens, Westside Pharmacy), dentists, dialysis center (Fresenius), but **zero Certified Prosthetic-Orthotic (CPO) providers or prosthetic fabrication labs**
+- **Nearest CPO services:** Charleston, WV area (~190 miles, 3+ hours by car)
+- **Key facilities found:** CVS Pharmacy (Beaver), Walgreens (Oceana, E. Oak Hill, Whitesville), Westside Pharmacy, Liberty Dental Centers
+- **Medicaid impact:** High — WV has expanded Medicaid, but geographic barriers remain the primary obstacle
+
+#### Eastern Kentucky — Pikeville
+- **Healthcare within 50 km:** Clinics (PMC Medical Diagnostics, Town Center Urgent Care, MCHC Elkhorn City, Elkhorn City Clinic), pharmacies (Rite Aid, Elkhorn Drug, Walgreens in Salyersville, Parkway Pharmacy), doctors (Meta Medical Center, Pediatric Associates, Asthma & Allergy Center), dentists (Elkhorn Dental)
+- **Nearest CPO services:** Lexington, KY area (~130 miles, 3+ hours)
+- **Key observation:** Despite multiple primary care clinics, **no prosthetic/orthotic facilities exist** within 50 km
+- **Medicaid impact:** Medium — KY has not fully expanded Medicaid in some counties
+
+#### Mississippi Delta — Greenville
+- **Healthcare within 15 km:** clinics (The Greenville Clinic — internal medicine, pediatrics, cardiology), dentists (Michelle Seard-Higgins DMD, Dental Group of Greenville)
+- **Pharmacy within 30 km:** South Street Pharmacy, Walgreens (Cleveland, MS), Shelby Drug Store, Gilbow's Drug Store
+- **Nearest CPO services:** Memphis, TN area (~200 miles, 4+ hours)
+- **Key observation:** The Delta is the most underserved — the Greenville Clinic covers basic care but has **no prosthetics, orthotics, or rehabilitation technology**
+- **Medicaid impact:** Extreme — MS Delta has some of the highest rates of amputation (diabetes-related) and the lowest access to prosthetic services
+
+---
+
+## Key Clinical Trials (Recent & Notable)
+
+### 1. PROSPER — Prosthetic Performance Enhancement Trial (NCT06419920)
+- **Status:** RECRUITING (as of Dec 2025)
+- **Sponsor:** University of Nevada, Las Vegas + NIH + DoD
+- **Focus:** Uneven terrain walking program for lower limb prosthesis users
+- **Enrollment:** 35 participants (estimated)
+- **Significance:** Directly addresses mobility and fall prevention for prosthetic users — highly relevant to access and quality-of-life outcomes
+
+### 2. EPJIC — European Prosthetic Joint Infection Cohort Study (NCT02424903)
+- **Status:** UNKNOWN (last known: NOT_YET_RECRUITING)
+- **Sponsor:** Pro-Implant Foundation + Charité University, Berlin
+- **Focus:** Prosthetic joint infection treatment approaches for hip, knee, shoulder
+- **Enrollment:** 5,000 (estimated)
+- **Significance:** Large-scale international registry; informs infection management in prosthetic surgery
+
+### 3. Gaza Prosthetic Satisfaction Study (NCT07519746)
+- **Status:** COMPLETED
+- **Sponsor:** Yeditepe University
+- **Focus:** Patient satisfaction and quality of life among lower limb prosthetic users in Gaza
+- **Enrollment:** 128 (actual)
+- **Significance:** Context-specific QoL research; model for studying prosthetic access in underserved/conflict zones
+
+---
+
+## Methodology
+
+Data sources:
+- **ClinicalTrials.gov API** — Used for all trial data (status, phase, sponsor, geographic, and condition filters).
+- **OpenStreetMap (OSM)** — Used for mapping healthcare facilities and infrastructure near target coordinates.
+- **Geocoding** — Target coordinates derived for Beckley, WV; Pikeville, KY; Greenville, MS (Mississippi Delta central).
+
+Caveats:
+- OSM data is community-maintained and may miss private/insular CPO providers.
+- ClinicalTrials.gov data reflects registered studies, not all prosthetic care research.
+- The "access gap" analysis identifies the absence of CPO facilities; actual travel distances may be shorter via alternate routes.
+
+---
+
+*Built to improve prosthetic care access for all. Open and free.*

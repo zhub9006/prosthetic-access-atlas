@@ -1,0 +1,53 @@
+{
+  "last_updated": "2026-07-19",
+  "regions": [
+    {
+      "name": "Rural West Virginia",
+      "center": {"latitude": 37.778, "longitude": -81.188},
+      "reference_city": "Beckley, WV",
+      "cpo_within_50km": 0,
+      "nearest_cpo": "Charleston, WV",
+      "nearest_cpo_distance_mi": 190,
+      "travel_time": "3+ hours",
+      "medicaid_coverage": "High (expanded)",
+      "healthcare_found": {
+        "pharmacies": ["CVS Pharmacy (Beaver)", "Walgreens (Oceana, E. Oak Hill, Whitesville)", "Westside Pharmacy"],
+        "clinics": ["Fresenius Medical Care (dialysis)"],
+        "dentists": ["Liberty Dental Centers", "Shady Spring Dental Care"],
+        "prosthetic_orthotic": []
+      }
+    },
+    {
+      "name": "Eastern Kentucky",
+      "center": {"latitude": 37.479, "longitude": -82.519},
+      "reference_city": "Pikeville, KY",
+      "cpo_within_50km": 0,
+      "nearest_cpo": "Lexington, KY",
+      "nearest_cpo_distance_mi": 130,
+      "travel_time": "3+ hours",
+      "medicaid_coverage": "Medium (partial expansion)",
+      "healthcare_found": {
+        "clinics": ["PMC Medical Diagnostics", "Town Center Urgent Care", "MCHC Elkhorn City Medical Clinic", "Elkhorn City Clinic"],
+        "pharmacies": ["Rite Aid", "Elkhorn Drug", "Walgreens (Salyersville, Martin)", "Parkway Pharmacy"],
+        "doctors": ["Meta Medical Center", "Pediatric Associates of Pikeville", "Asthma & Allergy Center"],
+        "prosthetic_orthotic": []
+      }
+    },
+    {
+      "name": "Mississippi Delta",
+      "center": {"latitude": 33.411, "longitude": -91.064},
+      "reference_city": "Greenville, MS",
+      "cpo_within_50km": 0,
+      "nearest_cpo": "Memphis, TN",
+      "nearest_cpo_distance_mi": 200,
+      "travel_time": "4+ hours",
+      "medicaid_coverage": "Extreme (high amputation rate, low access)",
+      "healthcare_found": {
+        "clinics": ["The Greenville Clinic (internal medicine, pediatrics, cardiology)"],
+        "pharmacies": ["South Street Pharmacy", "Walgreens (Cleveland, MS)", "Shelby Drug Store", "Gilbow's Drug Store"],
+        "dentists": ["Michelle Seard-Higgins DMD", "Dental Group of Greenville"],
+        "prosthetic_orthotic": []
+      }
+    }
+  ]
+}

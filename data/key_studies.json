@@ -1,0 +1,42 @@
+{
+  "last_updated": "2026-07-19",
+  "studies": [
+    {
+      "nct_id": "NCT06419920",
+      "title": "Prosthetic Performance Enhancement Trial (PROSPER)",
+      "status": "RECRUITING",
+      "sponsor": "University of Nevada, Las Vegas",
+      "collaborators": ["University of Washington", "Chapman University", "DoD", "NIH"],
+      "conditions": ["Amputation", "Lower Limb Amputation"],
+      "interventions": ["Flat terrain locomotor training", "Uneven terrain locomotor training"],
+      "enrollment_estimated": 35,
+      "start_date": "2025-06-26",
+      "completion_date": "2027-07",
+      "significance": "Addresses mobility and fall prevention for prosthetic users; directly relevant to access and quality-of-life outcomes"
+    },
+    {
+      "nct_id": "NCT02424903",
+      "title": "European Prosthetic Joint Infection Cohort Study (EPJIC)",
+      "status": "UNKNOWN (last known: NOT_YET_RECRUITING)",
+      "sponsor": "Pro-Implant Foundation",
+      "collaborators": ["Charité University, Berlin"],
+      "conditions": ["Prosthesis-related Infections"],
+      "enrollment_estimated": 5000,
+      "start_date": "2015-05",
+      "completion_date": "2018-12",
+      "significance": "Large-scale international registry for prosthetic joint infection outcomes"
+    },
+    {
+      "nct_id": "NCT07519746",
+      "title": "Patient Satisfaction and Quality of Life Among Lower Limb Prosthetic Users in Gaza",
+      "status": "COMPLETED",
+      "sponsor": "Yeditepe University",
+      "collaborators": ["Al-Azhar University - Gaza"],
+      "conditions": ["Amputation", "Prosthesis User", "Satisfaction", "Quality of Life"],
+      "enrollment_actual": 128,
+      "start_date": "2025-09",
+      "completion_date": "2026-03",
+      "significance": "Context-specific QoL research; model for studying prosthetic access in underserved/conflict zones"
+    }
+  ]
+}

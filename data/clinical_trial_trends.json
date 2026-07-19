@@ -1,0 +1,61 @@
+{
+  "total_prosthetic_studies": 644,
+  "total_limb_prosthesis_studies": 360,
+  "last_updated": "2026-07-19",
+  "status_distribution": {
+    "COMPLETED": 271,
+    "UNKNOWN": 134,
+    "RECRUITING": 112,
+    "NOT_YET_RECRUITING": 38,
+    "ACTIVE_NOT_RECRUITING": 37,
+    "ENROLLING_BY_INVITATION": 12,
+    "TERMINATED": 24,
+    "WITHDRAWN": 10,
+    "SUSPENDED": 4,
+    "TEMPORARILY_NOT_AVAILABLE": 1
+  },
+  "phase_distribution": {
+    "N/A": 338,
+    "Unknown": 202,
+    "PHASE2": 39,
+    "PHASE3": 30,
+    "PHASE4": 29,
+    "PHASE1": 15,
+    "EARLY_PHASE1": 4
+  },
+  "phase_distribution_limb_prosthesis": {
+    "N/A": 215,
+    "Unknown": 103,
+    "PHASE1": 7,
+    "PHASE2": 17,
+    "PHASE3": 10,
+    "PHASE4": 9,
+    "EARLY_PHASE1": 4
+  },
+  "sponsor_distribution": {
+    "Academic/Other": 493,
+    "Industry": 108,
+    "Federal + Other Gov": 37,
+    "Network + NIH": 6
+  },
+  "top_countries_all": {
+    "United States": 680,
+    "France": 317,
+    "Denmark": 78,
+    "Germany": 76,
+    "Italy": 71,
+    "United Kingdom": 44,
+    "Canada": 41,
+    "Australia": 35,
+    "Egypt": 38
+  },
+  "top_countries_limb_prosthesis": {
+    "United States": 327,
+    "France": 181,
+    "Germany": 60,
+    "Italy": 32,
+    "Australia": 32,
+    "Netherlands": 23,
+    "Egypt": 24
+  }
+}

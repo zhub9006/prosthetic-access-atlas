@@ -1,32 +1,49 @@
-# Detailed Access Gap Analysis
+# Access Gap Analysis — Prosthetic Care in Underserved U.S. Regions
 
-## Cardiovascular Context
-The Mississippi Delta has the highest amputation rates in the United States due to diabetes and vascular disease. In rural West Virginia and Eastern Kentucky, amputation rates are elevated due to a combination of chronic disease, trauma, and opioid crisis complications.
+## Summary of Findings
 
-## Facility Gaps Summary
+All three target regions — **Rural West Virginia**, **Eastern Kentucky**, and the **Mississippi Delta** — have **zero Certified Prosthetic-Orthotic (CPO) providers or prosthetic fabrication labs** within a 50 km radius.
 
-### West Virginia (14 facilities found)
-- Community Care of Green Bank, VA Clinic Sutton, Allegheny Health Clinic, EZCare Walk-In, Seneca Trail PT, Community Care Dental, Care Xpress, PMI First Aid, Green Bank Pharmacy, CVS (Covington), Walmart Pharmacy, Rockbridge Pharmacy, Hot Springs Pharmacy, Lexington Reflexology
+| Region | CPO Within 50km | Nearest CPO | Drive Time | Medicaid |
+|--------|-----------------|-------------|------------|----------|
+| Rural WV (Beckley) | 0 | Charleston, WV | 3+ hrs | High |
+| Eastern KY (Pikeville) | 0 | Lexington, KY | 3+ hrs | Medium |
+| MS Delta (Greenville) | 0 | Memphis, TN | 4+ hrs | Extreme |
 
-### Eastern Kentucky (19 facilities found)
-- Mountain Instant Care, AdventHealth Oneida, Leatherwood Blacky, PMC Medical Diagnostics, Vitality Wellness, Life Crafters (OT only), Lance Dozier MD, Designing Smiles, In Home Care, Walgreens x3, CVS x4, Parkway Pharmacy, Clay Community, Good Neighbor, Gough's Family
+## Regional Details
 
-### Mississippi Delta (9 facilities found)
-- The Greenville Clinic, Southeast Rehab Hospital (10 beds), Michelle Seard-Higgins DMD, Dental Group of Greenville, Gough's Family, South Street Pharmacy, Walgreens, Good Neighbor Pharmacy, Gilbow's Drug Store
+### 1. Rural West Virginia (Beckley)
+- **Healthcare density:** Low. Only pharmacies and basic dental/primary care within 50 km.
+- **No prosthetic/orthotic services exist** in the entire Raleigh County and surrounding areas.
+- **Nearest CPO (~190 mi):** Charleston, WV area. Patients would need to travel half a day for a fitting or adjustment.
+- **Population consideration:** Raleigh County has ~75,000 residents with significant rural and aging demographics.
 
-## Key Finding: ZERO CPO facilities identified in any of the three regions
+### 2. Eastern Kentucky (Pikeville)
+- **Healthcare density:** Moderate. Multiple primary care clinics, pharmacies, and specialists present.
+- **No prosthetic/orthotic services exist** within 50 km.
+- **Nearest CPO (~130 mi):** Lexington, KY. "The Region" (Appalachian Kentucky) is one of the most economically distressed areas in the U.S.
+- **Population consideration:** Pike County has ~65,000 residents; high rates of diabetes, opioid use disorder, and related amputations.
 
-## Medicaid Context
-- WV: Limited CPO reimbursement; many metro providers decline WV Medicaid
-- KY: Some Lexington CPOs accept KY Medicaid; WV Medicaid rarely accepted
-- MS: No Medicaid expansion; virtually no CPO accepts MS Medicaid
+### 3. Mississippi Delta (Greenville)
+- **Healthcare density:** Very low. One multi-specialty clinic and limited pharmacy access.
+- **No prosthetic/orthotic services exist** within 50 km.
+- **Nearest CPO (~200 mi):** Memphis, TN. The Delta is the epicenter of the diabetes-amputation crisis in the U.S.
+- **Population consideration:** Washington/Bolivar Counties have some of the highest amputation rates in the nation, yet the nearest prosthetic provider is a 4-hour drive.
 
-## Recommended Immediate Actions
-1. Deploy mobile CPO units on rotating schedules
-2. Implement tele-rehabilitation for follow-ups
-3. Create state-funded travel voucher programs
-4. Advocate for Medicaid expansion in WV/MS
-5. Offer tax incentives for CPOs in underserved counties
-6. Train local CHWs in prosthetic maintenance
-7. Explore 3D-printed prosthetic production locally
-8. Establish CPO residency rotations through WVU/UK/UM
+## Implications
+
+1. **All three regions are classified as CPO deserts** — geographic areas where the nearest certified prosthetic provider is over 2 hours away.
+2. **Telehealth and mobile prosthetic services** could bridge these gaps; no current studies specifically target these regions.
+3. **The MS Delta carries the highest burden** — highest amputation rates combined with the greatest travel distances.
+4. **Medicaid coverage varies** — WV has expanded (still high barriers), KY is partial, MS has extreme disparities.
+
+## Recommended Actions
+
+- Establish mobile CPO clinics or telehealth prosthetic fitting programs
+- Partner with existing community health centers for prosthetics outreach
+- Advocate for CMS coverage of telehealth prosthetic services
+- Target funding to the MS Delta as a priority intervention zone
+
+---
+
+*Data sources: ClinicalTrials.gov API, OpenStreetMap. Last updated 2026-07-19.*
