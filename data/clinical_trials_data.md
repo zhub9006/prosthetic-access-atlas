@@ -1,0 +1,6 @@
+nct_id,title,status,sponsor,phase,enrollment,country,location,study_type,start_date,completion_date
+NCT06243549,Personalisation of Prosthetic Care for Lower-Limb Amputees,ACTIVE_NOT_RECRUITING,University of Bath,Observational,30,UK,University Hospital Bristol,Prospective Cohort,2023-09-01,2026-10-01
+NCT02666859,Virtual Reality Prosthetic Training and Rehabilitation,COMPLETED,University of South Florida,Early Phase 1,10,US,University of South Florida Tampa,Randomized,2016-01-01,2019-06-01
+NCT07652619,Motor Imagery for Prosthetic Gait Training in Transtibial Amputees,COMPLETED,Ariel University,Interventional,Unknown,Israel,Ariel University,Feasibility Pilot,2023-01-10,2023-10-20
+NCT02366702,Bilateral Transfemoral: Passive vs Powered Prosthetic Devices,UNKNOWN,Southern California Institute for Research and Education,Observational,3,US,VA Long Beach Healthcare System,Case Crossover,2015-02-01,2020-02-01
+NCT02424903,European Prosthetic Joint Infection Cohort Study (EPJIC),UNKNOWN,Pro-Implant Foundation,Observational,5000,Germany,Charité Berlin,Prospective Cohort,2015-05-01,2018-12-01

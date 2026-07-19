@@ -1,56 +1,32 @@
-# Contributing to Prosthetic Access Atlas
+# Contribution Guide
 
-## How to Contribute
+## How to Contribute to the Prosthetic Access Atlas
 
-### 1. Report Data Issues
-- Check if the data on ClinicalTrials.gov is outdated
-- Verify CPO provider information through ABC directory or direct contact
-- Open an issue with the `[DATA]` label
+This is an open-access project. We welcome contributions of all kinds!
 
-### 2. Add Regional Profiles
-- Duplicate an existing profile that is similar in scope
-- Update coordinates, demographics, and provider data
-- Include gap scoring with methodology notes
-- Submit a PR for review
+### Types of Contributions
+1. **Data updates** — Refresh ClinicalTrials.gov data or add newly identified studies
+2. **Region expansions** — Add new underserved regions for access gap analysis
+3. **Code** — Scripts for data extraction, visualization, or analysis
+4. **Documentation** — Improve methodology, fix errors, or add translations
+5. **Maps** — Add interactive maps or visualizations
 
-### 3. Add Visualizations
-- Fork the repo
-- Create a new branch for your visualization
-- Add charts, maps, or dashboards in `visualizations/`
-- Ensure all outputs are version-controlled
+### Getting Started
+1. Fork the repository
+2. Create a branch: `git checkout -b feature/your-feature-name`
+3. Make your changes
+4. Commit with a clear message
+5. Open a pull request
 
-### 4. Add Policy Briefs
-- Write evidence-based briefs in `docs/policy_briefs/`
-- Include citations and gap analysis data
-- Target audience: HRSA, CMS, state Medicaid offices, VA
+### Code Style
+- Use Markdown for documentation
+- Use JSON for structured data
+- Keep CSV files clean with headers
 
-### 5. Fix bugs or improve code
-- Python scripts and Jupyter notebooks live in `analysis/`
-- Use virtual environments
-- Add unit tests where appropriate
-
-## Code of Conduct
-
-- Be respectful and inclusive
-- Default to open data sharing
-- Credit original data sources
-- Do not include protected health information
-
-## Documentation Standards
-
-- All markdown files use ATX headers
-- JSON files must be valid (validate with `python -m json.tool`)
-- CSV files include header rows
-- All figures and maps must include source attribution
-
-## Review Process
-
-1. Fork and branch
-2. Open PR against `main`
-3. At least one maintainer review
-4. CI check (if any) must pass
-5. Merge
+### Review Process
+- All PRs will be reviewed by maintainers
+- Data accuracy is paramount — please cite sources
 
 ---
 
-We welcome contributions from clinicians, researchers, policymakers, patients, and advocates.
+*Together we can map and close prosthetic care gaps.*
