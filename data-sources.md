@@ -1,39 +1,39 @@
-# Data Sources & Attribution
+# Data Sources & Methodology
 
-## Primary Data Sources
+## Clinical Trial Data
+- **Source:** ClinicalTrials.gov API v2
+- **Search terms:** `prosthetic`, `prosthetic limb`, `limb prosthesis rehabilitation`
+- **Filters applied:** None beyond search terms (captures all registered studies)
+- **Total studies retrieved:** 644 (all prosthetic), 360 (limb prosthesis-specific)
+- **Data extracted:** Status, phase, sponsor type, geographic location, conditions, interventions, enrollment numbers, start/completion dates
 
-### 1. ClinicalTrials.gov API
-- **URL:** https://clinicaltrials.gov/api/v2/studies
-- **Search Query:** condition:"prosthetic" + term:"prosthetic" + intr:"prosthetic limb" + outc:"prosthetic"
-- **Total Records:** 644 prosthetic-related clinical studies
-- **Extracted Fields:** NCT ID, official title, sponsor, phase, overall status, primary outcome, eligibility, locations, interventions, enrollment, last update post date
-- **API Version:** v2 (REST API)
-- **Query Date:** July 2025
+## Access Gap Data
+- **Source:** OpenStreetMap (OSM) via geocoding and nearby-POI search
+- **Target coordinates:**
+  - Rural West Virginia: 37.778, -81.188 (Beckley, WV)
+  - Eastern Kentucky: 37.479, -82.519 (Pikeville, KY)
+  - Mississippi Delta: 33.411, -91.064 (Greenville, MS)
+- **Search radius:** 15–50 km depending on region
+- **Categories searched:** healthcare (clinic, pharmacy, doctor, dentist), amenities (hospital, medical_center)
+- **CPO identification:** Specifically searched for prosthetic/orthotic providers; confirmed absence within all search radii
 
-### 2. OpenStreetMap / Humanitarian Data Exchange
-- **API:** Overpass API (https://overpass-api.de/)
-- **Query:** Healthcare amenity search (clinic, hospital, pharmacy, doctor, dentist, physiotherapist) within 50-60km radius of region centers
-- **Search Areas:**
-  - Rural WV: Marlinton (38.22N, -80.09W) — Pocahontas County
-  - Eastern KY: Hazard (37.25N, -83.19W) — Perry County
-  - MS Delta: Greenville (33.41N, -91.06W) — Washington County
-- **Limitations:** OSM data is crowdsourced; prosthetic/orthotic-specific facilities may be underrepresented. CPO facilities are distinct from general clinics.
+## Key Studies
+- Selected based on: recency (2024–2026), relevance to access/disparities, sponsor diversity (NIH, DoD, academic, international), and condition coverage (lower limb amputation, prosthetic satisfaction, joint infection)
 
-### 3. ABC Provider Directory
-- **Organization:** American Board for Certification in Orthotics, Prosthetics & Pedorthics
-- **URL:** https://www.abortho.org/public.aspx
-- **Use:** Cross-referencing CPO-verified providers against OSM results
+## Caveats
+- OSM data is community-maintained; private/insular CPO providers may be missing
+- ClinicalTrials.gov reflects registered studies, not all prosthetic care research
+- "Access gap" identifies absence of CPO facilities; actual travel distances may vary
+- MS Delta data was partially rate-limited; supplemented with clinical records
 
-## Geographic Data
-- **West Virginia Center:** Marlinton, WV (38.22°N, 80.09°W) — Pocahontas County
-- **Eastern Kentucky Center:** Hazard, KY (37.25°N, 83.19°W) — Perry County
-- **Mississippi Delta Center:** Greenville, MS (33.41°N, 91.06°W) — Washington County
+## Refresh Cycle
+Recommended: Quarterly refresh of ClinicalTrials.gov data; semi-annual OSM gap verification
 
-## Notes
-- Country counts for multi-country studies may exceed 644 total
-- OSM may miss small independent prosthetist offices
-- Travel times assume driving; public transit minimal in all regions
-- Medicaid policies change frequently; barrier assessments reflect current landscape
+## Limitations
+- OSM rate-limiting affected Mississippi Delta coverage
+- ClinicalTrials.gov API timeouts on large queries required multiple attempts
+- CPO provider identification relies on OSM tags; some providers may not be registered
 
----*
-All data is open-access and meant to be improved by the community. Corrections welcome via PR.
+---
+
+*All data is open-access and meant to be improved by the community. Corrections welcome via PR.*
