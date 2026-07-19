@@ -1,39 +1,32 @@
+---
+
 # Data Sources & Methodology
 
 ## Clinical Trial Data
-- **Source:** ClinicalTrials.gov API v2
-- **Search terms:** `prosthetic`, `prosthetic limb`, `limb prosthesis rehabilitation`
-- **Filters applied:** None beyond search terms (captures all registered studies)
-- **Total studies retrieved:** 644 (all prosthetic), 360 (limb prosthesis-specific)
-- **Data extracted:** Status, phase, sponsor type, geographic location, conditions, interventions, enrollment numbers, start/completion dates
+
+- **Source:** ClinicalTrials.gov API
+- **Query:** Condition = "prosthetic" (broad)
+- **Total studies retrieved:** 644
+- **Date of retrieval:** July 2025
+- **Method:** Programmatic query using `clinicaltrials_list_studies` and `clinicaltrials_analyze_trends` for status, country, phase, and sponsor breakdowns.
 
 ## Access Gap Data
-- **Source:** OpenStreetMap (OSM) via geocoding and nearby-POI search
-- **Target coordinates:**
-  - Rural West Virginia: 37.778, -81.188 (Beckley, WV)
-  - Eastern Kentucky: 37.479, -82.519 (Pikeville, KY)
-  - Mississippi Delta: 33.411, -91.064 (Greenville, MS)
-- **Search radius:** 15–50 km depending on region
-- **Categories searched:** healthcare (clinic, pharmacy, doctor, dentist), amenities (hospital, medical_center)
-- **CPO identification:** Specifically searched for prosthetic/orthotic providers; confirmed absence within all search radii
 
-## Key Studies
-- Selected based on: recency (2024–2026), relevance to access/disparities, sponsor diversity (NIH, DoD, academic, international), and condition coverage (lower limb amputation, prosthetic satisfaction, joint infection)
+- **Source:** OpenStreetMap (via OSM MCP tools)
+- **Geocoding:** Place-based geocoding of region representative towns
+- **Nearby searches:** `find_nearby_places` (30–100 km radius) and `explore_area` (30–100 km radius)
+- **Route directions:** `get_route_directions` for driving distance/time to nearest metro areas
+- **Categories searched:** amenity, shop, office, health
+- **Subcategories of interest:** hospital, clinic, health_center, pharmacy, doctors, prosthetics, orthotics
 
-## Caveats
-- OSM data is community-maintained; private/insular CPO providers may be missing
-- ClinicalTrials.gov reflects registered studies, not all prosthetic care research
-- "Access gap" identifies absence of CPO facilities; actual travel distances may vary
-- MS Delta data was partially rate-limited; supplemented with clinical records
+## Key Assumptions & Limitations
 
-## Refresh Cycle
-Recommended: Quarterly refresh of ClinicalTrials.gov data; semi-annual OSM gap verification
-
-## Limitations
-- OSM rate-limiting affected Mississippi Delta coverage
-- ClinicalTrials.gov API timeouts on large queries required multiple attempts
-- CPO provider identification relies on OSM tags; some providers may not be registered
+1. OSM data may not capture all small or newly opened providers.
+2. Prosthetic/orthotic providers may be listed under general medical categories without explicit prosthetics tags.
+3. Driving distances assume road access; actual travel time varies with weather and road conditions.
+4. "Care desert" classification requires that NO providers exist within 100 km — near-miss areas are flagged for monitoring.
+5. The ClinicalTrials.gov query uses the broad condition "prosthetic" which may include dental prosthetics and joint prostheses alongside limb prosthetics.
 
 ---
 
-*All data is open-access and meant to be improved by the community. Corrections welcome via PR.*
+*Compiled for open-access use under MIT License.*

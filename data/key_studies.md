@@ -1,51 +1,65 @@
-# Key Prosthetic Clinical Trials — Detailed Profiles
+---
 
-## Latest / Most Relevant Studies (July 2025)
+# Key Prosthetic Clinical Trials (Latest)
 
-### 1. NCT07519746 — Satisfaction & QoL Among Prosthetic Users in Gaza
-- **Title:** Patient Satisfaction and Quality of Life Among Lower Limb Prosthetic Users in Gaza Governorate During Gaza War
-- **Sponsor:** Yeditepe University (Academic)
-- **Status:** COMPLETED (Sep 2025 – Mar 2026)
-- **Enrollment:** 128 (actual)
-- **Type:** Observational / Patient Registry
-- **Summary:** Cross-sectional study evaluating satisfaction and QoL among adult lower limb prosthetic users in Gaza. Uses SAT-PRO, PEQ, TAPES, EQ-5D-5L, and SWLS instruments. War-related traumatic amputations increased, limiting access to prosthetic services.
-- **Relevance:** Highlights access crisis in conflict zones; satisfaction as a proxy for access quality.
+## Active & Recent
 
-### 2. NCT04953364 — SMART Program: Self-Management for Amputee Rehabilitation Using Technology
-- **Title:** Self-Management for Amputee Rehabilitation Using Technology (SMART) Program
-- **Sponsor:** University of British Columbia
-- **Status:** RECRUITING (Oct 2022 – Feb 2026)
-- **Enrollment:** 82 (estimated)
-- **Type:** Interventional (RCT)
-- **Summary:** mHealth platform for lower limb amputee self-management: prosthetic limb management, peer support, and wellness tracking via tablet. Targets rural Canadians aged 50+. Directly relevant to rural access gaps.
-- **Relevance:** Models for remote/tele-prosthetic care in underserved areas.
-
-### 3. NCT02366702 — Powered vs. Passive Prosthetic Devices (Bilateral Transfemoral)
-- **Title:** Kinematic, Kinetic, and Metabolic Comparison of Bilateral Transfemoral Ambulation With Passive Versus Powered Prosthetic Devices
-- **Sponsor:** Southern California Institute for Research and Education (Academic)
-- **Status:** UNKNOWN (last known: ACTIVE_NOT_RECRUITING, 2019)
-- **Enrollment:** 3 (actual)
-- **Type:** Observational
-- **Summary:** Early pilot comparing powered vs. passive prostheses for bilateral transfemoral amputees. Only 3 subjects completed — illustrates difficulty of small prosthetic trials.
-- **Relevance:** Shows challenges in prosthetic device efficacy research; small sample sizes.
-
-### 4. NCT04904003 — ProMob: Prosthetic Use, Mobility and Daily Functioning
-- **Title:** Prosthetic Use, Mobility and Daily Functioning
-- **Sponsor:** Oslo Metropolitan University
-- **Status:** COMPLETED (Apr 2021 – Jun 2022)
-- **Enrollment:** 60 (actual)
-- **Type:** Interventional (non-randomized)
-- **Summary:** Semi-structured individualized rehabilitation for new and experienced lower limb amputees. Uses PLUS-M, AMP, TAPES-R, ABC, EQ-5D-5L outcome measures.
-- **Relevance:** Benchmark for rehabilitation outcome measurement; protocol adaptable for rural settings.
-
-### 5. NCT04588753 — Active Isolated Stretch for Trans-Tibial Amputees
-- **Title:** Active Isolated Stretch and Post Facilitation Stretch on Hamstring Flexibility in Trans-Tibial Amputees
-- **Sponsor:** Riphah International University (Academic)
-- **Status:** COMPLETED (Dec 2019 – Dec 2020)
-- **Enrollment:** 38 (actual)
-- **Type:** Interventional (RCT)
-- **Summary:** Compares AIS vs. Post Facilitation Stretch for hamstring flexibility in trans-tibial amputees. Addresses knee contractures that affect prosthetic use.
-- **Relevance:** Rehabilitation adjunct care; relevant to preventing secondary complications in underserved settings.
+### 1. Personalisation of Prosthetic Care for Lower-Limb Amputees
+- **NCT ID:** NCT06243549
+- **Status:** Active, Not Recruiting
+- **Sponsor:** University of Bath (UK)
+- **Collaborators:** University Hospitals Bristol and Weston NHS Foundation Trust; Portsmouth Hospitals NHS Trust
+- **PI:** Alexandra Withey
+- **Design:** Prospective cohort, 12-month follow-up
+- **Enrollment:** 30 (estimated)
+- **Focus:** Biomechanical and psychological pathways of lower back pain in lower-limb amputees with prosthetics
+- **Start:** Sept 2023 | Estimated completion: Oct 2026
 
 ---
-*Data sourced from ClinicalTrials.gov API, July 2025. All NCT IDs are valid and accessible at https://clinicaltrials.gov/.*
+
+### 2. Motor Imagery for Prosthetic Gait Training in Transtibial Amputees
+- **NCT ID:** NCT07652619
+- **Status:** Completed
+- **Sponsor:** Ariel University (Israel)
+- **Design:** Feasibility pilot study
+- **Focus:** Motor imagery prior to or alongside initial prosthetic gait training in acute transtibial amputees
+- **Period:** Jan 2023 – Oct 2023
+
+---
+
+### 3. Virtual Reality Prosthetic Training and Rehabilitation
+- **NCT ID:** NCT02666859
+- **Status:** Completed
+- **Sponsor:** University of South Florida
+- **Collaborators:** U.S. Army Medical R&D Command; Telemedicine & Advanced Technology Research Center
+- **PI:** Stephanie L. Carey
+- **Design:** randomized, single-group, early-phase intervention
+- **Enrollment:** 10 (actual)
+- **Focus:** CAREN-based VR for upper limb prosthetic training
+- **Period:** Jan 2016 – Jun 2019
+
+---
+
+### 4. Bilateral Transfemoral: Passive vs Powered Prosthetic Devices
+- **NCT ID:** NCT02366702
+- **Status:** Unknown (last known: Active, Not Recruiting)
+- **Sponsor:** Southern California Institute for Research and Education
+- **Collaborators:** Vanderbilt University
+- **PI:** Michael Goldfarb
+- **Design:** Case-crossover, prospective
+- **Enrollment:** 3 (actual)
+- **Focus:** Kinematic, kinetic, and metabolic comparison of passive vs powered prosthetic devices for bilateral transfemoral amputees
+- **Period:** Feb 2015 – Feb 2020
+
+---
+
+### 5. European Prosthetic Joint Infection Cohort Study (EPJIC)
+- **NCT ID:** NCT02424903
+- **Status:** Unknown
+- **Sponsor:** Pro-Implant Foundation
+- **Collaborators:** Charité University, Berlin
+- **Design:** Prospective observational cohort
+- **Enrollment:** 5,000 (estimated)
+- **Focus:** Treatment approaches for prosthetic joint infections in hip, knee, and shoulder revisions
+- **Period:** May 2015 – Dec 2018
+

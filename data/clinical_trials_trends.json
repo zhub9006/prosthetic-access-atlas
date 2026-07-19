@@ -1,0 +1,39 @@
+{
+  "totalStudies": 644,
+  "byStatus": {
+    "COMPLETED": 271,
+    "RECRUITING": 113,
+    "UNKNOWN": 134,
+    "NOT_YET_RECRUITING": 38,
+    "ACTIVE_NOT_RECRUITING": 37,
+    "TERMINATED": 24,
+    "WITHDRAWN": 10,
+    "ENROLLING_BY_INVITATION": 12,
+    "SUSPENDED": 4,
+    "TEMPORARILY_NOT_AVAILABLE": 1
+  },
+  "byPhase": {
+    "N/A": 338,
+    "Unknown": 202,
+    "PHASE2": 39,
+    "PHASE3": 30,
+    "PHASE4": 29,
+    "PHASE1": 15,
+    "EARLY_PHASE1": 4
+  },
+  "bySponsor": {
+    "Academic/Other": 493,
+    "Industry": 108,
+    "Federal": 23,
+    "Other Gov": 15,
+    "Network": 5,
+    "NIH": 1
+  },
+  "topCountries": [
+    {"country": "United States", "count": 680},
+    {"country": "France", "count": 317},
+    {"country": "Denmark", "count": 78},
+    {"country": "Germany", "count": 76},
+    {"country": "Italy", "count": 71}
+  ]
+}

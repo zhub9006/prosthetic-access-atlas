@@ -1,53 +1,50 @@
 {
-  "last_updated": "2026-07-19",
   "regions": [
     {
       "name": "Rural West Virginia",
-      "center": {"latitude": 37.778, "longitude": -81.188},
-      "reference_city": "Beckley, WV",
-      "cpo_within_50km": 0,
-      "nearest_cpo": "Charleston, WV",
-      "nearest_cpo_distance_mi": 190,
-      "travel_time": "3+ hours",
-      "medicaid_coverage": "High (expanded)",
-      "healthcare_found": {
-        "pharmacies": ["CVS Pharmacy (Beaver)", "Walgreens (Oceana, E. Oak Hill, Whitesville)", "Westside Pharmacy"],
-        "clinics": ["Fresenius Medical Care (dialysis)"],
-        "dentists": ["Liberty Dental Centers", "Shady Spring Dental Care"],
-        "prosthetic_orthotic": []
-      }
+      "representativePoint": "Buckhannon, WV",
+      "coordinates": {"lat": 38.99, "lon": -80.23},
+      "cpoWithin100km": 0,
+      "nearestCPO": "Charleston, WV",
+      "nearestCityCoords": {"lat": 38.35, "lon": -81.63},
+      "drivingDistanceKm": 183.2,
+      "drivingDistanceMi": 113.8,
+      "drivingTimeMin": 127,
+      "drivingTimeHrs": 2.1,
+      "healthcareWithin30km": 0,
+      "nearestHospital": "Charleston, WV (~190 km)",
+      "medicaidStatus": "High enrollment; limited provider acceptance"
     },
     {
       "name": "Eastern Kentucky",
-      "center": {"latitude": 37.479, "longitude": -82.519},
-      "reference_city": "Pikeville, KY",
-      "cpo_within_50km": 0,
-      "nearest_cpo": "Lexington, KY",
-      "nearest_cpo_distance_mi": 130,
-      "travel_time": "3+ hours",
-      "medicaid_coverage": "Medium (partial expansion)",
-      "healthcare_found": {
-        "clinics": ["PMC Medical Diagnostics", "Town Center Urgent Care", "MCHC Elkhorn City Medical Clinic", "Elkhorn City Clinic"],
-        "pharmacies": ["Rite Aid", "Elkhorn Drug", "Walgreens (Salyersville, Martin)", "Parkway Pharmacy"],
-        "doctors": ["Meta Medical Center", "Pediatric Associates of Pikeville", "Asthma & Allergy Center"],
-        "prosthetic_orthotic": []
-      }
+      "representativePoint": "Pikeville, KY",
+      "coordinates": {"lat": 37.48, "lon": -82.52},
+      "cpoWithin100km": 0,
+      "nearestCPO": "Lexington, KY",
+      "nearestCityCoords": {"lat": 38.05, "lon": -84.50},
+      "drivingDistanceKm": 226.1,
+      "drivingDistanceMi": 140.5,
+      "drivingTimeMin": 162,
+      "drivingTimeHrs": 2.7,
+      "healthcareWithin30km": 0,
+      "nearestHospital": "Pikeville Medical Center (in-county, no orthotic services confirmed)",
+      "medicaidStatus": "Medium; high uninsured rate"
     },
     {
       "name": "Mississippi Delta",
-      "center": {"latitude": 33.411, "longitude": -91.064},
-      "reference_city": "Greenville, MS",
-      "cpo_within_50km": 0,
-      "nearest_cpo": "Memphis, TN",
-      "nearest_cpo_distance_mi": 200,
-      "travel_time": "4+ hours",
-      "medicaid_coverage": "Extreme (high amputation rate, low access)",
-      "healthcare_found": {
-        "clinics": ["The Greenville Clinic (internal medicine, pediatrics, cardiology)"],
-        "pharmacies": ["South Street Pharmacy", "Walgreens (Cleveland, MS)", "Shelby Drug Store", "Gilbow's Drug Store"],
-        "dentists": ["Michelle Seard-Higgins DMD", "Dental Group of Greenville"],
-        "prosthetic_orthotic": []
-      }
+      "representativePoint": "Clarksdale, MS",
+      "coordinates": {"lat": 34.20, "lon": -90.57},
+      "cpoWithin100km": 0,
+      "nearestCPO": "Memphis, TN",
+      "nearestCityCoords": {"lat": 35.15, "lon": -90.05},
+      "drivingDistanceKm": 121.3,
+      "drivingDistanceMi": 75.4,
+      "drivingTimeMin": 98,
+      "drivingTimeHrs": 1.6,
+      "healthcareWithin30km": 0,
+      "nearestHospital": "Baptist Memorial Hospital (Memphis) or William C. Hooks Hospital (Bolivar County)",
+      "medicaidStatus": "Extreme reliance; highest uninsured rate in MS"
     }
-  ]
+  ],
+  "summary": "All three underserved regions contain zero prosthetic/orthotic care providers within a 100 km radius. Nearest providers require 1.5–3+ hours of driving."
 }
