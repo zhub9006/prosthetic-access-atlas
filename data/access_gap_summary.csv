@@ -1,4 +1,4 @@
-Region,Population,Total_Facilities,CPO_in_50km,CPO_in_200km,Nearest_CPO,Travel_Time,Medicaid_Barrier
-Rural_West_Virginia,93k_county_7k_town,14,None,None,"Charleston WV (~190mi) Pittsburgh PA (~200mi)",3+_hrs,High_-_WV_limited
-Eastern_Kentucky,5k_Hazard_7k_Pikeville,19,None,None,Lexington_KY (~130mi),3+_hrs,Medium_-_KY_only
-Mississippi_Delta,31k_Greenville_10k_Indianola,9,None,None,"Memphis TN (~200mi) Jackson MS (~250mi)",4+_hrs,Extreme_-_MS_not_expanded
+Region,CenterLat,CenterLon,PopulationApprox,CPOSearchedRadius,CPOsFound,NearestCPO,DistanceToNearestCPO,TravelTime,GapSeverity,MedicaidBarrier
+Rural_West_Virginia,38.48,-80.84,93000,100km,0,Charleston WV,190mi,3+ hrs,CRITICAL,HIGH
+Eastern_Kentucky,38.48,-82.64,22000,100km,0,Lexington KY,130mi,3+ hrs,CRITICAL,MEDIUM
+Mississippi_Delta,33.41,-91.06,31000,200km,0,Memphis TN,200mi,4+ hrs,EXTREME,EXTREME

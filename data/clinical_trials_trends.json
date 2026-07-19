@@ -1,9 +1,15 @@
 {
-  "totalStudies": 644,
+  "metadata": {
+    "source": "ClinicalTrials.gov",
+    "query": "prosthetic",
+    "totalStudies": 644,
+    "queryDate": "2025-07-19",
+    "version": "1.0"
+  },
   "byStatus": {
     "COMPLETED": 271,
-    "RECRUITING": 113,
     "UNKNOWN": 134,
+    "RECRUITING": 113,
     "NOT_YET_RECRUITING": 38,
     "ACTIVE_NOT_RECRUITING": 37,
     "TERMINATED": 24,
@@ -15,17 +21,17 @@
   "byPhase": {
     "N/A": 338,
     "Unknown": 202,
+    "PHASE1": 15,
     "PHASE2": 39,
     "PHASE3": 30,
     "PHASE4": 29,
-    "PHASE1": 15,
     "EARLY_PHASE1": 4
   },
-  "bySponsor": {
+  "bySponsorType": {
     "Academic/Other": 493,
     "Industry": 108,
     "Federal": 23,
-    "Other Gov": 15,
+    "Other_Gov": 14,
     "Network": 5,
     "NIH": 1
   },
@@ -34,6 +40,16 @@
     {"country": "France", "count": 317},
     {"country": "Denmark", "count": 78},
     {"country": "Germany", "count": 76},
-    {"country": "Italy", "count": 71}
+    {"country": "Italy", "count": 71},
+    {"country": "Australia", "count": 35},
+    {"country": "United Kingdom", "count": 44},
+    {"country": "Netherlands", "count": 41},
+    {"country": "Canada", "count": 41},
+    {"country": "Spain", "count": 38},
+    {"country": "Egypt", "count": 38},
+    {"country": "Belgium", "count": 20},
+    {"country": "Turkey", "count": 20},
+    {"country": "Sweden", "count": 17},
+    {"country": "Brazil", "count": 13}
   ]
 }

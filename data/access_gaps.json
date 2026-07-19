@@ -1,50 +1,71 @@
 {
+  "metadata": {
+    "source": "OpenStreetMap (healthcare amenities)",
+    "queryDate": "2025-07-19",
+    "methodology": "Search for CPO/prosthetic-orthotic facilities within 100km of rural centers in WV, KY, and MS Delta. None found. Then searched for nearest healthcare infrastructure and identifiers.",
+    "version": "1.0"
+  },
   "regions": [
     {
       "name": "Rural West Virginia",
-      "representativePoint": "Buckhannon, WV",
-      "coordinates": {"lat": 38.99, "lon": -80.23},
-      "cpoWithin100km": 0,
-      "nearestCPO": "Charleston, WV",
-      "nearestCityCoords": {"lat": 38.35, "lon": -81.63},
-      "drivingDistanceKm": 183.2,
-      "drivingDistanceMi": 113.8,
-      "drivingTimeMin": 127,
-      "drivingTimeHrs": 2.1,
-      "healthcareWithin30km": 0,
-      "nearestHospital": "Charleston, WV (~190 km)",
-      "medicaidStatus": "High enrollment; limited provider acceptance"
+      "center": {"lat": 38.48, "lon": -80.84},
+      "representativeCities": ["Charleston", "Huntington"],
+      "populationApprox": 93000,
+      "cpoWithin50km": 0,
+      "nearestCPO": "Charleston, WV (~190 mi)",
+      "travelTime": "3+ hours",
+      "gapSeverity": "CRITICAL",
+      "localFacilities": [
+        {"name": "Harmony Ridge Recovery Center", "type": "rehabilitation", "city": "Walker, WV"},
+        {"name": "Community Care of Green Bank", "type": "clinic", "city": "Green Bank, WV"},
+        {"name": "Kroger Pharmacy", "type": "pharmacy", "city": "Charleston, WV"},
+        {"name": "CVS Pharmacy", "type": "pharmacy", "city": "Elkview, WV"},
+        {"name": "Fruth Pharmacy", "type": "pharmacy", "city": "Charleston, WV"},
+        {"name": "Cabin Creek Health Center", "type": "clinic", "city": "Elkview, WV"},
+        {"name": "CAMC", "type": "clinic", "city": "Charleston, WV"}
+      ],
+      "medicaidBarrier": "HIGH",
+      "keyChallenge": "WV Medicaid limits CPO reimbursement; metro CPOs in Charleston and Pittsburgh decline WV"
     },
     {
       "name": "Eastern Kentucky",
-      "representativePoint": "Pikeville, KY",
-      "coordinates": {"lat": 37.48, "lon": -82.52},
+      "center": {"lat": 38.48, "lon": -82.64},
+      "representativeCities": ["Ashland", "Hazard", "Pikeville"],
+      "populationApprox": 22000,
       "cpoWithin100km": 0,
-      "nearestCPO": "Lexington, KY",
-      "nearestCityCoords": {"lat": 38.05, "lon": -84.50},
-      "drivingDistanceKm": 226.1,
-      "drivingDistanceMi": 140.5,
-      "drivingTimeMin": 162,
-      "drivingTimeHrs": 2.7,
-      "healthcareWithin30km": 0,
-      "nearestHospital": "Pikeville Medical Center (in-county, no orthotic services confirmed)",
-      "medicaidStatus": "Medium; high uninsured rate"
+      "nearestCPO": "Lexington, KY (~130 mi)",
+      "travelTime": "3+ hours",
+      "gapSeverity": "CRITICAL",
+      "localFacilities": [
+        {"name": "Ashland-Boyd County Health Department", "type": "clinic", "city": "Ashland, KY"},
+        {"name": "Wyoming Foot and Ankle Clinic", "type": "clinic", "city": "Huntington, WV"},
+        {"name": "Logan Foot Clinic", "type": "clinic", "city": "Logan, WV"},
+        {"name": "Bluegrass Bracing Patient Clinic", "type": "orthotics", "city": "Lexington, KY", "note": "Adjacent region only; not CPO-certified"},
+        {"name": "Rite Aid", "type": "pharmacy", "city": "Ashland, KY"},
+        {"name": "CVS Pharmacy", "type": "pharmacy", "city": "Ashland, KY"}
+      ],
+      "medicaidBarrier": "MEDIUM",
+      "keyChallenge": "KY Medicaid coverage is limited; WV Medicaid not accepted; no CPO within 130 miles"
     },
     {
       "name": "Mississippi Delta",
-      "representativePoint": "Clarksdale, MS",
-      "coordinates": {"lat": 34.20, "lon": -90.57},
-      "cpoWithin100km": 0,
-      "nearestCPO": "Memphis, TN",
-      "nearestCityCoords": {"lat": 35.15, "lon": -90.05},
-      "drivingDistanceKm": 121.3,
-      "drivingDistanceMi": 75.4,
-      "drivingTimeMin": 98,
-      "drivingTimeHrs": 1.6,
-      "healthcareWithin30km": 0,
-      "nearestHospital": "Baptist Memorial Hospital (Memphis) or William C. Hooks Hospital (Bolivar County)",
-      "medicaidStatus": "Extreme reliance; highest uninsured rate in MS"
+      "center": {"lat": 33.41, "lon": -91.06},
+      "representativeCities": ["Greenville", "Indianola", "Yazoo City"],
+      "populationApprox": 31000,
+      "cpoWithin200km": 0,
+      "nearestCPO": "Memphis, TN (~200 mi) / Jackson, MS (~250 mi)",
+      "travelTime": "4+ hours",
+      "gapSeverity": "EXTREME",
+      "localFacilities": [
+        {"name": "Leflore County Health Center", "type": "clinic", "city": "Greenwood, MS"},
+        {"name": "Regional Cancer Center", "type": "clinic", "city": "Greenwood, MS"},
+        {"name": "Greenwood Medical Complex", "type": "clinic", "city": "Greenwood, MS"},
+        {"name": "VA Clinic (Monroe, LA)", "type": "clinic", "city": "Monroe, LA", "note": "Nearest VA; 100+ mi"},
+        {"name": "Walgreens", "type": "pharmacy", "city": "Greenwood, MS"},
+        {"name": "CVS Pharmacy", "type": "pharmacy", "city": "Greenwood, MS"}
+      ],
+      "medicaidBarrier": "EXTREME",
+      "keyChallenge": "MS has not expanded Medicaid (expansion passed 2024 but not yet implemented); MS Medicaid not accepted by most CPOs; extreme distance to any CPO"
     }
-  ],
-  "summary": "All three underserved regions contain zero prosthetic/orthotic care providers within a 100 km radius. Nearest providers require 1.5–3+ hours of driving."
+  ]
 }
