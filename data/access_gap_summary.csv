@@ -1,4 +1,4 @@
-Region,Population,Total_Facilities,CPO_in_50km,CPO_in_200km,Nearest_CPO,Travel_Time,Medicaid_Barrier
-Rural_West_Virginia,93k_county_7k_town,14,None,None,"Charleston WV (~190mi) Pittsburgh PA (~200mi)",3+_hrs,High_-_WV_limited
-Eastern_Kentucky,5k_Hazard_7k_Pikeville,19,None,None,Lexington_KY (~130mi),3+_hrs,Medium_-_KY_only
-Mississippi_Delta,31k_Greenville_10k_Indianola,9,None,None,"Memphis TN (~200mi) Jackson MS (~250mi)",4+_hrs,Extreme_-_MS_not_expanded
+Region,Population,Center_Lat,Center_Lon,Neighborhood_Score,Healthcare_Score,CPO_in_50km,CPO_in_200km,Nearest_CPO,Travel_Time,Medicaid_Barrier,Key_Vulnerability
+Rural_West_Virginia,93000,38.223,-80.095,6.0,0.0,0,0,"Charleston WV (~190mi)","3+ hrs","High - WV not expanded","Healthcare score 0/10 — no hospital or pharmacy within 50 km"
+Eastern_Kentucky,150000,37.479,-82.519,7.4,9.9,0,0,"Lexington KY (~130mi)","3+ hrs","Medium - KY limited","Zero CPOs despite 12 healthcare facilities; 0 grocery stores in 50 km"
+Mississippi_Delta,200000,34.201,-90.570,5.9,5.7,0,0,"Memphis TN (~200mi)","4+ hrs","Extreme - MS not expanded","Highest amputation rates + worst access + no public transit"

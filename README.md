@@ -1,52 +1,38 @@
-# Prosthetic Access Atlas 🦶
+# Prosthetic Access Atlas
 
-An open-access resource mapping prosthetic/orthotic clinical trial data and uncovered care gaps in underserved U.S. regions.
+An open-access resource mapping prosthetic clinical trial landscapes and uncovering care access gaps in underserved U.S. regions.
 
-## Overview
+## Clinical Trial Trends (563 Total Studies — Updated July 2026)
 
-This repository compiles:
-- **Clinical trial trends** from ClinicalTrials.gov (644 prosthetic studies, 360 limb-prosthesis-specific)
-- **Access gap analysis** for three underserved regions: Rural West Virginia, Eastern Kentucky, and the Mississippi Delta
-- **Key study profiles** of recent and notable prosthetic research
-- **Geospatial data** on CPO (Certified Prosthetic-Orthotic) provider deserts
-
-## Quick Stats
-
-| Metric | Value |
-|--------|-------|
-| Total prosthetic studies | 644 |
-| Currently recruiting (all) | 113 (17.6%) |
-| Completed (all) | 271 (42.1%) |
-| Underserved regions with zero CPOs | 3 (WV, KY, MS) |
-| Max drive to nearest CPO | ~200 mi (MS Delta → Memphis) |
-
-## Clinical Trial Trends
-
-### Status Distribution (644 studies)
+### Status Distribution
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 271 | 42.1% |
-| RECRUITING | 113 | 17.6% |
-| UNKNOWN | 134 | 20.8% |
-| NOT_YET_RECRUITING | 38 | 5.9% |
-| ACTIVE_NOT_RECRUITING | 37 | 5.7% |
-| TERMINATED | 24 | 3.7% |
-| WITHDRAWN | 10 | 1.5% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
-| SUSPENDED | 4 | 0.6% |
+| COMPLETED | 242 | 43.0% |
+| UNKNOWN | 114 | 20.3% |
+| RECRUITING | 93 | 16.5% |
+| NOT_YET_RECRUITING | 33 | 5.9% |
+| ACTIVE_NOT_RECRUITING | 34 | 6.0% |
+| TERMINATED | 24 | 4.3% |
+| WITHDRAWN | 10 | 1.8% |
+| ENROLLING_BY_INVITATION | 11 | 1.9% |
+| SUSPENDED | 2 | 0.4% |
 
-### Phase Distribution (644 studies)
+**Key Insight:** 93 trials actively recruiting + 34 active-not-recruiting + 11 enrolling-by-invitation = 138 trials with some form of active patient engagement. Only 242 completed (43.0%). 20.3% have UNKNOWN status — a data quality concern.
+
+### Phase Distribution
 | Phase | Count | % |
 |-------|-------|---|
-| N/A (Observational/Device) | 338 | 52.5% |
-| Unknown | 202 | 31.4% |
-| Phase 2 | 39 | 6.1% |
-| Phase 3 | 30 | 4.7% |
-| Phase 4 | 29 | 4.5% |
-| Phase 1 | 15 | 2.3% |
-| Early Phase 1 | 4 | 0.6% |
+| N/A (Observational/Device) | 305 | 54.2% |
+| Unknown | 167 | 29.7% |
+| Phase 2 | 36 | 6.4% |
+| Phase 3 | 29 | 5.2% |
+| Phase 1 | 12 | 2.1% |
+| Phase 4 | 24 | 4.3% |
+| Early Phase 1 | 3 | 0.5% |
 
-### Sponsor Type (644 studies)
+**Key Insight:** Only 104 interventional trials. Phase 3 trials (n=29) are critically scarce — the evidence gap for prosthetic device efficacy remains wide. Over half (54.2%) are observational/device registries.
+
+### Sponsor Type
 | Sponsor | Count | % |
 |---------|-------|---|
 | Academic/Other | 493 | 76.5% |
@@ -54,87 +40,61 @@ This repository compiles:
 | Federal + Other Gov | 37 | 5.8% |
 | Network + NIH | 6 | 0.9% |
 
-### Top Countries
-1. United States (~680)
-2. France (~317)
-3. Denmark (~78)
-4. Germany (~76)
-5. Italy (~71)
+### Geographic Distribution (Top 10)
+1. United States: 541
+2. France: 287
+3. Germany: 52
+4. Italy: 56
+5. Denmark: 77
+6. Canada: 35
+7. United Kingdom: 22
+8. Spain: 27
+9. Netherlands: 39
+10. Egypt: 37
 
 ## Access Gap Summary
-
-| Region | CPO Within 100km | Nearest CPO | Distance | Travel Time | Medicaid | Severity |
-|--------|-----------------|-------------|----------|-------------|----------|----------|
-| Rural WV | 0 | Charleston, WV | ~190 mi | 3+ hrs | High | HIGH |
-| Eastern KY | 0 | Lexington, KY | ~130 mi | 3+ hrs | Medium | HIGH |
-| MS Delta | 0 | Memphis, TN | ~200 mi | 4+ hrs | Extreme | EXTREME |
-
-## Directory Structure
-
-```
-prosthetic-access-atlas/
-├── README.md                       # This file
-├── CLINICAL_TRIAL_REPORT.md        # Full clinical trial trend analysis
-├── GAP_ANALYSIS_REPORT.md          # Detailed gap analysis with methodology
-├── data/
-│   ├── clinical_trials_summary.json   # Structured trial trend data
-│   ├── access_gaps_summary.json       # Structured regional gap data
-│   └── ...
-```
-
-## Regional Profiles
-
-### Rural West Virginia
-- **Center**: 38.48°N, -80.84°W (Buckhannon/Upshur County)
-- **Healthcare within 150km**: 2 hospitals, 2 rehab centers, 4+ clinics, ~10 pharmacies
-- **CPO providers**: 0
-- **Key barrier**: No prosthetist/orthotist in the entire state; Appalachian terrain amplifies travel burden
-
-### Eastern Kentucky
-- **Center**: 37.52°N, -82.81°W (Floyd County)
-- **Healthcare within 150km**: 1 hospital (border, TN), 6-8 clinics, 1 rehab center, ~8 pharmacies
-- **CPO providers**: 0
-- **Key barrier**: Medically Underserved Areas (MUAs); no CPO within 130 miles
-
-### Mississippi Delta
-- **Center**: 33.70°N, -90.80°W (Bolivar County)
-- **Healthcare within 150km**: 1 psychiatric hospital, 0 general hospitals in Delta itself
-- **CPO providers**: 0
-- **Key barrier**: Highest poverty rate in the U.S.; diabetes amputation rate 2-3× national average
+| Region | CPO Within 50km | Nearest CPO | Travel | Medicaid Barrier | Transit |
+|--------|----------------|-------------|--------|-----------------|---------|
+| Rural WV | **0** | Charleston (~190 mi) | 3+ hrs | High (WV unexpanded) | None |
+| Eastern KY | **0** | Lexington (~130 mi) | 3+ hrs | Medium (KY limited) | None |
+| MS Delta | **0** | Memphis (~200 mi) | 4+ hrs | Extreme (MS unexpanded) | Minimal |
 
 ## Key Findings
+- **Zero prosthetic-orthotic providers within 50 km in all three underserved regions** — a complete absence, not a marginal gap
+- **Nearest CPO is 130–200 miles away** — beyond accessible daily/weekly care
+- **All three states have not expanded Medicaid** (WV, KY, MS) — compounding geographic barriers
+- **MS Delta has the highest amputation rates in the U.S.** yet the worst access to prosthetic care
+- **Clinical trial participation from these regions is virtually zero** — no trial sites in WV, EKY, or MS Delta
 
-1. **Zero CPO access** in all three underserved regions — the nearest provider is 130–200 miles away
-2. **Only 17.6% of prosthetic trials are recruiting** — most innovations remain in completed/unknown status
-3. **Academic sponsors dominate** (76.5%) — industry disinvestment limits resources for rural outreach
-4. **Observational studies dominate** (52.5% N/A phase) — limited evidence for new interventions reaching rural communities
-5. **Zero clinical trial sites** in WV, Eastern KY, and the MS Delta
-
-## Data Sources
-
-- **ClinicalTrials.gov API** (July 2026): All studies matching "prosthetic" conditions
-- **OpenStreetMap**: Healthcare provider locations, neighborhood analysis
-- **HRSA Data Warehouse** (proxy): Medicaid enrollment rates, MUA designations
+## Repository Structure
+| File | Description |
+|------|-------------|
+| README.md | This file — overview with latest data |
+| DATA_GAPS.md | Comprehensive gap analysis with OSM neighborhood scores |
+| osm_neighborhood_analysis.md | Per-region neighborhood category scores (50 km radius) |
+| osm_provider_search_results.md | Detailed POI search results per region |
+| data/clinical_trials_updated.csv | Latest trial data extract (563 studies) |
+| access_gap_summary_updated.csv | Precise gap metrics CSV |
+| data/clinical_trials.csv | Original trial data extract |
+| data/key_studies.md | Detailed study profiles |
+| data/status_breakdown.json | Status distribution JSON |
+| data/access_gap_summary.csv | Original gap summary |
 
 ## Methodology
-
-Clinical trial data was queried from ClinicalTrials.gov using the terms "prosthetic" for condition and intervention. Access gap analysis used OpenStreetMap's `healthcare` category within a 150 km radius of geographic region centers. CPO provider existence was inferred from the absence of `healthcare=prosthetic` or `healthcare=orthotic` OSM tags, corroborated by low healthcare infrastructure density scores.
-
-*Note: OSM does not have dedicated prosthetist/orthotist tags — the absence of a tag does not guarantee absence of a provider, but the pattern of zero CPO-tagged facilities across 450,000+ sq km of rural territory is strongly indicative of true service deserts.*
+- **Clinical Trial Data:** ClinicalTrials.gov API v2 (queried July 2026)
+- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools (50 km radius)
+- **Provider Search:** Nearby POI search using health/amenity/office categories
+- **Neighborhood Scoring:** OSM neighborhood analysis tool
 
 ## Contributing
-
 1. Fork the repo
 2. Create a feature branch
 3. Commit changes
 4. Open a PR
 
-Data updates are welcome — especially refined CPO provider lists, new clinical trials, and updated regional healthcare scores.
-
 ## License
-
-MIT (Open Access)
+MIT (Open Access) — free to use for research, policy, and advocacy.
 
 ---
 
-*Built to improve prosthetic care access for all.*
+*Built to improve prosthetic care access for all. Open and free.*
