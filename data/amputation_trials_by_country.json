@@ -1,0 +1,19 @@
+{
+  "totalStudies": 927,
+  "analysisDate": "2025-07-20",
+  "topCountries": [
+    { "country": "United States", "count": 1264 },
+    { "country": "France", "count": 170 },
+    { "country": "Italy", "count": 51 },
+    { "country": "Turkey", "count": 65 },
+    { "country": "Ukraine", "count": 29 },
+    { "country": "Canada", "count": 71 },
+    { "country": "United Kingdom", "count": 69 },
+    { "country": "Germany", "count": 113 },
+    { "country": "Japan", "count": 69 },
+    { "country": "Australia", "count": 8 },
+    { "country": "Egypt", "count": 16 },
+    { "country": "Brazil", "count": 24 }
+  ],
+  "keyInsight": "When expanding to all amputation-related studies (927 total, including prosthesis as intervention), the geographic pattern is similar but the absolute numbers are higher. The US accounts for the largest share, but many multi-country studies inflate US counts."
+}

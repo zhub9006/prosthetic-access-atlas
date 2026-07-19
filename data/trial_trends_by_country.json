@@ -1,0 +1,25 @@
+{
+  "totalStudies": 644,
+  "analysisDate": "2025-07-20",
+  "topCountries": [
+    { "country": "United States", "count": 680, "note": "Includes multi-country studies; domestic US trials subset is smaller" },
+    { "country": "France", "count": 317 },
+    { "country": "Denmark", "count": 78 },
+    { "country": "Germany", "count": 76 },
+    { "country": "Italy", "count": 71 },
+    { "country": "Australia", "count": 35 },
+    { "country": "United Kingdom", "count": 44 },
+    { "country": "Netherlands", "count": 41 },
+    { "country": "Canada", "count": 41 },
+    { "country": "Spain", "count": 38 },
+    { "country": "Egypt", "count": 38 },
+    { "country": "Belgium", "count": 20 },
+    { "country": "Turkey", "count": 20 },
+    { "country": "Sweden", "count": 17 },
+    { "country": "Brazil", "count": 13 },
+    { "country": "Switzerland", "count": 27 },
+    { "country": "Poland", "count": 12 },
+    { "country": "Austria", "count": 14 }
+  ],
+  "keyInsight": "US dominates studies count but per-capita, Denmark and Belgium lead. Sub-Saharan Africa, South Asia, and Latin America have minimal representation — yet these regions have the highest amputation rates. Egypt (~38) is a notable entry, likely driven by conflict-related amputation research."
+}

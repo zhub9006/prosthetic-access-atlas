@@ -1,13 +1,14 @@
 {
-  "analysisType": "countByPhase",
   "totalStudies": 644,
-  "results": {
-    "Unknown": 202,
-    "NA": 338,
-    "PHASE2": 39,
-    "PHASE3": 30,
-    "PHASE1": 15,
-    "PHASE4": 29,
-    "EARLY_PHASE1": 4
-  }
+  "analysisDate": "2025-07-20",
+  "phaseDistribution": {
+    "N/A": { "count": 338, "pct": 52.5, "label": "Observational/Device Studies" },
+    "Unknown": { "count": 202, "pct": 31.4, "label": "Phase Not Specified" },
+    "Phase 2": { "count": 39, "pct": 6.1, "label": "Phase 2 Trials" },
+    "Phase 3": { "count": 30, "pct": 4.7, "label": "Phase 3 Trials" },
+    "Phase 1": { "count": 15, "pct": 2.3, "label": "Phase 1 Trials" },
+    "Phase 4": { "count": 29, "pct": 4.5, "label": "Phase 4 / Post-Market" },
+    "Early Phase 1": { "count": 4, "pct": 0.6, "label": "Early Phase 1" }
+  },
+  "keyInsight": "Only 84 interventional trials (Phase 1-4). Phase 3 trials (n=30) are critically scarce, indicating an evidence gap in prosthetic device efficacy. 52.5% have N/A phase (device registries/observational). 202 unknown phase = data quality issue."
 }

@@ -1,16 +1,17 @@
 {
-  "analysisType": "countByStatus",
   "totalStudies": 644,
-  "results": {
-    "COMPLETED": 271,
-    "UNKNOWN": 134,
-    "TERMINATED": 24,
-    "NOT_YET_RECRUITING": 38,
-    "RECRUITING": 113,
-    "WITHDRAWN": 10,
-    "ACTIVE_NOT_RECRUITING": 37,
-    "ENROLLING_BY_INVITATION": 12,
-    "SUSPENDED": 4,
-    "TEMPORARILY_NOT_AVAILABLE": 1
-  }
+  "analysisDate": "2025-07-20",
+  "statusDistribution": {
+    "COMPLETED": { "count": 271, "pct": 42.1 },
+    "UNKNOWN": { "count": 134, "pct": 20.8 },
+    "RECRUITING": { "count": 113, "pct": 17.6 },
+    "NOT_YET_RECRUITING": { "count": 38, "pct": 5.9 },
+    "ACTIVE_NOT_RECRUITING": { "count": 37, "pct": 5.7 },
+    "TERMINATED": { "count": 24, "pct": 3.7 },
+    "WITHDRAWN": { "count": 10, "pct": 1.5 },
+    "ENROLLING_BY_INVITATION": { "count": 12, "pct": 1.9 },
+    "SUSPENDED": { "count": 4, "pct": 0.6 },
+    "TEMPORARILY_NOT_AVAILABLE": { "count": 1, "pct": 0.2 }
+  },
+  "keyInsight": "113 trials actively recruiting (17.6%). Only 282 completed and fully resolved (43.5%). 134 studies have unknown status — these may be stalled or abandoned trials that were never properly closed out."
 }

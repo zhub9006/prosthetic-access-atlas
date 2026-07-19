@@ -1,12 +1,11 @@
 {
-  "analysisType": "countBySponsorType",
   "totalStudies": 644,
-  "results": {
-    "OTHER": 493,
-    "INDUSTRY": 108,
-    "OTHER_GOV": 14,
-    "FED": 23,
-    "NETWORK": 5,
-    "NIH": 1
-  }
+  "analysisDate": "2025-07-20",
+  "sponsorDistribution": {
+    "Academic/Other": { "count": 493, "pct": 76.5, "label": "Academic Institutions & Other" },
+    "Industry": { "count": 108, "pct": 16.8, "label": "Industry/Biotech/Device Companies" },
+    "Federal/Gov": { "count": 37, "pct": 5.7, "label": "Federal & Other Government" },
+    "Network/NIH": { "count": 6, "pct": 0.9, "label": "Research Networks & NIH" }
+  },
+  "keyInsight": "Industry investment extremely low (16.8%). Most research is curiosity-driven (76.5% academic). This directly explains the shortage of Phase 3 trials — industry lacks commercial incentive for smaller prosthetic markets compared to pharma."
 }
