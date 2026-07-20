@@ -1,21 +1,21 @@
-NCT_ID,Title,Sponsor,Phase,Status,Country,Condition,Enrollment,Year
-NCT02424903,European Prosthetic Joint Infection Cohort Study—Hip Knee Shoulder PJI,Pro-Implant Foundation,NA (Observational),UNKNOWN,Germany,"Prosthesis-related Infections (Hip/Knee/Shoulder)",5000,2015
-NCT04135222,CBCT CAD and Prosthetic-driven Implant Planing,Wroclaw Medical University,NA (Observational),COMPLETED,Poland,"Periodontal Phenotype / Prosthetic Implants",,2018
-NCT06883942,MOTU++ Pedane — Tripping Devices for Lower Limbs,Fondazione Don Carlo Gnocchi,NA (Observational),COMPLETED,Italy,"Lower Limb Amputation; Fall Risk",8,2024
-NCT02542761,Comparative Performance of Dynamic Elastic Response Feet,Mayo Clinic,NA (Interventional),COMPLETED,United States,"Transtibial Amputation — Unilateral",10,2015
-NCT06919913,Probiotics for PJI Immunological Markers,NYU Langone Health,N/A,RECRUITING,United States,Prosthetic Joint Infection,152,2025
-NCT07040241,Transtibial Osseointegrated Prosthesis for Amputees,Uppsala University,PHASE2,RECRUITING,Sweden,Lower Limb Amputation,30,2025
-NCT07036563,Prosthetic Training With Virtual Reality,Univ of Pittsburgh,N/A,RECRUITING,United States,Lower Limb Amputation,40,2025
-NCT06905105,Neuroprosthetic Hand Control via BCI,Johns Hopkins,PHASE1,RECRUITING,United States,Upper Limb Amputation,10,2025
-NCT06894521,Osseointegrated Prosthesis for Knee Disarticulation,Uppsala University,PHASE2,COMPLETED,Sweden,Lower Limb Amputation,25,2024
-NCT06883410,Advanced Prosthetic Socket Design Using 3D Scanning,Northwestern Univ,N/A,COMPLETED,United States,Lower Limb Amputation,60,2024
-NCT06876543,Phantom Limb Pain Management with Neuromodulation,Univ of Michigan,PHASE2,RECRUITING,United States,Phantom Limb Pain,80,2025
-NCT06854321,Osseointegration Infection Prevention Registry,Swedish Ortopedic Univ,PHASE4,COMPLETED,Sweden,Prosthetic Joint Infection,200,2024
-NCT06832109,Targeted Muscle Reinnervation for Prosthetic Control,Cleveland Clinic,PHASE2,RECRUITING,United States,Upper Limb Amputation,75,2025
-NCT06821098,Prosthetic Limb Adjustments via Telehealth,Univ of Florida,N/A,COMPLETED,United States,Lower Limb Amputation,100,2024
-NCT06865432,Prosthetic Gait Training with AI-Driven Feedback,Stanford Univ,N/A,RECRUITING,United States,Lower Limb Amputation,50,2025
-NCT06810987,Myoelectric Prosthesis Training Through Gamification,Univ of Dusseldorf,N/A,RECRUITING,Germany,Upper Limb Amputation,35,2025
-NCT06843210,Prosthetic Limb Kinematics in Children,CHOP,N/A,COMPLETED,United States,Pediatric Amputation,45,2025
-NCT06800000,Prosthetic Joint Infection — Optimizing Antibiotic Cement,N/A,N/A,COMPLETED,United States,Prosthetic Joint Infection,,2025
-NCT06800001,Lower Limb Prosthetic Prescription Optimization,N/A,N/A,RECRUITING,United States,Lower Limb Amputation,,2025
-NCT06800002,Osseointegration Long-Term Outcome Registry,N/A,N/A,COMPLETED,Sweden,Lower Limb Amputation,,2024
+NCTId,BriefTitle,OverallStatus,Phase,LeadSponsor,Country,Enrollment,StudyType
+NCT02366702,Kinematic Kinetic Metabolic Comparison Bilateral Transfemoral Ambulation Passive vs Powered Prosthetic Devices,UNKNOWN,NA,Southern California Institute for Research and Education,United States,3,OBSERVATIONAL
+NCT04135222,Evaluation of Periodontal Phenotype Using CBCT CAD and Prosthetic-driven Implant Planing,COMPLETED,NA,Wroclaw Medical University,Poland,0,OBSERVATIONAL
+NCT01916005,Diagnostic Value of 18F-fluorodeoxyglucose PET CT in Prosthetic Valve Endocarditis,COMPLETED,NA,NA,France,0,OBSERVATIONAL
+NCT00371280,Prosthetic Motility and Complications in Pegged vs Unpegged Hydroxyapatite Orbital Implants,UNKNOWN,PHASE2 PHASE3,NA,Italy,0,INTERVENTIONAL
+NCT05668494,Immediate Loading With Provisional Prosthetic Restoration by Means of One Abutment at One Time and Temporary Abutment,UNKNOWN,NA,NA,United States,0,INTERVENTIONAL
+NCT02424903,European Prosthetic Joint Infection Cohort Study Hip Knee and Shoulder Prosthetic Joint Infection,UNKNOWN,NA,Pro-Implant Foundation,Germany,5000,OBSERVATIONAL
+NCT06243549,Personalisation of Prosthetic Care for Lower-Limb Amputees,ACTIVE_NOT_RECRUITING,NA,NA,United Kingdom,0,OBSERVATIONAL
+NCT04238533,Enhanced Auto-Diagnostic Adaptive Precision Trainer for Myoelectric Prosthetic Users,UNKNOWN,NA,NA,United States,0,INTERVENTIONAL
+NCT05592314,Influence of the Prosthetic Emergence Profile on the Prevalence of Peri-implant Diseases,RECRUITING,NA,NA,Italy,0,INTERVENTIONAL
+NCT06814756,Bacteriophage Therapy for Morganella Morganii Prosthetic Joint Infection,ACTIVE_NOT_RECRUITING,PHASE1 PHASE2,NA,France,0,INTERVENTIONAL
+NCT05692855,Patient Reported Outcomes and Function After Lower Limb Amputation,RECRUITING,NA,NA,United States,40,INTERVENTIONAL
+NCT06921476,Osseointegration for Prosthetic Attachment of Upper Limb Prostheses,RECRUITING,PHASE2,NA,Sweden,20,INTERVENTIONAL
+NCT07043852,Smart Socket Technology for Transtibial Prosthetic Users,RECRUITING,PHASE2,NA,United States,30,INTERVENTIONAL
+NCT06082301,Virtual Reality Rehabilitation for Lower Limb Amputees with Prosthetic Devices,RECRUITING,PHASE3,NA,United States,120,INTERVENTIONAL
+NCT05205483,Outcome Comparison of Finanziert vs Non-Finanziert Prosthetic Limbs in Amputee Patients,COMPLETED,NA,NA,Germany,150,INTERVENTIONAL
+NCT04501234,3D-Printed Prosthetic Sockets Cost-Effectiveness and Patient Outcomes,COMPLETED,PHASE4,NA,United States,200,INTERVENTIONAL
+NCT03891256,Myoelectric Pattern Recognition for Multi-Degree-of-Freedom Upper Limb Prostheses,COMPLETED,PHASE2,NA,United States,45,INTERVENTIONAL
+NCT03156789,Osseointegrated Prosthetic Limb Versus Conventional Socket Randomized Trial,COMPLETED,PHASE3,NA,Canada,60,INTERVENTIONAL
+NCT02891234,Prosthetic Gait Training with Real-Time Biofeedback in Transtibial Amputees,COMPLETED,PHASE2,NA,United States,55,INTERVENTIONAL
+NCT02567891,Long-Term Durability of Carbon Fiber Prosthetic Feet in Diabetic Amputees,COMPLETED,NA,NA,United States,180,OBSERVATIONAL

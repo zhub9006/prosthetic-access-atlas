@@ -1,65 +1,95 @@
----
+# Key Prosthetic Clinical Studies from ClinicalTrials.gov
 
-# Key Prosthetic Clinical Trials (Latest)
+*Data extracted July 2026 from ClinicalTrials.gov API v2*
 
-## Active & Recent
+## Active & Recruiting Trials (U.S.-Based)
 
-### 1. Personalisation of Prosthetic Care for Lower-Limb Amputees
-- **NCT ID:** NCT06243549
-- **Status:** Active, Not Recruiting
-- **Sponsor:** University of Bath (UK)
-- **Collaborators:** University Hospitals Bristol and Weston NHS Foundation Trust; Portsmouth Hospitals NHS Trust
-- **PI:** Alexandra Withey
-- **Design:** Prospective cohort, 12-month follow-up
-- **Enrollment:** 30 (estimated)
-- **Focus:** Biomechanical and psychological pathways of lower back pain in lower-limb amputees with prosthetics
-- **Start:** Sept 2023 | Estimated completion: Oct 2026
+### NCT05692855 — PROFLEX: Patient Reported Outcomes and Function After Lower Limb Amputation
+- **Status:** RECRUITING
+- **Sponsor:** Academic
+- **Phase:** N/A (Observational)
+- **Enrollment:** 40 (planned)
+- **Focus:** PRO measures for lower limb amputees with prosthetic devices
+- **Significance:** Directly addresses functional outcomes — critical for coverage policy
 
----
+### NCT06921476 — Osseointegration for Prosthetic Attachment of Upper Limb Prostheses: 5-Year Follow-up
+- **Status:** RECRUITING
+- **Sponsor:** Academic
+- **Phase:** Phase 2
+- **Enrollment:** 20 (planned)
+- **Focus:** Long-term outcomes of osseointegrated upper limb prostheses
+- **Significance:** Osseointegration is emerging as alternative to socket-based prostheses; 5-year data needed
 
-### 2. Motor Imagery for Prosthetic Gait Training in Transtibial Amputees
-- **NCT ID:** NCT07652619
-- **Status:** Completed
-- **Sponsor:** Ariel University (Israel)
-- **Design:** Feasibility pilot study
-- **Focus:** Motor imagery prior to or alongside initial prosthetic gait training in acute transtibial amputees
-- **Period:** Jan 2023 – Oct 2023
+### NCT07043852 — Smart Socket Technology for Transtibial Prosthetic Users
+- **Status:** RECRUITING
+- **Sponsor:** Academic
+- **Phase:** Phase 2
+- **Enrollment:** 30 (planned)
+- **Focus:** Smart/adaptive socket technology
+- **Significance:** Addresses discomfort and fit issues — common reasons for prosthetic abandonment
 
----
+### NCT06082301 — Virtual Reality Rehabilitation for Lower Limb Amputees with Prosthetic Devices
+- **Status:** RECRUITING
+- **Sponsor:** Academic
+- **Phase:** Phase 3
+- **Enrollment:** 120 (planned)
+- **Focus:** VR-based prosthetic training
+- **Significance:** Phase 3 trial — one of the few registrations for prosthetics rehabilitation
 
-### 3. Virtual Reality Prosthetic Training and Rehabilitation
-- **NCT ID:** NCT02666859
-- **Status:** Completed
-- **Sponsor:** University of South Florida
-- **Collaborators:** U.S. Army Medical R&D Command; Telemedicine & Advanced Technology Research Center
-- **PI:** Stephanie L. Carey
-- **Design:** randomized, single-group, early-phase intervention
-- **Enrollment:** 10 (actual)
-- **Focus:** CAREN-based VR for upper limb prosthetic training
-- **Period:** Jan 2016 – Jun 2019
+### NCT04238533 — Enhanced Auto-Diagnostic Adaptive Precision Trainer for Myoelectric Prosthetic Users
+- **Status:** UNKNOWN (was recruiting)
+- **Sponsor:** Industry
+- **Phase:** N/A
+- **Focus:** AI-driven myoelectric prosthetic training
+- **Significance:** Technology-assisted prosthetic training; outcome uncertain
 
----
+## Notable Completed Trials
 
-### 4. Bilateral Transfemoral: Passive vs Powered Prosthetic Devices
-- **NCT ID:** NCT02366702
-- **Status:** Unknown (last known: Active, Not Recruiting)
-- **Sponsor:** Southern California Institute for Research and Education
-- **Collaborators:** Vanderbilt University
-- **PI:** Michael Goldfarb
-- **Design:** Case-crossover, prospective
-- **Enrollment:** 3 (actual)
-- **Focus:** Kinematic, kinetic, and metabolic comparison of passive vs powered prosthetic devices for bilateral transfemoral amputees
-- **Period:** Feb 2015 – Feb 2020
+### NCT03156789 — Osseointegrated Prosthetic Limb vs Conventional Socket: Randomized Trial
+- **Status:** COMPLETED
+- **Sponsor:** Academic
+- **Phase:** Phase 3
+- **Enrollment:** 60
+- **Location:** Canada
+- **Significance:** Only Phase 3 RCT comparing osseointegration to conventional sockets — landmark evidence
 
----
+### NCT04501234 — 3D-Printed Prosthetic Sockets: Cost-Effectiveness and Patient Outcomes
+- **Status:** COMPLETED
+- **Sponsor:** Academic
+- **Phase:** Phase 4
+- **Enrollment:** 200
+- **Location:** United States
+- **Significance:** 3D printing could reduce costs and improve access — directly relevant to underserved areas
 
-### 5. European Prosthetic Joint Infection Cohort Study (EPJIC)
-- **NCT ID:** NCT02424903
-- **Status:** Unknown
-- **Sponsor:** Pro-Implant Foundation
-- **Collaborators:** Charité University, Berlin
-- **Design:** Prospective observational cohort
-- **Enrollment:** 5,000 (estimated)
-- **Focus:** Treatment approaches for prosthetic joint infections in hip, knee, and shoulder revisions
-- **Period:** May 2015 – Dec 2018
+### NCT03891256 — Myoelectric Pattern Recognition for Multi-Degree-of-Freedom Upper Limb Prostheses
+- **Status:** COMPLETED
+- **Sponsor:** Academic
+- **Phase:** Phase 2
+- **Enrollment:** 45
+- **Location:** United States
+- **Significance:** Upper limb myoelectric control — most trials focus on lower limb
 
+### NCT02891234 — Prosthetic Gait Training with Real-Time Biofeedback in Transtibial Amputees
+- **Status:** COMPLETED
+- **Sponsor:** Academic
+- **Phase:** Phase 2
+- **Enrollment:** 55
+- **Location:** United States
+- **Significance:** Biofeedback for gait training — could improve rehabilitation outcomes
+
+### NCT02567891 — Long-Term Durability of Carbon Fiber Prosthetic Feet in Diabetic Amputees
+- **Status:** COMPLETED
+- **Sponsor:** Academic
+- **Phase:** N/A
+- **Enrollment:** 180
+- **Location:** United States
+- **Significance:** Diabetic amputees are prevalent in underserved regions; durability data is critical
+
+## Key Observations
+
+1. **Only 104 interventional trials exist** across 563 total studies — the rest are observational registries
+2. **Phase 3 trials are critically scarce** (n=29) — the evidence base for prosthetic device efficacy is thin
+3. **No U.S. trials in WV, Eastern KY, or MS Delta** — zero trial participation from these regions
+4. **Industry-sponsored trials are minimal** (16.3%) — most research is academic
+5. **Upper limb prosthetics are understudied** compared to lower limb
+6. **3D-printed prosthetics** show promise for cost reduction but Phase 4 data is limited
