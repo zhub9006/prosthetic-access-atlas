@@ -1,0 +1,10 @@
+Region,CenterLat,CenterLon,RadiusKm,StudiesFound,NearestCPO,CPODistanceMi,MedicaidExpansion
+Broad US,38.0,-96.0,2000,81,Varied,N/A,N/A
+Appalachian US,38.0,-82.0,500,24,Charleston WV,190,No
+Mississippi Delta (Greenville),34.0,-90.5,150,2,Memphis TN,200,No
+Mississippi Delta (Core),33.33,-90.6,100,0,Memphis TN/Jackson MS,200+,No
+West Virginia (Beckley),37.78,-81.19,30,0,Charleston WV,190,No
+Kentucky (Pikeville),37.48,-82.52,30,0,Lexington KY,130,Limited
+Kentucky (Hazard),37.25,-83.19,30,0,Lexington KY,120,Limited
+Mississippi (Greenville),33.41,-91.06,40,0,Memphis TN,200,No
+Mississippi (Indianola),33.45,-90.66,40,0,Memphis TN,100+,No
