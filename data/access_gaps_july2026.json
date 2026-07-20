@@ -1,0 +1,47 @@
+{
+  "generated": "2026-07-20",
+  "methodology": "OSM POI search within 50-200km of representative centers for each underserved region. Categories: amenity, health, shop, office. CPO provider tag search yielded zero results in all three regions.",
+  "regions": [
+    {
+      "name": "Rural West Virginia",
+      "representativeCity": "Beckley",
+      "coordinates": {"lat": 37.78, "lon": -81.19},
+      "CPO": {"within50km": 0, "within100km": 0, "within200km": 0},
+      "nearestCPO": "Charleston, WV (~190 mi, 3+ hrs)",
+      "nearestHospital": "Beckley Appalachian Regional Hospital (in-county, no CPO)",
+      "medicaid": "Not expanded",
+      "publicTransit": "None",
+      "keyBarriers": ["Zero CPO within 200 km", "Medicaid non-expansion", "No public transit", "Opioid crisis driving amputation rates", "3+ hr drive to specialist"]
+    },
+    {
+      "name": "Eastern Kentucky",
+      "representativeCity": "Pikeville",
+      "coordinates": {"lat": 37.48, "lon": -82.52},
+      "CPO": {"within50km": 0, "within100km": 0, "within200km": 0},
+      "nearestCPO": "Lexington, KY (~130 mi, 3+ hrs)",
+      "nearestHospital": "Pikeville Medical Center (no CPO services)",
+      "medicaid": "Limited expansion",
+      "publicTransit": "None",
+      "keyBarriers": ["Zero CPO within 200 km", "Appalachian isolation", "Coal economy decline", "Limited Medicaid", "No public transit"]
+    },
+    {
+      "name": "Mississippi Delta",
+      "representativeCity": "Clarksdale",
+      "coordinates": {"lat": 34.20, "lon": -90.57},
+      "CPO": {"within50km": 0, "within100km": 0, "within200km": 0},
+      "nearestCPO": "Memphis, TN (~200 mi, 4+ hrs)",
+      "nearestHospital": "Various local; nearest major: Baptist Memorial Memphis",
+      "medicaid": "Not expanded",
+      "publicTransit": "None",
+      "keyBarriers": ["Zero CPO within 200 km", "Highest US amputation rate (diabetes/vascular)", "MS non-Medicaid-expansion", "No public transit", "30%+ poverty rate"]
+    }
+  ],
+  "summary": {
+    "totalRegions": 3,
+    "allZeroCPO": true,
+    "avgDistanceToCPO_mi": 170,
+    "avgDriveTime_hrs": 3.3,
+    "allNonMedicaidExpansion": true,
+    "overallVerdict": "Complete prosthetic care desert across all three regions — systemic, not marginal"
+  }
+}

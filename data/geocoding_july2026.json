@@ -1,0 +1,23 @@
+{
+  "generated": "2026-07-20",
+  "regions": {
+    "ruralWestVirginia": {
+      "stateCenter": {"lat": 38.48, "lon": -80.84},
+      "representativeCity": "Beckley",
+      "cityCoords": {"lat": 37.78, "lon": -81.19}
+    },
+    "easternKentucky": {
+      "stateCenter": {"lat": 37.48, "lon": -82.52},
+      "representativeCity": "Pikeville",
+      "cityCoords": {"lat": 37.48, "lon": -82.52}
+    },
+    "mississippiDelta": {
+      "regionCenter": {"lat": 33.41, "lon": -91.06},
+      "representativeCity": "Clarksdale",
+      "cityCoords": {"lat": 34.20, "lon": -90.57},
+      "alternateCenter": {"lat": 32.85, "lon": -90.41, "city": "Yazoo City"},
+      "southernHub": {"lat": 33.41, "lon": -91.06, "city": "Greenville, MS"}
+    }
+  }
+}
+}

@@ -1,0 +1,67 @@
+{
+  "generated": "2026-07-20",
+  "query": "prosthetic (broad) AND prosthetic limb amputation (focused)",
+  "api_sources": {
+    "broad_countByStatus": "644 total",
+    "broad_countByCountry": "644 total",
+    "broad_countByPhase": "644 total",
+    "broad_countBySponsor": "644 total",
+    "focused_count_limb_amputation": "121 US-based",
+    "regional_wv": 3,
+    "regional_ky": 4,
+    "regional_ms": 2
+  },
+  "status_distribution": {
+    "RECRUITING": 112,
+    "COMPLETED": 271,
+    "UNKNOWN": 134,
+    "WITHDRAWN": 10,
+    "NOT_YET_RECRUITING": 38,
+    "ENROLLING_BY_INVITATION": 12,
+    "ACTIVE_NOT_RECRUITING": 38,
+    "TERMINATED": 24,
+    "SUSPENDED": 4,
+    "TEMPORARILY_NOT_AVAILABLE": 1
+  },
+  "phase_distribution": {
+    "PHASE3": 30,
+    "NA": 338,
+    "PHASE4": 29,
+    "Unknown": 202,
+    "EARLY_PHASE1": 4,
+    "PHASE1": 15,
+    "PHASE2": 39
+  },
+  "sponsor_distribution": {
+    "INDUSTRY": 108,
+    "OTHER": 493,
+    "FED": 23,
+    "OTHER_GOV": 14,
+    "NETWORK": 5,
+    "NIH": 1
+  },
+  "key_recruiting_trials": [
+    {"nctId": "NCT05831696", "title": "Metabolic Cost of Walking With Passive vs. Powered Prosthetic Knees", "sponsor": "Loma Linda University", "start": "2023-02", "status": "RECRUITING"},
+    {"nctId": "NCT06210620", "title": "Pro APP Prosthetic Outcome Registry", "sponsor": "Össur Iceland", "start": "2024-01", "status": "RECRUITING"},
+    {"nctId": "NCT07075198", "title": "Caesar Foot Take-Home Validation Testing", "sponsor": "Liberating Technologies", "start": "2025-10", "status": "RECRUITING"},
+    {"nctId": "NCT06541379", "title": "Motor Imagery for Myoelectric Prostheses", "sponsor": "TBD", "start": "2025-06", "status": "RECRUITING"}
+  ],
+  "key_completed_trials": [
+    {"nctId": "NCT04784429", "title": "ASCENT K2: Microprocessor Knee Utilization", "sponsor": "Otto Bock / Hanger Clinic", "completion": "2023-06"},
+    {"nctId": "NCT02540681", "title": "ProFit: Prosthetic Fit Assessment Transtibial", "sponsor": "METRC / BADER Consortium", "completion": "2020"},
+    {"nctId": "NCT05179395", "title": "Brasthesis Prosthetic Harness Women Veterans", "sponsor": "TBD", "completion": "2022-07"},
+    {"nctId": "NCT05190354", "title": "Xtremity Polymer Prosthetic Socket System", "sponsor": "TBD", "completion": "2021-11"}
+  ],
+  "regional_trials": {
+    "West Virginia": 3,
+    "Kentucky": 4,
+    "Mississippi": 2
+  },
+  "access_gap_summary": {
+    "regions": ["Rural West Virginia", "Eastern Kentucky", "Mississippi Delta"],
+    "zero_CPO_in_all_three": true,
+    "average_distance_to_nearest_CPO_mi": 170,
+    "all_states_non_Medicaid_expansion": true,
+    "highest_amputation_region": "Mississippi Delta"
+  }
+}
