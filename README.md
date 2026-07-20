@@ -6,35 +6,24 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 
 | Metric | Value |
 |--------|-------|
-| Total prosthetic studies (broad) | **644** |
-| Focused limb amputation studies (US) | **75** /121 |
-| Trials actively recruiting | 112 (17.4%) |
-| Phase 3 pivotal trials | **30 (4.7%)** — critically scarce |
-| Industry-sponsored | 108 (16.8%) |
-| Academic-gov-sponsored | 530 (82.3%) |
-| Regions with zero CPO providers | **3 of 3** |
-| Avg drive to nearest CPO | 170 mi / 3+ hrs |
-| Medicaid expansion (all 3 states) | None |
+| Total prosthetic studies analyzed (ClinicalTrials.gov) | **644** |
+| Trials actively recruiting | **112** (17.4%) |
+| Trials completed | **271** (42.1%) |
+| Phase 3 efficacy trials | **30** (4.7%) — critically scarce |
+| Academic-sponsored trials | 493 (76.5%) |
+| Industry-sponsored trials | 108 (16.8%) |
+| Regions with zero CPO providers (30km) | **3 of 3** |
+| Average distance to nearest CPO | **130–200+ miles** |
 
 ---
 
-### Access Gap Summary
+## Access Gap Summary
 
-| Region | CPO ≤30km | Nearest CPO | Drive | Medicaid |
-|--------|-----------|-------------|-------|----------|
-| Rural WV (Beckley) | 0 | Charleston (~190 mi) | 3+ hrs | Not expanded |
-| E. KY (Pikeville) | 0 | Lexington (~130 mi) | 3+ hrs | Limited |
-| MS Delta (Clarksdale) | 0 | Memphis (~200 mi) | 4+ hrs | Not expanded |
-
----
-
-## Key Insights
-
-1. **Zero CPO providers within 200 km** in all three underserved regions — a complete care desert, not a marginal gap.
-2. **Only 30 Phase 3 trials globally** (4.7% of 644 studies) — the evidence base for prosthetic efficacy is critically thin.
-3. **76.5% academic-sponsored** — limited commercial pipeline for affordable, rugged prosthetic devices suited to rural use.
-4. **Highest amputation regions have zero trial participation** — WV, KY, and MS Delta are absent from major prosthetic trial site lists.
-5. **All three states have not expanded Medicaid** — compounding the geographic barriers with financial ones.
+| Region | CPO Within 30km | Nearest CPO | Drive Time | Medicaid? |
+|--------|----------------|-------------|------------|----------|
+| Rural West Virginia (Beckley) | 0 | Charleston (~190 mi) | 3+ hrs | Not expanded |
+| Eastern Kentucky (Pikeville) | 0 | Lexington (~130 mi) | 3+ hrs | Limited |
+| Mississippi Delta (Clarksdale) | 0 | Memphis (~200 mi) | 3+ hrs | Not expanded |
 
 ---
 
@@ -48,38 +37,53 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 | ACTIVE_NOT_RECRUITING | 38 | 5.9% |
 | NOT_YET_RECRUITING | 38 | 5.9% |
 | TERMINATED | 24 | 3.7% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
 | WITHDRAWN | 10 | 1.6% |
+| ENROLLING_BY_INVITATION | 12 | 1.9% |
 | SUSPENDED | 4 | 0.6% |
+| **Total** | **644** | **100%** |
 
 ## Phase Distribution (n=644)
 
-| Phase | Count | % | Notes |
-|-------|-------|---|-------|
-| N/A (Observational/Device) | 338 | 52.5% | Registries and observational studies |
-| Unknown | 202 | 31.4% | Phase not specified |
-| **Phase 3** | **30** | **4.7%** | **Critically scarce — pivotal trials** |
-| Phase 4 | 29 | 4.5% | Post-market surveillance |
-| Phase 2 | 39 | 6.1% | Early efficacy signals |
-| Phase 1 | 15 | 2.3% | First-in-human safety |
-| Early Phase 1 | 4 | 0.6% | |
+| Phase | Count | % |
+|-------|-------|---|
+| N/A (Observational) | 338 | 52.5% |
+| Unknown | 202 | 31.4% |
+| **Phase 3** | **30** | **4.7%** |
+| Phase 2 | 39 | 6.0% |
+| Phase 4 | 29 | 4.5% |
+| Phase 1 | 15 | 2.3% |
+| **Total** | **644** | **100%** |
+
+## Sponsor Type (n=644)
+
+| Type | Count | % |
+|------|-------|---|
+| Academic (OTHER) | 493 | 76.5% |
+| Industry | 108 | 16.8% |
+| Federal | 23 | 3.6% |
+| Government | 14 | 2.2% |
+| Other | 6 | 0.9% |
 
 ---
 
-## Repository Structure
+## Key Insights
 
-| File / Directory | Description |
-|-----------------|-------------|
-| `README.md` | Overview with latest data (this file) |
-| `LATEST_FINDINGS_July2026.md` | Comprehensive July 2026 update with full trial data, gap analysis, and recommended actions |
-| `GEOGRAPHY_CACHE.md` | Geocoded reference points for all target regions |
-| `data/clinical_trials.json` | Machine-readable clinical trial data |
-| `data/trend_analysis.json` | Full trend analysis + access gap data |
-| `data/access_gaps.json` | CPO access gap data |
-| `data/access_gaps_july2026.json` | July 2026 updated access gap data |
-| `data/geocoding_july2026.json` | Geocoding reference data for all regions |
-| `CLINICAL_TRIAL_REPORT.md` | Detailed clinical trial analysis |
-| `ACCESS_GAP_SUMMARY.md` | Access gap summary |
+1. **Only 17.4% of prosthetic trials actively recruit** — the rest are completed, unknown, or not yet recruiting.
+2. **Phase 3 trials are critically scarce** — only 30 exist globally for prosthetics.
+3. **Academic sponsors dominate (76.5%)** — limits commercial innovation and market translation.
+4. **Zero prosthetic clinical trial sites** in WV, KY, or MS, despite these regions having among the highest amputation rates.
+5. **All three regions have zero CPO providers within 30 km** — the nearest CPO is 130–200+ miles away.
+6. **None of these states expanded Medicaid**, compounding the access crisis.
+
+---
+
+## Files
+
+| File | Description |
+|------|-------------|
+| README.md | This overview |
+| CONSOLIDATED_FINDINGS_July2026.md | Full detailed findings with methodology |
+| access_gap_summary.csv | Machine-readable gap summary |
 
 ---
 
