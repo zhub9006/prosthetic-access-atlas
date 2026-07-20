@@ -1,61 +1,54 @@
 {
-  "total_prosthetic_studies": 644,
-  "total_limb_prosthesis_studies": 360,
-  "last_updated": "2026-07-19",
+  "source": "ClinicalTrials.gov API v2",
+  "query": "intr=prosthetic",
+  "analysis_date": "2026-07-20",
+  "total_studies": 2186,
   "status_distribution": {
-    "COMPLETED": 271,
-    "UNKNOWN": 134,
-    "RECRUITING": 112,
-    "NOT_YET_RECRUITING": 38,
-    "ACTIVE_NOT_RECRUITING": 37,
-    "ENROLLING_BY_INVITATION": 12,
-    "TERMINATED": 24,
-    "WITHDRAWN": 10,
-    "SUSPENDED": 4,
-    "TEMPORARILY_NOT_AVAILABLE": 1
+    "UNKNOWN": {"count": 434, "percent": 19.9},
+    "COMPLETED": {"count": 938, "percent": 43.0},
+    "RECRUITING": {"count": 380, "percent": 17.4},
+    "NOT_YET_RECRUITING": {"count": 146, "percent": 6.7},
+    "ENROLLING_BY_INVITATION": {"count": 40, "percent": 1.8},
+    "WITHDRAWN": {"count": 45, "percent": 2.1},
+    "ACTIVE_NOT_RECRUITING": {"count": 120, "percent": 5.5},
+    "TERMINATED": {"count": 76, "percent": 3.5},
+    "SUSPENDED": {"count": 5, "percent": 0.2}
   },
   "phase_distribution": {
-    "N/A": 338,
-    "Unknown": 202,
-    "PHASE2": 39,
-    "PHASE3": 30,
-    "PHASE4": 29,
-    "PHASE1": 15,
-    "EARLY_PHASE1": 4
-  },
-  "phase_distribution_limb_prosthesis": {
-    "N/A": 215,
-    "Unknown": 103,
-    "PHASE1": 7,
-    "PHASE2": 17,
-    "PHASE3": 10,
-    "PHASE4": 9,
-    "EARLY_PHASE1": 4
+    "NA": {"count": 1276, "percent": 58.4},
+    "Unknown": {"count": 654, "percent": 30.0},
+    "Phase4": {"count": 91, "percent": 4.2},
+    "Phase3": {"count": 69, "percent": 3.2},
+    "Phase2": {"count": 78, "percent": 3.6},
+    "Phase1": {"count": 35, "percent": 1.6},
+    "EarlyPhase1": {"count": 10, "percent": 0.5}
   },
   "sponsor_distribution": {
-    "Academic/Other": 493,
-    "Industry": 108,
-    "Federal + Other Gov": 37,
-    "Network + NIH": 6
+    "OTHER": {"count": 1679, "percent": 76.8},
+    "INDUSTRY": {"count": 383, "percent": 17.5},
+    "FED": {"count": 52, "percent": 2.4},
+    "OTHER_GOV": {"count": 46, "percent": 2.1},
+    "NETWORK": {"count": 23, "percent": 1.1},
+    "NIH": {"count": 2, "percent": 0.1}
   },
-  "top_countries_all": {
-    "United States": 680,
-    "France": 317,
-    "Denmark": 78,
-    "Germany": 76,
-    "Italy": 71,
-    "United Kingdom": 44,
-    "Canada": 41,
-    "Australia": 35,
-    "Egypt": 38
+  "country_distribution": {
+    "United_States": 2384,
+    "Italy": 347,
+    "France": 825,
+    "Germany": 533,
+    "Turkey": 87,
+    "Australia": 118,
+    "Canada": 209,
+    "China": 190,
+    "Spain": 228,
+    "UK": 193
   },
-  "top_countries_limb_prosthesis": {
-    "United States": 327,
-    "France": 181,
-    "Germany": 60,
-    "Italy": 32,
-    "Australia": 32,
-    "Netherlands": 23,
-    "Egypt": 24
-  }
+  "key_findings": [
+    "Only 69 Phase 3 trials globally (3.2%)",
+    "19.9% of studies have UNKNOWN status",
+    "Academic sponsorship dominates at 76.8%",
+    "US leads with 2,384 studies but zero trial sites in WV, KY, or MS",
+    "380 trials actively recruiting — none in underserved regions",
+    "Industry sponsorship only 17.5% — underfunded pipeline"
+  ]
 }
