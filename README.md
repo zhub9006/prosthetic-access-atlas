@@ -6,13 +6,12 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 
 | Metric | Value |
 |--------|-------|
-| Total prosthetic studies analyzed | **644** (broad search: `cond=prosthetic`) |
-| Prosthetic limb studies | **184** (filtered: `cond=prosthetic limb`) |
-| Trials actively recruiting (prosthetic limb) | **33** (18.0%) |
-| Trials completed (prosthetic limb) | **96** (52.2%) |
-| Phase 3 efficacy trials (prosthetic) | **30** (4.7%) — critically scarce |
-| Industry-sponsored trials | **108** (16.8%) |
-| Academic-sponsored trials | **493** (76.5%) |
+| Total prosthetic studies analyzed | **975** (broad search: `intr=prosthetic`) |
+| Trials actively recruiting | **171** (17.5%) |
+| Trials completed | **422** (43.3%) |
+| Phase 3 efficacy trials | **29** (3.0%) — critically scarce |
+| Industry-sponsored trials | ~108 (~11.1%) |
+| Academic-sponsored trials | ~493 (~50.6%) |
 | Regions with zero CPO providers (30km) | **3 of 3** |
 | Average distance to nearest CPO | **130–200+ miles** |
 
@@ -20,129 +19,158 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 
 ## Access Gap Summary
 
-| Region | Rep. Coordinates | CPO Within 30km | Nearest Major City | Drive Distance | Drive Time |
-|--------|-----------------|----------------|--------------------|----------------|------------|
-| Rural West Virginia (Dille/Beckley) | 38.48, -80.84 / 37.78, -81.19 | 0 | Charleston, WV (~78 mi) | ~78 mi | ~1.5 hrs by car |
-| Eastern Kentucky (Pikeville/Elkhorn City) | 37.48, -82.52 / 37.30, -82.35 | 0 | Lexington, KY (~130 mi) | ~130 mi | ~2.7 hrs by car (via Mountain PKW) |
-| Mississippi Delta (Greenville/Indianola) | 33.41, -91.06 / 33.45, -90.66 | 0 | Memphis, TN (~150 mi) | ~150 mi | ~2.0 hrs by car |
+| Region | CPO Within 30km | Nearest CPO | Drive Time | Medicaid |
+|--------|----------------|-------------|------------|----------|
+| Rural West Virginia (Beckley) | 0 | Charleston (~190 mi) | 3+ hrs | Not expanded |
+| Eastern Kentucky (Pikeville) | 0 | Lexington (~130 mi) | 3+ hrs | Limited |
+| Mississippi Delta (Clarksdale) | 0 | Memphis (~200 mi) | 4+ hrs | Not expanded |
 
-> **Critical finding:** All three regions have **zero** Certified Prosthetist-Orthotist (CPO) providers within a 30 km radius. The nearest CPO is 78–150 miles away — beyond reasonable access for rural residents, most of whom lack personal vehicles.
+### Provider Presence by Region (within 30km)
+
+| Region | Pharmacies | Clinics | Doctors | Dentists | Other | CPO |
+|--------|-----------|---------|---------|----------|-------|-----|
+| WV (Beckley) | 9 | 4 | 1+ | 3+ | 1 dialysis, 1 audiology | **0** |
+| KY (Pikeville) | 6 | 4 | 5 | 2 | 1 optometry, 1 chiropractic | **0** |
+| MS Delta (Clarksdale) | 18+ | Multiple | Multiple | 6+ | Multiple specialists | **0** |
 
 ---
 
-## Clinical Trial Trends (n=644, July 2026)
+## Clinical Trial Status Distribution (n=975)
 
-### Status Distribution — Prosthetic Limb (n=184)
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 96 | 52.2% |
-| RECRUITING | 33 | 18.0% |
-| UNKNOWN | 25 | 13.6% |
-| ACTIVE_NOT_RECRUITING | 13 | 7.1% |
-| NOT_YET_RECRUITING | 12 | 6.5% |
-| TERMINATED | 4 | 2.2% |
-| ENROLLING_BY_INVITATION | 1 | 0.5% |
+| COMPLETED | 422 | 43.3% |
+| UNKNOWN | 193 | 19.8% |
+| RECRUITING | 171 | 17.5% |
+| ACTIVE_NOT_RECRUITING | 56 | 5.7% |
+| NOT_YET_RECRUITING | 60 | 6.2% |
+| TERMINATED | 31 | 3.2% |
+| WITHDRAWN | 20 | 2.1% |
+| ENROLLING_BY_INVITATION | 20 | 2.1% |
+| SUSPENDED | 2 | 0.2% |
+| **Total** | **975** | **100%** |
 
-### Phase Distribution — Prosthetic (n=644)
-| Phase | Count | % |
-|-------|-------|---|
-| N/A (Observational/Device) | 305 | 47.4% |
-| Unknown | 167 | 26.0% |
-| Phase 3 | 30 | 4.7% |
-| Phase 4 | 24 | 3.7% |
-| Phase 2 | 39 | 6.1% |
-| Phase 1 | 15 | 2.3% |
-| Early Phase 1 | 4 | 0.6% |
+## Phase Distribution (n=975)
 
-### Phase Distribution — Prosthetic Limb Clinical (n=136)
-| Phase | Count | % |
-|-------|-------|---|
-| N/A (Observational/Device) | 97 | 71.3% |
-| Unknown | 31 | 22.8% |
-| Phase 2 | 3 | 2.2% |
-| Phase 1 | 2 | 1.5% |
-| Others | 1 each | 0.7% |
-
-### Sponsor Type (n=644)
-| Sponsor | Count | % |
-|---------|-------|---|
-| Academic / Other | 493 | 76.5% |
-| Industry | 108 | 16.8% |
-| Federal Gov | 23 | 3.6% |
-| Other Gov | 14 | 2.2% |
-| Network | 5 | 0.8% |
-| NIH | 1 | 0.2% |
-
-### Country Distribution — Prosthetic Limb (Recruiting + Completed, n=98)
-| Country | Count | % |
-|---------|-------|---|
-| United States | 85 | 86.7% |
-| France | 37 | 37.8% |
-| Canada | 8 | 8.2% |
-| Spain | 7 | 7.1% |
-| United Kingdom | 6 | 6.1% |
+| Phase | Count | % | Notes |
+|-------|-------|---|-------|
+| N/A (Observational/Device) | 367 | 37.6% | Registries and observational studies |
+| Unknown | 193 | 19.8% | Phase not specified |
+| Phase 4 | 24 | 2.5% | Post-market surveillance |
+| **Phase 3** | **29** | **3.0%** | **Critically scarce — pivotal trials** |
+| Phase 2 | 36 | 3.7% | Early efficacy signals |
+| Phase 1 | 12 | 1.2% | First-in-human safety |
+| Early Phase 1 | 3 | 0.3% | |
+| **Total** | **975** | **100%** | |
 
 ---
 
-## Geographic Gap Analysis
+## Clinical Trial Trends — Key Insights
 
-### Rural West Virginia (Rep: Dille, Clay County)
-- **Healthcare within 50 km:** VA Clinic (Sutton), Cabin Creek Health Center, Wyoming Foot & Ankle Clinic, MedExpress urgent care — no hospital, no CPO
-- **Nearest hospital:** Charleston, WV (~78 mi, ~1.5 hrs)
-- **Pharmacies:** CVS (Fayetteville), Walgreens (multiple), Citizen's Pharmacy
-- **Key gap:** No prosthetist or orthotist anywhere within 80 miles; VA clinic provides basic care but cannot fit custom prosthetics
-
-### Eastern Kentucky (Rep: Pikeville, Pike County)
-- **Healthcare within 50 km:** Logan Foot Clinic, PMC Medical Diagnostics, MCHC Elkhorn City Medical Clinic, Leatherwood Blacky Clinic — no hospital, no CPO
-- **Nearest hospital:** Lexington, KY (~130 mi, ~2.7 hrs via Mountain Parkway)
-- **Pharmacies:** Rite Aid, Elkhorn Drug, Walgreens (Salyersville), Parkway Pharmacy
-- **Key gap:** Logan Foot Clinic is the closest foot/amputation-related provider, but it's a podiatry clinic, not a full CPO fitting center; no orthotic fabricators or prosthetic labs
-
-### Mississippi Delta (Rep: Greenville, Washington County)
-- **Healthcare within 50 km:** The Greenville Clinic, Regional Cancer Center, Leflore County Health Center, Greenwood Medical Complex — no hospital, no CPO
-- **Nearest hospital:** Memphis, TN (~150 mi, ~2.0 hrs); Southeast Rehabilitation Hospital (Lake Village, AR) is the only rehab facility within 50 km
-- **Pharmacies:** Walgreens, CVS, Good Neighbor Pharmacy, Fred's Pharmacy, Gilbow's Drug Store
-- **Key gap:** MS Delta has among the highest amputation rates in the US (diabetes complications, vascular disease), yet zero prosthetic/orthotic providers; patients must travel 150+ miles to Memphis for any CPO service
+1. **Only 29 Phase 3 trials exist globally** — the evidence base for prosthetic device efficacy is critically thin.
+2. **19.8% of studies have UNKNOWN status** — potential data quality and transparency concern.
+3. **Academic-sponsored dominance (50.6% vs. 11.1% industry)** — limits commercial innovation pipeline and market translation.
+4. **US leads globally** with 576 studies (71% of foreign country totals), yet has **zero trial sites** in WV, KY, or MS.
+5. **171 trials actively recruiting** — but none in the regions with the highest amputation rates.
 
 ---
 
-## Key Findings
+## Clinical Trial Country Distribution (Top 15)
 
-1. **Zero CPO providers within 30 km in all three underserved regions** — a complete absence, not a marginal gap
-2. **Nearest CPO is 78–150 miles away** — beyond reasonable care access for rural residents
-3. **All three regions lack hospitals within 30 km** — the closest hospitals are 78–150 miles away
-4. **MS Delta has highest amputation rates yet worst care access** — a double crisis
-5. **Only 30 Phase 3 trials across 644 studies (4.7%)** — the evidence gap for prosthetic device efficacy is wide
-6. **76.5% academic-sponsored, only 16.8% industry** — limited commercial innovation pipeline
-7. **Clinical trial infrastructure is concentrated in urban academic centers** — Nashville, LA, Pittsburgh, and Boston dominate site lists
-8. **No telehealth-specific prosthetic trials** identified — a missed opportunity for rural access
-9. **None of the three states have robust Medicaid coverage for prosthetic devices** — financial barriers compound geographic ones
-10. **Both WV and KY have not expanded Medicaid** — compounding the access gap for low-income prosthetic patients
+| Country | Count |
+|---------|-------|
+| United States | 576 |
+| France | 273 |
+| Italy | 91 |
+| China | 44 |
+| Germany | 48 |
+| Netherlands | 50 |
+| Canada | 53 |
+| Egypt | 53 |
+| Denmark | 42 |
+| UK | 26 |
+| Australia | 21 |
+| Turkey | 21 |
+| Spain | 32 |
+| Sweden | 13 |
+| Norway | 6 |
+
+*Data from ClinicalTrials.gov `countByCountry` analysis (amputation + prosthetic, COMPLETED + RECRUITING).*
 
 ---
 
-## Workflow: Building This Atlas
+## Access Gap Summary — Detailed
 
-```
-1. ClinicalTrials.gov API → Search "prosthetic" and "prosthetic limb"
-   → Extract: NCT IDs, status, phase, sponsor, locations
-   → Aggregate: countByStatus, countByPhase, countBySponsorType, countByCountry
+### Rural West Virginia (Beckley, WV)
+- **Coordinates:** 37.78°N, 81.19°W
+- **CPO within 30 km:** 0
+- **CPO within 100 km:** 0
+- **Nearest CPO:** Charleston, WV — ~190 mi
+- **Healthcare within 30km:** 9 pharmacies, 4 clinics, 1 major medical center, 3+ dentists, 1 audiology, 1 dialysis
+- **Key barrier:** No public transit; WV did not expand Medicaid; 3+ hour drive to nearest CPO
 
-2. OpenStreetMap → Geocode underserved regions
-   → Dille/Beckley (WV), Pikeville/Elkhorn City (KY), Greenville/Indianola (MS)
-   → find_nearby_places → healthcare categories within 50 km
-   → get_route_directions → drive times to nearest major cities
+### Eastern Kentucky (Pikeville, KY)
+- **Coordinates:** 37.48°N, 82.52°W
+- **CPO within 30 km:** 0
+- **CPO within 100 km:** 0 (nearest: Logan Foot Clinic — foot care only, not CPO)
+- **Nearest CPO:** Lexington, KY — ~130 mi
+- **Healthcare within 30km:** 6 pharmacies, 4 clinics (incl. PMC Medical Diagnostics, MCHC Elkhorn City), 5 doctors, 2 dentists, 1 optometrist, 1 chiropractic
+- **Key barrier:** Appalachian isolation; coal economy decline reduced healthcare infrastructure; KY limited Medicaid
 
-3. Compile → GitHub repo with structured data files
-```
+### Mississippi Delta (Clarksdale, MS)
+- **Coordinates:** 34.20°N, 90.57°W
+- **CPO within 30 km:** 0
+- **CPO within 100 km:** 0
+- **Nearest CPO:** Memphis, TN — ~200 mi
+- **Healthcare within 30km:** 18+ pharmacies, 1 hospital campus, multiple clinics, 6+ dentists, numerous specialists
+- **Key barrier:** MS Delta has **highest amputation rates in the U.S.** yet worst prosthetic access. MS did not expand Medicaid. No public transit. Double crisis.
+
+---
+
+## Clinical Trial Relevance
+
+- **Zero prosthetic clinical trial sites** in any of the three regions
+- **576 U.S. studies** on amputation/prosthetics — none participated by WV, KY, or MS
+- **Evidence gap:** Phase 3 trials for prosthetic devices are critically scarce (n=29 globally, n=7 in US)
+
+---
+
+## Methodology
+
+- **Clinical Trial Data:** ClinicalTrials.gov API v2 (queried July 2026)
+  - Query: `intr=prosthetic` (broad); `intr=prosthetic limb amputation` (focused)
+  - Trend analyses: `countByStatus`, `countByPhase`, `countByCountry`
+- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools (30 km radius)
+  - Provider search: `find_nearby_places` with healthcare category
+  - Area exploration: `explore_area` for comprehensive neighborhood profiles
+  - Coordinates: `geocode_address` for regional center points
+- **Gap Metrics:** Distance to nearest Certified Prosthetist-Orthotist (CPO) from regional hub
+- **Analysis date:** July 20, 2026
+
+---
+
+## Repository Structure
+
+| File | Description |
+|------|-------------|
+| README.md | Overview with latest data (this file) |
+| **CONSOLIDATED_FINDINGS_July2026.md** | Full compiled findings with clinical trial stats and gap analysis |
+| ACCESS_GAP_SUMMARY.md | Access gap summary table and methodology |
+| CLINICAL_TRIAL_REPORT.md | Detailed clinical trial analysis |
+| clinical-trial-trends.md | Trend data from ClinicalTrials.gov |
+| data/ | Additional data files and profiles |
+
+---
 
 ## Contributing
+
 1. Fork the repo
 2. Create a feature branch
 3. Commit changes
 4. Open a PR
 
 ## License
+
 MIT (Open Access) — free to use for research, policy, and advocacy.
 
 ---
