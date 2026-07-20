@@ -1,0 +1,35 @@
+# Prosthetic Access Atlas — Regional Routing Data (July 2026)
+
+Driving distances and estimated travel times from underserved regions to nearest major CPO hubs.
+
+Generated: 2026-07-20
+
+## From → To Routes
+
+| Origin | Destination | Distance (mi) | Distance (km) | Drive Time | Notes |
+|--------|------------|---------------|---------------|------------|-------|
+| Beckley, WV | Charleston, WV | 59 | 95 | 1.3 hr | I-77 corridor |
+| Pikeville, KY | Lexington, KY | 140 | 226 | 2.7 hr | Mountain Parkway + I-64 |
+| Clarksdale, MS | Memphis, TN | 75 | 121 | 1.6 hr | US-61/US-278 |
+| Greenville, MS | Memphis, TN | 59 | 95 | 1.4 hr | US-61/US-278 |
+| Indianola, MS | Memphis, TN | 61 | 98 | 1.5 hr | US-49/US-61 |
+| Leland, MS | Memphis, TN | 57 | 91 | 1.4 hr | US-61/US-278 |
+| Rolling Fork, MS | Memphis, TN | 67 | 108 | 1.7 hr | MS-14/US-61 |
+| Ashland, KY | Lexington, KY | 155 | 250 | 3.0 hr | US-23/I-64 |
+| Logan, WV | Charleston, WV | 81 | 130 | 1.8 hr | US-119/I-77 |
+| Huntington, WV | Charleston, WV | 43 | 70 | 0.75 hr | US-60/I-64 |
+
+## Regional Summary
+
+- **Shortest CPO gap**: Huntington, WV → Charleston (43 mi, ~45 min)
+- **Longest CPO gap**: Ashland, KY → Lexington (155 mi, ~3 hr)
+- **Highest need region**: MS Delta (highest amputation rate + zero CPO)
+- **Most isolated**: Pikeville, KY (140 mi to nearest CPO in Appalachia)
+
+## CPO Hub Centers
+
+| Hub City | State | Coordinates | Counties Served |
+|----------|-------|-------------|-----------------|
+| Charleston | WV | 38.35°N, 81.63°W | Kanawha, Logan, Cabell |
+| Lexington | KY | 38.05°N, 84.50°W | Fayette, Boyd, Pike |
+| Memphis | TN | 35.15°N, 90.05°W | Shelby, Washington, Sunflower, Coahoma |
