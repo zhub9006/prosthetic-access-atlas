@@ -1,0 +1,4 @@
+region,state,c0_to_30km,c0_to_50km,c0_to_100km,nearest_cpo_miles,drive_time_to_nearest_cpo,medicaid_expanded,amputation_rate_tier
+Rural_West_Virginia_Beckley,WV,0,0,0,190,"3+ hours",No,Highest
+Eastern_Kentucky_Hazard,KY,0,0,0,130,"3+ hours",No,High
+Mississippi_Delta_Greenville,MS,0,0,0,200,"4+ hours",No,Highest
