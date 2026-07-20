@@ -1,118 +1,148 @@
-# Underserved Region Profiles & Prosthetic Care Access Gaps
+# Underserved Region Profiles — Prosthetic & Orthotic Care Access Gaps
 
-## 1. Rural West Virginia
+> OpenStreetMap Provider Search | 30 km Radius | July 2026
 
-### Geographic Scope
-- **Center:** Buckhannon (38.99°N, -80.23°W), Upshur County
-- **Secondary Center:** Elkins (38.93°N, -79.84°W), Randolph County
-- **Covering Counties:** Upshur, Randolph, Webster, Pocahontas, Lewis, Harrison, Taylor
-- **Combined Population:** ~200,000 across the 7-county region
+---
 
-### Prosthetic/Orthotic Care Provider Density
-| Region | CPOs within 50 mi | CPOs within 100 mi | Nearest Facility |
-|--------|-------------------|--------------------|------------------|
-| Buckhannon, WV | 0 | 0 | Charleston, WV (~190 mi) |
-| Elkins, WV | 0 | 1 | Charleston, WV (~190 mi) |
+## 1. Rural West Virginia (Center: Buckhannon, 38.48°N, -80.84°W)
+
+### Healthcare Providers Within 30 km
+| Provider | Type | Location | Distance |
+|----------|------|----------|----------|
+| Care Xpress | Clinic | Sutton, WV | ~30 km |
+| VA Clinic (Sutton) | VA Clinic (Veterans) | Sutton, WV | ~30 km |
+| Summersville Family Medicine | Clinic | Summersville, WV | ~25 km |
+| Walgreens | Pharmacy | Summersville, WV | ~25 km |
+
+**Prosthetist/Orthotist within 30 km: 0**
+**Prosthetic- or orthotic-specific facility: 0**
+
+### Nearest CPO (Certified Prosthetist-Orthotist)
+- Charleston, WV (~190 miles, ~3+ hours)
+- Huntington, WV (~90 miles, ~1.5 hours)
+
+### Neighborhood Livability Score (30 km radius)
+- **Overall:** Data unavailable (API timeout at query)
+- **Known gaps:** No public transit, no prosthetist, minimal specialist care
+
+### Medicaid
+- West Virginia has **not expanded** Medicaid under ACA.
+- Significant barrier for low-income amputees needing prosthetic devices.
+
+### Transit
+- No public transit system in rural Appalachian WV.
+- Personal vehicle essentially required for any medical travel.
 
 ### Key Findings
-- **Zero certified prosthetist-orthotist (CPO) offices** within any practical travel radius
-- **Nearest CPO:** Charleston, WV (~3+ hours drive) — 2 facilities (Lakeside Orthotics & Prosthetics, WVU Medicine)
-- **Pittsburgh, PA:** ~4+ hours drive; 50+ CPO but not accessible to most WV patients
-- **Medicaid:** WV Medicaid has limited CPO provider networks; prior authorization required for all prosthetic devices
-- **Amputee prevalence:** WV has among the highest diabetes and vascular disease rates → higher amputation risk
-- **Transportation:** Rural dialysis patients who become amputees face impossible travel for prosthetic fitting
-- ** youngest amputee in region:** Pediatric amputees have no local option for growing prosthetic limb adjustments
-
-### Coverage Gap Score: EXTREME (1/5)
-- No CPO within 100 miles
-- No pedal prosthetic specialist
-- No pediatric prosthetic orthotist
-- No BCI/neuromodulation research in region
-- Zero prosthetic clinical trials conducted locally
+- **Zero prosthetic/orthotic providers within 30 km — a complete absence.**
+- Nearest CPO is 90–190 miles away, making regular prosthetic adjustments impractical.
+- VA Clinic in Sutton serves veterans but has limited prosthetic specialty services.
+- High rates of opioid use disorder and diabetes in rural WV compound amputation risk.
 
 ---
 
-## 2. Eastern Kentucky
+## 2. Eastern Kentucky (Center: Pikeville, 37.48°N, -82.52°W)
 
-### Geographic Scope
-- **Center:** Pikeville (37.48°N, -82.52°W), Pike County
-- **Secondary Center:** Hazard (37.25°N, -83.19°W), Perry County
-- **Covering Counties:** Pike, Perry, Floyd, Letcher, Knott, Magoffin, Breathitt, Wolfe
-- **Combined Population:** ~250,000 across 8 counties
+### Healthcare Providers Within 30 km
+| Provider | Type | Location | Distance |
+|----------|------|----------|----------|
+| PMC Medical Diagnostics | Clinic | Pikeville, KY | ~2 km |
+| MCHC Elkhorn City Medical Clinic | Clinic | Elkhorn City, KY | ~22 km |
+| Elkhorn City Clinic | Clinic | Elkhorn City, KY | ~23 km |
+| PMC Employee Health | Doctor | Pikeville, KY | ~2 km |
+| Meta Medical Center (Dr. Parker, DO) | Doctor | Pikeville, KY | ~2 km |
+| Pediatric Associates of Pikeville | Doctor | Pikeville, KY | ~3 km |
+| Asthma & Allergy Center | Doctor | Pikeville, KY | ~3 km |
+| Elkhorn Drug | Pharmacy | Elkhorn City, KY | ~22 km |
+| Nichols Apothecary | Pharmacy | Elkhorn City, KY | ~23 km |
+| Walgreens (Martin, KY) | Pharmacy | Martin, KY | ~28 km |
+| Big Sandy Dental Center | Dentist | Pikeville, KY | ~2 km |
+| Akers Family Chiropractic | Alternative | Pikeville, KY | ~2 km |
+| Dr. Mary Anne Belcher O.D. PSC | Optometrist | Elkhorn City, KY | ~23 km |
 
-### Prosthetic/Orthotic Care Provider Density
-| Region | CPOs within 50 mi | CPOs within 100 mi | Nearest Facility |
-|--------|-------------------|--------------------|------------------|
-| Pikeville, KY | 0 | 0 | Lexington, KY (~130 mi) |
-| Hazard, KY | 0 | 0 | Lexington, KY (~130 mi) |
+**Prosthetist/Orthotist within 30 km: 0**
+**Prosthetic- or orthotic-specific facility: 0**
+
+### Neighborhood Livability Score (30 km radius)
+- **Overall:** 4.5 / 10
+- **Walkability:** 4 / 10
+- **Groceries:** 8.8
+- **Healthcare:** 0 / 10
+- **Education:** 10.0
+- **Parks:** 8.0
+- **Shopping:** 7.4
+- **Restaurants:** 0 / 10
+- **Public Transport:** 0 / 10
+- **Entertainment:** 1.0
+- **Sports:** 0 / 10
+
+### Medicaid
+- Kentucky **did not expand** Medicaid until 2014 (the state expanded). However, rural EKY still faces significant access barriers.
+
+### Transit
+- No public transit in Pikeville or surrounding counties.
+- Mountain terrain makes travel between communities difficult.
 
 ### Key Findings
-- **Zero CPO offices** within 100 miles — deepest prosthetic desert in the US
-- **Nearest CPO centers:** Lexington, KY (~2.5+ hours) with some CPOs accepting KY Medicaid; WV Medicaid often not accepted
-- **Smoking/vascular disease:** Pike County has highest smoking rate in America → vascular disease → amputations
-- **Opioid crisis legacy:** IV drug users who contracted septic arthritis now need prosthetic joints but cannot access care locally
-- **Appalachian stereotype barrier:** Cultural factors reduce help-seeking for disability
-- **Transportation:** No public transit; everyone drives. Mountain roads make 3+ hour drives dangerous in winter
-- **Telehealth:** Some CPOs offer telehealth but prosthetic fitting requires in-person casting, alignment, and gait training
-
-### Coverage Gap Score: EXTREME (1/5)
-- Deepest prosthetic access desert in contiguous US
-- No prosthetics research anywhere in eastern KY
-- High amputation risk + zero local care = preventable disability spiral
-- Diabetes-related amputations 2x national average
-- Prosthetic joint infection patients cannot proximity-enroll in trials
+- **Healthcare score is 0/10** — the most critical gap in all categories.
+- Despite having general clinics and a pharmacy, there is **zero prosthetic/orthotic specialty care** within 30 km.
+- University of Pikeville and Kentucky College of Osteopathic Medicine provide education but not prosthetic services.
+- Nearest CPO likely in Lexington (~130 mi) or at the Lexington VA Medical Center.
 
 ---
 
-## 3. Mississippi Delta
+## 3. Mississippi Delta (Center: Greenville, 33.41°N, -91.06°W)
 
-### Geographic Scope
-- **Center:** Greenville (33.41°N, -91.06°W), Washington County
-- **Secondary Center:** Indianola (33.30°N, -90.91°W), Hinds County
-- **Covering Counties:** Washington, Humphreys, Sunflower, Bolivar, Issaquena, Sharkey
-- **Combined Population:** ~200,000 across the Delta region
+### Healthcare Providers Within 30 km
+| Provider | Type | Location | Distance |
+|----------|------|----------|----------|
+| The Greenville Clinic | Clinic | Greenville, MS | ~3 km |
+| Michelle Seard-Higgins DMD PLLC | Dentist | Greenville, MS | ~2 km |
+| Dental Group of Greenville | Dentist | Greenville, MS | ~4 km |
 
-### Prosthetic/Orthotic Care Provider Density
-| Region | CPOs within 50 mi | CPOs within 100 mi | CPOs within 200 mi |
-|--------|-------------------|--------------------|--------------------|
-| Greenville, MS | 0 | 0 | 0 |
-| Indianola, MS | 0 | 0 | 0 |
+**Prosthetist/Orthotist within 30 km: 0**
+**Prosthetic- or orthotic-specific facility: 0**
+
+### Neighborhood Livability Score (30 km radius)
+- **Overall:** 4.6 / 10
+- **Walkability:** 2 / 10
+- **Groceries:** 8.9
+- **Healthcare:** 2.0 / 10
+- **Education:** 9.9
+- **Parks:** 9.8
+- **Restaurants:** 9.9
+- **Shopping:** 0 / 10
+- **Public Transport:** 0 / 10
+- **Entertainment:** 5.9
+- **Services:** 0 / 10
+
+### Medicaid
+- Mississippi has **not expanded** Medicaid under ACA — the highest amputation rate state with the most restrictive eligibility.
+
+### Transit
+- Minimal to no public transit in the Delta region.
+- Most residents rely on personal vehicles.
 
 ### Key Findings
-- **Zero CPO offices within 250 miles** — the most severe prosthetic care desert in the nation
-- **Nearest CPO:** Memphis, TN (~200 mi, ~3.5 hrs) or Jackson, MS (~250 mi, ~4 hrs)
-- **Highest amputation rates in the US:** Mississippi has the highest diabetes-related amputation rate; Delta counties are epicenters
-- **Medicare/Medicaid:** Mississippi did NOT expand Medicaid under ACA — massive coverage gap for prosthetic devices
-- **Rural hospital closures:** Multiple Delta hospitals have closed; no inpatient rehab for post-amputation recovery
-- **Economic devastation:** Average household income ~$30k; prosthetic devices cost $5k-$50k; insurance rarely covers full cost
-- **Cultural barrier:** High disability tolerance with limited rehabilitation infrastructure
-- **Vascular disease:** Black residents in Delta have 3-4x the amputation rate of White residents nationally
-
-### Coverage Gap Score: CATASTROPHIC (0/5)
-- Most severe prosthetic desert in the United States
-- No rehabilitation facility for prosthetic training
-- No prosthetist anywhere remotely accessible
-- Highest amputation rate + lowest care access = human rights crisis
-- Zero prosthetic clinical trials in the entire state of Mississippi
-- Mississippi Medicaid does not cover most prosthetic enhancements
+- **Healthcare score is only 2.0/10** — the second-lowest among the three regions.
+- The MS Delta has the **highest amputation rates in the U.S.** (driven by diabetes, peripheral vascular disease, and hypertension).
+- Despite this, prosthetic and orthotic care is virtually absent within a 30 km radius.
+- Nearest CPO likely in Memphis, TN (~200 mi) or Jackson, MS (~150 mi).
+- The combination of high amputation prevalence and extreme geography barriers creates a **double crisis**.
 
 ---
 
-## Comparative Summary Table
+## Comparative Summary
 
-| Region | Population | Nearest CPO | Distance | Medicaid Status | Amputation Rate | Gap Score |
-|--------|-----------|-----------|----------|----------------|-----------------|-----------|
-| Rural WV | ~200K | Charleston, WV | ~190 mi | Limited prior auth | Above avg | 1/5 |
-| Eastern KY | ~250K | Lexington, KY | ~130 mi | Limited (KY only) | 2x national | 1/5 |
-| Mississippi Delta | ~200K | Memphis/Jackson | 200-250 mi | Not expanded | 3-4x national | 0/5 |
+| Metric | Rural WV | Eastern KY | MS Delta |
+|--------|----------|-----------|----------|
+| CPO within 30 km | **0** | **0** | **0** |
+| Nearest CPO | ~190 mi (Charleston) | ~130 mi (Lexington) | ~200 mi (Memphis) |
+| Healthcare score | N/A | **0/10** | **2.0/10** |
+| Medicaid expanded? | No | Yes (2014) | No |
+| Public transit | None | None | None |
+| Amputation rate context | High (opioid epidemic) | Moderate-High | **Highest in U.S.** |
 
 ---
 
-## Recommendations
-
-1. **Deploy mobile prosthetic clinics** to WV and Eastern KY with certified CPOs rotating monthly
-2. **Establish telehealth + local casting partnerships** in the Delta region (patient travels to nearest hub, local clinic handles casting)
-3. **Advocate for Mississippi Medicaid expansion** — single largest policy lever reducing amputations
-4. **Create prosthetics research hubs** in WV/APPalachia via NIH HRSA — currently ZERO trials conducted locally
-5. **Leverage the VA network** — WV has 3 VA medical centers; they should lead prosthetic research and direct care
-6. **Establish graduate prosthetics programs** in underserved states (WV, KY, MS) to build local workforce
+*Data compiled from OpenStreetMap POI searches (July 2026) and ClinicalTrials.gov API.*

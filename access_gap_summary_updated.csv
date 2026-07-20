@@ -1,4 +1,4 @@
-region,state,center_lat,center_lon,cpo_within_50km,distance_to_nearest_cpo_mi,nearest_cpo_city,medicaid_expanded,public_transit,walkability_score,healthcare_score_50km,physician_count_50km,clinic_count_50km,pharmacy_count_50km,hospital_beds_50km,amputation_rate_ranking,care_gap_severity
-Eastern Kentucky,KY,37.48,-82.52,0,130,Lexington KY,No,None,4,0,5,4,6,0,High,EXTREME
-Mississippi Delta,MS,33.41,-91.06,0,200,Memphis TN,No,Minimal,2,7.6,1,1,4,10,Highest in U.S.,EXTREME
-Rural West Virginia,WV,37.80,-81.93,0,190,Charleston WV,No,None,0,7.9,1,4,10,0,High,EXTREME
+region,center_lat,center_lon,radius_km,cpo_within_radius,nearest_cpo_city,nearest_cpo_distance_miles,healthcare_score,nearest_healthcare,cpp_within_30km,medicaid_expanded,public_transit,walkability_score,key_barrier
+Rural West Virginia,38.48,-80.84,30,0,Charleston (WV),190,1,Care Xpress clinic (Sutton) / Summersville Family Medicine (25km),0,No (WV),None,~1,No prosthetist/orthotist within 30km; nearest CPO 90-190 mi; high opioid/diabetes comorbidity
+Eastern Kentucky,37.48,-82.52,30,0,Lexington (KY),130,0,PMC Medical Diagnostics (2km) / MCHC Elkhorn City Clinic (22km),0,Yes (2014),None,4,No prosthetic/orthotic specialty care despite 15 general healthcare facilities; nearest CPO ~130 mi; mountain terrain limits travel
+Mississippi Delta,33.41,-91.06,30,0,Memphis (TN),200,2,The Greenville Clinic (3km) / Dental Group of Greenville (4km),0,No (MS),None,2,Zero prosthetics in highest-amputation-rate region; 150-200 mi to nearest CPO; minimal healthcare infrastructure; no specialist care

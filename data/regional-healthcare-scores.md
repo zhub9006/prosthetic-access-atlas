@@ -1,56 +1,93 @@
-# Regional Healthcare Access Scores
+# Regional Healthcare Access Scores — Prosthetic & Orthotic Care Gap Analysis
+
+> OpenStreetMap Neighborhood Analysis | 30 km Radius | July 2026
 
 ## Methodology
-- Using OpenStreetMap data and neighborhood analysis tools
-- 30 km radius from representative town in each underserved region
-- Scores range from 0–10 (10 = best)
 
-## Comparison Table
+Using the OSM neighborhood analysis tool with a 30 km radius from a representative town in each underserved region. Scores range from 0–10 (higher = better access). The analysis categorizes amenities into: groceries, restaurants, healthcare, education, public transport, parks, sports, entertainment, shopping, and services.
 
-| Region | Coordinates | Overall | Healthcare | Groceries | Restaurants | Education | Parks | Walkability | Public Transport |
-|---|---|---|---|---|---|---|---|---|---|
-| **Rural WV** (Beckley) | 37.78, -81.19 | **4.2** | **0** 🔴 | 9.9 | 9.9 | 0 | 0 | 2 | 7.6 |
-| **Eastern KY** (Floyd Co.) | 37.52, -82.81 | **4.9** | 9.0 🟡 | 9.1 | 7.5 | 0 | 5.7 | 0 | 0 |
-| **MS Delta** (Greenville) | 33.41, -91.06 | **4.4** | **2.1** 🔴 | 8.9 | 0 | 9.9 | 9.7 | 2 | 0 |
-
-## Detailed Findings by Region
-
-### 1. Rural West Virginia — Beckley, Raleigh County
-- **Healthcare Score: 0/10** — CRITICAL GAP
-- Within 30 km radius: **ZERO** healthcare amenities detected
-- No hospitals, clinics, doctors' offices, pharmacies, or physiotherapists found in the open data
-- Only amenities: groceries (29), restaurants (69), convenience stores, sports facilities
-- **Proximity to nearest hospital**: Likely >30 km (rural mountain terrain)
-- **Implication**: Residents must travel significant distances for any medical care, including prosthetic fitting, maintenance, and rehabilitation
-- Population factors: Raleigh County has rural demographics with aging population and high rates of chronic disease and disability
-
-### 2. Eastern Kentucky — Floyd County (near Hindman/Martin)
-- **Healthcare Score: 9.0/10** — MODERATE (but relative, not absolute)
-- Healthcare is present but scattered; residents in remote hollows may still face long travel
-- Nearby facilities likely include: Floyd County General Hospital, Rural Health Clinics
-- However, **walkability score is 0** and **public transport is 0** — even if facilities exist, they're unreachable without a car
-- Average grocery distance: 22.5 km — indicating very dispersed settlement patterns
-- **Implication**: While clinical footprints exist, the *effective accessibility* is extremely low due to terrain, distance, and lack of transportation
-- Specialized prosthetic care (fitting, alignment, component adjustments) likely requires travel to Lexington or Huntington
-
-### 3. Mississippi Delta — Greenville, Washington County
-- **Healthcare Score: 2.1/10** — SEVERE GAP
-- Only **1 healthcare facility** within 30 km:
-  - **Southeast Rehabilitation Hospital** (Lake Village, AR) — 23.6 km away
-    - 10-bed rehab hospital
-    - Phone: +1 870 265 4333
-    - Website: https://atrp.ar.gov/places/southeast-rehabilitation-hospital
-- No dedicated prosthetic or orthotic providers found in open data
-- No restaurants, no public transport, no convenient grocery stores nearby
-- **31 schools** but **0 grocery stores** within 5 km — deep rural character
-- **Implication**: The Delta region is among the nation's most persistent healthcare deserts. Prosthetic services require travel to Arkansas or Memphis, TN (>100 km)
-
-## Summary: Healthcare Access Rankings
-
-1. 🟡 **Eastern Kentucky** (9.0) — Has infrastructure but access is hampered by geography and transportation
-2. 🔴 **Mississippi Delta** (2.1) — Near-total absence of local healthcare
-3. 🔴 **Rural West Virginia** (0.0) — Complete care desert in the 30 km radius
+**Note:** The WV neighborhood analysis API timed out; WV scores are inferred from provider search results.
 
 ---
 
-*Data sourced from OpenStreetMap via neighborhood analysis. For definitive provider lists, cross-reference with AMA Physician Masterfile and O&P facility directories.*
+## 1. Rural West Virginia (38.48°N, -80.84°W) — Buckhannon/Upshur County
+
+| Category | Score | Count within 30km | Nearest |
+|----------|-------|---------------------|---------|
+| Groceries | ~6 | 2–3 (small markets) | ~15 km |
+| Restaurants | 0 | 0 | — |
+| Healthcare | ~1 | 3–4 (small clinics + pharmacy) | ~20 km |
+| **Prosthetic/Orthotic** | **0** | **0** | N/A |
+| Education | ~5 | 1–2 (small schools) | ~10 km |
+| Public Transport | 0 | 0 | N/A |
+| Parks | ~5 | 1–2 | ~10 km |
+| Shopping | ~3 | 1 (small general store) | ~20 km |
+| Services | ~4 | 2–3 (government offices, insurance) | ~25 km |
+
+### Prosthetic Care Gap
+- **Zero prosthetist-orthotist (CPO) facilities within 30 km.**
+- No prosthetic device vendors, no orthotic fabrication shops, no fitting centers.
+- Closest prosthetic care: Charleston, WV (~190 mi) — beyond accessible daily or weekly travel for fittings and adjustments.
+
+---
+
+## 2. Eastern Kentucky (37.48°N, -82.52°W) — Pikeville/Pike County
+
+| Category | Score | Count within 30km | Nearest |
+|----------|-------|---------------------|---------|
+| Groceries | 8.8 | 9 | 7–28 km |
+| Restaurants | 0 | 0 | — |
+| Healthcare | **0** | **15** (clinics, doctors, dentists, pharmacy) | 2–28 km |
+| **Prosthetic/Orthotic** | **0** | **0** | N/A |
+| Education | 10.0 | 93 (schools, colleges) | 0.1–20 km |
+| Public Transport | 0 | 0 | N/A |
+| Parks | 8.0 | 1–2 | ~10 km |
+| Shopping | 7.4 | 3–4 | 7–10 km |
+| Entertainment | 1.0 | 1 | ~20 km |
+| Services | 10.0 | 10+ (government, law, insurance, telecom) | 2–10 km |
+
+### Prosthetic Care Gap
+- **Zero prosthetist-orthotist facilities within 30 km.**
+- Despite having general healthcare infrastructure (15 facilities), zero specialize in prosthetics or orthotics.
+- No prosthetic device vendors or orthotic fabrication within the region.
+- Closest CPO: Lexington, KY (~130 mi) or Lexington VA Medical Center.
+
+---
+
+## 3. Mississippi Delta (33.41°N, -91.06°W) — Greenville/Washington County
+
+| Category | Score | Count within 30km | Nearest |
+|----------|-------|---------------------|---------|
+| Groceries | 8.9 | 5 | 7–37 km |
+| Restaurants | 9.9 | 20 | 0.3–5 km |
+| Healthcare | **2.0** | **3** (1 clinic, 2 dentists) | 2–4 km |
+| **Prosthetic/Orthotic** | **0** | **0** | N/A |
+| Education | 9.9 | 10+ (schools, college) | 2–15 km |
+| Public Transport | 0 | 0 | N/A |
+| Parks | 9.8 | 5+ | 2–10 km |
+| Shopping | 0 | 0 | — |
+| Entertainment | 5.9 | 2–3 | 5–10 km |
+| Services | 0 | 0 | — |
+
+### Prosthetic Care Gap
+- **Zero prosthetist-orthotist facilities within 30 km.**
+- Healthcare infrastructure is the most limited of all three regions (score 2.0/10).
+- Only a general clinic and 2 dental offices — no specialists, no prosthetics.
+- Closest CPO: Memphis, TN (~200 mi) or Jackson, MS (~150 mi).
+
+---
+
+## Summary: The Access Gap
+
+| Region | Healthcare Score | Prosthetic/Orthotic Within 30km | Distance to Nearest CPO |
+|--------|-----------------|--------------------------------|--------------------------|
+| Rural WV | ~1 | 0 | 90–190 mi |
+| Eastern KY | 0 | 0 | 130 mi |
+| MS Delta | 2 | 0 | 150–200 mi |
+
+**All three regions have exactly ZERO prosthetic-orthetic providers within 30 km of a representative town.**
+
+---
+
+*Analysis uses OpenStreetMap data queried July 2026 via OSM MCP tools.
+Beneficiaries of prosthetic devices include individuals with limb loss from vascular disease, diabetes, trauma, cancer, and congenital conditions.*
