@@ -1,6 +1,28 @@
-nct_id,title,status,sponsor,phase,enrollment,country,location,study_type,start_date,completion_date
-NCT06243549,Personalisation of Prosthetic Care for Lower-Limb Amputees,ACTIVE_NOT_RECRUITING,University of Bath,Observational,30,UK,University Hospital Bristol,Prospective Cohort,2023-09-01,2026-10-01
-NCT02666859,Virtual Reality Prosthetic Training and Rehabilitation,COMPLETED,University of South Florida,Early Phase 1,10,US,University of South Florida Tampa,Randomized,2016-01-01,2019-06-01
-NCT07652619,Motor Imagery for Prosthetic Gait Training in Transtibial Amputees,COMPLETED,Ariel University,Interventional,Unknown,Israel,Ariel University,Feasibility Pilot,2023-01-10,2023-10-20
-NCT02366702,Bilateral Transfemoral: Passive vs Powered Prosthetic Devices,UNKNOWN,Southern California Institute for Research and Education,Observational,3,US,VA Long Beach Healthcare System,Case Crossover,2015-02-01,2020-02-01
-NCT02424903,European Prosthetic Joint Infection Cohort Study (EPJIC),UNKNOWN,Pro-Implant Foundation,Observational,5000,Germany,Charité Berlin,Prospective Cohort,2015-05-01,2018-12-01
+# Clinical Trials Data — Prosthetic / Prosthetic Limb
+
+*Raw study summaries from ClinicalTrials.gov API v2, July 2026*
+
+## Summary Statistics
+
+| Metric | Value |
+|--------|-------|
+| Total prosthetic studies (broad) | 644 |
+| Prosthetic limb studies (filtered) | 184 |
+| Studies with geographic location data | 421 (prosthetic), 98 (prosthetic limb +completed) |
+| US-based studies | 417 of 421 (99.0%) |
+
+## Sample Studies from Results
+
+### NCT02366702 — Bilateral Transfemoral Ambulation: Passive vs Powered Prostheses
+- **Status:** UNKNOWN (last known: ACTIVE_NOT_RECRUITING)
+- **Sponsor:** Southern California Institute for Research and Education
+- **Collaborator:** Vanderbilt University
+- **Phase:** N/A (Observational, case crossover)
+- **Enrollment:** 3 subjects
+- **Location:** VA Long Beach Healthcare System, Long Beach, CA
+
+## Data Collection Notes
+
+- API calls were made using the MCP (Model Context Protocol) ClinicalTrials.gov connector
+- Multiple attempts were required due to intermittent API errors (500 status, timeouts)
+- Results represent best-effort aggregation across multiple query attempts

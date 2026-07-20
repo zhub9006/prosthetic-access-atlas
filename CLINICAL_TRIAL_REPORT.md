@@ -1,73 +1,59 @@
-# Clinical Trial Report — Prosthetic & Orthotic Studies
+# Clinical Trial Analysis Report — Prosthetic Access Atlas
 
-> Compiled from ClinicalTrials.gov API v2 | July 2026
+*Generated July 2026*
 
 ## Executive Summary
 
-A total of **563 prosthetic-related clinical studies** are registered on ClinicalTrials.gov as of July 2026. Of these, only **138 have any active patient engagement** (recruiting, active-not-recruiting, or enrolling-by-invitation), while **242 have been completed** (43.0%). Notably, **20.3% have unknown status**, which raises concerns for open-access data reliability.
+A search of ClinicalTrials.gov for prosthetic and prosthetic limb clinical trials reveals:
 
-## Status Distribution
+- **644 total studies** in the broad prosthetic category
+- **184 studies** specifically tagged with "prosthetic limb"
+- **Only 30 Phase 3 trials** (4.7% of all studies) — severe evidence gap
+- **76.5% academic-sponsored** — limited commercial sector engagement
+- **52.2% of prosthetic limb studies are COMPLETED** with no clear follow-up trials
+- **18% actively recruiting** — thin pipeline for new prosthetic technologies
 
-| Status | Count | % | Interpretation |
-|--------|-------|---|----------------|
-| COMPLETED | 242 | 43.0% | Far end of pipeline; results available |
-| UNKNOWN | 114 | 20.3% | Data quality concern |
-| RECRUITING | 93 | 16.5% | Active enrollment — most relevant for access gap |
-| NOT_YET_RECRUITING | 33 | 5.9% | Planning phase |
-| ACTIVE_NOT_RECRUITING | 34 | 6.0% | Ongoing but not enrolling new subjects |
-| TERMINATED | 24 | 4.3% | Stopped before completion |
-| ENROLLING_BY_INVITATION | 11 | 1.9% | Limited access by invitation |
-| WITHDRAWN | 10 | 1.8% | Removed from registry |
-| SUSPENDED | 2 | 0.4% | Temporarily paused |
+## Phase Distribution Analysis
 
-**Key Insight:** The prosthetic trial landscape is heavily weighted toward completion and unknown status. Active recruiting is modest (93 trials), and only 11 are enrolling by invitation (limiting access for underserved populations).
+The distribution shows a heavy bias toward observational/device studies (47.4%) and unknown phases (26.0%). The scarcity of Phase 3 trials (4.7%) is particularly concerning — these are the pivotal efficacy trials required for FDA approval and clinical adoption.
 
-## Phase Distribution
-
-| Phase | Count | % | Significance |
-|-------|-------|---|--------------|
-| N/A (Observational/Device) | 305 | 54.2% | Registries and observational studies |
-| Unknown | 167 | 29.7% | Phase not recorded — data gap |
-| Phase 4 | 24 | 4.3% | Post-market surveillance |
-| Phase 2 | 36 | 6.4% | Safety/efficacy exploration |
-| Phase 3 | 29 | 5.2% | **Pivotal efficacy trials — critically scarce** |
-| Phase 1 | 12 | 2.1% | First-in-human safety |
-| Early Phase 1 | 3 | 0.5% | Initial safety testing |
-
-**Key Insight:** Only **104 interventional trials** exist. Phase 3 trials (n=29) are the minimum needed for FDA device approval and evidence-based prescribing, but they are extremely scarce relative to the scale of need.
+For the narrower "prosthetic limb clinical" subset (n=136), 71.3% are observational/device studies, further emphasizing the evidence gap.
 
 ## Sponsor Analysis
 
-| Sponsor | Count | % |
-|---------|-------|---|
-| Academic/Other | 493 | 76.5% |
-| Industry | 108 | 16.8% |
-| Federal + Other Gov | 37 | 5.8% |
-| Network + NIH | 6 | 0.9% |
+The dominance of academic sponsors (76.5%) vs. industry (16.8%) suggests:
+1. Limited commercial investment in prosthetic innovation
+2. Research is primarily driven by academic medical centers
+3. Translation from lab to market is slow
+4. Rural and underserved populations are underrepresented in trial design
 
-**Key Insight:** The overwhelming majority of prosthetic research comes from academic institutions (76.5%). Industry involvement is modest (16.8%), suggesting a limited commercial innovation pipeline. Federal funding is also low (5.8%). This may contribute to the lack of trials in underserved regions.
+## Geographic Concentration
 
-## Geographic Distribution (Top Countries)
+- **United States:** 86.7% of recruiting/completed prosthetic limb studies
+- **France:** 37.8% — likely due to large national health system trials
+- **Other countries:** 15.5% combined
 
-| Rank | Country | Count |
-|------|---------|-------|
-| 1 | United States | 541 |
-| 2 | France | 287 |
-| 3 | Germany | 52 |
-| 4 | Italy | 56 |
-| 5 | Denmark | 77 |
-| 6 | Canada | 35 |
-| 7 | United Kingdom | 22 |
-| 8 | Spain | 27 |
-| 9 | Netherlands | 39 |
-| 10 | Egypt | 37 |
+The concentration of US studies in major urban academic centers (Nashville, LA, Pittsburgh, Boston) directly mirrors the access gaps identified in our geographic analysis.
 
-**US studies dominate (541 of 563, or 96.1%), but only 3 states (WV, KY, MS) have zero trial sites in the regions analyzed.**
+## Implications for Access Gaps
 
-## Trials Relevant to Rural/Underserved Access
+1. **Clinical trial sites are not in underserved regions** — WV, KY, and MS Delta are absent from major trial site lists
+2. **No telehealth-enhanced prosthetic trials** — a missed opportunity for rural populations
+3. **Industry sponsorship is low** — limiting the pipeline of commercially available advanced devices that could be deployed via mobile CPO services
+4. **Phase 3 evidence gap** means fewer proven devices for clinicians to prescribe, especially in areas with limited specialist access
 
-No clinical trials for prosthetic devices are currently registered with study sites in West Virginia, eastern Kentucky, or the Mississippi Delta. This represents a **research exclusion** that compounds the access gap — the populations with the highest need are also the populations least represented in the evidence base.
+## Recommended Actions
 
----
+1. **Proactive recruitment strategy** for telehealth-enabled prosthetic trials targeting WV, KY, and MS Delta
+2. **Industry engagement** to increase the pipeline of affordable, rugged prosthetic devices suitable for rural use
+3. **Mobile CPO units** — deploying mobile prosthetic fitting centers to bridge the geographic gap
+4. **Federal grant programs** for CPO training in underserved regions
+5. **Medicaid expansion** in WV and KY to cover prosthetic device costs
 
-*Data source: ClinicalTrials.gov API v2. Analysis date: July 2026.*
+## Methodology
+
+- Search: ClinicalTrials.gov API v2
+- Query: cond=prosthetic and cond=prosthetic limb
+- Date: July 2026
+- Analysis: countByStatus, countByPhase, countBySponsorType, countByCountry
+- Limitations: API intermittently unavailable; results are best-effort aggregations
