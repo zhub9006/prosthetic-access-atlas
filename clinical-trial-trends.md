@@ -1,72 +1,75 @@
-# Clinical Trial Trends — Prosthetic & Orthotic Studies
+# Clinical Trial Trends — Prosthetic Access Atlas
 
-> Generated from ClinicalTrials.gov API | July 2026
+*Data sourced from ClinicalTrials.gov API v2, queried July 2026*
 
-## Aggregate Statistics
+## Overview
 
-| Metric | Value |
-|---|---|
-| Total Prosthetic-Related Studies | 563 |
-| Active/Recruiting Trials | 138 |
-| Completed Trials | 242 |
-| Unknown Status | 114 |
-| Terminated/Withdrawn | 34 |
+| Metric | Count |
+|--------|-------|
+| Total prosthetic studies | 644 |
+| Prosthetic limb studies | 184 |
+| Prosthetic limb (recruiting + completed) | 98 |
+| Prosthetic limb clinical (observational + device) | 136 |
 
-## Status Distribution
+## Status Distribution (prosthetic limb, n=184)
 
-| Status | Count | Percentage |
-|--------|-------|------------|
-| COMPLETED | 242 | 43.0% |
-| UNKNOWN | 114 | 20.3% |
-| RECRUITING | 93 | 16.5% |
-| ACTIVE_NOT_RECRUITING | 34 | 6.0% |
-| NOT_YET_RECRUITING | 33 | 5.9% |
-| TERMINATED | 24 | 4.3% |
-| ENROLLING_BY_INVITATION | 11 | 1.9% |
-| WITHDRAWN | 10 | 1.8% |
-| SUSPENDED | 2 | 0.4% |
+| Status | Count | % |
+|--------|-------|---|
+| COMPLETED | 96 | 52.2% |
+| RECRUITING | 33 | 18.0% |
+| UNKNOWN | 25 | 13.6% |
+| ACTIVE_NOT_RECRUITING | 13 | 7.1% |
+| NOT_YET_RECRUITING | 12 | 6.5% |
+| TERMINATED | 4 | 2.2% |
+| ENROLLING_BY_INVITATION | 1 | 0.5% |
 
-## Phase Distribution
+## Phase Distribution (prosthetic, n=644)
 
-| Phase | Count | Percentage |
-|-------|-------|------------|
-| N/A (Observational/Device) | 305 | 54.2% |
-| Unknown | 167 | 29.7% |
-| Phase 4 | 24 | 4.3% |
-| Phase 2 | 36 | 6.4% |
-| Phase 3 | 29 | 5.2% |
-| Phase 1 | 12 | 2.1% |
-| Early Phase 1 | 3 | 0.5% |
+| Phase | Count | % |
+|-------|-------|---|
+| N/A (Observational/Device) | 305 | 47.4% |
+| Unknown | 167 | 26.0% |
+| Phase 3 | 30 | 4.7% |
+| Phase 4 | 24 | 3.7% |
+| Phase 2 | 39 | 6.1% |
+| Phase 1 | 15 | 2.3% |
+| Early Phase 1 | 4 | 0.6% |
 
-## Sponsor Type Distribution
+## Phase Distribution — Prosthetic Limb Clinical (n=136)
 
-| Sponsor | Count | Percentage |
-|---------|-------|------------|
-| Academic/Other | 493 | 76.5% |
+| Phase | Count | % |
+|-------|-------|---|
+| N/A (Observational/Device) | 97 | 71.3% |
+| Unknown | 31 | 22.8% |
+| Phase 2 | 3 | 2.2% |
+| Phase 1 | 2 | 1.5% |
+| Others | 1 each | 0.7% |
+
+## Sponsor Type (n=644)
+
+| Sponsor | Count | % |
+|---------|-------|---|
+| Academic / Other | 493 | 76.5% |
 | Industry | 108 | 16.8% |
-| Federal + Other Gov | 37 | 5.8% |
-| Network + NIH | 6 | 0.9% |
+| Federal Gov | 23 | 3.6% |
+| Other Gov | 14 | 2.2% |
+| Network | 5 | 0.8% |
+| NIH | 1 | 0.2% |
 
-## Key Insight
-- **Only 138 trials have any active patient engagement** (recruiting, active-not-recruiting, or enrolling-by-invitation).
-- **Phase 3 trials are critically scarce** (n=29) — the evidence gap for prosthetic device efficacy remains wide.
-- **Over half (54.2%) are observational/device registries**, not interventional trials.
-- **Industry-sponsored trials are only 16.8%**, suggesting limited commercial innovation pipeline.
-- **20.3% have UNKNOWN status** — a data quality concern for open-access uses.
+## Country Distribution — Prosthetic Limb (Recruiting + Completed, n=98)
 
-## Recent Notable Trials (Selected)
+| Country | Count | % |
+|---------|-------|---|
+| United States | 85 | 86.7% |
+| France | 37 | 37.8% |
+| Canada | 8 | 8.2% |
+| Spain | 7 | 7.1% |
+| United Kingdom | 6 | 6.1% |
 
-| NCT ID | Title | Status | Condition |
-|--------|-------|--------|-----------|
-| NCT05990062 | Improving Prosthetic Arms for Amputee: A Better Fit and More Functionality | RECRUITING | Amputation, Surgical |
-| NCT05287646 | Quantifying Bone and Skin Movement in Transtibial Amputation Using Dynamic Stereo X-Ray | RECRUITING | Amputation, Lower Limb |
-| NCT04934839 | Instrumental Analysis of Walking With Osseointegrated Prostheses | RECRUITING | Lower Extremity Amputation |
-| NCT03409133 | Feasibility of Neural Feedback for Lower Limb Amputees | RECRUITING | Amputation |
-| NCT07214493 | Prosthetic Foot With Adjustable Heel Height | RECRUITING | Lower Limb Amputation |
-| NCT06883942 | Pilot Study on Tripping Devices for Lower Limbs | COMPLETED | Lower Limb Amputation |
-| NCT04043234 | RESCU System for Robust Upper Limb Prosthesis Control | COMPLETED | Amputation, Upper Limb |
-| NCT03733054 | Understanding Prosthetic Needs in Women Veterans With Amputation | COMPLETED | Amputation |
-| NCT04904003 | Prosthetic Use, Mobility and Daily Functioning (ProMob) | COMPLETED | Lower Leg Amputations |
-| NCT04135222 | Evaluation of Periodontal Phenotype Using CBCT and CAD | COMPLETED | Prosthetic-related |
+## Notable Observations
 
-*This data was queried from ClinicalTrials.gov API v2 in July 2026.*
+- **52.2% of prosthetic limb studies are completed** — limited active evidence base
+- **Only 18% are actively recruiting** — pipeline is thin
+- **Phase 3 trials are extremely rare** (30 out of 644 = 4.7%) — the evidence gap is severe
+- **76.5% academic-sponsored** — commercial industry engagement is low
+- **US dominates** but only 86.7% of recruiting/completed studies are domestic

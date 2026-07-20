@@ -1,0 +1,4 @@
+region,rep_latitude,rep_longitude,cpo_within_30km,nearest_major_city,drive_distance_mi,drive_time_hrs,nearest_hospital_mi,medicaid_expanded,healthcare_score
+Rural West Virginia,38.48,-80.84,0,Charleston WV,78,1.5,78,No,N/A
+Eastern Kentucky,37.48,-82.52,0,Lexington KY,130,2.7,130,No,N/A
+Mississippi Delta,33.41,-91.06,0,Memphis TN,150,2.0,150,No,N/A
