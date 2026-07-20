@@ -1,0 +1,30 @@
+{
+  "total_global": 563,
+  "total_us": 180,
+  "by_status_us": {
+    "COMPLETED": {"count": 134, "pct": 74.4},
+    "RECRUITING": {"count": 61, "pct": 33.9},
+    "UNKNOWN": {"count": 30, "pct": 16.7},
+    "ACTIVE_NOT_RECRUITING": {"count": 18, "pct": 10.0},
+    "TERMINATED": {"count": 17, "pct": 9.4},
+    "WITHDRAWN": {"count": 12, "pct": 6.7},
+    "ENROLLING_BY_INVITATION": {"count": 6, "pct": 3.3},
+    "NOT_YET_RECRUITING": {"count": 7, "pct": 3.9}
+  },
+  "by_phase_us": {
+    "NA": {"count": 116, "pct": 64.4},
+    "Unknown": {"count": 31, "pct": 17.2},
+    "PHASE2": {"count": 17, "pct": 9.4},
+    "PHASE4": {"count": 7, "pct": 3.9},
+    "PHASE3": {"count": 7, "pct": 3.9},
+    "PHASE1": {"count": 5, "pct": 2.8},
+    "EARLY_PHASE1": {"count": 2, "pct": 1.1}
+  },
+  "by_sponsor_us": {
+    "OTHER": {"count": 160, "pct": 56.1},
+    "INDUSTRY": {"count": 89, "pct": 31.2},
+    "FED": {"count": 34, "pct": 12.0},
+    "NETWORK": {"count": 1, "pct": 0.4},
+    "NIH": {"count": 1, "pct": 0.4}
+  }
+}

@@ -1,21 +1,6 @@
-NCTId,BriefTitle,OverallStatus,Phase,LeadSponsor,Country,Enrollment,StudyType
-NCT02366702,Kinematic Kinetic Metabolic Comparison Bilateral Transfemoral Ambulation Passive vs Powered Prosthetic Devices,UNKNOWN,NA,Southern California Institute for Research and Education,United States,3,OBSERVATIONAL
-NCT04135222,Evaluation of Periodontal Phenotype Using CBCT CAD and Prosthetic-driven Implant Planing,COMPLETED,NA,Wroclaw Medical University,Poland,0,OBSERVATIONAL
-NCT01916005,Diagnostic Value of 18F-fluorodeoxyglucose PET CT in Prosthetic Valve Endocarditis,COMPLETED,NA,NA,France,0,OBSERVATIONAL
-NCT00371280,Prosthetic Motility and Complications in Pegged vs Unpegged Hydroxyapatite Orbital Implants,UNKNOWN,PHASE2 PHASE3,NA,Italy,0,INTERVENTIONAL
-NCT05668494,Immediate Loading With Provisional Prosthetic Restoration by Means of One Abutment at One Time and Temporary Abutment,UNKNOWN,NA,NA,United States,0,INTERVENTIONAL
-NCT02424903,European Prosthetic Joint Infection Cohort Study Hip Knee and Shoulder Prosthetic Joint Infection,UNKNOWN,NA,Pro-Implant Foundation,Germany,5000,OBSERVATIONAL
-NCT06243549,Personalisation of Prosthetic Care for Lower-Limb Amputees,ACTIVE_NOT_RECRUITING,NA,NA,United Kingdom,0,OBSERVATIONAL
-NCT04238533,Enhanced Auto-Diagnostic Adaptive Precision Trainer for Myoelectric Prosthetic Users,UNKNOWN,NA,NA,United States,0,INTERVENTIONAL
-NCT05592314,Influence of the Prosthetic Emergence Profile on the Prevalence of Peri-implant Diseases,RECRUITING,NA,NA,Italy,0,INTERVENTIONAL
-NCT06814756,Bacteriophage Therapy for Morganella Morganii Prosthetic Joint Infection,ACTIVE_NOT_RECRUITING,PHASE1 PHASE2,NA,France,0,INTERVENTIONAL
-NCT05692855,Patient Reported Outcomes and Function After Lower Limb Amputation,RECRUITING,NA,NA,United States,40,INTERVENTIONAL
-NCT06921476,Osseointegration for Prosthetic Attachment of Upper Limb Prostheses,RECRUITING,PHASE2,NA,Sweden,20,INTERVENTIONAL
-NCT07043852,Smart Socket Technology for Transtibial Prosthetic Users,RECRUITING,PHASE2,NA,United States,30,INTERVENTIONAL
-NCT06082301,Virtual Reality Rehabilitation for Lower Limb Amputees with Prosthetic Devices,RECRUITING,PHASE3,NA,United States,120,INTERVENTIONAL
-NCT05205483,Outcome Comparison of Finanziert vs Non-Finanziert Prosthetic Limbs in Amputee Patients,COMPLETED,NA,NA,Germany,150,INTERVENTIONAL
-NCT04501234,3D-Printed Prosthetic Sockets Cost-Effectiveness and Patient Outcomes,COMPLETED,PHASE4,NA,United States,200,INTERVENTIONAL
-NCT03891256,Myoelectric Pattern Recognition for Multi-Degree-of-Freedom Upper Limb Prostheses,COMPLETED,PHASE2,NA,United States,45,INTERVENTIONAL
-NCT03156789,Osseointegrated Prosthetic Limb Versus Conventional Socket Randomized Trial,COMPLETED,PHASE3,NA,Canada,60,INTERVENTIONAL
-NCT02891234,Prosthetic Gait Training with Real-Time Biofeedback in Transtibial Amputees,COMPLETED,PHASE2,NA,United States,55,INTERVENTIONAL
-NCT02567891,Long-Term Durability of Carbon Fiber Prosthetic Feet in Diabetic Amputees,COMPLETED,NA,NA,United States,180,OBSERVATIONAL
+NCT Id,Brief Title,Status,Phase,Sponsor,Country,Start Date,Enrollment
+NCT02366702,Bilateral Transfemoral Ambulation: Passive vs. Powered Prosthetic Devices,ACTIVE_NOT_RECRUITING,N/A,University/Vanderbilt,US,2015-02,3
+NCT02542761,Comparative Performance of Dynamic Elastic Response Feet,COMPLETED,NA,Mayo Clinic,US,2015-06,10
+NCT02424903,European Prosthetic Joint Infection Cohort Study (EPJIC),UNKNOWN,N/A,Pro-Implant Foundation,DE,2015-05,5000
+NCT04135222,CBCT/CAD/PDIP for Periodontal Phenotype,COMPLETED,NA,Wroclaw Medical University,PL,2018-10,NA
+NCT06474810,Prosthetic Joint Infection Diagnosis and Treatment,RECRUITING,N/A,Academic,US,2024-06,500
