@@ -8,82 +8,61 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 - **Database:** ClinicalTrials.gov (NIH/NLM) — API v2
 - **Query:** `condition: "prosthetic"` (broad search capturing amputation, prosthetic joint, and limb prosthesis studies)
 - **Total Studies:** 644
+- **Subset — Prosthetic + Care Terms:** 155 studies (detailed trend analysis in `findings_2026_update.md`)
 - **Subset — U.S. Location:** 202 studies (with U.S. facility)
-- **Subset — France:** 317 studies (largest non-U.S. contributor)
 
-### Status Distribution (All 644 Studies)
+### Status Distribution (155 Prosthetic Care Studies)
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 271 | 42.1% |
-| UNKNOWN | 134 | 20.8% |
-| RECRUITING | 112 | 17.4% |
-| ACTIVE_NOT_RECRUITING | 38 | 5.9% |
-| NOT_YET_RECRUITING | 38 | 5.9% |
-| TERMINATED | 24 | 3.7% |
-| ENROLLING_BY_INVITATION | 12 | 1.9% |
-| WITHDRAWN | 10 | 1.6% |
-| SUSPENDED | 4 | 0.6% |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.2% |
+| RECRUITING | 32 | 20.6% |
+| COMPLETED | 53 | 34.2% |
+| UNKNOWN | 25 | 16.1% |
+| NOT_YET_RECRUITING | 15 | 9.7% |
+| ACTIVE_NOT_RECRUITING | 17 | 11.0% |
+| TERMINATED | 4 | 2.6% |
+| WITHDRAWN | 3 | 1.9% |
+| ENROLLING_BY_INVITATION | 2 | 1.3% |
+| SUSPENDED | 3 | 1.9% |
+| TEMPORARILY_NOT_AVAILABLE | 1 | 0.6% |
 
-**Key Insight:** 112 trials actively recruiting (17.4%) + 38 active-not-recruiting + 12 enrolling-by-invitation = 162 trials with some active engagement. Only 271 completed (42.1%). Over 1 in 5 (20.8%) have UNKNOWN status — a data quality concern.
+**Key Insight:** 47 trials with future patient engagement (32 recruiting + 15 not-yet). 53 completed studies may contain actionable results. The 16.1% UNKNOWN rate is a transparency concern.
 
-### Phase Distribution (All 644 Studies)
+### Phase Distribution (155 Prosthetic Care Studies)
 | Phase | Count | % |
 |-------|-------|---|
-| N/A (Observational/Device) | 338 | 52.5% |
-| Unknown | 202 | 31.4% |
-| Phase 2 | 39 | 6.1% |
-| Phase 3 | 30 | 4.7% |
-| Phase 1 | 15 | 2.3% |
-| Phase 4 | 29 | 4.5% |
-| Early Phase 1 | 4 | 0.6% |
+| N/A (Observational/Device) | 80 | 51.6% |
+| Unknown | 52 | 33.5% |
+| Phase 2 | 11 | 7.1% |
+| Phase 4 | 8 | 5.2% |
+| Phase 3 | 4 | 2.6% |
+| Phase 1 | 2 | 1.3% |
 
-**Key Insight:** Only 88 interventional Phase 1–4 trials. Phase 3 trials (n=30) are critically scarce — the evidence gap for prosthetic device efficacy remains wide. Over half (52.5%) are observational/device registries.
+**Critical Gap:** Only 4 Phase 3 pivotal trials among 155 studies — the evidence gap for prosthetic device efficacy remains wide.
 
-### U.S.-Based Trial Breakdown (202 Studies with U.S. Locations)
-| Metric | Value |
-|--------|-------|
-| Total U.S. trials | 202 |
-| Phase 3 | 7 (3.5%) |
-| Phase 2 | 19 (9.4%) |
-| Phase 1 | 7 (3.5%) |
-| Phase 4 | 11 (5.4%) |
-| Active/Recruiting | 112 (55.4%) |
-| Interventional | 44 (21.8%) |
-| Observational | 158 (78.2%) |
-
-**Key Insight:** 7 Phase 3 trials across 202 U.S. studies — the evidence pipeline is extremely thin.
-
-### Sponsor Type
+### Sponsor Type (155 Prosthetic Care Studies)
 | Sponsor | Count | % |
 |---------|-------|---|
-| Academic/Other | 493 | 76.5% |
-| Industry | 108 | 16.8% |
-| Federal | 23 | 3.6% |
-| Other Gov | 14 | 2.2% |
-| Network | 5 | 0.8% |
-| NIH | 1 | 0.2% |
-
-### U.S. Sponsor Breakdown (202 U.S. Location Studies)
-| Sponsor Type | Count | % |
-|-------------|-------|---|
-| Academic/Other | 120 | 59.4% |
-| Industry | 55 | 27.2% |
-| Federal | 23 | 11.4% |
-| Network | 3 | 1.5% |
-| NIH | 1 | 0.5% |
+| Academic/Other | 109 | 70.3% |
+| Industry | 30 | 19.4% |
+| Federal | 11 | 7.1% |
+| Other Gov | 4 | 2.6% |
+| Network | 1 | 0.6% |
 
 ### Geographic Distribution (Top 10 Countries)
-1. United States: 680 locations
-2. France: 317
-3. Germany: 76
-4. Italy: 71
-5. Denmark: 78
-6. Canada: 41
-7. United Kingdom: 44
-8. Spain: 38
-9. Netherlands: 41
-10. Egypt: 38
+1. United States: 336 locations
+2. United Kingdom: 25
+3. France: 17
+4. Germany: 20
+5. Spain: 17
+6. Netherlands: 20
+7. Australia: 35
+8. Sweden: 8
+9. Switzerland: 8
+10. Canada: 13
+
+**Key Insight:** Zero trial sites exist in West Virginia, Eastern Kentucky, or the Mississippi Delta — the regions with the highest amputation rates and worst access.
+
+---
 
 ## Access Gap Analysis
 
@@ -91,9 +70,9 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 
 | Region | Center | Coordinates | CPO in 50km | Nearest CPO | Travel | Medicaid | Neighborhood Score |
 |--------|--------|-------------|-------------|-------------|--------|----------|-------------------|
-| **Rural West Virginia** | Beckley, WV | 37.778, -81.188 | **0** | Charleston (~190 mi) | 3+ hrs | Not expanded | 7.1 |
-| **Eastern Kentucky** | Pikeville, KY | 37.479, -82.519 | **0** | Lexington (~130 mi) | 3+ hrs | Not expanded | 4.4 |
-| **Mississippi Delta** | Greenville, MS | 33.411, -91.064 | **0** | Memphis (~200 mi) | 4+ hrs | Not expanded | 4.1 |
+| **Rural West Virginia** | Marlinton, WV | 38.223, -80.095 | **0** | Charleston (~190 mi) | 3+ hrs | Not expanded | 7.1 |
+| **Eastern Kentucky** | Pikeville, KY | 37.479, -82.519 | **0** | Lexington (~130 mi) | 3+ hrs | Not expanded | 7.4 |
+| **Mississippi Delta** | Greenville, MS | 33.411, -91.064 | **0** | Memphis (~200 mi) | 4+ hrs | Not expanded | 5.0 |
 | **MS Delta Heartland** | Clarksdale, MS | 34.201, -90.570 | **0** | Memphis (~200 mi) | 4+ hrs | Not expanded | **1.5** |
 
 ### Key Findings
@@ -105,31 +84,11 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 - **Clarksdale, MS (Delta heartland) scores 1.5/10** — zero healthcare, zero groceries, zero restaurants within 20 km
 - **Rural WV has highest disability rate in the U.S. (~19.4%) yet lowest prosthetic access**
 
-### Detailed Neighborhood Scores (20 km radius)
-
-#### Rural West Virginia (Beckley)
-- **Overall:** 7.1/10 | Healthcare: 9.5 (pharmacies/clinics only, NO prosthetists)
-- Groceries: 9.9, Restaurants: 9.9, Education: 9.9, Parks: 9.0, Shopping: 9.3
-- **Services: 0/10** — no social services, vocational rehab, or disability services
-
-#### Eastern Kentucky (Pikeville)
-- **Overall:** 4.4/10 | Healthcare: 9.8 (6 facilities, all general — zero prosthetics)
-- Education: 10.0 (University of Pikeville), Groceries: 6.1
-- **Restaurants: 0/10, Public Transport: 0/10, Services: 0/10**
-
-#### Mississippi Delta (Greenville)
-- **Overall:** 4.1/10 | **Healthcare: 0/10** — zero clinics, hospitals, or pharmacies within 20km
-- Restaurants: 9.9, Education: 9.8, Parks: 9.5
-- **Groceries: 6.3, Public Transport: 0/10**
-
-#### Clarksdale, MS (Delta Heartland)
-- **Overall: 1.5/10** — one of the most underserved communities in the U.S.
-- **Healthcare: 0/10, Groceries: 0/10, Restaurants: 0/10**
-- **Shopping: 0/10, Services: 0/10, Entertainment: 0/10**
+---
 
 ## Methodology
 - **Clinical Trial Data:** ClinicalTrials.gov API v2 (queried July 2026)
-- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools (20–50 km radius)
+- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools (50 km radius)
 - **Provider Search:** POI search using health/amenity/office categories + keyword searches for prosthetist/orthotist/CPO
 - **Neighborhood Scoring:** OSM neighborhood analysis tool (walkability, amenities, services)
 - **Gap Analysis:** Cross-referencing CPO provider locations with population centers in high-need regions
