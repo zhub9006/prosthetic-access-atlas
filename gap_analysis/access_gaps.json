@@ -1,0 +1,56 @@
+{
+  "analysis_date": "2026-07-20",
+  "regions": [
+    {
+      "name": "Rural West Virginia (Beckley)",
+      "coordinates": {"lat": 37.7781702, "lon": -81.1881557},
+      "neighborhood_score": 6.1,
+      "walkability": 0,
+      "healthcare_30km": 7,
+      "cpo_30km": 0,
+      "cpo_nearest": "Charleston, WV",
+      "cpo_distance_miles": 190,
+      "drive_time_nearest": "3+ hours",
+      "medicaid_expansion": false,
+      "public_transport": false,
+      "key_barriers": ["WV did not expand Medicaid", "No public transit", "3+ hour drive to nearest CPO", "Mountainous terrain", "Coal economy decline"],
+      "healthcare_facilities": ["Primary Care Plus (emergency + clinic)", "CVS Pharmacy", "Multiple local pharmacies", "1 medical center"]
+    },
+    {
+      "name": "Eastern Kentucky (Pikeville)",
+      "coordinates": {"lat": 37.4792672, "lon": -82.5187629},
+      "neighborhood_score": 5.6,
+      "walkability": 6,
+      "healthcare_30km": 11,
+      "cpo_30km": 0,
+      "cpo_nearest": "Lexington, KY",
+      "cpo_distance_miles": 130,
+      "drive_time_nearest": "3+ hours",
+      "medicaid_expansion": "limited",
+      "public_transport": false,
+      "key_barriers": ["Appalachian isolation", "Coal economy decline", "KY limited Medicaid", "No public transit", "Infrastructure sparse"],
+      "healthcare_facilities": ["PMC Medical Diagnostics", "MCHC Elkhorn City", "5 doctors", "6 pharmacies", "2 dentists"]
+    },
+    {
+      "name": "Mississippi Delta (Clarksdale/Greenville)",
+      "coordinates": {"lat": 33.4111051, "lon": -91.0635857},
+      "neighborhood_score": 4.1,
+      "walkability": 2,
+      "healthcare_30km": 0,
+      "cpo_30km": 0,
+      "cpo_nearest": "Memphis, TN",
+      "cpo_distance_miles": 200,
+      "drive_time_nearest": "4+ hours",
+      "medicaid_expansion": false,
+      "public_transport": false,
+      "key_barriers": ["MS did not expand Medicaid", "No public transit", "4+ hour drive to nearest CPO", "Highest amputation rate in US", "Grocery store desert", "Zero healthcare in OSM 30km radius"],
+      "healthcare_facilities": ["1 hospital campus (broader search)", "18+ pharmacies (broader search)", "Multiple clinics (broader search)"]
+    }
+  ],
+  "overall_assessment": {
+    "zero_CPO_providers": 3,
+    "avg_distance_to_CPO": "130-200+ miles",
+    "zero_trials_in_underserved": true,
+    "highest_need_lowest_access": "Mississippi Delta"
+  }
+}

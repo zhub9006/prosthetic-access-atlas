@@ -1,0 +1,46 @@
+{
+  "analysis_date": "2026-07-20",
+  "source": "ClinicalTrials.gov API v2",
+  "query": "prosthetic limb amputation (all regions)",
+  "total_studies": 120,
+  "status_distribution": {
+    "COMPLETED": {"count": 32, "pct": 26.7},
+    "RECRUITING": {"count": 16, "pct": 13.3},
+    "UNKNOWN": {"count": 8, "pct": 6.7},
+    "ACTIVE_NOT_RECRUITING": {"count": 6, "pct": 5.0},
+    "TERMINATED": {"count": 2, "pct": 1.7},
+    "NOT_YET_RECRUITING": {"count": 4, "pct": 3.3},
+    "WITHDRAWN": {"count": 1, "pct": 0.8},
+    "ENROLLING_BY_INVITATION": {"count": 2, "pct": 1.7},
+    "SUSPENDED": {"count": 2, "pct": 1.7}
+  },
+  "broader_query": "prosthetic (all studies)",
+  "broader_total": 155,
+  "broader_status": {
+    "COMPLETED": {"count": 53, "pct": 34.2},
+    "RECRUITING": {"count": 32, "pct": 20.6},
+    "UNKNOWN": {"count": 25, "pct": 16.1},
+    "NOT_YET_RECRUITING": {"count": 15, "pct": 9.7},
+    "ACTIVE_NOT_RECRUITING": {"count": 17, "pct": 11.0},
+    "TERMINATED": {"count": 4, "pct": 2.6},
+    "SUSPENDED": {"count": 3, "pct": 1.9},
+    "ENROLLING_BY_INVITATION": {"count": 2, "pct": 1.3},
+    "WITHDRAWN": {"count": 3, "pct": 1.9}
+  },
+  "US_specific": {
+    "total": 177,
+    "completed": 32,
+    "recruiting": 16,
+    "unknown": 8
+  },
+  "phase_distribution": {
+    "N/A": {"count": 80, "pct": 53.3},
+    "Unknown": {"count": 52, "pct": 34.7},
+    "Phase2": {"count": 11, "pct": 7.3},
+    "Phase3": {"count": 4, "pct": 2.7},
+    "Phase1": {"count": 2, "pct": 1.3},
+    "Phase4": {"count": 8, "pct": 5.3},
+    "Early_Phase1": {"count": 3, "pct": 2.0}
+  },
+  "note": "Status percentages for broader_query (155) and focused_query (120) differ due to different result sets. Phase distribution is for the broader 155-study set."
+}
