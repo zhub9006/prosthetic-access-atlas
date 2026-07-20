@@ -1,0 +1,64 @@
+# Prosthetic Access Atlas — Data Files
+
+## Clinical Trial Trends (July 2026)
+
+### Status Counts
+- RECRUITING: 112
+- COMPLETED: 271
+- UNKNOWN: 134
+- WITHDRAWN: 10
+- NOT_YET_RECRUITING: 38
+- ENROLLING_BY_INVITATION: 12
+- ACTIVE_NOT_RECRUITING: 38
+- TERMINATED: 24
+- SUSPENDED: 4
+- TEMPORARILY_NOT_AVAILABLE: 1
+- Total: 644
+
+### Phase Counts
+- PHASE3: 30
+- NA: 338
+- PHASE4: 29
+- Unknown: 202
+- EARLY_PHASE1: 4
+- PHASE1: 15
+- PHASE2: 39
+- Total: 644
+
+### Country Counts (Top 10)
+- United States: 680
+- France: 317
+- Canada: 41
+- Germany: 76
+- Italy: 71
+- Denmark: 78
+- UK: 44
+- Egypt: 38
+- Spain: 38
+- Australia: 35
+
+### Sponsor Type Counts
+- OTHER (Academic): 493
+- INDUSTRY: 108
+- FED: 23
+- OTHER_GOV: 14
+- NETWORK: 5
+- NIH: 1
+- Total: 644
+
+## Access Gap Data
+
+### Region - Center Coordinates
+- Rural West Virginia: 38.35, -81.63
+- Eastern Kentucky: 37.48, -82.52
+- Mississippi Delta: 33.41, -91.06
+
+### Provider Counts (within 30km)
+- WV (Charleston): Pharmacies=15+, Clinics=5+, Doctors=1+, Dentists=3+, CPO=0
+- KY (Pikeville): Pharmacies=7, Clinics=7, Doctors=5, Dentists=2, CPO=0
+- MS Delta (Greenville): Pharmacies=4+, Clinics=1-2, Doctors=1-2, Dentists=2, CPO=0
+
+### Nearest CPO
+- WV (rural): Charleston (~190 mi, 3+ hrs)
+- KY (Pikeville): Lexington (~130 mi, 3+ hrs)
+- MS Delta: Memphis (~200 mi, 4+ hrs)
