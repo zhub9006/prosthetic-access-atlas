@@ -1,1 +1,51 @@
-{"analysisType": "countByStatus", "totalStudies": 155, "results": {"COMPLETED": 53, "RECRUITING": 33, "UNKNOWN": 25, "NOT_YET_RECRUITING": 15, "ACTIVE_NOT_RECRUITING": 16, "TERMINATED": 4, "SUSPENDED": 3, "WITHDRAWN": 3, "ENROLLING_BY_INVITATION": 2, "TEMPORARILY_NOT_AVAILABLE": 1}, "insights": ["34% of trials have completed - significant evidence base but limited ongoing recruitment", "21% are actively recruiting - good number of new studies in progress", "16% have unknown status - a major data quality concern for gap analysis", "10% not yet recruiting - pipeline studies that may address future needs", "13% terminated/suspended/withdrawn - concerning attrition rate suggesting barriers"]}
+{
+  "totalGlobal": 563,
+  "totalUS": 180,
+  "byStatusGlobal": {
+    "UNKNOWN": {"count": 114, "pct": 20.3},
+    "COMPLETED": {"count": 242, "pct": 43.0},
+    "RECRUITING": {"count": 93, "pct": 16.5},
+    "ACTIVE_NOT_RECRUITING": {"count": 34, "pct": 6.0},
+    "NOT_YET_RECRUITING": {"count": 33, "pct": 5.9},
+    "TERMINATED": {"count": 24, "pct": 4.3},
+    "WITHDRAWN": {"count": 10, "pct": 1.8},
+    "ENROLLING_BY_INVITATION": {"count": 11, "pct": 1.9},
+    "SUSPENDED": {"count": 2, "pct": 0.4}
+  },
+  "byStatusUS": {
+    "UNKNOWN": {"count": 23, "pct": 12.8},
+    "COMPLETED": {"count": 84, "pct": 46.7},
+    "RECRUITING": {"count": 33, "pct": 18.3},
+    "TERMINATED": {"count": 14, "pct": 7.8},
+    "ACTIVE_NOT_RECRUITING": {"count": 12, "pct": 6.7},
+    "ENROLLING_BY_INVITATION": {"count": 3, "pct": 1.7},
+    "WITHDRAWN": {"count": 6, "pct": 3.3},
+    "NOT_YET_RECRUITING": {"count": 5, "pct": 2.8}
+  },
+  "byPhaseGlobal": {
+    "NA": {"count": 305, "pct": 54.2},
+    "Unknown": {"count": 167, "pct": 29.7},
+    "PHASE2": {"count": 36, "pct": 6.4},
+    "PHASE3": {"count": 29, "pct": 5.2},
+    "PHASE4": {"count": 24, "pct": 4.3},
+    "PHASE1": {"count": 12, "pct": 2.1},
+    "EARLY_PHASE1": {"count": 3, "pct": 0.5}
+  },
+  "byPhaseUS": {
+    "NA": {"count": 116, "pct": 64.4},
+    "Unknown": {"count": 31, "pct": 17.2},
+    "PHASE3": {"count": 7, "pct": 3.9},
+    "PHASE2": {"count": 17, "pct": 9.4},
+    "PHASE4": {"count": 7, "pct": 3.9},
+    "PHASE1": {"count": 5, "pct": 2.8},
+    "EARLY_PHASE1": {"count": 2, "pct": 1.1}
+  },
+  "bySponsor": {
+    "OTHER": {"count": 434, "pct": 76.5},
+    "INDUSTRY": {"count": 92, "pct": 16.3},
+    "FED": {"count": 23, "pct": 4.1},
+    "OTHER_GOV": {"count": 11, "pct": 2.0},
+    "NETWORK": {"count": 2, "pct": 0.4},
+    "NIH": {"count": 1, "pct": 0.2}
+  }
+}

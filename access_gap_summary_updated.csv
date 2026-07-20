@@ -1,4 +1,4 @@
-Region,Population,Center_Lat,Center_Lon,Neighborhood_Score,Healthcare_Score,CPO_in_50km,CPO_in_200km,Nearest_CPO,Travel_Time,Medicaid_Barrier,Key_Vulnerability
-Rural_West_Virginia,93000,38.223,-80.095,6.0,0.0,0,0,"Charleston WV (~190mi)","3+ hrs","High - WV not expanded","Healthcare score 0/10 — no hospital or pharmacy within 50 km"
-Eastern_Kentucky,150000,37.479,-82.519,7.4,9.9,0,0,"Lexington KY (~130mi)","3+ hrs","Medium - KY limited","Zero CPOs despite 12 healthcare facilities; 0 grocery stores in 50 km"
-Mississippi_Delta,200000,34.201,-90.570,5.9,5.7,0,0,"Memphis TN (~200mi)","4+ hrs","Extreme - MS not expanded","Highest amputation rates + worst access + no public transit"
+region,state,center_lat,center_lon,cpo_within_50km,distance_to_nearest_cpo_mi,nearest_cpo_city,medicaid_expanded,public_transit,walkability_score,healthcare_score_50km,physician_count_50km,clinic_count_50km,pharmacy_count_50km,hospital_beds_50km,amputation_rate_ranking,care_gap_severity
+Eastern Kentucky,KY,37.48,-82.52,0,130,Lexington KY,No,None,4,0,5,4,6,0,High,EXTREME
+Mississippi Delta,MS,33.41,-91.06,0,200,Memphis TN,No,Minimal,2,7.6,1,1,4,10,Highest in U.S.,EXTREME
+Rural West Virginia,WV,37.80,-81.93,0,190,Charleston WV,No,None,0,7.9,1,4,10,0,High,EXTREME

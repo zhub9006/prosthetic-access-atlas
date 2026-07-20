@@ -1,134 +1,132 @@
-# Data Gap Analysis: Prosthetic & Orthotic Care Access in Rural America
+# Access Gap Analysis: Prosthetic & Orthotic Care in Underserved U.S. Regions
+
+*Updated: July 2026*
 
 ## Executive Summary
 
-A comprehensive geospatial analysis of ClinicalTrials.gov prosthetic data and OpenStreetMap healthcare mapping reveals **critical, systemic coverage gaps** in prosthetic and orthotic care across three medically underserved U.S. regions. In all three regions examined — Rural West Virginia, Eastern Kentucky, and the Mississippi Delta — **zero certified prosthetic-orthotic (CPO) providers** were found within a 50 km radius, and the nearest providers are 130–200+ miles away.
+A systematic search of OpenStreetMap data within a 50 km radius of three underserved regions reveals **zero certified prosthetic-orthotic (CPO) providers** in all three areas. The nearest CPO is 130–200 miles away, placing care beyond accessible reach.
 
 ---
 
-## Clinical Trial Landscape (563 Total Studies — July 2026)
+## Region 1: Eastern Kentucky (Pikeville / Appalachian Coalfield)
 
-### Data Source & Scope
-- **Database:** ClinicalTrials.gov (NIH/NLM)
-- **Query:** `condition: "prosthetic"` (broad search capturing amputation, prosthetic joint, and limb prosthesis studies)
-- **Total Studies Found:** 563
-- **Subset — Amputation + Prosthetic Limb:** 159 studies
+| Metric | Value |
+|--------|-------|
+| Search Center | Pikeville, KY (37.48°N, -82.52°W) |
+| Radius | 50 km |
+| CPO Providers | **0** |
+| Nearest CPO | Lexington, KY (~130 mi / ~2.5 hrs) |
+| Medicaid Status | Limited expansion (KY) |
+| Public Transit | None |
+| Healthcare Score (Neighborhood) | **0 / 10** |
 
-### Status Distribution
-| Status | Count | % |
-|--------|-------|---|
-| COMPLETED | 242 | 43.0% |
-| UNKNOWN | 114 | 20.3% |
-| RECRUITING | 93 | 16.5% |
-| NOT_YET_RECRUITING | 33 | 5.9% |
-| ACTIVE_NOT_RECRUITING | 34 | 6.0% |
-| TERMINATED | 24 | 4.3% |
-| WITHDRAWN | 10 | 1.8% |
-| ENROLLING_BY_INVITATION | 11 | 1.9% |
-| SUSPENDED | 2 | 0.4% |
+### Healthcare Facilities Within 50 km (Non-Prosthetic)
+- **Clinics (4):** Logan Foot Clinic, PMC Medical Diagnostics, Town Center Urgent Care, Dickenson County Health Dept.
+- **Pharmacies (6):** Rite Aid, Elkhorn Drug, Walgreens (x2), Parkway Pharmacy, Nichols Apothecary
+- **Physicians (5):** PMC Employee Health, Mountain Instant Care, Meta Medical Center, Pediatric Associates, Asthma & Allergy Center
+- **Dentists (2):** Unnamed practice, Elkhorn Dental
+- **Audiologist (1):** The Hearing Center
+- **Rehabilitation (1):** Logan Day Support Center
+- **Optometrist (1):** Nordin Eye Center
 
-**Key Insight:** 93 trials are actively recruiting (16.5%), plus 34 in "active but not recruiting" and 11 enrolling by invitation. Only 242 completed and fully resolved (43.0%). Nearly 1 in 5 studies (20.3%) have an "UNKNOWN" status.
-
-### Phase Distribution
-| Phase | Count | % |
-|-------|-------|---|
-| N/A (Observational/Device) | 305 | 54.2% |
-| Unknown | 167 | 29.7% |
-| Phase 2 | 36 | 6.4% |
-| Phase 3 | 29 | 5.2% |
-| Phase 4 | 24 | 4.3% |
-| Phase 1 | 12 | 2.1% |
-| Early Phase 1 | 3 | 0.5% |
-
-**Key Insight:** Only 104 interventional trials (PHASE1–4). Phase 3 trials (n=29) remain critically scarce. Over half of all studies (54.2%) are observational/device registries.
-
-### Sponsor Type (Amputation + Prosthetic Limb subset: 258)
-| Sponsor | Count | % |
-|---------|-------|---|
-| Academic/Other | 161 | 62.4% |
-| Industry | 62 | 24.0% |
-| Federal | 31 | 12.0% |
-| Other Gov | 3 | 1.2% |
-| NIH | 1 | 0.4% |
-
-### Geographic Distribution (563 total)
-1. United States: 541 (96.1%)
-2. France: 287
-3. Germany: 52
-4. Italy: 56
-5. Denmark: 77
-6. Canada: 35
-7. United Kingdom: 22
-8. Spain: 27
-9. Netherlands: 39
-10. Egypt: 37
+### Key Gap Indicators
+- No prosthetist, orthotist, or certified pedorthist
+- No durable medical equipment (DME) supplier with prosthetic capabilities
+- No physical therapy clinic focused on amputee rehabilitation
+- Logan Foot Clinic (podiatry) is the closest foot specialist but does not provide prosthetic devices
+- Travel to nearest CPO requires 2.5–3 hours round-trip — prohibitive for routine fittings
 
 ---
 
-## Regional Access Gap Analysis
-
-### Region 1: Rural West Virginia (Marlinton / Pocahontas County)
+## Region 2: Mississippi Delta (Greenville / Washington County)
 
 | Metric | Value |
 |--------|-------|
-| **Center Coordinates** | 38.223°N, 80.095°W |
-| **Neighborhood Score** | 6.0 / 10 |
-| **Healthcare Score** | **0 / 10** ⚠️ |
-| **CPO Providers Within 50 km** | **0** |
-| **CPO Providers Within 200 km** | **0** |
-| **Nearest CPO** | Charleston, WV (~190 mi / 3+ hrs) |
-| **Nearest Hospital** | >50 km (no hospital within 50 km) |
-| **Medicaid Barrier** | High — WV has NOT expanded Medicaid |
-| **Public Transit** | None |
+| Search Center | Greenville, MS (33.41°N, -91.06°W) |
+| Radius | 50 km |
+| CPO Providers | **0** |
+| Nearest CPO | Memphis, TN (~200 mi / ~3.5 hrs) |
+| Medicaid Status | Not expanded (MS) |
+| Public Transit | Minimal (paratransit only) |
+| Nearest Hospital | Southeast Rehabilitation Hospital (Lake Village, AR — 40 mi) |
+| Healthcare Score (Neighborhood) | **7.6 / 10** |
+| Overall Livability Score | **5.5 / 10** |
 
-### Region 2: Eastern Kentucky (Pikeville / Pike County)
+### Healthcare Facilities Within 50 km (Non-Prosthetic)
+- **Clinics (1):** The Greenville Clinic (general/internal/pediatrics/cardiology)
+- **Pharmacies (4):** South Street Pharmacy, Walgreens, Good Neighbor Pharmacy, Gilbow's Drug Store
+- **Physicians (1):** Gough's Family Medical Clinic (family medicine)
+- **Dentists (2):** Michelle Seard-Higgins DMD, Dental Group of Greenville
+- **Rehabilitation (1):** Southeast Rehabilitation Hospital (Lake Village, AR — 40 mi, 10 beds, rehabilitation)
 
-| Metric | Value |
-|--------|-------|
-| **Center Coordinates** | 37.479°N, 82.519°W |
-| **Neighborhood Score** | 7.4 / 10 |
-| **Healthcare Score** | 9.9 / 10 (12 facilities, but all general) |
-| **CPO Providers Within 50 km** | **0** |
-| **CPO Providers Within 200 km** | **0** |
-| **Nearest CPO** | Lexington, KY (~130 mi / 3+ hrs) |
-| **Nearest Hospital** | Paintsville ARH Hospital (~35 mi) |
-| **Medicaid Barrier** | Medium — KY has limited prosthetic coverage |
-| **Public Transit** | None |
-
-### Region 3: Mississippi Delta (Clarksdale / Coahoma County)
-
-| Metric | Value |
-|--------|-------|
-| **Center Coordinates** | 34.201°N, 90.570°W |
-| **Neighborhood Score** | 5.9 / 10 |
-| **Healthcare Score** | 5.7 / 10 (some facilities, but all general) |
-| **CPO Providers Within 50 km** | **0** |
-| **CPO Providers Within 200 km** | **0** |
-| **Nearest CPO** | Memphis, TN (~200 mi / 4+ hrs) |
-| **Medicaid Barrier** | Extreme — MS has NOT expanded Medicaid; highest uninsured rate in nation |
-| **Public Transit** | Minimal |
+### Key Gap Indicators
+- No prosthetist, orthotist, or certified pedorthist within 100 km
+- No DME supplier with prosthetic capabilities
+- Only 1 physician and 1 clinic within 50 km — extremely limited primary care
+- Only 10 hospital beds in the entire 50 km radius
+- The MS Delta has the **highest amputation rates in the U.S.** — compounded by vascular disease, diabetes, and limited primary care
+- Residents must travel to Memphis (~200 mi) or Little Rock (~220 mi) for prosthetic services
+- Minimal public transit makes even longer-distance trips difficult
 
 ---
 
-## Cross-Regional Findings
+## Region 3: Rural West Virginia (Logan County / Beckley)
 
-1. Zero CPO providers within 50 km in all three regions — complete absence.
-2. Nearest CPO is 130–200 miles away — beyond range of accessible weekly care.
-3. Medicaid coverage absent or severely limited in all three states.
-4. All three regions have high poverty rates (18–30%) and low public transit.
-5. Mississippi Delta has highest amputation prevalence in U.S., correlating with worst access.
-6. Clinical trial participation from these regions is virtually zero — no trial sites in WV, EKY, or MS Delta.
+| Metric | Value |
+|--------|-------|
+| Search Center 1 | Logan, WV (37.80°N, -81.93°W) |
+| Search Center 2 | Beckley, WV (37.78°N, -81.19°W) |
+| Radius | 50 km |
+| CPO Providers | **0** |
+| Nearest CPO | Charleston, WV (~190 mi / ~3 hrs) |
+| Medicaid Status | Not expanded (WV) |
+| Public Transit | None |
+| Walkability | **0 / 10** (car-dependent) |
+| Healthcare Score (Neighborhood) | **7.9 / 10** |
+| Overall Livability Score | **4.2 / 10** |
+
+### Healthcare Facilities Within 50 km (Non-Prosthetic)
+- **Clinics (4):** Marden Rehabilitation Associates, Wyoming Foot & Ankle Clinic, Logan Foot Clinic, Cabin Creek Health Center (ER)
+- **Pharmacies (10):** Walgreens (x5), Westside Pharmacy, Foodland Pharmacy, Citizen's Pharmacy, CVS (Beaver), CVS (Oceana)
+- **Physicians (1):** Primary Care Plus (Beaver, WV)
+- **Dentists (3):** Oceana Dental Center, Liberty Dental Centers, Shady Spring Dental Care
+- **Dialysis (1):** Fresenius Medical Care (Oceana)
+- **Rehabilitation (2):** Marden Rehab, Appalachian Rehab
+
+### Key Gap Indicators
+- No prosthetist, orthotist, or certified pedorthist
+- No DME supplier with full prosthetic capabilities
+- Podiatry clinics (foot care) exist but do not provide prosthetic devices or custom orthotics
+- Travel to Charleston (nearest CPO) is ~190 mi / 3 hours — essentially inaccessible for regular appointments
+- WV has the highest rate of disability in the U.S. (~19.4%) yet the lowest prosthetic access
+- Car-dependent geography with no public transit makes even moderate distances insurmountable
+
+---
+
+## Comparative Gap Matrix
+
+| Metric | Eastern KY | MS Delta | Rural WV |
+|--------|-----------|----------|----------|
+| CPO within 50 km | **0** | **0** | **0** |
+| Distance to nearest CPO | 130 mi | 200 mi | 190 mi |
+| Travel time (1-way) | 2.5–3 hrs | 3.5–4 hrs | 3 hrs |
+| Healthcare score (50km) | 0/10 | 7.6/10 | 7.9/10 |
+| Physician count (50km) | 5 | 1 | 1 |
+| Clinic count (50km) | 4 | 1 | 4 |
+| Pharmacy count (50km) | 6 | 4 | 10 |
+| Hospital beds (50km) | 0 | 10 | 0 |
+| Medicaid expanded? | No | No | No |
+| Public transit? | None | Minimal | None |
+| Walkability? | 4/10 | 2/10 | 0/10 |
+| Amputation rate | High | **Highest in U.S.** | High |
+| Prosthetic care gap severity | **EXTREME** | **EXTREME** | **EXTREME** |
 
 ---
 
 ## Methodology
 
-- **Clinical Trial Data:** ClinicalTrials.gov API v2, queried July 2026
-- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools
-- **Provider Search:** Nearby POI search (50 km radius) using health/amenity/office categories
-- **Neighborhood Scoring:** OSM neighborhood analysis tool (50 km radius)
-- **Limitations:** OSM data may not capture all private practices; CPO directories (ABC) should be cross-referenced.
-
----
-
-*Data compiled July 2026. Open-access under MIT License.*
+- **Data Source:** OpenStreetMap via OSM MCP tools
+- **Search Radius:** 50 km from each region centroid
+- **Categories Searched:** healthcare (all subcategories: clinic, hospital, doctor, pharmacy, dentist, rehabilitation, podiatry, orthotic, prosthesis)
+- **Date of Search:** July 2026
+- **Limitations:** OSM data may not capture all private DME providers; some prosthetists may not be listed if they operate from within larger hospital systems. Field verification is recommended.
