@@ -1,225 +1,156 @@
 # Prosthetic Access Atlas — Full Report
 
-> **Generated:** July 2026 | **Data Sources:** ClinicalTrials.gov API v2, OpenStreetMap
-> **License:** MIT (Open Access)
+*July 2026 | Open Access Resource*
 
 ---
 
-## 1. Executive Summary
+## Part 1: Clinical Trial Landscape (563 Global Studies)
 
-This report combines the latest prosthetic clinical trial landscape from ClinicalTrials.gov with geospatial gap analysis of certified prosthetic-orthotic (CPO) care providers in three of America's most underserved regions: **Rural West Virginia**, **Eastern Kentucky**, and the **Mississippi Delta**. The overarching finding is stark: **all three regions suffer from complete prosthetic care deserts** — zero CPO providers within 100 km, and the nearest providers are 130–200+ miles away.
+### 1.1 Status Distribution
 
----
+| Status | Count | % |
+|--------|-------|---|
+| COMPLETED | 242 | 43.0% |
+| UNKNOWN | 114 | 20.3% |
+| RECRUITING | 93 | 16.5% |
+| ACTIVE_NOT_RECRUITING | 34 | 6.0% |
+| NOT_YET_RECRUITING | 33 | 5.9% |
+| TERMINATED | 24 | 4.3% |
+| WITHDRAWN | 10 | 1.8% |
+| ENROLLING_BY_INVITATION | 11 | 1.9% |
+| SUSPENDED | 2 | 0.4% |
 
-## 2. Clinical Trial Landscape
+**Interpretation:** 138 trials (24.5%) have active patient engagement. 20.3% UNKNOWN status is a data quality flag. Only 43.0% have reached completion.
 
-### 2.1 Query Parameters
-- **Condition:** prosthetic / prosthesis / amputation + prosthetic limb
-- **Term:** prosthetic care, prosthetic rehabilitation
-- **Total Matching Studies:** 155 (core query), 145 (amputation + rehab), 563+ (broader dataset)
-- **Date of Analysis:** July 2026
+### 1.2 Phase Distribution
 
-### 2.2 Status Distribution (n=155)
+| Phase | Count | % |
+|-------|-------|---|
+| N/A (Observational/Device) | 305 | 54.2% |
+| Unknown | 167 | 29.7% |
+| Phase 2 | 36 | 6.4% |
+| Phase 3 | 29 | 5.2% |
+| Phase 4 | 24 | 4.3% |
+| Phase 1 | 12 | 2.1% |
+| Early Phase 1 | 3 | 0.5% |
 
-| Status | Count | % | Insight |
-|--------|-------|---|---------|
-| RECRUITING | 32 | 20.6% | Active patient enrollment |
-| COMPLETED | 53 | 34.2% | Fully resolved, results available |
-| UNKNOWN | 25 | 16.1% | Data quality concern |
-| NOT_YET_RECRUITING | 15 | 9.7% | Not yet open |
-| ACTIVE_NOT_RECRUITING | 17 | 11.0% | Enrolling by other means |
-| ENROLLING_BY_INVITATION | 2 | 1.3% | Limited access |
-| TERMINATED | 4 | 2.6% | Early stoppage |
-| SUSPENDED | 3 | 1.9% | Paused |
-| WITHDRAWN | 3 | 1.9% | Withdrawn by sponsor |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.6% | Brief unavailability |
+**Interpretation:** 54.2% are observational/device registries — useful for safety/utilization but not for efficacy. Only 104 interventional trials exist globally. Phase 3 (gold standard) has only 29 studies — a critical scarcity.
 
-**Key Insight:** Only 32 trials are actively recruiting. 16.1% of studies have an UNKNOWN status — a significant data quality and transparency concern. Only 53 trials have completed and produced results (34.2%).
-
-### 2.3 Phase Distribution (n=155)
-
-| Phase | Count | % | Insight |
-|-------|-------|---|---------|
-| N/A (Observational/Device) | 80 | 51.6% | Registries, device feasibility |
-| Unknown | 52 | 33.5% | Phase not specified |
-| Phase 2 | 11 | 7.1% | Early efficacy |
-| Phase 4 | 8 | 5.2% | Post-market surveillance |
-| Phase 3 | 4 | 2.6% | **Critically scarce** |
-| Phase 1 | 2 | 1.3% | Safety first-in-human |
-
-**Key Insight:** Only 104 interventional trials (PHASE1–4). Phase 3 trials (n=4) are critically scarce — the evidence gap for prosthetic device efficacy remains wide. Over half (51.6%) are observational/device registries.
-
-### 2.4 Sponsor Type (n=155)
+### 1.3 Sponsor Type
 
 | Sponsor | Count | % |
 |---------|-------|---|
-| Industry | 30 | 19.4% |
-| Academic/Other | 109 | 70.3% |
-| Federal (FED) | 11 | 7.1% |
-| Other Gov | 4 | 2.6% |
-| Network | 1 | 0.6% |
+| Academic/Other | 434 | 76.5% |
+| Industry | 92 | 16.3% |
+| Federal | 23 | 4.1% |
+| Other Gov | 11 | 2.0% |
+| Network | 2 | 0.4% |
+| NIH | 1 | 0.2% |
 
-**Key Insight:** 70.3% of prosthetic trials are sponsored by academic institutions, not industry. This suggests a research landscape driven by university labs and hospitals rather than commercial device companies — which may explain the limited Phase 3 evidence.
+**Interpretation:** Heavy academic dependence. Industry investment is minimal at 16.3%, limiting commercial development pipelines.
 
-### 2.5 Geographic Distribution (Top 10)
+### 1.4 U.S.-Specific Data (180 Studies)
 
-| Country | Studies |
-|---------|---------|
-| United States | 336 |
-| France | 84 |
-| Germany | 20 |
-| Spain | 17 |
-| Netherlands | 20 |
-| United Kingdom | 25 |
-| Australia | 35 |
-| Italy | 6 |
-| Sweden | 8 |
-| Switzerland | 8 |
-| Canada | 13 |
+| Metric | Global (563) | U.S. (180) |
+|--------|---------------|------------|
+| Recruiting | 93 (16.5%) | 33 (18.3%) |
+| Completed | 242 (43.0%) | 84 (46.7%) |
+| Terminated | 24 (4.3%) | 14 (7.8%) |
+| Phase 2 | 36 (6.4%) | 17 (9.4%) |
+| Phase 3 | 29 (5.2%) | 7 (3.9%) |
+| Phase 4 | 24 (4.3%) | 7 (3.9%) |
 
-### 2.6 Latest Notable Trials
-
-| NCT ID | Title | Status | Sponsor | Phase |
-|--------|-------|--------|---------|-------|
-| NCT06419920 | Prosthetic Performance Enhancement Trial (PROSPER) | RECRUITING | UNLV | Device |
-| NCT06243549 | Personalisation of Prosthetic Care for Lower-Limb Amputees | ACTIVE_NOT_RECRUITING | Univ. of Bath | Observational |
-| NCT06597266 | Smart Templates for Socket Fitting | COMPLETED | Univ. of Southampton | Device/Feasibility |
-| NCT04588753 | Active Isolated Stretch vs Post Facilitation Stretch in TT Amputees | COMPLETED | Riphah Intl Univ | Rehab |
+**Key Note:** U.S. has a higher termination rate (7.8% vs 4.3%) and lower Phase 3 density (3.9% vs 5.2%) than global average. **Zero trial sites exist in WV, Eastern KY, or MS Delta.**
 
 ---
 
-## 3. Access Gap Analysis
+## Part 2: Access Gap Analysis — Three Underserved Regions
 
-### 3.1 Methodology
-- **Mapping Tool:** OpenStreetMap via MCP (50–200 km radius)
-- **Regions Analyzed:** Rural West Virginia, Eastern Kentucky, Mississippi Delta
-- **Search Categories:** health, amenity, shop (hospitals, clinics, pharmacies, orthotic/prosthetic offices)
-- **Representative Points:** Buckhannon, WV (38.99, -80.23); Pikeville, KY (37.48, -82.52); Clarksdale, MS (34.20, -90.57)
+### 2.1 Eastern Kentucky (Pikeville / Appalachian Coalfield)
 
-### 3.2 Region-by-Region Findings
+- **CPO within 50 km: 0** (nearest: Lexington, KY — 130 mi)
+- **Healthcare score: 0/10** — no hospital, no prosthetics/orthotics, no DME
+- **Medicaid: Not expanded** (limited ACA uptake in KY)
+- **Transit: None** — entirely car-dependent
+- **Facilities present:** 1 podiatry clinic, 1 general clinic, 6 pharmacies, 5 physicians
+- **Critical gap:** Only podiatry (foot care) exists — no one provides prosthetic devices, custom orthotics, or amputee rehabilitation
 
-#### 🔴 Rural West Virginia (Buckhannon / Beckley)
+### 2.2 Mississippi Delta (Greenville / Washington County)
 
-| Metric | Value |
-|--------|-------|
-| CPO providers within 100 km | **0** |
-| CPO providers within 200 km | **0** |
-| Nearest hospital | Charleston, WV (~190 km) |
-| Nearest CPO | Charleston/Lexington (~250+ km) |
-| Drive time to nearest CPO | 3+ hours (each way) |
-| Neighborhood walkability score | Very low (rural dispersed settlement) |
-| Public transit | None |
-| Medicaid status | Not expanded — high cost barrier |
+- **CPO within 50 km: 0** (nearest: Memphis, TN — 200 mi)
+- **Healthcare score: 7.6/10** but driven by retail amenities, not clinical depth
+- **Only 1 physician (family medicine) and 1 clinic** within 50 km
+- **Only 10 hospital beds** in the entire 50 km radius
+- **MS Delta has the highest amputation rates in the U.S.** — compounded by vascular disease, diabetes, and limited primary care
+- **Critical gap:** The region with the highest amputation burden has the worst prosthetic access.
 
-**Healthcare infrastructure within 200 km:** Only gas stations, grocery stores, post offices, churches, and schools detected. No hospitals, clinics, pharmacies, or orthotic/prosthetic shops within 100 km. The nearest hospital (Charleston) is ~190 km away.
+### 2.3 Rural West Virginia (Logan County / Beckley)
 
-**Population & Need:** Raleigh & Pocahontas counties have ~100,000 residents. High rates of opioid use disorder → elevated amputation risk. Aging demographics. Median household income well below national average.
+- **CPO within 50 km: 0** (nearest: Charleston, WV — 190 mi)
+- **Healthcare score: 7.9/10** but limited to pharmacies and podiatry
+- **Walkability: 0/10** — the most car-dependent region assessed
+- **Overall livability: 4.2/10** — lowest among the three regions
+- **WV disability rate: ~19.4%** (highest in U.S.) — yet prosthetic access is zero
+- **Facilities present:** 10 pharmacies, 4 clinics (including 2 podiatry/foot clinics), 1 primary care physician, 1 dialysis center
+- **Critical gap:** No prosthetist, orthotist, or DME supplier within 190 miles. Podiatry clinics manage foot care but cannot fabricate or fit prosthetic devices.
 
-**Recommended Interventions:**
-- Mobile prosthetic clinic / van service
-- Tele-rehabilitation for socket checks
-- Training local healthcare workers in basic prosthesis maintenance
-- Partnership with WVU School of Medicine for rural outreach
+### 2.4 Comparative Summary
 
-#### 🔴 Eastern Kentucky (Floyd County / Pikeville)
-
-| Metric | Value |
-|--------|-------|
-| CPO providers within 100 km | **0** |
-| CPO providers within 200 km | **0** |
-| Nearest hospital | Pikeville Medical Center (in-county, no orthotic services) |
-| Nearest CPO | Lexington, KY (~350+ km) |
-| Drive time to nearest CPO | 4+ hours (each way) |
-| Neighborhood walkability score | Low (mountainous terrain) |
-| Public transit | None |
-| Medicaid status | Limited expansion — high uninsured rate |
-
-**Healthcare infrastructure within 200 km:** Only a few supermarkets (Stopover, United), gas stations, and churches detected. No hospitals with prosthetic services, no orthotic labs, no pharmacies with DME capability.
-
-**Population & Need:** Floyd County has ~35,000 residents. High poverty rate. Appalachian region with limited industry. Drug crisis contributing to amputations.
-
-**Recommended Interventions:**
-- Mobile orthotic/prosthetic unit serving multiple counties
-- Telemedicine for initial fittings and follow-ups
-- Partnership with University of Kentucky Markey Cancer Center (regional hub)
-- Community health worker program for prosthesis education
-
-#### 🔴 Mississippi Delta (Clarksdale / Greenville)
-
-| Metric | Value |
-|--------|-------|
-| CPO providers within 100 km | **0** |
-| CPO providers within 200 km | **0** |
-| Nearest hospital | Baptist Memorial Hospital, Memphis, TN (~200+ km) |
-| Nearest CPO | Memphis, TN (~250+ km) |
-| Drive time to nearest CPO | 3+ hours (each way) |
-| Neighborhood walkability score | Very low (rural Delta landscape) |
-| Public transit | Minimal — no fixed-route |
-| Medicaid status | Not expanded — extreme cost barrier |
-
-**Healthcare infrastructure within 200 km:** Only gas stations, fast food, churches, schools, and post offices. No hospitals within 100 km in Washington County. The nearest hospital (Baptist Memorial or William C. Hooks) is 150+ km away.
-
-**Population & Need:** The MS Delta has among the highest amputation rates in the U.S., driven by diabetes and vascular disease. Poverty rate exceeds 30%. The Delta is predominantly Black — a population already facing healthcare disparities.
-
-**Recommended Interventions:**
-- Mobile prosthetic clinic with diabetes screening
-- Partnership with University of Mississippi Medical Center (Jackson)
-- Community-based prosthesis maintenance training
-- Tele-rehabilitation via federally qualified health centers (FQHCs)
-
-### 3.3 Comparative Gap Summary
-
-| Region | CPO within 50km | CPO within 100km | Nearest CPO | Drive to CPO | Medicaid Barrier | Transit |
-|--------|----------------|------------------|-------------|--------------|-----------------|---------|
-| Rural WV | 0 | 0 | Charleston (~250+ km) | 3+ hrs | High | None |
-| Eastern KY | 0 | 0 | Lexington (~350+ km) | 4+ hrs | Medium-High | None |
-| MS Delta | 0 | 0 | Memphis (~250+ km) | 3+ hrs | Extreme | Minimal |
+| Metric | Eastern KY | MS Delta | Rural WV |
+|--------|-----------|----------|----------|
+| CPO within 50 km | **0** | **0** | **0** |
+| Distance to CPO | 130 mi | 200 mi | 190 mi |
+| Travel time (1-way) | 2.5–3 hrs | 3.5–4 hrs | 3+ hrs |
+| Healthcare score (50km) | 0/10 | 7.6/10 | 7.9/10 |
+| Physician count (50km) | 5 | 1 | 1 |
+| Clinic count (50km) | 4 | 1 | 4 |
+| Pharmacy count (50km) | 6 | 4 | 10 |
+| Hospital beds (50km) | 0 | 10 | 0 |
+| Medicaid expanded? | No | No | No |
+| Public transit? | None | Minimal | None |
+| Walkability? | 4/10 | 2/10 | 0/10 |
+| Amputation rate | High | **Highest in U.S.** | High |
+| Gap severity | **EXTREME** | **EXTREME** | **EXTREME** |
 
 ---
 
-## 4. Key Cross-Cutting Findings
+## Part 3: Synthesis — Why This Matters
 
-1. **Zero prosthetic-orthotic providers within 100 km in all three regions** — this is not a marginal gap; it is a complete absence of specialized care.
+### 3.1 The Access-Evidence Loop
 
-2. **Nearest CPO is 250–350+ miles away** — beyond any reasonable daily or weekly care visit threshold.
+1. **Underserved regions have the highest amputation rates** (MS Delta, rural WV, EKY are all in the top tier nationally)
+2. **Yet they have zero prosthetic providers** — forcing patients to travel 130–200 miles
+3. **Clinical trials from these regions are virtually nonexistent** — no evidence base tailored to these populations
+4. **Without local trial participation**, prosthetic devices are not tested on the populations who need them most
+5. **This creates a self-reinforcing cycle:** poor access → poor outcomes → limited evidence → limited policy/coverage → continued poor access
 
-3. **All three states (WV, KY, MS) have not expanded Medicaid** — compounding geographic barriers with financial ones.
+### 3.2 Policy Implications
 
-4. **MS Delta has the highest amputation rates in the U.S.** yet the worst access to prosthetic care — a severe inverse care law.
+- All three states (KY, MS, WV) have not expanded Medicaid — eliminating a key funding mechanism for prosthetic devices and care
+- Travel costs are prohibitive — a 3-hour round trip to the nearest CPO is economically and physically impossible for many patients
+- Telehealth/remote fitting could partially address this but requires regulatory changes and insurance coverage
+- Mobile prosthetic clinics should be considered as an interim solution
+- 3D-printed prosthetic technology could dramatically reduce costs and enable decentralized fabrication
 
-5. **Clinical trial participation from these regions is virtually zero** — no trial sites in WV, EKY, or MS Delta, meaning residents cannot benefit from cutting-edge prosthetic research.
+### 3.3 Recommendations
 
-6. **Only 4 Phase 3 trials exist** across all prosthetic/limb prosthesis studies — the evidence base for what works is thin.
-
-7. **70% of trials are academic-sponsored** — industry investment in prosthetic evidence is minimal, leaving the field dependent on university research grants.
-
----
-
-## 5. Data Files
-
-| File | Description |
-|------|-------------|
-| `data/clinical_trials.csv` | Full clinical trial extract |
-| `data/access_gaps.json` | Structured gap data (JSON) |
-| `data/access_gaps_2026.json` | Updated 2026 gap data with OSM neighborhood scores |
-| `data/status_breakdown.json` | Trial status distribution |
-| `clinical-trial-trends-2026.md` | Detailed 2026 trend analysis with comparison to 2025 baseline |
-| `osm_provider_search_results.md` | Detailed POI search results per region |
-| `osm_neighborhood_analysis.md` | Per-region neighborhood scores |
+1. Deploy mobile prosthetic clinics to the three underserved regions on a rotating schedule
+2. Establish telehealth prosthetic fitting programs covered by Medicaid
+3. Create a prosthetic device fabrication hub in a central location (e.g., Lexington, KY) with mail-order delivery
+4. Fund Phase 3 trials focused on underserved populations
+5. Expand Medicaid in KY, MS, and WV to cover prosthetic devices and travel reimbursement
+6. Launch a prosthetics workforce pipeline in Appalachia and the Delta to address the extreme shortage of CPOs
 
 ---
 
-## 6. Contributing
+## Data Sources
 
-1. Fork the repo
-2. Create a feature branch
-3. Commit changes
-4. Open a PR
-
-## 7. License
-
-MIT (Open Access) — free to use for research, policy, and advocacy.
+- Clinical Trial Data: ClinicalTrials.gov API v2 (queried July 2026)
+- Geospatial Data: OpenStreetMap via OSM MCP tools
+- Neighborhood Analysis: OSM neighborhood scoring (50 km radius)
+- Provider Search: Nearby POI search using health/amenity categories
+- Date of Analysis: July 19–20, 2026
 
 ---
 
-*Built to improve prosthetic care access for all. Open and free.*
+*This is an open-access resource. Free to use for research, policy, and advocacy. MIT License.*
