@@ -1,118 +1,49 @@
 # Data Sources & Methodology
 
 ## Clinical Trial Data
+- **Source:** ClinicalTrials.gov API v2
+- **Query:** `cond=amputation, term=prosthesis`
+- **Date collected:** July 20, 2026
+- **Total studies found:** 459 (focused search); 644 (broad search, `cond=prosthetic`)
+- **API Limitations:** Significant timeouts and 500 errors during collection; data represents what was retrievable
+- **Analysis types:** countByStatus, countByPhase, countBySponsorType, countByCountry
 
-### Source: ClinicalTrials.gov API
-- **API Endpoint**: `https://clinicaltrials.gov/api/v2/studies`
-- **Date of Analysis**: July 2026
-- **Query Parameters**:
-  - Condition: `prosthetic`, `amputation`, `prosthesis`
-  - Term: `prosthetic limb`, `amputation`, `prosthesis`
-  - Filters: All statuses, all phases, all countries
-- **Total Studies Retrieved**: 644 (unique studies)
-- **Methodology Notes**:
-  - Analysis performed using ClinicalTrials.gov v2 API
-  - Trend aggregation across status, phase, country, and sponsor dimensions
-  - Studies with multiple conditions/locations may be counted multiple times
+## Gap Analysis (OSM)
+- **Source:** OpenStreetMap via OSM MCP tools
+- **Search method:** `find_nearby_places` and `search_category` with 30-50 km radii
+- **Center points:**
+  - Rural West Virginia: Huntington, WV (38.42°N, -82.45°W)
+  - Eastern Kentucky: Pikeville, KY (37.48°N, -82.52°W)
+  - Mississippi Delta: Greenville, MS (33.41°N, -91.06°W)
+- **Categories searched:** healthcare (clinic, doctor, hospital, pharmacy, physiotherapist, rehabilitation), shop
+- **Limitations:** Each search limited to ~50 results; some requests timed out (504/429 rate limits); OSM data completeness varies by region
 
-### Analyzed Dimensions
-- **Status**: COMPLETED, RECRUITING, UNKNOWN, NOT_YET_RECRUITING, etc.
-- **Phase**: EARLY_PHASE1, PHASE1, PHASE2, PHASE3, PHASE4, N/A
-- **Country**: Geographic distribution of study sites
-- **Sponsor Type**: Academic/Government vs. Industry vs. Federal
+## CPO Distance Estimation
+- Estimated based on known CPO locations in metropolitan areas (Charleston, WV; Lexington, KY; Memphis, TN)
+- Not verified against actual provider directories for every small town
+- Recommendation: validate with state prosthetic societies and Medicare provider data
 
-### Key Study Data
-- **MIRA Trial** (NCT05768802): Full structured data from ClinicalTrials.gov
-- **PROINGA** (NCT07519746): Gaza conflict-zone lower-limb satisfaction study
-- **MPK-K2** (NCT06498245): Microprocessor knee RCT for K2-level ambulators
+## Key Definitions
+- **CPO:** Certified Prosthetist-Orthotist — board-certified provider of prosthetic and orthotic devices
+- **DME:** Durable Medical Equipment — includes prostheses, orthoses, wheelchairs
+- **Care gap:** Defined as zero CPO providers within 30 km radius of the representative town
 
----
+## Recommended Quarterly Refresh Cycle
+1. Re-query ClinicalTrials.gov API
+2. Re-run OSM nearby-places searches
+3. Update country and phase distributions
+4. Validate CPO distances against state provider directories
+5. Check for new Medicaid expansion updates
 
-## Gap Analysis Data
+## API Endpoints Used
+- ClinicalTrials.gov: `https://clinicaltrials.gov/api/v2/studies`
+- OpenStreetMap Nominatim: `https://nominatim.openstreetmap.org/search`
+- OpenStreetMap Overpass: `https://overpass-api.de/api/interpreter`
 
-### Source: OpenStreetMap (via Overpass API)
-- **Method**: Geographic bounding-box and radius searches around target regions
-- **Search Radius**: 30km for detailed healthcare; 50-100km for gap extrapolation
-- **Categories Searched**: `healthcare`, `amenity`, `pharmacy`, `hospital`, `clinic`
-- **Providers Specifically Searched For**:
-  - Prosthetist
-  - Orthotist
-  - O&P (Orthotics & Prosthetics) clinic
-  - Certified Orthotic Fitter
-  - Rehab hospital (for prosthetic rehab programs)
+## Data Quality
+- **Clinical trials:** Retrieved with gaps (API timeouts); 459 focused + 644 broad baseline
+- **OSM geographic data:** Successfully retrieved for all three regions
+- **CPO provider data:** OSM has limited specialized medical provider coverage; distances are estimates
+- **Neighborhood scores:** Some API timeouts; scores may be approximate
 
-### Results
-| Region | Prosthetic/Orthotic Providers Found | Nearest O&P (estimated) |
-|--------|-------------------------------------|-------------------------|
-| Beckley, WV | 0 | Charleston, WV (~100km) |
-| Hazard/Pikeville, KY | 0 | Lexington, KY (~160km) |
-| Cleveland/Greenville, MS | 0 | Memphis, TN (~130km) |
-
-### Identified Infrastructure (non-O&P)
-
-**Beckley, WV (37.78, -81.19)**:
-- Raleigh General Hospital (37.787808, -81.201766)
-- MedExpress urgent care (37.8027516, -81.1837815)
-- Anchor Medical LLC (37.7932784, -81.117786)
-- CVS Pharmacy, Beaver (37.750599, -81.1360385)
-- Walgreens, Beaver (37.7484415, -81.1350834)
-- CVS Pharmacy, Fayetteville (38.032451, -81.1242828)
-- Walgreens, Oak Hill (37.9845446, -81.1377133)
-- Primary Care Plus (37.7699869, -81.1576383)
-- Liberty Dental Centers (37.8017549, -81.1781779)
-
-**Greenville, MS (33.41, -91.06)**:
-- The Greenville Clinic (33.3819143, -91.0291499)
-- Southeast Rehabilitation Hospital, Lake Village AR (33.3147629, -91.2903316)
-- Shelby Drug Store (33.9478467, -90.767517)
-- Michelle Seard-Higgins DMD PLLC (33.4062507, -91.0305699)
-- Dental Group of Greenville (33.3481607, -91.0431873)
-
-**Hindman/Pikeville, KY (37.34, -82.98)**:
-- No healthcare infrastructure captured in 30km search (extremely rural)
-- Regional referral centers in Hazard, Pikeville, and Hindman
-
----
-
-## Methodology
-
-1. **Clinical Trial Harvesting**:
-   - Query ClinicalTrials.gov for all studies tagged with `prosthetic`, `amputation`, or `prosthesis`
-   - Aggregate by status, phase, country, and sponsor
-   - Identify most recent and active studies
-
-2. **Geographic Gap Analysis**:
-   - Select representative towns in each underserved region
-   - Geocode to precise coordinates
-   - Search OpenStreetMap within 30km radius for healthcare providers
-   - Extrapolate to 50-100km radius for nearest O&P estimation
-   - Cross-reference with known regional referral centers
-
-3. **Infrastructure Scoring**:
-   - Use neighborhood analysis (OSM) to score amenities
-   - Categories: groceries, restaurants, healthcare, education, parks, transport, shopping
-   - Composite score on 0-10 scale
-
-4. **Gap Severity Classification**:
-   - Red (Critical): 0 providers within 100km; high disease burden
-   - Orange (Severe): 0-1 providers within 100km; moderate burden
-   - Yellow (Moderate): 1-3 providers; reasonable but limited
-   - Green (Adequate): 3+ providers; local access feasible
-
----
-
-## Limitations
-
-- OSM data may not capture all providers (especially smaller O&P businesses)
-- ClinicalTrials.gov data may include studies that have since been terminated or unknown
-- Counts may overlap (multi-site studies counted in multiple countries)
-- Radius analysis is proxy; actual O&P access depends on insurance, referral patterns, and device availability
-- Real-time provider availability is not verified
-
----
-
-## API References
-
-- ClinicalTrials.gov API: https://clinicaltrials.gov/api/v2/studies
-- OpenStreetMap Overpass API: https://overpass-turbo.eu/
-- GitHub Repository: https://github.com/zhub9006/prosthetic-access-atlas
+*Last updated: July 20, 2026*
