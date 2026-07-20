@@ -14,7 +14,7 @@
       "medicaid_expansion": false,
       "public_transport": false,
       "key_barriers": ["WV did not expand Medicaid", "No public transit", "3+ hour drive to nearest CPO", "Mountainous terrain", "Coal economy decline"],
-      "healthcare_facilities": ["Primary Care Plus (emergency + clinic)", "CVS Pharmacy", "Multiple local pharmacies", "1 medical center"]
+      "healthcare_facilities": ["Primary Care Plus (emergency + clinic)", "CVS Pharmacy", "Multiple local pharmacies", "1 medical center", "Audiology", "Dialysis"]
     },
     {
       "name": "Eastern Kentucky (Pikeville)",
@@ -29,7 +29,7 @@
       "medicaid_expansion": "limited",
       "public_transport": false,
       "key_barriers": ["Appalachian isolation", "Coal economy decline", "KY limited Medicaid", "No public transit", "Infrastructure sparse"],
-      "healthcare_facilities": ["PMC Medical Diagnostics", "MCHC Elkhorn City", "5 doctors", "6 pharmacies", "2 dentists"]
+      "healthcare_facilities": ["PMC Medical Diagnostics", "MCHC Elkhorn City", "5 doctors", "6 pharmacies", "2 dentists", "1 optometrist", "1 chiropractic"]
     },
     {
       "name": "Mississippi Delta (Clarksdale/Greenville)",
@@ -44,7 +44,7 @@
       "medicaid_expansion": false,
       "public_transport": false,
       "key_barriers": ["MS did not expand Medicaid", "No public transit", "4+ hour drive to nearest CPO", "Highest amputation rate in US", "Grocery store desert", "Zero healthcare in OSM 30km radius"],
-      "healthcare_facilities": ["1 hospital campus (broader search)", "18+ pharmacies (broader search)", "Multiple clinics (broader search)"]
+      "healthcare_facilities": ["1 hospital campus (broader 50km+ search)", "18+ pharmacies (broader search)", "Multiple clinics (broader search)"]
     }
   ],
   "overall_assessment": {

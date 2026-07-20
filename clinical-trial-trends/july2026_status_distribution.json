@@ -14,6 +14,12 @@
     "ENROLLING_BY_INVITATION": {"count": 2, "pct": 1.7},
     "SUSPENDED": {"count": 2, "pct": 1.7}
   },
+  "broader_query": {
+    "total_studies": 155,
+    "completed": {"count": 53, "pct": 34.2},
+    "recruiting": {"count": 32, "pct": 20.6},
+    "unknown": {"count": 25, "pct": 16.1}
+  },
   "us_specific": {
     "total": 177,
     "completed": 32,
