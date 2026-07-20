@@ -1,24 +1,35 @@
-# Key Prosthetic Studies — July 2026
+# Key Prosthetic Clinical Trials — Selected Profiles
 
-*Selected studies from ClinicalTrials.gov search results*
+## 1. NCT05990062 — K-Socket-Harness (KSH) System for Transradial Amputees
+- **Status**: RECRUITING (Updated July 2026)
+- **Sponsor**: VA Office of Research and Development
+- **Collaborator**: Stumpworx LLC
+- **Condition**: Amputation, Surgical
+- **Intervention**: K-Socket-Harness (DEVICE)
+- **Phases**: Phase 1-3 combined
+- **Enrollment**: 30 Veterans (5 design + 5 validation + 20 testing)
+- **Summary**: Testing a variable-compliance socket and frame system for transradial amputees using hybrid polymer/textile design from athletic shoe technology. Addresses fit, comfort, and harness dissatisfaction — top reasons for prosthetic abandonment. Creates digital fitting device for measuring residual limb geometry.
+- **Significance**: Directly addresses attachment/comfort issues cited in abandonment surveys; VA-driven innovation filling commercial void.
 
-## Sample Study Profiles
+## 2. NCT02424903 — European Prosthetic Joint Infection Cohort (EPJIC)
+- **Status**: UNKNOWN (last known: NOT_YET_RECRUITING)
+- **Sponsor**: Pro-Implant Foundation
+- **Collaborator**: Charité University, Berlin
+- **Condition**: Prosthesis-related Infections
+- **Type**: Observational, Prospective Cohort
+- **Enrollment**: 5,000
+- **Summary**: EU-wide multi-center study comparing surgical and antibiotic approaches for hip, knee, and shoulder prosthetic joint revision surgery. Aims to optimize PJI treatment through diagnostic testing and treatment algorithm validation.
+- **Significance**: Largest prosthetic-related observational study globally; focuses on infection management rather than device innovation.
 
-### NCT02366702 — Bilateral Transfemoral Ambulation: Passive vs Powered
-- **Status:** UNKNOWN (last known: ACTIVE_NOT_RECRUITING)
-- **Sponsor:** Southern California Institute for Research and Education
-- **Collaborator:** Vanderbilt University
-- **Phase:** N/A (Observational)
-- **Enrollment:** 3 subjects
-- **Design:** Case crossover, prospective
-- **Location:** VA Long Beach Healthcare System, Long Beach, CA
-- **Intervention:** Lower Limb Powered Knee-Ankle Prosthesis
-- **Key findings:** Comparing sagittal plane hip kinematics and metabolic cost for bilateral transfemoral walking with passive vs powered prostheses
+## 3. NCT04135222 — CBCT/CAD/PDIP for Prosthetic-Driven Implant Planning
+- **Status**: COMPLETED
+- **Sponsor**: Wroclaw Medical University
+- **Condition**: Periodontal Diseases
+- **Type**: Diagnostic/Observational
+- **Summary**: Evaluating gingival and periodontal phenotype using CBCT, intraoral scanning, and CAD for prosthetic-driven implant planning. Correlated periodontal phenotype measurements with treatment outcomes.
+- **Significance**: Academic-sponsored diagnostic study showing role of imaging in prosthetic treatment planning.
 
-## Data Collection Notes
-
-- API calls were made using the MCP (Model Context Protocol) ClinicalTrials.gov connector
-- Multiple attempts were required due to intermittent API errors (500 status, timeouts)
-- Results represent the best available data at time of collection
-- Phase distributions and country breakdowns were confirmed across multiple query attempts
-- Status distributions were collected from both broad (prosthetic) and filtered (prosthetic limb) queries
+## 4. Notable From List Search
+- Multiple prosthetic joint infection and revision studies across Europe and US
+- VA prosthetics research strong in upper-limb and socket innovation
+- Limited lower-limb socket/comfit optimization studies in US

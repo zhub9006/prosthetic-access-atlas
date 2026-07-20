@@ -1,4 +1,5 @@
-Region,Population,Center_Lat,Center_Lon,Neighborhood_Score,Healthcare_Score,CPO_in_50km,CPO_in_200km,Nearest_CPO,Travel_Time,Medicaid_Barrier,Key_Vulnerability
-Rural_West_Virginia,93000,38.223,-80.095,6.0,0.0,0,0,"Charleston WV (~190mi)","3+ hrs","High - WV not expanded","Healthcare score 0/10 — no hospital or pharmacy within 50 km"
-Eastern_Kentucky,150000,37.479,-82.519,7.4,9.9,0,0,"Lexington KY (~130mi)","3+ hrs","Medium - KY limited","Zero CPOs despite 12 healthcare facilities; 0 grocery stores in 50 km"
-Mississippi_Delta,200000,34.201,-90.570,5.9,5.7,0,0,"Memphis TN (~200mi)","4+ hrs","Extreme - MS not expanded","Highest amputation rates + worst access + no public transit"
+Region,CPO_Within_30km,Nearest_CPO,Distance_Miles,Estimated_Drive_Time,Medicaid_Expanded,Neighborhood_Healthcare_Score
+Rural West Virginia,0,Charleston (WV),190,3+ hrs,No,9.8
+Eastern Kentucky,0,Lexington (KY),130,3+ hrs,Limited,9.9
+Mississippi Delta - Greenville,0,Memphis (TN),200,4+ hrs,No,2.0
+Mississippi Delta - Clarksdale,0,Memphis (TN),200,4+ hrs,No,0.0
