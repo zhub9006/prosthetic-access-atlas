@@ -1,5 +1,5 @@
-region,state,center_lat,center_lon,neighborhood_score,healthcare_score,cpo_within_50km,distance_to_nearest_cpo_mi,nearest_cpo_city,medicaid_expanded,public_transit,walkability_score,physician_count_50km,clinic_count_50km,pharmacy_count_50km,hospital_beds_50km,restaurants_score,groceries_score,services_score,amputation_rate_ranking,care_gap_severity
-Rural_West_Virginia,WV,37.778,-81.188,7.1,9.5,0,190,Charleston WV,No,None,2,1,2,3,0,9.9,9.9,0,High,EXTREME
-Eastern_Kentucky,KY,37.479,-82.519,4.4,9.8,0,130,Lexington KY,No,None,2,4,2,2,0,0,6.1,0,High,EXTREME
-Mississippi_Delta,MS,33.411,-91.064,4.1,0,0,200,Memphis TN,No,Minimal,2,0,0,0,0,9.9,6.3,0,Highest in U.S.,EXTREME
-MS_Delta_Heartland,MS,34.201,-90.570,1.5,0,0,200,Memphis TN,No,None,0,0,0,0,0,0,0,0,Highest in U.S.,CRITICAL
+region,state,center_lat,center_lon,neighborhood_score,healthcare_score,cpo_within_30km,distance_to_nearest_cpo_mi,nearest_cpo_city,medicaid_expanded,public_transit,walkability_score,physician_count_30km,clinic_count_30km,pharmacy_count_30km,hospital_beds_30km,restaurants_score,groceries_score,services_score,amputation_rate_ranking,care_gap_severity,data_source,data_date
+Rural_West_Virginia,WV,37.778,-81.188,7.1,9.5,0,190,Charleston WV,No,None,2,1,2,3,0,9.9,9.9,0,High,EXTREME,OSM+ClinicalTrials.gov,2026-07-20
+Eastern_Kentucky,KY,37.479,-82.519,4.4,9.8,0,130,Lexington KY,Yes 2014,None,2,4,2,2,0,0,6.1,0,Moderate-High,EXTREME,OSM+ClinicalTrials.gov,2026-07-20
+Mississippi_Delta,MS,33.411,-91.064,4.1,0,0,200,Memphis TN,No,Minimal,2,0,0,0,0,9.9,6.3,0,Highest in U.S.,CRITICAL,OSM+ClinicalTrials.gov,2026-07-20
+MS_Delta_Heartland,MS,34.201,-90.570,1.5,0,0,200,Memphis TN,No,None,0,0,0,0,0,0,0,0,Highest in U.S.,CRITICAL,OSM+ClinicalTrials.gov,2026-07-20
