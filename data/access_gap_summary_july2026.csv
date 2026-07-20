@@ -1,0 +1,5 @@
+Region,Population,Center_Lat,Center_Lon,Neighborhood_Score,Healthcare_Score,CPO_in_50km,CPO_in_200km,Nearest_CPO,Travel_Time,Medicaid_Barrier,Key_Vulnerability
+Rural_West_Virginia,93000,37.778,-81.188,7.6,9.8,0,0,"Charleston, WV (~190mi)","3+ hrs","High - WV not expanded","Healthcare score 9.8 — pharmacies/clinics exist but ZERO prosthetists; amputation rates above national avg"
+Eastern_Kentucky,150000,37.479,-82.519,4.8,0.0,0,0,"Lexington, KY (~130mi)","3+ hrs","Medium - KY limited","Zero CPOs despite 12+ healthcare facilities; 0 restaurants in 50km; University of Pikeville present but no prosthetic training"
+Mississippi_Delta,200000,33.411,-91.064,5.5,7.6,0,0,"Memphis, TN (~200mi)","4+ hrs","Extreme - MS not expanded","Highest amputation rates in U.S. + worst access + no public transit; only 1 clinic + 1 doctor + 2 pharmacies in 50km"
+MS_Delta_Heartland,50000,34.201,-90.570,1.5,0.0,0,0,"Memphis, TN (~200mi)","4+ hrs","Extreme - MS not expanded","Zero grocery, zero healthcare, zero restaurants in 20km; 17 schools serve children who may need prosthetic care with nowhere to access it
