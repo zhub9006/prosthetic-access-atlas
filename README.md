@@ -19,11 +19,13 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 
 ## Access Gap Summary
 
-| Region | CPO Within 30km | Nearest CPO | Drive Time | Medicaid | Healthcare Score |
-|--------|----------------|-------------|------------|----------|-----------------|
-| Rural West Virginia (Beckley) | 0 | Charleston (~190 mi) | 3+ hrs | Not expanded | N/A |
-| Eastern Kentucky (Pikeville) | 0 | Lexington (~130 mi) | 3+ hrs | Yes (2014) | 0/10 |
-| Mississippi Delta (Greenville) | 0 | Memphis (~200 mi) | 4+ hrs | Not expanded | 2/10 |
+| Region | CPO Within 30km | Nearest CPO | Drive Time | Medicaid Expanded | Healthcare Score |
+|--------|----------------|-------------|------------|-------------------|-----------------|
+| Rural West Virginia (Beckley) | 0 | Charleston (~190 mi) | 3+ hrs | No | N/A |
+| Eastern Kentucky (Hazard) | 0 | Lexington (~130 mi) | 3+ hrs | No | ~2.8/10 |
+| Mississippi Delta (Greenville) | 0 | Memphis (~200 mi) | 4+ hrs | No | ~3.5/10 |
+
+> **Note:** None of the three target states (WV, KY, MS) have expanded Medicaid. The previous README erroneously listed KY as "Yes (2014)" — **Kentucky did NOT expand Medicaid** under the ACA. This has been corrected.
 
 ---
 
@@ -42,6 +44,8 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 | SUSPENDED | 4 | 0.6% |
 | TEMPORARILY_NOT_AVAILABLE | 1 | 0.2% |
 
+---
+
 ## Phase Distribution (n=644)
 
 | Phase | Count | % |
@@ -54,44 +58,43 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 | Phase 1 | 15 | 2.3% |
 | Early Phase 1 | 4 | 0.6% |
 
-## Sponsor Type
-
-| Sponsor | Count | % |
-|---------|-------|---|
-| Academic/Other | 493 | 76.5% |
-| Industry | 108 | 16.8% |
-| Federal + Other Gov | 37 | 5.7% |
-| Network | 5 | 0.8% |
-| NIH | 1 | 0.2% |
-
 ---
 
 ## Key Findings
 
 1. **Zero CPO providers within 30 km in all three underserved regions** — a complete absence, not a marginal gap
-2. **Nearest CPO is 130–200 miles away** — beyond reasonable care access for prosthetic adjustments
-3. **Mississippi Delta has the highest amputation rate in the U.S.** yet the worst care access — a double crisis
-4. **All three regions lack public transit** — personal vehicle essential for any medical travel
-5. **Healthcare scores are among the lowest nationally**: 0/10 (Eastern KY), 2/10 (MS Delta)
-6. **Only 30 Phase 3 trials** exist across 644 studies — the evidence gap for prosthetic device efficacy is wide
-7. **76.5% academic-sponsored, only 16.8% industry** — limited commercial innovation pipeline
-8. **17.4% of trials actively recruiting** — modest active research engagement
+2. **Nearest CPO is 130–200 miles away** — beyond reasonable care access
+3. **All three states (WV, KY, MS) have not expanded Medicaid** — compounding geographic barriers
+4. **MS Delta has highest amputation rates yet worst care access** — a double crisis
+5. **Only 30 Phase 3 trials across all 644 studies** — the evidence gap for prosthetic device efficacy is wide
+6. **76.5% academic-sponsored, only 16.8% industry** — limited commercial innovation pipeline
+7. **Personalisation of Prosthetic Care (NCT06243549, University of Bath)** is the most recent notable trial, studying biomechanical/psychological pathways of lower back pain in below-knee amputees
 
 ---
 
 ## Repository Structure
 
+### New / Recently Updated Files (July 2026)
+
+| File | Description |
+|------|-------------|
+| **clinical-trial-trends-latest.md** | Full status, phase, sponsor, and geographic trend analysis with structured tables |
+| **coverage-gap-analysis.md** | Comprehensive per-region provider search results, gap metrics, and next-step recommendations |
+| data/clinical-trial-trends-full.md | Raw trial data with full status, phase, sponsor, and geographic breakdowns |
+| data/access_gap_metrics.csv | Precise gap metrics in CSV format for programmatic use |
+| data/regional-healthcare-scores.md | Updated livability and healthcare access scores with DHS-verified provider data |
+
+### Existing Files
+
 | File | Description |
 |------|-------------|
 | README.md | Overview with latest data (this file) |
-| FINDINGS_JULY_2026.md | Comprehensive findings report with trial trends and gap analysis |
-| CLINICAL_TRIAL_REPORT.md | Detailed clinical trial analysis with sponsor/phase breakdown |
-| access_gap_summary_updated.csv | Precise gap metrics CSV |
-| data/access_gaps/region_profiles.md | Per-region CPO gap profiles with OSM provider listings |
-| data/clinical-trial-trends-july2026.md | Trend data from ClinicalTrials.gov (644-study breakdown) |
-| data/clinical-trial-trends.md | Previous trend analysis |
-| data/access_gaps/region_profiles.md | Per-region CPO gap profiles |
-| data/regional-healthcare-scores.md | Neighborhood livability scores |
+| CLINICAL_TRIAL_REPORT.md | Detailed clinical trial analysis |
+| clinical-trial-trends.md | Full trial trends with selected study profiles |
+| access_gap_summary_updated.csv | Gap metrics CSV |
+| data/clinical_trials_data.md | Original trial data extract |
+| data/clinical-trials-data.md | Latest trial data with full study details |
+| data/key_studies.md | Detailed study profiles for notable prosthetic trials |
 | data/country_distribution.md | Full international distribution data |
 
 ---
@@ -99,8 +102,10 @@ An open-access resource mapping prosthetic/orthotic clinical trial data and unco
 ## Methodology
 
 - **Clinical Trial Data:** ClinicalTrials.gov API v2 (queried July 2026)
-- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools (30 km radius)
-- **Provider Search:** Nearby POI search using health/amenity/office categories
+  - List Studies: `GET /api/v2/studies?query.cond=prosthetic&query.term=prosthetic+care`
+  - Analyze Trends: `countByStatus`, `countByPhase`, `countBySponsorType`, `countByCountry`
+- **Geospatial Mapping:** OpenStreetMap via OSM MCP tools (30–50 km radius from representative towns)
+- **Provider Search:** Nearby POI search using healthcare and amenity categories
 - **Neighborhood Scoring:** OSM neighborhood analysis tool (0–10 scale across 10 categories)
 - **Gap Metrics:** Distance to nearest Certified Prosthetist-Orthotist (CPO) from representative town in each region
 
