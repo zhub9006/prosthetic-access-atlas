@@ -1,0 +1,4 @@
+region,oCPOs_within_50km,nearest_CPO_name,nearest_CPO_distance_mi,travel_time,state,medicaid_expansion,healthcare_score,overall_score,key_hospitals
+Rural West Virginia,0,Charleston (190 mi),190,3+ hrs,WV,No,9.8,5.9,"CAMC General; CAMC Memorial; Saint Francis; Charleston Surgical; CAMC W&C"
+Eastern Kentucky,0,Lexington (130 mi),130,3+ hrs,KY,No,0,4.5,"Pikeville Medical Center (only hub)"
+Mississippi Delta,0,Memphis (200 mi),200,4+ hrs,MS,No,2.0,4.6,"Delta Regional Medical Center West; Delta Health System Medical Center"
