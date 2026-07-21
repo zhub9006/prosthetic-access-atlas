@@ -1,4 +1,4 @@
-region,cpo_within_30km,nearest_cpo,drive_distance_mi,drive_time_hrs,medicaid_expanded,amputation_rate_rank,healthcare_facilities_30km
-Rural West Virginia (Beckley),0,Charleston WV,190,3+,No,High,14
-Eastern Kentucky (Pikeville),0,Lexington KY,130,3+,Limited,High,6
-Mississippi Delta (Clarksdale),0,Memphis TN,200,3+,No,Highest US,10
+region,cpo_within_30km,nearest_cpo,drive_distance_mi,drive_time_hrs,medicaid_expanded,amputation_rate_rank,healthcare_facilities_30km,clinical_trials_in_region,first_trial_date,last_trial_date
+Rural West Virginia (Beckley),0,Charleston WV,190,3+,No,High,3,0,,
+Eastern Kentucky (Pikeville),0,Lexington KY,130,3+,Limited,High,1,0,,
+Mississippi Delta (Greenville),0,Memphis TN,200,3+,No,Highest US,2,0,,
