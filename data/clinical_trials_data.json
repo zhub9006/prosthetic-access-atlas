@@ -1,0 +1,65 @@
+{
+  "query_date": "2026-07-21",
+  "source": "ClinicalTrials.gov API",
+  "total_prosthetic_studies_all_countries": 644,
+  "total_prosthetic_studies_us": 202,
+  "total_limb_amputation_prosthetics_us": 86,
+  "status_distribution": {
+    "RECRUITING": 112,
+    "SUSPENDED": 4,
+    "COMPLETED": 271,
+    "NOT_YET_RECRUITING": 38,
+    "UNKNOWN": 134,
+    "ENROLLING_BY_INVITATION": 12,
+    "WITHDRAWN": 10,
+    "TERMINATED": 24,
+    "ACTIVE_NOT_RECRUITING": 38,
+    "TEMPORARILY_NOT_AVAILABLE": 1
+  },
+  "phase_distribution": {
+    "PHASE3": 30,
+    "NA": 338,
+    "Unknown": 202,
+    "EARLY_PHASE1": 4,
+    "PHASE1": 15,
+    "PHASE2": 39,
+    "PHASE4": 29
+  },
+  "sponsor_distribution": {
+    "OTHER": 493,
+    "INDUSTRY": 108,
+    "FED": 23,
+    "OTHER_GOV": 14,
+    "NETWORK": 5,
+    "NIH": 1
+  },
+  "regions": [
+    {
+      "name": "Rural West Virginia",
+      "center": {"latitude": 37.778, "longitude": -81.189},
+      "city": "Beckley", "state": "WV",
+      "cpo_within_30km": 0, "cpo_within_50km": 0,
+      "nearest_cpo": "Charleston, WV", "nearest_cpo_distance_mi": 190,
+      "drive_time": "3+ hours",
+      "medicaid_expansion": false, "amputation_rate": "high"
+    },
+    {
+      "name": "Eastern Kentucky",
+      "center": {"latitude": 37.479, "longitude": -82.519},
+      "city": "Pikeville", "state": "KY",
+      "cpo_within_30km": 0, "cpo_within_50km": 0,
+      "nearest_cpo": "Lexington, KY", "nearest_cpo_distance_mi": 130,
+      "drive_time": "3+ hours",
+      "medicaid_expansion": "limited", "amputation_rate": "high"
+    },
+    {
+      "name": "Mississippi Delta",
+      "center": {"latitude": 33.411, "longitude": -91.064},
+      "city": "Greenville", "state": "MS",
+      "cpo_within_30km": 0, "cpo_within_50km": 0,
+      "nearest_cpo": "Memphis, TN", "nearest_cpo_distance_mi": 200,
+      "drive_time": "3+ hours",
+      "medicaid_expansion": false, "amputation_rate": "highest_in_us"
+    }
+  ]
+}
