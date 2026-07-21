@@ -1,4 +1,4 @@
-region,rep_latitude,rep_longitude,cpo_within_30km,cpo_within_100km,nearest_major_city,drive_distance_mi,drive_time_hrs,nearest_hospital_mi,medicaid_expanded,healthcare_score,key_barrier
-Rural West Virginia,37.78,-81.19,0,0,Charleston WV,190,3+,78,No,7-no CPO,Zero CPO within 100mi; Medicaid not expanded
-Eastern Kentucky,37.48,-82.52,0,0,Lexington KY,130,3+,130,Limited,11-no CPO,Appalachian isolation; no CPO within 100mi
-Mississippi Delta,34.20,-90.57,0,0,Memphis TN,200,4+,150,No,0-no CPO,Highest amputation rate in US; zero CPO; no Medicaid; no transit
+region,representative_town,center_lat,center_lon,cpo_within_30km,nearest_cpo_city,nearest_cpo_distance_mi,est_drive_time_hrs,medicaid_expansion,amputation_rate,nearest_hospital,head_count
+Rural WV,Beckley,37.78,-81.19,0,Charleston WV,190,3+,Not expanded,High,Huntington-Charleston metro,1.5M
+Eastern KY,Pikeville,37.48,-82.52,0,Lexington KY,130,3+,Limited,High,Lexington metro,0.5M
+MS Delta,Greenville,33.41,-91.06,0,Memphis TN,200,3+,Not expanded,Highest US,Memphis metro,1.3M

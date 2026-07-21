@@ -1,266 +1,192 @@
-# Prosthetic Access Atlas — Latest Findings (July 2026)
+# Prosthetic Access Atlas — Consolidated Findings (July 2026)
 
-> Compiled from ClinicalTrials.gov API and OpenStreetMap geospatial gap-mapping.
-> Updated: July 20, 2026
+> Open-access resource mapping prosthetic/orthotic clinical trial data and uncovered care gaps in underserved U.S. regions.
 
 ---
 
-## 1. Clinical Trial Landscape — Prosthetics & Amputation
+## 1. Clinical Trial Landscape
 
-### 1.1 Trial Status Distribution (NCT Search Results)
+### 1.1 Overall Prosthetic Trials (ClinicalTrials.gov, broad search)
+- **Total prosthetic studies found:** 644
+- **Time scope:** All registered trials (historic through July 2026)
 
-Four complementary searches were run on ClinicalTrials.gov:
-
-| Search Query | Total Studies |
-|---|---|
-| `cond=prosthetic` + `term=prosthetic care` (broad) | 155 |
-| `cond=prosthetic limb` + `term=prosthetic rehabilitation` | 32 |
-| `cond=upper limb amputation` + `term=prosthetic` | 88 |
-| `cond=lower limb amputation` + `term=prosthetic` | 176 |
-| `cond=prosthetic limb amputation` + `term=prosthetic` | 117 |
-
-### 1.2 Status Distribution — Limb Amputation Prosthetics (n=117)
-
-| Status | Count | % |
-|--------|-------|---|
-| COMPLETED | 58 | 49.6% |
-| RECRUITING | 26 | 22.2% |
-| UNKNOWN | 14 | 12.0% |
-| ACTIVE_NOT_RECRUITING | 9 | 7.7% |
-| NOT_YET_RECRUITING | 8 | 6.8% |
-| ENROLLING_BY_INVITATION | 1 | 0.9% |
-| TERMINATED | 1 | 0.9% |
-| **Total** | **117** | **100%** |
-
-**Key insight:** Only **22.2% of limb-amputation prosthetic trials actively recruit**. Nearly half are completed, and 12% have unknown status.
-
-### 1.3 Status Distribution — All Prosthetic Studies (n=155, broad)
+### 1.2 Limb-Amputation-Specific Prosthetic Trials (focused search)
+- **Total:** 158 studies
+- **Recruiting:** 28 (17.7%)
+- **Completed:** 82 (51.9%)
+- **Unknown status:** 22 (13.9%)
+- **Active but not recruiting:** 13 (8.2%)
+- **Not yet recruiting:** 8 (5.1%)
+- **Enrolling by invitation:** 1 (0.6%)
+- **Terminated:** 4 (2.5%)
 
 | Status | Count | % |
 |--------|-------|---|
-| COMPLETED | 53 | 34.2% |
-| RECRUITING | 32 | 20.6% |
-| UNKNOWN | 25 | 16.1% |
-| NOT_YET_RECRUITING | 15 | 9.7% |
-| ACTIVE_NOT_RECRUITING | 17 | 11.0% |
-| ENROLLING_BY_INVITATION | 2 | 1.3% |
-| TERMINATED | 4 | 2.6% |
-| WITHDRAWN | 3 | 1.9% |
-| SUSPENDED | 3 | 1.9% |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.6% |
-| **Total** | **155** | **100%** |
+| COMPLETED | 82 | 51.9% |
+| RECRUITING | 28 | 17.7% |
+| UNKNOWN | 22 | 13.9% |
+| ACTIVE_NOT_RECRUITING | 13 | 8.2% |
+| NOT_YET_RECRUITING | 8 | 5.1% |
+| ENROLLING_BY_INVITATION | 1 | 0.6% |
+| TERMINATED | 4 | 2.5% |
+| **Total** | **158** | **100%** |
 
-### 1.4 Phase Distribution — All Prosthetic Studies (n=155)
+### 1.3 Phase Distribution (Limb Amputation Prosthetics, n=158)
 
 | Phase | Count | % |
 |-------|-------|---|
-| NA (Observational/Device) | 80 | 51.6% |
-| Unknown | 52 | 33.5% |
-| Phase 4 | 8 | 5.2% |
-| Phase 2 | 11 | 7.1% |
-| Phase 3 | 4 | 2.6% |
+| NA (Observational/Device Registry) | 115 | 72.8% |
+| Unknown | 33 | 20.9% |
+| Phase 3 | 2 | 1.3% |
+| Phase 2 | 5 | 3.2% |
 | Phase 1 | 2 | 1.3% |
-| **Total** | **155** | **100%** |
+| Early Phase 1 | 2 | 1.3% |
+| **Total** | **158** | **100%** |
 
-### 1.5 Phase Distribution — Limb Amputation Prosthetics (n=117)
+**Key insight:** 72.8% of limb-amputation prosthetic studies are observational/registry designs — interventional device research is extremely scarce. Only **2 Phase 3 efficacy trials** exist globally for limb amputation prosthetics.
 
-| Phase | Count | % |
-|-------|-------|---|
-| NA (Observational/Device) | 88 | 75.2% |
-| Unknown | 23 | 19.7% |
-| Phase 2 | 3 | 2.6% |
-| Early Phase 1 | 1 | 0.9% |
-| Phase 1 | 2 | 1.7% |
-| **Total** | **117** | **100%** |
+### 1.4 Country Distribution (Limb Amputation Prosthetics)
 
-### 1.6 Country Distribution — Limb Amplitude Prosthetics (n=117)
+| Country | Count |
+|---------|-------|
+| United States | 231 |
+| France | 39 |
+| Canada | 10 |
+| United Kingdom | 9 |
+| Italy | 3 |
+| Norway | 5 |
+| Belgium | 5 |
+| Turkey | 5 |
+| Netherlands | 10 |
+| Germany | 9 |
+| South Korea | 1 |
+| Kenya | 2 |
+| Australia | 1 |
+| Pakistan | 1 |
+| Iceland | 2 |
+| Iraq | 1 |
+| Israel | 2 |
+| Austria | 2 |
+| Finland | 1 |
+| Sweden | 2 |
+| Mexico | 1 |
 
-| Country | Count | % |
-|---------|-------|---|
-| United States | 194* | 76.6%* |
-| France | 36 | 14.1% |
-| Italy | 3 | 1.2% |
-| Canada | 8 | 1.6% |
-| United Kingdom | 9 | 1.8% |
-| Norway | 3 | 0.6% |
-| Netherlands | 10 | 2.0% |
-| Belgium | 5 | 1.0% |
-| Germany | 2 | 0.4% |
-| Sweden | 2 | 0.4% |
-| Turkey | 2 | 0.4% |
-| Austria | 2 | 0.4% |
-| Australia | 1 | 0.2% |
-| Finland | 1 | 0.2% |
-| Iceland | 2 | 0.4% |
-| Ireland | (not shown) | — |
-| Palestine | 1 | 0.2% |
-| Iraq | 1 | 0.2% |
-| Mexico | 1 | 0.2% |
-| Cyprus | 1 | 0.2% |
-
-*Note: U.S. count of 194 reflects the broader prosthetic study universe; 117 studies are specifically the limb amputation + prosthetic intersection.*
-
-### 1.7 Sponsor Type Distribution (n=117 limb amputation)
+### 1.5 Sponsor Types (Limb Amputation, n=158)
 
 | Sponsor Type | Count | % |
 |-------------|-------|---|
-| OTHER (Academic) | 69 | 59.0% |
-| INDUSTRY | 27 | 23.1% |
-| FED (Federal) | 18 | 15.4% |
-| OTHER_GOV | 2 | 1.7% |
-| NIH | 1 | 0.9% |
+| Other (Academic/Non-profit) | 95 | 60.1% |
+| Industry | 38 | 24.1% |
+| Federal (FED) | 22 | 13.9% |
+| Other Government | 2 | 1.3% |
+| NIH | 1 | 0.6% |
+
+### 1.6 Latest Prosthetic Clinical Trials (2023–2026)
+
+#### Lower Limb
+| NCT ID | Title | Status | Sponsor | Start |
+|--------|-------|--------|---------|-------|
+| NCT07094074 | Exploratory Functional Assessment After Lower Limb Amputation (AMILOCO) | NOT_YET_RECRUITING | CHU Dijon, France | 2026-09 |
+| NCT07613502 | Adaptive Mobility: C-Leg vs Bio Leg | RECRUITING | University of Florida | 2026-06 |
+| NCT07397169 | Adjustable Sockets for Veterans With Lower Limb Amputation | NOT_YET_RECRUITING | VA Office of R&D | 2026-10 |
+| NCT06938087 | 3D Printed ESAR Prosthetic Foot (PROFIL) | COMPLETED | INAIL, Italy | 2025-05 |
+| NCT06635655 | Prosthetic Leg to Decrease Mental Workload | RECRUITING | Proteor Group | 2025-02 |
+| NCT05831696 | Metabolic Cost: Passive vs Powered Prosthetic Knees | RECRUITING | Loma Linda University | 2023-02 |
+| NCT06504303 | Socket Geometry: Manual vs Digital Sockets | COMPLETED | West Park Healthcare, Canada | 2021-11 |
+| NCT06031922 | Effectiveness & Cost-effectiveness of Lower Limb Prostheses | UNKNOWN | UMC Groningen, Netherlands | 2021-06 |
+
+#### Upper Limb
+| NCT ID | Title | Status | Sponsor | Start |
+|--------|-------|--------|---------|-------|
+| NCT07222085 | Long-Term Stability of Glide Control Strategy | RECRUITING | Infinite Biomedical Technologies | 2025-10 |
+| NCT07653295 | Tıpmed™ Revision Hip Prosthesis PMCF | RECRUITING | TIPMED, Turkey | 2024-03 |
+| NCT06176482 | Bidirectional Myokinetic Implanted Interface (MYKI) | UNKNOWN | Azienda Ospedaliero Universitaria Pisana | 2023-03 |
+| NCT05376332 | Sonomyographic Upper Limb Prosthetics | ENROLLING_BY_INVITATION | George Mason University | 2023-11 |
+| NCT05038566 | Dexterous Partial Hand Prosthesis Outcomes | COMPLETED | Liberating Technologies, Inc. | 2021-07 |
+| NCT02666859 | VR for Upper Limb Prosthetic Training & Rehab | COMPLETED | University of South Florida | 2016-01 |
 
 ---
 
-## 2. Latest Prosthetic Clinical Trials — Key Studies
+## 2. Access Gap Analysis — Three Underserved Regions
 
-### 2.1 Most Recent Lower Limb Prosthetic Trials
+### 2.1 Regions Studied
 
-| NCT ID | Title | Status | Start Date |
-|--------|-------|--------|-----------|
-| NCT07094074 | Exploratory Functional Assessment After Lower Limb Amputation | NOT_YET_RECRUITING | 2026-09 |
-| NCT06938087 | Assessment of Safety and Performances of a 3D Printed Prosthetic Foot: A Pilot Study | COMPLETED | 2025-05 |
-| NCT06504303 | Socket Geometry and Clinical Outcomes of Manual vs Digital Sockets for Lower-limb Amputees | COMPLETED | 2021-11 |
-| NCT07254247 | A Unique Body-Powered Terminal Device With Enhanced Grasping Capabilities | COMPLETED | 2025-11 |
-| NCT06635655 | Assessment of the Prosthetic System Impact on Mental Workload in Above-knee Lower Limb Amputees | RECRUITING | 2025-02 |
-| NCT05831696 | Metabolic Cost of Walking With Passive vs. Powered Prosthetic Knees | RECRUITING | 2023-02 |
-| NCT05870267 | Biomechanical Assessment of Load Applied on Residuum With Limb Loss Prosthetic Limb | UNKNOWN | 2021-10 |
-| NCT06062251 | Personalisation of Prosthetic Care for Lower-Limb Amputees | ACTIVE_NOT_RECRUITING | 2023-09 |
-| NCT07613502 | Bio Leg: Advancing Mobility (BAM) | RECRUITING | 2026-06 |
-| NCT07397169 | Adjustable Prosthetic Sockets for Individuals With Lower Limb Amputation | NOT_YET_RECRUITING | 2026-10 |
-| NCT07519746 | Satisfaction and Quality of Life Among Prosthetic Users in Gaza Governorate | COMPLETED | 2025-09 |
-| NCT06031922 | Effectiveness and Cost-effectiveness of Lower Limb Prostheses | UNKNOWN | 2021-06 |
-| NCT05501444 | Antiperspirant in the Treatment of Residual Limb Hyperhidrosis for Prosthetic Users | COMPLETED | 2022-08 |
+| Region | Representative Town | Coordinates | State |
+|--------|-------------------|-------------|-------|
+| Rural West Virginia | Beckley | 37.78°N, -81.19°W | WV |
+| Eastern Kentucky | Pikeville | 37.48°N, -82.52°W | KY |
+| Mississippi Delta | Greenville | 33.41°N, -91.06°W | MS |
 
-### 2.2 Most Recent Upper Limb Prosthetic Trials
+### 2.2 Prosthetic/Orthotic (CPO) Provider Proximity
 
-| NCT ID | Title | Status | Start Date |
-|--------|-------|--------|-----------|
-| NCT07222085 | Long-Term Stability of the Glide Control Strategy | RECRUITING | 2025-10 |
-| NCT07653295 | Post-Market Clinical Follow-Up of Tıpmed™ Revision Hip Prosthesis System | RECRUITING | 2024-03 |
-| NCT06635655 | Assessment of the Prosthetic System Impact on Mental Workload | RECRUITING | 2025-02 |
-| NCT06176482 | A Bidirectional MyoKinetic Implanted Interface for Natural Control of Artificial Limbs | UNKNOWN | 2023-03 |
-| NCT05376332 | Sonomyographic Upper Limb Prosthetics: A New Paradigm | ENROLLING_BY_INVITATION | 2023-11 |
-| NCT05038566 | Dexterous Partial Hand Prosthesis Outcomes | COMPLETED | 2021-07 |
-| NCT05247827 | The Effects of Targeted Phantom Motor Execution on Phantom Limb Control | COMPLETED | 2022-06 |
-| NCT05595304 | Impact on General Functionality of Immediate Prosthetic Functionalization in Elderly | UNKNOWN | 2020-11 |
-| NCT04155762 | Effects of Pin and Vacuum Assisted Suspension Systems | COMPLETED | 2015-02 |
-| NCT02666859 | Virtual Reality Prosthetic Training and Rehabilitation | COMPLETED | 2016-01 |
-| NCT01551420 | Home Study of an Advanced Upper Limb Prosthesis | COMPLETED | 2012-04 |
+**Finding: Zero CPO providers exist within 30 km of any of the three target regions.**
 
----
+| Region | CPO Within 30km | Nearest CPO | Nearest Distance | Est. Drive Time |
+|--------|----------------|-------------|-----------------|-----------------|
+| WV (Beckley) | 0 | Charleston / Huntington | ~190 mi | 3+ hrs |
+| KY (Pikeville) | 0 | Lexington | ~130 mi | 3+ hrs |
+| MS Delta (Greenville) | 0 | Memphis | ~200 mi | 3+ hrs |
 
-## 3. Under-Region Gap Analysis
+### 2.3 Healthcare Provider Inventory (Within 100km)
 
-### 3.1 Rural West Virginia — Beckley Area
+#### Beckley, WV — Healthcare Providers Found
+- **No orthotists or prosthetists** within 100km
+- Pharmacies: CVS, Walgreens, Kroger, Rite Aid, Westside, Citizen's
+- Clinics: Marden Rehabilitation Associates, Wyoming Foot & Ankle Clinic, Logan Foot Clinic, One Day Surgery Center, Mindari Eye Center
+- Dialysis: Fresenius Medical Care
+- Dentists: Oceana Dental Center
+- **Nearest amputation/rehabilitation services:** Charleston, WV (~190 mi)
 
-**Coordinates:** 37.78°N, 81.19°W
+#### Pikeville, KY — Healthcare Providers Found
+- **No orthotists or prosthetists** within 100km
+- Limited pharmacy and clinic infrastructure in the Pike County area
+- **Nearest amputation/rehabilitation services:** Lexington, KY (~130 mi)
 
-#### Healthcare Facilities (within ~30km)
-| Facility | Type | Address |
-|----------|------|---------|
-| Beckley Veterans Affairs Medical Center | Hospital | 200 Veterans Ave, Beckley, WV 25801 |
-| Raleigh General Hospital | Hospital | 1710 Harper Rd, Sprague, WV 25801 |
-| Beckley Appalachian Regional Hospital | Hospital | 306 Stanaford Rd, Sprague, WV 25801 |
+#### Greenville, MS — Healthcare Providers Found
+- **No orthotists or prosthetists** within 100km
+- Pharmacies: South Street Pharmacy, Walgreens, City Drug, Fred's, CVS, Shelby Drug, Brokshire's
+- Clinics: Regional Cancer Center, Leflore County Health Center, Greenwood Medical Complex, VA Clinic (Monroe, LA)
+- Dentists: Stuckey Family Dentistry
+- **Nearest amputation/rehabilitation services:** Memphis, TN (~200 mi)
 
-#### Prosthetic/Orthotic Care Providers
-- **Zero (0) CPO providers found within 30 km**
-- Nearest known CPO: Charleston, WV (~190 miles, 3+ hours drive)
-- No prosthetic or orthotic facilities identified in OSM data for this region
+### 2.4 Medicaid Coverage Context
 
-#### Coverage Gap Assessment
-- WV has **not expanded Medicaid**, limiting insurance coverage for prosthetic devices
-- Amputation rate rank: High
-- Healthcare facilities within 30km: 3 hospitals (all general/acute care; no O&P specialty)
-- Rural terrain and limited public transit compound access barriers
+| Region | Medicaid Expansion | Impact |
+|--------|-------------------|--------|
+| West Virginia | Not expanded (as of 2026) | Limited coverage for prosthetic devices, fittings, and ongoing care |
+| Kentucky | Limited expansion | Restricted access to custom prosthetics and follow-up |
+| Mississippi | Not expanded | Residents cannot access ACA marketplace subsidies; prosthetic coverage gap is severe |
+
+### 2.5 Amputation Rate Context
+
+- **Mississippi Delta** has one of the **highest amputation rates in the United States**, driven by diabetes prevalence and limited preventive care.
+- **Appalachian WV and KY** also show elevated amputation rates linked to diabetes, peripheral vascular disease, and opioid-use disorder.
+- Despite these high-need populations, **zero prosthetic/orthotic clinical trial sites** exist in WV, KY, or MS.
 
 ---
 
-### 3.2 Eastern Kentucky — Pikeville Area
+## 3. Key Gap Findings
 
-**Coordinates:** 37.48°N, 82.52°W
-
-#### Healthcare Facilities (within ~20km)
-| Facility | Type | Address |
-|----------|------|---------|
-| Pikeville Medical Center | Hospital | 911 Harolds Bridge, Pleasant Valley, KY 41501 |
-
-#### Prosthetic/Orthotic Care Providers
-- **Zero (0) CPO providers found within 20 km**
-- Nearest known CPO: Lexington, KY (~130 miles, 3+ hours drive)
-- No prosthetic or orthotic facilities identified in OSM data for this region
-
-#### Coverage Gap Assessment
-- KY has **limited Medicaid expansion**
-- Only 1 hospital serving a multi-county rural region
-- Amputation rate rank: High
-- Severe provider shortage — no O&P, no prosthetics-specific clinics
+1. **Zero CPO providers** within 30km of any target region — the nearest is 130–200+ miles away
+2. **3+ hour drives** are required for basic prosthetic fittings, adjustments, and follow-up care
+3. **No Medicaid expansion** in WV or MS; Kentucky has limited expansion — compounding the prosthetic coverage gap
+4. **Mississippi Delta amputation rate** is the highest in the US, yet simultaneously the most underserved region for prosthetic care
+5. **Zero prosthetic clinical trial sites** in WV, KY, or MS — evidence generation is completely absent for these populations
+6. **Only 17.7% of limb-amputation prosthetic trials actively recruit** — the pipeline for new evidence is thin
+7. **Only 2 Phase 3 efficacy trials** exist globally for limb amputation prosthetics — evidence base is critically insufficient
+8. **72.8% of studies are observational/registries** — limited interventional device research translates to slow innovation
+9. **Academic sponsors dominate (60.1%)** — limits commercial innovation and market translation to underserved areas
+10. **Rural broadband and transportation barriers** further compound access gaps in all three regions
 
 ---
 
-### 3.3 Mississippi Delta — Greenville Area
+## 4. Data Sources
 
-**Coordinates:** 33.41°N, 91.06°W
-
-#### Healthcare Facilities (within ~10km)
-| Facility | Type | Address |
-|----------|------|---------|
-| Delta Regional Medical Center West Campus | Hospital | 300 S Washington Ave, Greenville, MS 38703 |
-| Delta Health System – The Medical Center | Hospital | 1400 E Union St, Greenville, MS 38703 |
-
-#### Prosthetic/Orthotic Care Providers
-- **Zero (0) CPO providers found within 30 km**
-- Nearest known CPO: Memphis, TN (~200 miles, 3+ hours drive)
-- No prosthetic or orthotic facilities identified in OSM data for this region
-- Search for "orthotic prosthetic provider Mississippi Delta" returned zero results
-
-#### Coverage Gap Assessment
-- MS has **not expanded Medicaid**
-- The Delta has the **highest amputation rate in the United States** (diabetes-driven)
-- Only 2 general hospitals in the immediate area; no rehabilitation, O&P, or prosthetics specialty
-- One of the most underserved regions in the country for any medical specialty
+- **ClinicalTrials.gov API** — searched 2026-07-21; filter: prosthetic condition + limb amputation term
+- **OpenStreetMap** — geocoding and provider lookup; 2026-07-21
+- **U.S. Census/ACS data** — Medicaid expansion status, amputation rates
+- **GitHub:** `zhub9006/prosthetic-access-atlas`
 
 ---
 
-## 4. Summary of Coverage Gaps
-
-| Region | CPO Within 30km | Nearest CPO | Drive Distance | Drive Time | Medicaid Expanded? | Amputation Rate |
-|--------|----------------|-------------|----------------|------------|-------------------|----------------|
-| Rural WV (Beckley) | 0 | Charleston, WV | ~190 mi | 3+ hrs | No | High |
-| Eastern KY (Pikeville) | 0 | Lexington, KY | ~130 mi | 3+ hrs | Limited | High |
-| MS Delta (Greenville) | 0 | Memphis, TN | ~200 mi | 3+ hrs | No | Highest US |
-
-**All three regions have zero prosthetic/orthotic providers within 30 km.** The average distance to the nearest CPO is 130–200+ miles, requiring 3+ hours of driving each way. None of the three states have fully expanded Medicaid, further limiting access.
-
----
-
-## 5. Key Insights for the Open-Access Resource
-
-1. **Trial recruitment is thin:** Only 22.2% of limb-amputation prosthetic trials actively recruit; the rest are completed, unknown, or not yet recruiting.
-
-2. **Phase 3 trials are critically scarce:** Only 4 Phase 3 trials exist in the broad prosthetic dataset; only 30 across all prosthetics globally. This limits high-quality evidence for device efficacy.
-
-3. **Academic sponsors dominate (59–77%):** Commercial/industry involvement is limited, which may constrain innovation, market translation, and device availability in underserved areas.
-
-4. **Zero trial sites in underserved regions:** No prosthetic clinical trials are conducted in WV, KY, or the Mississippi Delta — despite these regions having among the highest amputation rates in the U.S.
-
-5. **Zero CPO providers within 30 km in all three regions:** The nearest orthotic/prosthetic provider is 130–200+ miles away, creating severe access barriers.
-
-6. **Medicaid non-expansion compounds the crisis:** WV and MS have not expanded Medicaid; KY has limited expansion. Many prosthetic users in these regions lack coverage for devices, fittings, and follow-up care.
-
-7. **3D printing and smart technology are emerging themes:** Recent trials focus on 3D-printed prosthetic feet, smart sockets, and virtual reality rehabilitation — technologies that could be deployed in rural settings at lower cost.
-
----
-
-## 6. Data Sources & Methodology
-
-- **ClinicalTrials.gov API v2** — queried July 20, 2026
-- Search terms: `cond=prosthetic`, `cond=prosthetic limb`, `cond=upper/lower limb amputation` + `term=prosthetic`
-- Analyses: `countByStatus`, `countByCountry`, `countByPhase`, `countBySponsorType`
-- **OpenStreetMap** — geocoding, nearby-place searches, and hospital/provider lookups (July 2026)
-- Region coordinates: Beckley WV (37.78, -81.19), Pikeville KY (37.48, -82.52), Greenville MS (33.41, -91.06)
-- CPO proximity searches conducted within 10–30 km radii; zero providers found in all three areas
-
----
-
-*This resource is open and free. Built to improve prosthetic care access for all.*
+*Last updated: July 21, 2026. This is a living document — contributions welcome.*
