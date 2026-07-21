@@ -1,4 +1,14 @@
-region,center_lat,center_lon,search_radius_km,healthcare_facilities_found,prosthetic_orthotic_providers_found,nearest_hospital_city,distance_to_nearest_hospital_mi,notes
-rural_wv,37.7781702,-81.1881557,100,6,0,Charleston,190,"CVS/Walgreens/Kroger pharmacies; rehab clinic; foot clinic; eye center; dialysis center — no CPO providers"
-eastern_ky,37.4792672,-82.5187629,100,0,0,Lexington,130,"OSM search infrastructure-limited in rural KY; regional hospital仅有 in Pikeville"
-ms_delta,33.4111051,-91.0635857,100,9,0,Memphis,200,"Cancer clinic; county health center; VA clinic (Monroe LA); walgreens/cvs/freds; no O&P specialty"
+region,center_lat,center_lon,search_radius_km,category,provider_count,nearest_provider_type,nearest_distance_km,notes
+Rural WV Beckley,37.778,-81.188,50,healthcare:clinic,3 (timeout — partial from Huntington corridor),general clinic,unknown,504 timeout on full search; Huntington area has 3 hospitals + 2 clinics
+Rural WV Beckley,37.778,-81.188,30000,healthcare:clinic,1 (Ashland-Boyd County Health Dept),general clinic,unknown,No O&P specialist found
+E Kentucky Pikeville,37.479,-82.519,50,healthcare:clinic,6,general clinic,unknown,Logan Foot Clinic (general), MCHC Elkhorn City, Dickenson County HDept — NONE are CPO
+E Kentucky Pikeville,37.479,-82.519,50,healthcare:pharmacy,7,community pharmacy,unknown,No O&P provider among pharmacies or clinics
+E Kentucky Pikeville,37.479,-82.519,50,healthcare:doctor,5,general/family medicine,unknown,PMC Employee Health, Mountain Instant Care, Meta Medical Center — none are prosthetists
+E Kentucky Ashland,38.478,-82.638,30000,healthcare:clinic,1,Ashland-Boyd County Health Dept,unknown,No O&P provider; no prosthetic/orthotic specialty
+E Kentucky Ashland,38.478,-82.638,30000,healthcare:pharmacy,4,CVS/Walgreens,unknown,No prosthetist or orthotist
+MS Delta Greenville,33.411,-91.064,50,healthcare:clinic,1,The Greenville Clinic,unknown,General/internal/pediatrics/cardiology only — no O&P
+MS Delta Greenville,33.411,-91.064,50,healthcare:hospital,1,Southeast Rehabilitation Hospital,10,10-bed rehab only — no O&P services
+MS Delta Greenville,33.411,-91.064,50,healthcare:pharmacy,4,Good Neighbor/Walgreens,unknown,No prosthetist or orthotist
+MS Delta Greenville,33.411,-91.064,50,healthcare:doctor,1,Gough's Family Medical Clinic,unknown,No prosthetist or orthotist
+MS Delta Clarksdale,34.201,-90.570,50,healthcare:pharmacy,1,Shelby Drug Store,unknown,Only 1 healthcare provider found in 50km radius
+MS Delta Clarksdale,34.201,-90.570,50,healthcare:clinic,0,None,None,Minimal infrastructure — no clinic or hospital found

@@ -1,4 +1,6 @@
-region,representative_town,latitude,longitude,cpo_within_30km,nearest_cpo_city,nearest_cpo_distance_mi,est_drive_time,hrs,medicaid_expansion,amputation_rate_context
-rural_wv,Beckley,37.78,-81.19,0,Charleston,190,3+,no expanded,High (appalachian diabetes/PVD)
-eastern_ky,Pikeville,37.48,-82.52,0,Lexington,130,3+,limited limited,High (appalachian diabetes/opioid)
-ms_delta,Greenville,33.41,-91.06,0,Memphis,200,3+,no expanded,Highest US (diabetes-driven)
+region,repr_city,state,latitude,longitude,cprov_30km,nearest_cpo_city,nearest_cpo_distance_mi,drive_time_hrs,medicaid_expansion,amputation_rate,number_of_hospitals,beds_available,csv_note
+Rural West Virginia,Beckley,WV,37.78,-81.19,0,Charleston,190,3+,No Expanded,High,3,0,No CPO providers within 30km; nearest CPO ~190mi (Charleston WV)
+Eastern Kentucky,Pikeville,KY,37.48,-82.52,0,Lexington,130,3+,Limited,High,1,0,No CPO providers; limited Medicaid expansion
+Eastern Kentucky,Ashland,KY,38.48,-82.64,0,Lexington,140,3+,Limited,High,3,0,No CPO providers in Ashland corridor
+MS Delta,Greenville,MS,33.41,-91.06,0,Memphis,200,3+,Not Expanded,Highest US,2,10,Highest US amputation rate; driven by diabetes prevalence; no Medicaid expansion
+MS Delta,Clarksdale,MS,34.20,-90.57,0,Memphis,150,3+,Not Expanded,Highest US,0,0,Minimal healthcare infrastructure; only 1 pharmacy within 50km

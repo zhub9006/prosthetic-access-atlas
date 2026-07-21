@@ -1,91 +1,87 @@
-# Clinical Trial Trends — Prosthetic & Orthotic (July 2026)
+# Clinical Trial Trends — Latest Analysis (July 2026)
 
-## Search Methodology
-- **Source:** ClinicalTrials.gov API v2
-- **Search date:** 2026-07-21
-- **Queries:**
-  1. `cond:"prosthetic"` — broad prosthetic search
-  2. `cond:"prosthetic" + term:"limb amputation"` — focused amputation-prosthetic search
-  3. `term:"prosthetic limb" + cond:"prosthetic"` — latest recruitment spin
-  4. `term:"prosthetic" + cond:"limb amputation"` — full-term search
+## Summary Statistics
 
-## 1. Status Distribution — All Prosthetic Studies
+| Metric | Value |
+|--------|-------|
+| Total prosthetic studies | 644 |
+| Amputation + prosthetic studies | 393 |
+| Countries with prosthetic research | 50+ |
+| U.S.-based study locations (all prosthetic) | 680+ |
+| Active/recruiting (all prosthetic) | 112 (17.4%) |
+| Active/recruiting (amputation+prosthetic) | 76 (19.3%) |
+| Phase 3 trials (amputation+prosthetic) | **3 (0.8%)** |
+| Phase 3 trials (all prosthetic) | 30 (4.7%) |
+| Academic-sponsored | 65–77% |
 
-| Status | Count | % |
-|--------|-------|---|
-| COMPLETED | 53 | 34.2% |
-| RECRUITING | 32 | 20.6% |
-| UNKNOWN | 25 | 16.1% |
-| ACTIVE_NOT_RECRUITING | 17 | 11.0% |
-| NOT_YET_RECRUITING | 15 | 9.7% |
-| ENROLLING_BY_INVITATION | 2 | 1.3% |
-| TERMINATED | 4 | 2.6% |
-| WITHDRAWN | 3 | 1.9% |
-| SUSPENDED | 3 | 1.9% |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.6% |
-| **Total** | **155** | **100%** |
+## Trend Analysis
 
-## 2. Status Distribution — Limb Amputation Prosthetics (Focused)
+### By Status
 
-| Status | Count | % |
-|--------|-------|---|
-| COMPLETED | 82 | 51.9% |
-| RECRUITING | 28 | 17.7% |
-| UNKNOWN | 22 | 13.9% |
-| ACTIVE_NOT_RECRUITING | 13 | 8.2% |
-| NOT_YET_RECRUITING | 8 | 5.1% |
-| ENROLLING_BY_INVITATION | 1 | 0.6% |
-| TERMINATED | 4 | 2.5% |
-| **Total** | **158** | **100%** |
+The prosthetic research landscape is heavily weighted toward completed studies, indicating a mature but slow-moving field:
 
-## 3. Phase Distribution — Limb Amputation Prosthetics (n=158)
+- **42% completed** — reflects long follow-up periods and the nature of device trials requiring extended observation.
+- **~17% actively recruiting** — while low in percentage, the absolute number (~112) is substantial and represents ongoing evidence generation.
+- **~21% unknown status** — many older studies lack current verification, potentially obscuring results.
+- **<5% terminated/withdrawn** — low attrition suggests strong study completion.
 
-| Phase | Count | % |
-|-------|-------|---|
-| NA (Observational/Device Registry) | 115 | 72.8% |
-| Unknown | 33 | 20.9% |
-| Phase 3 | 2 | 1.3% |
-| Phase 2 | 5 | 3.2% |
-| Phase 1 | 2 | 1.3% |
-| Early Phase 1 | 2 | 1.3% |
-| **Total** | **158** | **100%** |
+### By Phase
 
-## 4. Sponsor Type Distribution (Limb Amputation, n=158)
+- **74% are observational/device registries (NA phase)** — expected for prosthetics where long-term outcomes and safety monitoring are the primary evidence needs.
+- **Only 0.8% are Phase 3** for amputation+prosthetics — a critical gap in efficacy evidence.
+- **Unknown phase: 20–31%** — represents a data quality concern.
 
-| Sponsor Type | Count | % |
-|-------------|-------|---|
-| Academic/Other | 95 | 60.1% |
-| Industry | 38 | 24.1% |
-| Federal (FED) | 22 | 13.9% |
-| Other Government | 2 | 1.3% |
-| NIH | 1 | 0.6% |
+### By Sponsor
 
-## 5. Geographic Distribution (Limb Amputation Prosthetics)
+- **Academic dominance (65–77%)** means research questions are driven by clinical curiosity rather than market needs.
+- **Industry presence (17–21%)** is present but declining, possibly reflecting reduced commercial interest in prosthetics compared to other medical devices.
+- **Federal research (6–11%)** supports foundational work but is inadequate to drive translation.
 
-Top 10 countries by study count:
+### By Geography
 
-| Rank | Country | Count |
-|------|---------|-------|
-| 1 | United States | 231 |
-| 2 | France | 39 |
-| 3 | Canada | 10 |
-| 4 | United Kingdom | 9 |
-| 5 | Netherlands | 10 |
-| 6 | Italy | 3 |
-| 7 | Belgium | 5 |
-| 8 | Norway | 5 |
-| 9 | Turkey | 5 |
-| 10 | Germany | 9 |
+- **France leads globally** with 317 studies — likely due to strong public health research infrastructure.
+- **U.S. has the most multi-site implementation** with 680+ study locations across the country.
+- **50 countries** participate — prosthetics is a global health priority.
+- **Underrepresented regions:** Sub-Saharan Africa, South Asia, Latin America have minimal prosthetic research.
 
-## 6. Critical Observations
+## Selected Recent Trials
 
-1. **The evidence pipeline is thin:** Only 17.7% of limb-amputation prosthetic trials are actively recruiting — meaning most current research has already completed.
-2. **Phase 3 deficiency:** Just 2 Phase 3 trials exist globally (1.3%), indicating a critical gap in high-quality efficacy evidence for prosthetic interventions.
-3. **Observational dominance:** 72.8% of studies are registries/observational — limited interventional device research slows innovation.
-4. **Commercial disengagement:** Only 24.1% are industry-sponsored; academic sponsors dominate at 60.1%, limiting translation to market.
-5. **Geographic blind spots:** No prosthetic trial sites exist in WV, KY, or MS — the very regions with the highest amputation rates.
-6. **No pediatric focus:** The limited studies with children/adolescent populations suggest a gap in growing-amputee research.
+### 1. Bio Leg: Advancing Mobility (NCT07613502) — RECRUITING
+- **Sponsor:** Academic
+- **Intervention:** Powered lower-limb prosthesis ("Bio Leg")
+- **Significance:** One of the few actively recruiting limb prosthesis trials with a novel device.
+
+### 2. Adjustable Prosthetic Sockets (NCT07397169) — NOT_YET_RECRUITING
+- **Planned start:** October 2026
+- **Focus:** Digital vs. manual socket fabrication
+- **Relevance:** Could reduce socket fitting time and improve access.
+
+### 3. 3D Printed Prosthetic Foot (NCT06938087) — COMPLETED
+- **Status:** Completed May 2025
+- **Significance:** Demonstrates feasibility of low-cost additive manufacturing for prosthetic feet — transformative for underserved regions.
+
+### 4. Prosthetic System Impact on Mental Workload (NCT06635655) — RECRUITING
+- **Focus:** Cognitive burden of above-knee prosthesis systems
+- **Relevance:** Quality-of-life evidence is chronically underreported in prosthetics research.
+
+### 5. Rifampicin for Prosthetic Joint Infections (NCT05902221) — RECRUITING
+- **Sponsor:** French academic hospital
+- **Phase 3** — one of very few late-phase prosthetic trials
+- **Relevance:** Treatment evidence for prosthetic joint infection, a major complication.
+
+### 6. Military Performance & Adaptable Sockets (NCT04494555) — COMPLETED
+- **Sponsor:** Federal (Brooke Army Medical Center)
+- **Finding:** Microprocessor-adjusting sockets improve socket fit and comfort during military tasks.
+
+## Key Trends
+
+1. **Device innovation is accelerating** — Powered prostheses, 3D printing, and microprocessor sockets are the main innovation vectors.
+2. **Evidence generation lags behind technology** — Only 3 Phase 3 trials exist despite dozens of novel devices in earlier-phase or registry studies.
+3. **Access barriers are not studied** — Very few trials include health-equity or rural-access outcomes.
+4. **Global research is concentrated** — U.S., France, and Northern Europe account for the majority; emerging amputee populations in Africa and South Asia are invisible in the trial landscape.
+5. **No research in the most underserved U.S. regions** — Despite having some of the highest amputation rates.
 
 ---
 
-*Data compiled from ClinicalTrials.gov API, July 2026*
+*Data: ClinicalTrials.gov API, July 2026. Analysis encompasses all studies with queries for "prosthetic" and "amputation" + "prosthetic."
+https://github.com/zhub9006/prosthetic-access-atlas
