@@ -1,0 +1,119 @@
+# Latest Prosthetic Clinical Trials — Machine-Readable Data (July 2026)
+
+> JSON data extracted from ClinicalTrials.gov API, July 20–21, 2026
+> This file provides a curated list of the most relevant prosthetic clinical trials for quick reference.
+
+---
+
+## Summary Statistics
+
+- total_trials_broad: 155
+- total_trials_limb_amputation: 117
+- total_trials_upper_limb: 88
+- total_trials_lower_limb: 176
+- actively_recruiting_limb_amputation: 26
+- completed_limb_amputation: 58
+- phase3_exists: 4 (broad) / 0 (limb amputation)
+
+---
+
+## Selected Key Trials
+
+### Lower Limb Prosthetics
+
+- - nct_id: NCT07094074
+  title: "Exploratory Functional Assessment After Lower Limb Amputation"
+  status: NOT_YET_RECRUITING
+  start_date: "2026-09"
+  condition: "Lower Limb Amputation"
+  phase: NA
+
+- - nct_id: NCT07613502
+  title: "Bio Leg: Advancing Mobility (BAM)"
+  status: RECRUITING
+  start_date: "2026-06"
+  condition: "Amputation of Lower Limb Above Knee, Amputee, Amputation"
+  phase: NA
+
+- - nct_id: NCT07397169
+  title: "Adjustable Prosthetic Sockets for Individuals With Lower Limb Amputation"
+  status: NOT_YET_RECRUITING
+  start_date: "2026-10"
+  condition: "Lower Extremity Amputation"
+  phase: NA
+
+- - nct_id: NCT06938087
+  title: "Assessment of Safety and Performances of a 3D Printed Prosthetic Foot: A Pilot Study"
+  status: COMPLETED
+  start_date: "2025-05"
+  condition: "Amputation of Lower Limb"
+  phase: NA
+
+- - nct_id: NCT07254247
+  title: "A Unique Body-Powered Terminal Device With Enhanced Grasping Capabilities for Individuals With Upper Limb Loss"
+  status: COMPLETED
+  start_date: "2025-11"
+  condition: "Amputation"
+  phase: NA
+
+- - nct_id: NCT06635655
+  title: "Assessment of the Prosthetic System Impact on Mental Workload in Above-knee Lower Limb Amputees"
+  status: RECRUITING
+  start_date: "2025-02"
+  condition: "Lower Limb Amputation Above Knee (Injury)"
+  phase: NA
+
+- - nct_id: NCT05831696
+  title: "Metabolic Cost of Walking With Passive vs. Powered Prosthetic Knees Among Persons With Limb Loss"
+  status: RECRUITING
+  start_date: "2023-02"
+  condition: "Transfemoral Amputation"
+  phase: NA
+
+- - nct_id: NCT06504303
+  title: "Socket Geometry and Clinical Outcomes of Manual vs Digital Sockets for Lower-limb Amputees"
+  status: COMPLETED
+  start_date: "2021-11"
+  condition: "Amputation"
+  phase: NA
+
+### Upper Limb Prosthetics
+
+- - nct_id: NCT07222085
+  title: "Long-Term Stability of the Glide Control Strategy"
+  status: RECRUITING
+  start_date: "2025-10"
+  condition: "Upper Limb Amputation Above Elbow, Upper Limb Amputation Below Elbow"
+  phase: NA
+
+- - nct_id: NCT06176482
+  title: "A Bidirectional MyoKinetic Implanted Interface for Natural Control of Artificial Limbs"
+  status: UNKNOWN
+  start_date: "2023-03"
+  condition: "Upper Limb Amputation at the Wrist"
+  phase: NA
+
+- - nct_id: NCT05376332
+  title: "Sonomyographic Upper Limb Prosthetics: A New Paradigm"
+  status: ENROLLING_BY_INVITATION
+  start_date: "2023-11"
+  condition: "Amputation, Prosthesis User"
+  phase: NA
+
+- - nct_id: NCT05038566
+  title: "Dexterous Partial Hand Prosthesis Outcomes"
+  status: COMPLETED
+  start_date: "2021-07"
+  condition: "Amputation, Amputation; Traumatic, Hand, Limb; Absence, Congenital, Upper, Prosthesis User, Upper Limb Amputation at the Hand"
+  phase: NA
+
+---
+
+## Data Sources
+
+- ClinicalTrials.gov API v2 (July 20, 2026)
+- OpenStreetMap MCP Server (July 2026)
+
+## License
+
+MIT — free to use for research, policy, and advocacy.
