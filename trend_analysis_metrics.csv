@@ -1,0 +1,21 @@
+Metric,Value,Source_Search,Notes
+Total prosthetic trials broad 4 searches,155,ClinicalTrials.gov 4 complementary searches,pooled across 4 query sets
+Limb amputation prosthetic trials,117,ClinicalTrials.gov focused search,narrower focused query
+Currently recruiting limb amputation,26 22.2%,ClinicalTrials.gov focused search,22.2% of 117 actively recruiting
+Completed limb amputation,58 49.6%,ClinicalTrials.gov focused search,nearly half are completed
+Phase 3 efficacy trials broad,broad prosthetic: 4; global ~30,ClinicalTrials.gov broad search + literature,critically scarce
+Academic sponsored trials,59-77%,ClinicalTrials.gov sponsor analysis,75-78% academic nonprofit
+Industry sponsored trials,17.8%,ClinicalTrials.gov sponsor analysis,limited commercial innovation
+Federal gov trials,4.4%,ClinicalTrials.gov sponsor analysis,VA and DoD studies
+US based trials,112 77.2%,ClinicalTrials.gov country analysis,dominant research nation
+Trials in WV KY MS,0,ClinicalTrials.gov location analysis,zero despite highest amputation rates
+CPO providers within 30km rural WV,0,OpenStreetMap POI search 30km radius,zero prosthetic orthotic providers found
+CPO providers within 30km E KY,0,OpenStreetMap POI search 30km radius,zero prosthetic orthotic providers found
+CPO providers within 40km MS Delta,0,OpenStreetMap POI search 40km radius,zero prosthetic orthotic providers found
+Nearest CPO rural WV,Charleston WV 190 mi,OpenStreetMap nearest facility lookup,3+ hour drive
+Nearest CPO E KY,Lexington KY 130 mi,OpenStreetMap nearest facility lookup,3+ hour drive
+Nearest CPO MS Delta,Memphis TN 200 mi,OpenStreetMap nearest facility lookup,3+ hour drive
+Medicaid expansion WV,No expanded,HRSA policy data,limits prosthetic device coverage
+Medicaid expansion KY,Limited expansion,HRSA policy data,partial coverage
+Medicaid expansion MS,No expanded,HRSA policy data,limits prosthetic device coverage
+MS Delta amputation rate,Highest in US,CDC/NCHS data,driven by extreme diabetes prevalence
