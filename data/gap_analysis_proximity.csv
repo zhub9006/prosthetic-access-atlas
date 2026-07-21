@@ -1,0 +1,4 @@
+region,city,latitude,longitude,cpo_within_30km,nearest_cpo,nearest_cpo_distance_mi,drive_time_to_cpo,medicaid_expansion,amputation_rate,hospitals_within_50km,o_and_m_providers_within_50km,rural_urban_designation
+Rural West Virginia,Beckley,37.778,-81.189,0,Charleston WV,190,3+ hrs,No Expanded,High,3,0,Rural
+Eastern Kentucky,Pikeville,37.479,-82.519,0,Lexington KY,130,3+ hrs,Limited,High,1,0,Rural
+Mississippi Delta,Greenville,33.411,-91.064,0,Memphis TN,200,3+ hrs,No Expanded,Highest US,1,0,Rural
