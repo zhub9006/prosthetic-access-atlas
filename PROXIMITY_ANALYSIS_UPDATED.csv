@@ -1,0 +1,5 @@
+id,region,lat,lon,cpo_within_30km,nearest_cpo,nearest_cpo_lat,nearest_cpo_lon,drive_distance_mi,drive_time_hrs,medicaid_expanded,amputation_rate_rank,healthcare_facilities,hospitals_in_region,proximity_analysis_date
+WV_Beckley,37.7781702,-81.1881557,0,Charleston WV,38.3498,-81.5372,190,3+,No,High,"Beckley VA Medical Center; Raleigh General Hospital; Beckley Appalachian Regional Hospital",3,July 2026
+KY_Pikeville,37.4792672,-82.5187629,0,Lexington KY,38.0406,-84.5037,130,3+,Limited,High,"Pikeville Medical Center",1,July 2026
+MS_Greenville,33.4111051,-91.0635857,0,Memphis TN,35.1495,-90.0490,200,3+,No,Highest US,"Delta Regional Medical Center West Campus; Delta Health System - The Medical Center",2,July 2026
+MS_Clarksdale,34.2006479,-90.5702071,0,Memphis TN,35.1495,-90.0490,150,3+,No,Highest US,0,July 2026
