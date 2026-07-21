@@ -1,0 +1,5 @@
+region,cpo_within_30km,nearest_cpo,drive_distance_mi,drive_time_hrs,medicaid_expanded,amputation_rate_rank,healthcare_facilities_30km
+Rural West Virginia (Beckley),0,Charleston WV,190,3+,No,High,"Beckley VA Medical Center; Raleigh General Hospital; Beckley Appalachian Regional Hospital"
+Eastern Kentucky (Pikeville),0,Lexington KY,130,3+,Limited,High,"Pikeville Medical Center"
+MS Delta (Greenville),0,Memphis TN,200,3+,No,Highest US,"Delta Regional Medical Center West Campus; Delta Health System"
+MS Delta (Clarksdale),0,Memphis TN,150,3+,No,Highest US,0
