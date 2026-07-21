@@ -1,0 +1,7 @@
+region,representative_city,latitude,longitude,cpo_in_100km,nearest_cpo,nearest_cpo_miles,drive_hrs,medicaid_expanded,amputation_rate
+Beckley_WV,Beckley WV,37.7782,-81.1882,0,Charleston WV,130,3+,no,high
+Clarksburg_WV,Clarksburg WV,39.2806,-80.3445,0,Charleston WV,200,3+,no,high
+Ashland_KY,Ashland KY,38.4784,-82.6379,0,Lexington KY,130,3+,limited,high
+Hazard_KY,Hazard KY,37.2490,-83.1934,0,Lexington KY,140,3+,limited,high
+Greenville_MS,Greenville MS,33.4111,-91.0636,0,Memphis TN,200,3.5+,no,highest_us
+Indianola_MS,Indianola MS,33.4510,-90.6551,0,Memphis TN,180,3+,no,highest_us
