@@ -1,6 +1,7 @@
-region,state,latitude,longitude,cpo_within_30km,nearest_cpo_city,distance_miles,drive_time_hours,medicaid_expanded,amputation_rate,trial_sites,hospitals_nearby,rural_urban_designation,risk_level
-Rural West Virginia (Beckley),WV,38.4758406,-80.8408415,0,Charleston WV,~190,3+,No,Above National Average,0,3,Rural,CRITICAL
-Eastern Kentucky (Hazard),KY,37.2489635,-83.1933893,0,Lexington KY,~130,3+,Limited,Above National Average,0,1,Rural,HIGH
-Eastern Kentucky (Pikeville),KY,37.5170432,-82.805994,0,Lexington KY,~140,3+,Limited,Above National Average,0,1,Rural,HIGH
-Mississippi Delta (Greenville),MS,33.4111051,-91.0635857,0,Memphis TN,~200,3+,No,Highest in US,0,2,Rural,CRITICAL
-Mississippi Delta (Clarksdale),MS,33.4111051,-91.0635857,0,Memphis TN,~150,3+,No,Highest in US,0,0,Rural,CRITICAL
+region,city,latitude,longitude,cpo_within_30km,nearest_cpo,distance_miles,drive_time_hours,medicaid_expanded,amputation_rate,hospitals_within_30km
+rural_west_virginia,Beckley,37.778,-81.188,0,Charleston WV,190,3+,No,High,3
+rural_west_virginia,Elkins,38.926,-79.847,0,Charleston WV,175,3+,No,High,2
+eastern_kentucky,Hazard,37.249,-83.193,0,Lexington KY,130,3+,Limited,High,1
+eastern_kentucky,Floyd County,37.517,-82.806,0,Lexington KY,125,3+,Limited,High,2
+mississippi_delta,Greenville,33.411,-91.064,0,Memphis TN,200,3+,No,Highest US,2
+mississippi_delta,Clarksdale,34.207,-90.575,0,Memphis TN,150,3+,Not expanded,Highest US,0
