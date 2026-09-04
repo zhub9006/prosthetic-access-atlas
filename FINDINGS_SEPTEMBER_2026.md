@@ -78,22 +78,26 @@
 
 | Region | Representative City | Latitude | Longitude |
 |--------|-------------------|----------|------------|
-| Rural West Virginia | Marlinton, WV | 38.223 | -80.095 |
-| Eastern Kentucky | Pikeville, KY | 37.479 | -82.519 |
-| Mississippi Delta | Greenville, MS | 33.411 | -91.064 |
+| Rural West Virginia | Beckley, WV | 37.78 | -81.19 |
+| Eastern Kentucky | Pikeville, KY | 37.48 | -82.52 |
+| Eastern Kentucky | Ashland, KY | 38.48 | -82.64 |
+| Mississippi Delta | Greenville, MS | 33.41 | -91.06 |
+| Mississippi Delta | Clarksdale, MS | 34.20 | -90.57 |
 
 ### Neighborhood & Provider Analysis (30km radius)
 
 | Region | Overall Score | Healthcare Providers Found | Hospitals Nearby | CPO/Prosthetic Providers |
 |--------|-------------|---------------------------|------------------|--------------------------|
-| Marlinton, WV | **0.0** | 0 within analysis radius | ~3 general hospitals | **0** |
+| Beckley, WV | **0.0** | 0 within analysis radius | ~3 general hospitals | **0** |
 | Pikeville, KY | **0.0** | 0 within analysis radius | ~1 general hospital | **0** |
+| Ashland, KY | **0.0** | 0 within analysis radius | ~3 general hospitals | **0** |
 | Greenville, MS | **0.0** | 0 within analysis radius | ~2 general hospitals | **0** |
+| Clarksdale, MS | **0.0** | 0 within analysis radius | 0 hospitals | **0** |
 
 ### Critical Findings
 
 #### 1. Zero Prosthetic/Orthotic (CPO) Providers Within 30 km
-- All three regions have **zero certified prosthetists/orthotists** within a 30 km radius.
+- All five target locations have **zero certified prosthetists/orthotists** within a 30 km radius.
 - Nearest CPO providers are **130–200+ miles away**, requiring 3+ hours of driving.
 
 #### 2. Medicaid Expansion Status
@@ -112,13 +116,25 @@
 
 ### Recommended Actions
 
-1. **Deploy mobile CPO units** to rotate through Marlinton, Pikeville, and Greenville on a scheduled basis
+1. **Deploy mobile CPO units** to rotate through Beckley, Pikeville, Ashland, Greenville, and Clarksdale on a scheduled basis
 2. **Establish telehealth CPO consultations** to reduce travel burden for adjustment and fitting
 3. **Target these regions for clinical trial recruitment** — no trials are currently sited here despite high need
 4. **Advocate for Medicaid expansion** in WV and MS to improve insurance coverage for prosthetic devices
 5. **Create a prosthetics fellowship pipeline** placing resident-trained CPOs in underserved regions for 2-year service commitments
 
----
+## Latest Active Trials (2024–2026)
+
+| NCT ID | Title | Status | Start Date |
+|--------|-------|--------|------------|
+| NCT07613502 | Bio Leg: Advancing Mobility (BAM) | RECRUITING | 2026-06 |
+| NCT07094074 | Exploratory Functional Assessment After Amputation | NOT_YET_RECRUITING | 2026-09 |
+| NCT07397169 | Adjustable Prosthetic Sockets for Lower Limb | NOT_YET_RECRUITING | 2026-10 |
+| NCT06938087 | 3D Printed Prosthetic Foot: Pilot Study | COMPLETED | 2025-05 |
+| NCT06635655 | Prosthetic System Impact on Mental Workload | RECRUITING | 2025-02 |
+| NCT05831696 | Metabolic Cost: Passive vs. Powered Knees | RECRUITING | 2023-02 |
+| NCT07222085 | Glide Control Strategy (Upper Limb) | RECRUITING | 2025-10 |
+| NCT07653295 | Típmed™ Revision Hip Prosthesis PMCF | RECRUITING | 2024-03 |
+| NCT05902221 | Rifampicin for C. acnes Prosthetic Joint Infections | RECRUITING | 2024-05 |
 
 ## Data Sources
 
