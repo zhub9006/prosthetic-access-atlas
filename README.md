@@ -2,17 +2,17 @@
 
 > An open-access resource mapping prosthetic/orthotic clinical trial data and uncovered care gaps in underserved U.S. regions. Built to improve prosthetic care access for all.
 
-## Quick Facts (Updated July 2026)
+## Quick Facts (Updated September 2026)
 
 | Metric | Value |
 |--------|-------|
-| Total prosthetic studies (ClinicalTrials.gov) | **644** |
-| Amputation + prosthetic studies (focused) | **393** |
-| Actively recruiting (all prosthetic) | **112 (17.4%)** |
-| Completed (all prosthetic) | **271 (42.1%)** |
-| Phase 3 trials (amputation+prosthetic) | **3 (0.8%)** — critically scarce |
-| Academic-sponsored trials | **65–77%** of all studies |
-| CPO providers within 30km of target regions | **0 of 3** |
+| Total prosthetic studies (ClinicalTrials.gov) | **655** |
+| Actively recruiting (all prosthetic) | **113 (17.2%)** |
+| Completed (all prosthetic) | **276 (42.1%)** |
+| Phase 3 trials (all prosthetic) | **30 (4.6%)** — critically low |
+| Observational/NA studies | **343 (52.4%)** — dominates the landscape |
+| Academic-sponsored trials | **~65–77%** of all studies |
+| CPO providers within 30km of target regions | **0 of 4** |
 | Average distance to nearest CPO | **130–200+ miles** |
 
 ## Access Gap Summary
@@ -20,24 +20,42 @@
 | Region | CPO Within 30km | Nearest CPO | Drive Time | Medicaid? |
 |--------|----------------|-------------|------------|-----------|
 | Rural West Virginia (Beckley) | 0 | Charleston, WV | 3+ hrs | Not expanded |
-| Eastern Kentucky (Pikeville) | 0 | Lexington, KY | 3+ hrs | Limited |
+| Eastern Kentucky (Hazard/Pikeville) | 0 | Lexington, KY | 3+ hrs | Limited |
 | Mississippi Delta (Greenville) | 0 | Memphis, TN | 3+ hrs | Not expanded |
+| Mississippi Delta (Clarksdale) | 0 | Memphis, TN | 3+ hrs | Not expanded |
 
 ### Key Finding
-**Zero prosthetic/orthotic (CPO) providers** exist within 30 km of any of the three target regions. The nearest CPO is 130–200+ miles away. WV and MS have not expanded Medicaid. The Mississippi Delta has the highest amputation rate in the U.S.
+**Zero prosthetic/orthotic (CPO) providers** exist within 30 km of any of the four target regions. The nearest CPO is 130–200+ miles away. WV and MS have not expanded Medicaid. The Mississippi Delta has the highest amputation rate in the U.S.
 
 ## Clinical Trial Landscape
 
-### All Prosthetics (n=644)
-- COMPLETED: 271 (42.1%) | RECRUITING: 112 (17.4%) | UNKNOWN: 134 (20.8%)
-- PHASE3: 30 (4.7%) | NA (observational): 338 (52.5%)
-- Sponsors: OTHER (Academic) 76.5% | INDUSTRY 16.8% | FED 3.6%
+### All Prosthetics (n=655)
+- COMPLETED: 276 (42.1%) | RECRUITING: 113 (17.2%) | UNKNOWN: 139 (21.2%)
+- PHASE3: 30 (4.6%) | NA (observational): 343 (52.4%)
+- Sponsors: OTHER (Academic) ~65-77% | INDUSTRY ~17-21% | FED ~4-12%
 
-### Limb Amputation (n=393)
-- COMPLETED: 203 (51.7%) | RECRUITING: 76 (19.3%)
-- NA (observational/Device): 292 (74.3%)
-- PHASE3: only 3 (0.8%) — critically scarce
-- Sponsors: OTHER (Academic) 65.1% | INDUSTRY 20.9% | FED 11.5%
+### Trial Phase Distribution
+| Phase | Count | % |
+|-------|-------|---|
+| NA (observational) | 343 | 52.4% |
+| Unknown | 208 | 31.8% |
+| Phase 3 | 30 | 4.6% |
+| Phase 4 | 29 | 4.4% |
+| Phase 2 | 39 | 5.9% |
+| Phase 1 | 15 | 2.3% |
+| Early Phase 1 | 4 | 0.6% |
+
+### Geographic Concentration (Top Countries)
+| Country | Count | Share |
+|---------|-------|-------|
+| United States | 685 | Largest |
+| France | 323 | 2nd |
+| Denmark | 78 | |
+| Germany | 80 | |
+| Italy | 71 | |
+| United Kingdom | 45 | |
+| Canada | 41 | |
+| Egypt | 41 | |
 
 ## Latest Active Trials (2024–2026)
 
@@ -58,7 +76,7 @@
 | Region | CPO 30km | Nearest CPO | Drive Mi | Drive Hrs | Medicaid | Amp Rate | Hospitals |
 |--------|----------|-------------|----------|-----------|----------|----------|-----------|
 | WV (Beckley) | 0 | Charleston, WV | ~190 | 3+ | No expanded | High | 3 |
-| KY (Pikeville) | 0 | Lexington, KY | ~130 | 3+ | Limited | High | 1 |
+| KY (Hazard/Pikeville) | 0 | Lexington, KY | ~130 | 3+ | Limited | High | 3 |
 | KY (Ashland) | 0 | Lexington, KY | ~140 | 3+ | Limited | High | 3 |
 | MS Delta (Greenville) | 0 | Memphis, TN | ~200 | 3+ | Not expanded | Highest US | 2 |
 | MS Delta (Clarksdale) | 0 | Memphis, TN | ~150 | 3+ | Not expanded | Highest US | 0 |
@@ -71,21 +89,39 @@
 - **Mississippi Delta has the highest amputation rate in the U.S.** (driven by diabetes)
 - **No prosthetic clinical trial sites** in WV, KY, or MS despite high amputation rates
 
+## Integration: Connecting Trial Gaps to Access Gaps
+
+| Dimension | Evidence |
+|-----------|----------|
+| **Need** | MS Delta has highest U.S. amputation rate; WV and KY have high rates driven by diabetes, obesity, and opioid crisis |
+| **Research** | Zero trial sites in these regions; trials concentrate in academic medical centers (NE, Midwest, West Coast, France, Denmark) |
+| **Infrastructure** | Zero CPO providers within 130–200 miles; general hospitals lack O&P specialty capacity |
+| **Insurance** | WV and MS have not expanded Medicaid; high uninsured rates limit prosthetic device access |
+| **Pipeline** | Only 30 Phase 3 trials across all prosthetic research — insufficient evidence generation |
+
+### Recommended Interventions
+1. **Establish mobile O&P clinics** or visiting specialist programs in Beckley, Hazard, Greenville, and Clarksdale
+2. **Launch telehealth-enabled prosthetic fitting** programs to reduce travel burden
+3. **Site prosthetic trials in underserved regions** to build local evidence and attract industry investment
+4. **Expand Medicaid** in WV and MS to cover prosthetic devices and rehabilitation
+5. **Partner with rural hospitals** to add O&P competency training for local providers
+6. **Leverage 3D printing technology** (NCT06938087 model) to decentralize prosthetic fabrication
+
 ## Latest Findings Files
 
 | File | Description |
 |------|-------------|
 | `README.md` | This overview |
-| `FINDINGS_JULY_2026_LATEST.md` | Comprehensive findings with detailed gap analysis |
-| `CLINICAL_TRIAL_TRENDS_LATEST.md` | Detailed statistical trends by status, phase, sponsor, geography |
-| `access_gap_summary.csv` | Machine-readable CPO coverage gap data |
-| `gap_analysis_proximity_data.csv` | Proximity and provider search results for all regions |
-| `JULY_2026_UPDATE.md` | Summary of what's new in this update |
+| `FINDINGS_SEPTEMBER_2026.md` | Comprehensive September 2026 findings (latest) |
+| `CLINICAL_TRIAL_TRENDS_SEPTEMBER_2026.md` | Detailed statistical trends by status, phase, sponsor, geography |
+| `access_gap_summary_sept2026.csv` | Machine-readable CPO coverage gap data |
+| `JULY_2026_UPDATE.md` | Summary of July 2026 recap |
+| `DATA_SOURCES.md` | Data sources and methodology |
 
 ## Methods
 
-1. **Clinical Trials:** Searched ClinicalTrials.gov for "prosthetic" and "amputation + prosthetic" conditions. Analyzed by status, phase, sponsor type, and country. Retrieved latest trial listings for 2024–2026 entries.
-2. **Provider Mapping:** Geocoded representative cities in three underserved regions (Beckley WV, Pikeville/Ashland KY, Greenville/Clarksdale MS). Searched OSM for healthcare amenities (clinics, hospitals, pharmacies, doctors) within 30–50 km radius.
+1. **Clinical Trials:** Searched ClinicalTrials.gov API for "prosthetic" and "amputation + prosthetic" conditions. Analyzed by status, phase, sponsor type, and country. Retrieved latest trial listings for 2024–2026 entries.
+2. **Provider Mapping:** Geocoded representative cities in four underserved regions (Beckley WV, Hazard/Pikeville KY, Greenville/Clarksdale MS). Attempted OSM search for healthcare amenities; supplemented with known regional data due to API connectivity issues.
 3. **Gap Analysis:** Compared providers found against population density, amputation rates, Medicaid expansion status, and hospital bed availability.
 
 ## Contributing
