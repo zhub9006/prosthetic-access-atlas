@@ -1,14 +1,7 @@
-region,center_lat,center_lon,search_radius_km,category,provider_count,nearest_provider_type,nearest_distance_km,notes
-Rural WV Beckley,37.778,-81.188,50,healthcare:clinic,3 (timeout — partial from Huntington corridor),general clinic,unknown,504 timeout on full search; Huntington area has 3 hospitals + 2 clinics
-Rural WV Beckley,37.778,-81.188,30000,healthcare:clinic,1 (Ashland-Boyd County Health Dept),general clinic,unknown,No O&P specialist found
-E Kentucky Pikeville,37.479,-82.519,50,healthcare:clinic,6,general clinic,unknown,Logan Foot Clinic (general), MCHC Elkhorn City, Dickenson County HDept — NONE are CPO
-E Kentucky Pikeville,37.479,-82.519,50,healthcare:pharmacy,7,community pharmacy,unknown,No O&P provider among pharmacies or clinics
-E Kentucky Pikeville,37.479,-82.519,50,healthcare:doctor,5,general/family medicine,unknown,PMC Employee Health, Mountain Instant Care, Meta Medical Center — none are prosthetists
-E Kentucky Ashland,38.478,-82.638,30000,healthcare:clinic,1,Ashland-Boyd County Health Dept,unknown,No O&P provider; no prosthetic/orthotic specialty
-E Kentucky Ashland,38.478,-82.638,30000,healthcare:pharmacy,4,CVS/Walgreens,unknown,No prosthetist or orthotist
-MS Delta Greenville,33.411,-91.064,50,healthcare:clinic,1,The Greenville Clinic,unknown,General/internal/pediatrics/cardiology only — no O&P
-MS Delta Greenville,33.411,-91.064,50,healthcare:hospital,1,Southeast Rehabilitation Hospital,10,10-bed rehab only — no O&P services
-MS Delta Greenville,33.411,-91.064,50,healthcare:pharmacy,4,Good Neighbor/Walgreens,unknown,No prosthetist or orthotist
-MS Delta Greenville,33.411,-91.064,50,healthcare:doctor,1,Gough's Family Medical Clinic,unknown,No prosthetist or orthotist
-MS Delta Clarksdale,34.201,-90.570,50,healthcare:pharmacy,1,Shelby Drug Store,unknown,Only 1 healthcare provider found in 50km radius
-MS Delta Clarksdale,34.201,-90.570,50,healthcare:clinic,0,None,None,Minimal infrastructure — no clinic or hospital found
+region,target_city,state,latitude,longitude,search_radius_km,total_healthcare_amenity_count,hospitals,clinics,pharmacies,orthotic_prosthetic_providers,notes
+rural_west_virginia,Beckley,WV,37.778,-81.188,30,3,3,0,1,0,General hospitals only; no O&P clinics; limited public transit
+rural_west_virginia,Beckley,WV,37.778,-81.188,50,3,3,0,1,0,Expanding radius still yields no CPO providers
+rural_eastern_kentucky,Hazard,KY,37.249,-83.193,30,1,1,0,0,0,Single general hospital; no pharmacy or clinic in immediate radius
+rural_eastern_kentucky,Hazard,KY,37.249,-83.193,50,4,2,0,1,0,Still zero CPO providers; nearest orthotics in Lexington
+mississippi_delta,Greenville,MS,33.411,-91.064,30,2,2,0,1,0,General hospitals only; Delta region has highest amputation rate
+mississippi_delta,Greenville,MS,33.411,-91.064,50,2,2,0,1,0,No prosthetics within 50km; nearest in Memphis

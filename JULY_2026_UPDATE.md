@@ -1,22 +1,31 @@
-# Prosthetic Access Atlas — July 2026 Update
+# July 2026 Update
 
 ## What's New
 
-This directory contains the latest analysis additions for July 2026:
+### Clinical Trials
+- Updated total count from 644 to **2,222** prosthetic-related studies on ClinicalTrials.gov
+- Added phase distribution analysis: only **3.1% Phase 3** (critical shortage)
+- Added country-level breakdown showing research concentration in US, France, Germany
+- Added sponsor analysis: **65–77% academic**, **17–21% industry**
+- Added latest active trial listings (2024–2026)
 
-- **FINDINGS_JULY_2026_LATEST.md** — Comprehensive findings with clinical trial trends and gap analysis for all three underserved regions
-- **CLINICAL_TRIAL_TRENDS_LATEST.md** — Detailed statistical breakdown by status, phase, sponsor type, and geography
-- **access_gap_summary.csv** — Machine-readable CPO coverage gap data
-- **gap_analysis_proximity_data.csv** — Proximity and provider search results
+### Access Gap Analysis
+- Geocoded three representative cities in underserved regions:
+  - **Beckley, WV** (rural West Virginia)
+  - **Hazard, KY** (eastern Kentucky)
+  - **Greenville, MS** (Mississippi Delta)
+- **Zero prosthetic/orthotic (CPO) providers** found within 30 km of any target region
+- Documented nearest CPO distances: **130–200+ miles**
+- Added Medicaid expansion status for each region
+- Added amputation rate context (Delta = highest in U.S.)
 
-## Quick Reference
+### Data Files Added
+- `CLINICAL_TRIAL_TRENDS_LATEST.md` — detailed statistical trends
+- `access_gap_summary.csv` — machine-readable gap data
+- `gap_analysis_proximity_data.csv` — proximity and provider search results
 
-| Region | CPO 30km | Nearest CPO | Drive | Medicaid |
-|--------|----------|-------------|-------|----------|
-| Rural WV (Beckley) | 0 | Charleston ~190mi | 3+ | No expanded |
-| E Kentucky (Pikeville) | 0 | Lexington ~130mi | 3+ | Limited |
-| MS Delta (Greenville) | 0 | Memphis ~200mi | 3+ | Not expanded |
-
----
-
-*Repository: https://github.com/zhub9006/prosthetic-access-atlas*
+### Key Takeaways
+1. Extreme shortage of CPO providers in rural Appalachia and the Delta
+2. Medicaid non-expansion compounds access barriers
+3. Clinical trials are geographically disconnected from highest-need regions
+4. Phase 3 trials are critically scarce (only 3.1%)
