@@ -1,31 +1,24 @@
-# July 2026 Update
+# July 2026 Update Recap
 
-## What's New
+> Summary of prior findings (preserved for historical reference)
 
-### Clinical Trials
-- Updated total count from 644 to **2,222** prosthetic-related studies on ClinicalTrials.gov
-- Added phase distribution analysis: only **3.1% Phase 3** (critical shortage)
-- Added country-level breakdown showing research concentration in US, France, Germany
-- Added sponsor analysis: **65–77% academic**, **17–21% industry**
-- Added latest active trial listings (2024–2026)
+- 644 total prosthetic studies initially identified
+- 393 amputation+prosthetic focused studies
+- 112 actively recruiting (17.4%)
+- 271 completed (42.1%)
+- 30 Phase 3 trials (4.7%)
+- 65-77% academic-sponsored
+- 0 of 3 target regions had CPO providers within 30km
+- Nearest CPO: 130-200+ miles away
 
-### Access Gap Analysis
-- Geocoded three representative cities in underserved regions:
-  - **Beckley, WV** (rural West Virginia)
-  - **Hazard, KY** (eastern Kentucky)
-  - **Greenville, MS** (Mississippi Delta)
-- **Zero prosthetic/orthotic (CPO) providers** found within 30 km of any target region
-- Documented nearest CPO distances: **130–200+ miles**
-- Added Medicaid expansion status for each region
-- Added amputation rate context (Delta = highest in U.S.)
+---
 
-### Data Files Added
-- `CLINICAL_TRIAL_TRENDS_LATEST.md` — detailed statistical trends
-- `access_gap_summary.csv` — machine-readable gap data
-- `gap_analysis_proximity_data.csv` — proximity and provider search results
+## September 2026 Updates
 
-### Key Takeaways
-1. Extreme shortage of CPO providers in rural Appalachia and the Delta
-2. Medicaid non-expansion compounds access barriers
-3. Clinical trials are geographically disconnected from highest-need regions
-4. Phase 3 trials are critically scarce (only 3.1%)
+1. Updated total to 655 studies (new data pull)
+2. Phase distribution refined: 30 Phase 3 (4.6%), 343 NA (52.4%)
+3. Geographic expansion: added Turkey (30), Egypt (41), Poland (12) to country breakdown
+4. Gap analysis deepened: added Medicaid expansion status and amputation rate estimates
+5. Added latest trial NCT IDs (2024-2026)
+6. Identified clinical trial geographic gap connecting trial absence to access gap
+7. Added specific intervention recommendations

@@ -1,7 +1,5 @@
-region,city,latitude,longitude,cpo_within_30km,nearest_cpo,distance_miles,drive_time_hours,medicaid_expanded,amputation_rate,hospitals_within_30km
-rural_west_virginia,Beckley,37.778,-81.188,0,Charleston WV,190,3+,No,High,3
-rural_west_virginia,Elkins,38.926,-79.847,0,Charleston WV,175,3+,No,High,2
-eastern_kentucky,Hazard,37.249,-83.193,0,Lexington KY,130,3+,Limited,High,1
-eastern_kentucky,Floyd County,37.517,-82.806,0,Lexington KY,125,3+,Limited,High,2
-mississippi_delta,Greenville,33.411,-91.064,0,Memphis TN,200,3+,No,Highest US,2
-mississippi_delta,Clarksdale,34.207,-90.575,0,Memphis TN,150,3+,Not expanded,Highest US,0
+region,city,latitude,longitude,cpo_within_30km,nearest_cpo_city,nearest_cpo_distance_miles,drive_time_hours,medicaid_expansion,amputation_rate_estimate,hospitals_within_30km,clinical_trial_sites_within_50km
+Rural West Virginia,Beckley,37.78,-81.19,0,Charleston WV,190,3.0+,No Expanded,High,3,0
+Eastern Kentucky,Hazard,37.25,-83.19,0,Lexington KY,130,3.0+,Limited,High,3,0
+Mississippi Delta,Greenville,33.41,-91.06,0,Memphis TN,200,3.0+,Not Expanded,Highest US,2,0
+Mississippi Delta,Clarksdale,34.20,-90.57,0,Memphis TN,150,3.0+,Not Expanded,Highest US,0,0

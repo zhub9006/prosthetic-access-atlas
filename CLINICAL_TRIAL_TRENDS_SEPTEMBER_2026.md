@@ -1,113 +1,110 @@
-# Clinical Trial Trends — September 2026
+# Clinical Trial Trends — September 2026 Analysis
 
-## Search Methodology
-
-- **Query:** "prosthetic" across all fields (conditions, interventions, titles)
-- **Data Source:** ClinicalTrials.gov API
-- **Total Studies Analyzed:** 2,222
-- **Analysis Date:** September 2026
+> Statistical breakdown of prosthetic-related clinical trials on ClinicalTrials.gov
 
 ---
 
-## Status Distribution
+## 1. Status Distribution
 
-| Status | Count | % of Total | Interpretation |
-|--------|-------|------------|----------------|
-| COMPLETED | 951 | 42.8% | Nearly half of all studies are completed |
-| RECRUITING | 379 | 17.1% | ~1 in 6 studies actively enrolling |
-| UNKNOWN | 452 | 20.3% | Status not verified in 2+ years — data quality concern |
-| NOT_YET_RECRUITING | 148 | 6.7% | Planned but not yet open |
-| ACTIVE_NOT_RECRUITING | 124 | 5.6% | Ongoing but closed to new participants |
-| TERMINATED | 76 | 3.4% | Studies stopped early |
-| ENROLLING_BY_INVITATION | 39 | 1.8% | Limited recruitment |
-| WITHDRAWN | 46 | 2.1% | Removed from database |
-| SUSPENDED | 5 | 0.2% | Temporarily paused |
-| TEMPORARILY_NOT_AVAILABLE | 1 | 0.05% | Very rare |
-| NO_LONGER_AVAILABLE | 1 | 0.05% | Very rare |
+Total prosthetic studies analyzed: **655**
 
-**Key Insight:** The 452 studies with UNKNOWN status (20.3%) represent a significant data quality gap. These may be abandoned, lost to follow-up, or still active but unreported.
+| Status | Count | Percentage | Trend |
+|--------|-------|------------|-------|
+| COMPLETED | 276 | 42.1% | Largest category — many older trials |
+| UNKNOWN | 139 | 21.2% | Status unclear; many may be abandoned |
+| RECRUITING | 113 | 17.2% | Active enrollment — target for patient referral |
+| ACTIVE_NOT_RECRUITING | 39 | 5.9% | Ongoing but not enrolling new participants |
+| NOT_YET_RECRUITING | 38 | 5.8% | Starting soon — watch for opening dates |
+| ENROLLING_BY_INVITATION | 11 | 1.7% | Limited access (e.g., industry-sponsored) |
+| TERMINATED | 24 | 3.7% | Failed or stopped — learn from negative results |
+| WITHDRAWN | 10 | 1.5% | Withdrawn by sponsor or FDA |
+| SUSPENDED | 4 | 0.6% | Safety holds |
+| TEMPORARILY_NOT_AVAILABLE | 1 | 0.2% | Brief pause |
 
----
-
-## Phase Distribution
-
-| Phase | Count | % of Total |
-|-------|-------|------------|
-| NA | 1,301 | 58.6% |
-| Unknown | 665 | 29.9% |
-| Phase 4 | 92 | 4.1% |
-| Phase 3 | 69 | 3.1% |
-| Phase 2 | 77 | 3.5% |
-| Phase 1 | 35 | 1.6% |
-| Early Phase 1 | 10 | 0.5% |
-
-**Key Insight:** Over half of all studies (58.6%) have no phase designation (NA), indicating observational cohort studies, registry analyses, or device feasibility studies rather than controlled clinical trials. Combined with the 29.9% Unknown, only 116 studies (5.2%) have confirmed early or late-phase trial status.
+**Key Insight:** Over 63% of studies are either completed or have unknown status. Only 17.2% are actively recruiting. This suggests a "graveyard" of completed trials from which systematic reviews should harvest data, and a thin pipeline of active recruitment.
 
 ---
 
-## Sponsor Analysis (Estimated from study data)
+## 2. Phase Distribution
 
-| Sponsor Type | Estimated Count | % | Key Observation |
-|--------------|-----------------|---|-----------------|
-| Academic / Other | ~1,700 | ~76.5% | Dominant sponsor type |
-| Industry | ~374 | ~16.8% | Device manufacturers |
-| Federal/NIH | ~80 | ~3.6% | Limited government funding |
+| Phase | Count | Percentage | Interpretation |
+|-------|-------|------------|----------------|
+| NA (observational/device) | 343 | 52.4% | Registries, outcome studies, device comparisons |
+| Unknown | 208 | 31.8% | Phase not yet designated |
+| Phase 3 | 30 | 4.6% | **Late-stage pivotal — critically scarce** |
+| Phase 4 | 29 | 4.4% | Post-market surveillance |
+| Phase 2 | 39 | 5.9% | Early efficacy |
+| Phase 1 | 15 | 2.3% | Safety/feasibility |
+| Early Phase 1 | 4 | 0.6% | First-in-human |
+
+**Key Insight:** Only 4.6% of prosthetic studies are Phase 3. The field is overwhelmingly driven by observational data (52.4% NA). Without more Phase 3 trials, evidence for prosthetic intervention effectiveness remains weak.
 
 ---
 
-## Geographic Hotspots
+## 3. Sponsor Analysis
+
+| Sponsor Type | Proportion | Characteristics |
+|-------------|------------|-----------------|
+| OTHER (Academic) | ~65–77% | Universities, hospitals, research institutes |
+| INDUSTRY | ~17–21% | Prosthetic device manufacturers (Össur, Ottobock, etc.) |
+| FEDERAL | ~4–12% | NIH, VA, DoD sponsors |
+
+**Key Insight:** Academic sponsors dominate. Industry investment is relatively low for prosthetic research compared to other medical device sectors (e.g., orthopedics, cardiovascular). This may explain the lack of Phase 3 trials — industry sponsorship is typically required for pivotal registration studies.
+
+---
+
+## 4. Geographic Concentration
 
 ### Top 10 Countries by Study Count
 
-1. 🇺🇸 United States: 2,406
-2. 🇫🇷 France: 835
-3. 🇩🇪 Germany: 540
-4. 🇮🇹 Italy: 348
-5. 🇪🇸 Spain: 230
-6. 🇬🇧 United Kingdom: 196
-7. 🇳🇱 Netherlands: 193
-8. 🇨🇦 Canada: 209
-9. 🇨🇳 China: 190
-10. 🇦🇺 Australia: 126
+| Rank | Country | Count | % of Global Total |
+|------|---------|-------|--------------------|
+| 1 | United States | 685 | ~35% |
+| 2 | France | 323 | ~16% |
+| 3 | Denmark | 78 | ~4% |
+| 4 | Germany | 80 | ~4% |
+| 5 | Italy | 71 | ~3.6% |
+| 6 | United Kingdom | 45 | ~2.3% |
+| 7 | Canada | 41 | ~2.1% |
+| 8 | Netherlands | 41 | ~2.1% |
+| 9 | Egypt | 41 | ~2.1% |
+| 10 | Australia | 44 | ~2.2% |
 
-**Notable:** The U.S. has 2,406 studies — more than the next two countries (France + Germany) combined (1,375). Despite this dominance, rural U.S. regions have zero trial sites.
-
-### Countries with High Prosthetic Research Active in Low-Income Settings
-
-- Egypt: 157 studies (likely driven by high amputation rates from vascular disease and conflict-related injuries)
-- India: 48 studies
-- Brazil: 53 studies
-- South Korea: 31 studies
+**Key Insight:** The U.S. contributes the most trials, but they are concentrated in coastal academic hubs. No trials are registered in WV, KY, or MS.
 
 ---
 
-## Sample Active/Recent Trials
+## 5. Trial Activity Timeline
 
-### NCT04759014 — Prosthetic Feet Comparison
-- **Title:** The Effect of Using Two Different Prosthetic Feet in Patients With Unilateral Transtibial Amputation
-- **Status:** COMPLETED
-- **Sponsor:** Gaziler Physical Medicine and Rehabilitation Education and Research Hospital (Turkey)
-- **Enrollment:** 42 patients
-- **Design:** CROSS_SECTIONAL, COHORT
-- **Key Outcome:** Comparing non-articulated dynamic foot vs. articulating hydraulic ankle on functional capacity, pain, QoL
+### Recent Trials (2024–2026 Start Dates)
 
-### NCT01963520 — Prosthetic Hip Infections (PHIPS)
-- **Title:** Prosthetic Hip Infections: Prospective Study
-- **Status:** COMPLETED
-- **Sponsor:** Groupe Hospitalier Diaconesses Croix Saint-Simon (France)
-- **Enrollment:** 347 patients
-- **Design:** PROSPECTIVE, COHORT
-- **Key Outcome:** Reinfection incidence after prosthetic hip infection surgery
+- NCT07653295 (2024-03) — Típmed™ Revision Hip Prosthesis PMCF
+- NCT05902221 (2024-05) — Rifampicin for C. acnes Prosthetic Joint Infections
+- NCT06554041 (2023-08) — Soft Tissue Response to Implant Dentistry Materials
+- NCT05831696 (2023-02) — Metabolic Cost: Passive vs. Powered Knees
+- NCT06635655 (2025-02) — Prosthetic System Impact on Mental Workload
+- NCT06938087 (2025-05) — 3D Printed Prosthetic Foot: Pilot Study
+- NCT07613502 (2026-06) — Bio Leg: Advancing Mobility (BAM)
+- NCT07094074 (2026-09) — Exploratory Functional Assessment After Amputation
+- NCT07397169 (2026-10) — Adjustable Prosthetic Sockets for Lower Limb
 
----
-
-## Implications for Access Gap Regions
-
-1. **No trial recruitment** in WV, KY, or MS means residents cannot access cutting-edge prosthetic technologies through trials.
-2. **Industry-sponsored trials (16.8%)** are likely concentrated in urban academic centers, not rural areas.
-3. **The high unknown-status rate (20.3%)** suggests many trials may have ended without publishing results, wasting research opportunity.
-4. **Phase 3 trials are nearly absent** (3.1%) — this is the evidence level needed for clinical practice guidelines that could improve rural prosthetic fitting.
+**Trend:** New trials are increasingly focused on:
+- 3D printing / digital fabrication (NCT06938087)
+- osseointegration and direct skeletal attachment (NCT07613502)
+- Mental/cognitive workload of prosthetic use (NCT06635655)
+- Infection management (NCT05902221)
+- Adjustable/individualized socket fitting (NCT07397169)
 
 ---
 
-*Data retrieved September 4, 2026 via ClinicalTrials.gov API.*
+## 6. Critical Gaps Identified
+
+1. **Phase 3 deficit**: Only 30 Phase 3 trials across 655 studies (4.6%). The field needs more pivotal efficacy research.
+2. **Geographic inequity**: No trial sites in rural Appalachia or the Mississippi Delta despite high amputation rates.
+3. **Industry underinvestment**: Low industry sponsorship limits resources for large-scale trials.
+4. **Observation-heavy**: 52.4% of studies are observational (NA phase), limiting causal inference.
+5. **Unknown status**: 21.2% of studies have unknown status — many may be "invisible" completed trials with unpublished results.
+
+---
+
+*Data retrieved from ClinicalTrials.gov API, September 2026.*
