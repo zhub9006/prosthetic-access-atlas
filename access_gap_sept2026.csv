@@ -1,0 +1,4 @@
+region,city,latitude,longitude,overall_score,healthcare_within_30km,cpo_within_30km,nearest_cpo_city,distance_to_nearest_cpo_miles,drive_time_to_nearest_cpo,medicaid_expanded,amputation_rate_tier,hospitals_within_30km,clinical_trial_sites_within_30km
+Rural West Virginia,Marlinton,38.223,-80.095,0.0,0,0,Charleston WV,190,3+,No,High,3,0
+Eastern Kentucky,Pikeville,37.479,-82.519,0.0,0,0,Lexington KY,130,3+,Limited,High,1,0
+Mississippi Delta,Greenville,33.411,-91.064,0.0,0,0,Memphis TN,200,3+,No,Highest US,2,0
