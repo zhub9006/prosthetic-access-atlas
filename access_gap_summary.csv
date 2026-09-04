@@ -1,5 +1,5 @@
 region,city,latitude,longitude,cpo_within_30km,nearest_cpo,distance_miles,drive_time_hours,medicaid_expanded,amputation_rate,hospitals_within_30km
 rural_west_virginia,Beckley,37.778,-81.188,0,Charleston WV,190,3+,No,High,3
-eastern_kentucky,Hazard,37.249,-83.193,0,Lexington KY,130,3+,Limited,High,1
+eastern_kentucky,Pikeville,37.479,-82.519,0,Lexington KY,130,3+,Limited,High,1
 mississippi_delta,Greenville,33.411,-91.064,0,Memphis TN,200,3+,No,Highest US,2
 mississippi_delta,Clarksdale,34.207,-90.575,0,Memphis TN,150,3+,Not expanded,Highest US,0
